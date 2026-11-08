@@ -1071,6 +1071,10 @@ def build_apse_wall_structure(
     #    primo/ultimo vertice pentagono), stesso verso corretto.
     faces += [3, IDX_RIDGE, n + 0, n + 1]           # bocca Ovest -> primo vertice
     faces += [3, IDX_RIDGE, n + (n - 2), n + (n - 1)]  # ultimo vertice -> bocca Est
+    # 3) falda verso la navata (dal colmo al lato del pentagono lungo la
+    #    bocca, fra primo e ultimo vertice): senza, dalla pianta il tetto
+    #    dell'abside restava aperto con un buco triangolare.
+    faces += [3, IDX_RIDGE, n + 1, n + (n - 2)]
     # pannelli RETTANGOLARI (falde 1 e 5) che collegano il campanile
     # al resto del tetto - sostituiscono le sottili strisce verticali
     # di un tentativo precedente (rivelatesi insufficienti a coprire

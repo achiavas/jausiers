@@ -1010,6 +1010,9 @@ function buildApseWallStructure(church, wallHeight = APSE_EXTERNAL_HEIGHT_M, rid
   //    primo/ultimo vertice pentagono), stesso verso corretto.
   indices.push([IDX_RIDGE, n + 0, n + 1]);
   indices.push([IDX_RIDGE, n + (n - 2), n + (n - 1)]);
+  // 3) falda verso la navata (dal colmo al lato del pentagono lungo la
+  //    bocca): senza, dalla pianta il tetto dell'abside restava aperto.
+  indices.push([IDX_RIDGE, n + 1, n + (n - 2)]);
   // pannelli RETTANGOLARI (falde 1 e 5) verso il campanile
   indices.push([IDX_FW3, IDX_FW2, IDX_FW1], [IDX_FW3, IDX_FW1, IDX_FW0]);
   indices.push([IDX_FE3, IDX_FE2, IDX_FE1], [IDX_FE3, IDX_FE1, IDX_FE0]);

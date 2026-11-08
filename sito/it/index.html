@@ -517,7 +517,10 @@ function orientaVersoFuori(geom, centro) {
   g.setIndex(tieni);
 }
 orientaVersoFuori(wallsMesh.geometry, centroNavata);
-orientaVersoFuori(apseStructureMesh.geometry, centroNavata);
+// l'abside si orienta rispetto al proprio centro: la falda del tetto rivolta
+// verso la navata, vista dal centro della navata, sembrerebbe "dentro"
+const centroAbside = (() => { const a = church.apseVertices(); return () => [a.reduce((s, q) => s + q[0], 0) / a.length, 0, 5.0]; })();
+orientaVersoFuori(apseStructureMesh.geometry, centroAbside);
 orientaVersoFuori(chapelWallMesh.geometry, centroNicchia);
 orientaVersoFuori(chapelPierMesh.geometry, centroNicchia);
 for (const m of [wallsMesh, chapelWallMesh, chapelPierMesh, apseStructureMesh]) {
