@@ -34,8 +34,10 @@ cd sito
 python3 -m http.server 8765
 ```
 
-Poi aprire <http://localhost:8765/>. La cartella `sito/` è già pronta per essere pubblicata
-così com'è (per esempio con GitHub Pages).
+Poi aprire <http://localhost:8765/>.
+
+Il sito è pubblicato con GitHub Pages: <https://achiavas.github.io/jausiers/> (l'`index.html`
+in cima al repository porta a `sito/`).
 
 ## Avviare il programma Python
 
@@ -112,7 +114,7 @@ non sono nel repository.
 ## Licenza
 
 - **Codice** (Python e JavaScript): [MIT](LICENSE).
-- **Foto, testi e cartine**: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.it):
+- **Foto, testi e cartine**: [CC BY-SA 4.0](LICENSE-CONTENUTI.md):
   si possono riusare citando l'autore e condividendo con la stessa licenza.
 - Le librerie esterne mantengono la loro licenza (three.js: MIT). Le fonti citate
   (base Mérimée, Wikipedia, diagnostico 2016) restano dei rispettivi autori.
