@@ -108,3 +108,11 @@ python3 strumenti/verifica_sync.py
 Diagnostico dell'edificio del 2016, deliberazione del 1668, base Mérimée (PA00080407),
 OpenStreetMap, planimetria catastale, foto e video fatti nella chiesa. I PDF originali
 non sono nel repository.
+
+## Licenza
+
+- **Codice** (Python e JavaScript): [MIT](LICENSE).
+- **Foto, testi e cartine**: [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/deed.it):
+  si possono riusare citando l'autore e condividendo con la stessa licenza.
+- Le librerie esterne mantengono la loro licenza (three.js: MIT). Le fonti citate
+  (base Mérimée, Wikipedia, diagnostico 2016) restano dei rispettivi autori.
