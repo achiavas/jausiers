@@ -1,0 +1,19 @@
+# --- documenti e materiali di lavoro, non pubblicati ---
+*.pdf
+*.docx
+/Screenshot*.png
+/jausiers_web_final/
+/jausiers_web_fr/
+
+# --- video originali: troppo grandi per GitHub (le foto estratte restano) ---
+*.mov
+*.MOV
+*.mp4
+
+# --- ambiente Python e file generati ---
+.venv/
+__pycache__/
+*.pyc
+
+# --- sistema ---
+.DS_Store

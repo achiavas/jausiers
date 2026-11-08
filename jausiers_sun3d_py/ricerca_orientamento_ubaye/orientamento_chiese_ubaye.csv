@@ -1,0 +1,76 @@
+commune,insee,name,building,lat,lon,L,W,elong,apse_az,dir,facade_az,end_ratio,affidabilita,osm,verifica_ortofoto
+Barcelonnette,04019,Église Saint-Pierre-ès-liens,church,44.38775,6.65146,45.9,26.4,1.74,351.5,N,171.5,0.76,alta,way/128064002,non determinabile da ortofoto
+Barcelonnette,04019,Chapelle Saint-Jacques et Saint-Philippe,chapel,44.39781,6.64361,7.0,3.9,1.79,341.1,NNW,161.1,1.0,"asse sì, verso incerto",way/128062231,non determinabile da ortofoto
+Enchastrayes,04073,Église Notre-Dame-des-Neiges,church,44.37948,6.6952,18.7,11.1,1.69,339.8,NNW,159.8,0.76,alta,way/195326268,non determinabile da ortofoto
+Enchastrayes,04073,Église Saint-Pierre-et-Saint-Paul,church,44.36939,6.69127,19.6,12.8,1.53,244.5,WSW,64.5,0.94,pianta OSM dubbia,way/195328613,pianta OSM parziale/sfasata rispetto all'edificio
+Enchastrayes,04073,Chapelle Saint-Jean,yes,44.38809,6.70426,9.2,7.6,1.21,223.8,SW,43.8,0.93,bassa (pianta quasi quadrata),way/600812181,non determinabile da ortofoto
+Faucon-de-Barcelonnette,04086,Chapelle Saint-Jean-de-Matha,church,44.39436,6.68007,17.8,17.0,1.05,88.8,E,268.8,0.99,pianta OSM dubbia,way/72862068,pianta OSM che comprende più edifici
+Faucon-de-Barcelonnette,04086,Église Saint-Étienne,church,44.39391,6.67832,27.0,16.3,1.66,81.6,E,261.6,0.88,alta,way/72861887,non determinabile da ortofoto
+Faucon-de-Barcelonnette,04086,,yes,44.39332,6.67771,20.3,7.9,2.55,90.3,E,270.3,0.81,alta,way/72862315,non determinabile da ortofoto
+Jausiers,04096,Église Notre-Dame-del-Bosc,church,44.4063,6.75641,30.1,13.4,2.24,68.8,ENE,248.8,0.52,alta,way/93927303,non determinabile da ortofoto
+Jausiers,04096,Église Saint-Nicolas-de-Myre,church,44.41988,6.73392,37.5,20.9,1.8,336.3,NNW,156.3,0.95,verificata,way/93932532,confermato (planimetria catastale del programma: 340°)
+Jausiers,04096,Église Saint-Sébastien,church,44.41338,6.71744,24.6,15.0,1.63,336.0,NNW,156.0,0.99,verificata,way/93928811,confermato: abside semicircolare a NNW
+Jausiers,04096,,chapel,44.40639,6.71773,19.0,8.5,2.25,169.4,S,349.4,0.78,verificata,way/93927366,confermato: abside semicircolare a S
+Jausiers,04096,,chapel,44.41908,6.73467,14.9,7.9,1.89,148.7,SSE,328.7,0.91,alta,way/93929250,non determinabile da ortofoto
+Jausiers,04096,,yes,44.42062,6.73371,5.4,5.1,1.06,326.7,NNW,146.7,0.97,bassa (pianta quasi quadrata),way/93929830,non determinabile da ortofoto
+La Condamine-Châtelard,04062,Église Saint-Clément,church,44.4528,6.73989,18.6,13.5,1.38,0.5,N,180.5,0.93,verificata,way/128081857,confermato: abside arrotondata a N
+La Condamine-Châtelard,04062,Église Sainte-Catherine,church,44.45868,6.74462,25.0,12.6,1.99,15.3,NNE,195.3,0.83,alta,way/290959205,non determinabile da ortofoto
+La Condamine-Châtelard,04062,Chapelle Saint-Baptiste,chapel,44.45083,6.73802,8.0,5.2,1.54,267.9,W,87.9,1.0,"asse sì, verso incerto",way/128082218,non determinabile da ortofoto
+La Condamine-Châtelard,04062,Chapelle Saint-Roch,chapel,44.45862,6.73751,6.2,5.3,1.17,274.9,W,94.9,1.0,bassa (pianta quasi quadrata),way/128082035,non determinabile da ortofoto
+La Condamine-Châtelard,04062,Chapelle Sainte-Anne,chapel,44.47998,6.71156,7.4,5.9,1.26,57.0,ENE,237.0,0.99,"asse sì, verso incerto",way/162367074,non determinabile da ortofoto
+La Condamine-Châtelard,04062,Chapelle des Pénitents Blancs,chapel,44.45299,6.73999,11.2,6.6,1.69,112.1,ESE,292.1,0.93,verificata,way/128081813,confermato: abside arrotondata a ESE
+Le Lauzet-Ubaye,04102,Église Saint-Laurent,church,44.42949,6.43247,28.8,18.2,1.58,62.3,ENE,242.3,0.9,alta,way/128071277,non determinabile da ortofoto
+Le Lauzet-Ubaye,04102,Chapelle Sainte-Anne,chapel,44.44647,6.41969,6.7,4.9,1.35,125.9,SE,305.9,0.96,"asse sì, verso incerto",way/128071366,non determinabile da ortofoto
+Le Lauzet-Ubaye,04102,Chapelle de Costeplane,chapel,44.43916,6.42729,6.1,5.9,1.05,306.8,NW,126.8,0.95,bassa (pianta quasi quadrata),way/128071854,non determinabile da ortofoto
+Le Lauzet-Ubaye,04102,,chapel,44.43161,6.44387,7.0,5.7,1.24,98.2,E,278.2,1.0,bassa (pianta quasi quadrata),way/128071888,non determinabile da ortofoto
+Les Thuiles,04220,Église Saint-Martin de Tours,church,44.39419,6.56651,22.3,14.6,1.53,271.2,W,91.2,0.9,alta,way/128068584,non determinabile da ortofoto
+Les Thuiles,04220,Chapelle Saint-Jean,chapel,44.40683,6.5504,15.7,7.0,2.23,217.2,SW,37.2,0.98,"asse sì, verso incerto",way/128069346,non determinabile da ortofoto
+Les Thuiles,04220,Chapelle Saint-Joseph,chapel,44.40037,6.57384,19.6,9.8,1.99,273.4,W,93.4,0.83,alta,way/128069036,non determinabile da ortofoto
+Les Thuiles,04220,Chapelle ouverte des Guérins,yes,44.39019,6.57154,6.8,5.7,1.19,271.6,W,91.6,0.97,bassa (pianta quasi quadrata),way/128069160,non determinabile da ortofoto
+Les Thuiles,04220,,yes,44.38348,6.57394,21.8,8.6,2.52,116.7,ESE,296.7,0.96,"asse sì, verso incerto",way/128069132,non determinabile da ortofoto
+Méolans-Revel,04161,Chapelle Saint-Jean,church,44.35808,6.47531,7.5,6.6,1.14,48.9,NE,228.9,1.0,bassa (pianta quasi quadrata),way/127740366,non determinabile da ortofoto
+Méolans-Revel,04161,Église Notre-Dame de Lumière,church,44.41024,6.52745,29.9,11.2,2.66,272.3,W,92.3,0.74,alta,way/127740254,non determinabile da ortofoto
+Méolans-Revel,04161,Église Saint-Antoine,church,44.34919,6.50587,18.0,13.5,1.34,82.2,E,262.2,0.68,verificata,way/127740201,"confermato dalle fonti: Il campanile sta accanto alla facciata ovest: abside a est, come la misura (82°)."
+Méolans-Revel,04161,Église Saint-Jaques-le-Majeur,church,44.40192,6.50467,26.6,15.1,1.76,51.5,NE,231.5,0.81,alta,way/127740276,non determinabile da ortofoto
+Méolans-Revel,04161,Église Saint-Julien,church,44.37431,6.46271,17.5,14.7,1.19,318.5,NW,138.5,0.85,verificata,way/127740306,CORRETTO (calcolo automatico 138°): abside semicircolare a NW
+Méolans-Revel,04161,Église Saint-Julien,church,44.39884,6.50816,21.2,13.6,1.56,249.7,WSW,69.7,0.79,alta,way/127740308,non determinabile da ortofoto
+Méolans-Revel,04161,Chapelle,yes,44.41439,6.52105,4.6,3.8,1.22,358.3,N,178.3,0.98,bassa (pianta quasi quadrata),way/1409518781,non determinabile da ortofoto
+Méolans-Revel,04161,Chapelle Notre-Dame de la Salette,chapel,44.40104,6.48738,8.6,4.9,1.73,81.7,E,261.7,0.94,verificata,way/127741573,CORRETTO DA FONTI (calcolo automatico 262°): Il campanile a vela sopra la facciata ovest indica l'abside a est. Il calcolo automatico dava il verso opposto (262°): orientamento corretto a 82°.
+Méolans-Revel,04161,Chapelle Saint-Antoine et Saint-Roch,chapel,44.40987,6.52958,6.1,4.0,1.54,246.3,WSW,66.3,0.99,"asse sì, verso incerto",way/127741231,non determinabile da ortofoto
+Méolans-Revel,04161,Chapelle des Trons,yes,44.41255,6.51794,9.0,6.1,1.48,347.3,NNW,167.3,0.96,"asse sì, verso incerto",way/127741555,non determinabile da ortofoto
+Méolans-Revel,04161,,yes,44.39774,6.50669,11.9,6.0,1.97,26.5,NNE,206.5,0.97,"asse sì, verso incerto",way/127740889,non determinabile da ortofoto
+Pontis,04154,Église Saint-Claude,church,44.48126,6.35638,14.0,12.3,1.14,134.1,SE,314.1,0.5,bassa (pianta quasi quadrata),way/197385437,non determinabile da ortofoto
+Pontis,04154,Chapelle Saint-Martin,chapel,44.51468,6.36266,8.2,5.4,1.53,98.8,E,278.8,0.97,"asse sì, verso incerto",way/197385465,non determinabile da ortofoto
+Pontis,04154,Chapelle Saint-Pierre,chapel,44.48968,6.36105,6.6,5.6,1.18,0.8,N,180.8,1.0,bassa (pianta quasi quadrata),way/1038844287,non determinabile da ortofoto
+Pontis,04154,Église Saint-Jérôme,yes,44.50433,6.35744,25.4,11.7,2.17,0.4,N,180.4,0.76,alta,way/197385428,non determinabile da ortofoto
+Saint-Paul-sur-Ubaye,04193,Église Saint-Antoine-du-Désert de Maurin,church,44.59351,6.84682,22.2,15.8,1.41,271.6,W,91.6,0.76,alta,way/128086950,non determinabile da ortofoto
+Saint-Paul-sur-Ubaye,04193,Église Saint-Sébastien,church,44.52522,6.72341,18.6,9.5,1.95,96.2,E,276.2,0.95,alta,way/128090511,non determinabile da ortofoto
+Saint-Paul-sur-Ubaye,04193,Église Saint-Thomas,church,44.48741,6.74116,18.4,13.4,1.37,290.6,WNW,110.6,0.82,alta,way/128090494,non determinabile da ortofoto
+Saint-Paul-sur-Ubaye,04193,,church,44.5307,6.77642,16.4,16.1,1.02,141.2,SE,321.2,0.57,bassa (pianta quasi quadrata),way/128091115,non determinabile da ortofoto
+Saint-Paul-sur-Ubaye,04193,Chapelle Notre-Dame-des-Sept-Douleurs,chapel,44.52166,6.74704,8.1,4.4,1.84,349.1,N,169.1,1.0,"asse sì, verso incerto",way/128090724,non determinabile da ortofoto
+Saint-Paul-sur-Ubaye,04193,Chapelle Saint-Antoine,chapel,44.54498,6.79515,6.4,4.6,1.4,314.5,NW,134.5,1.0,"asse sì, verso incerto",way/401080144,non determinabile da ortofoto
+Saint-Paul-sur-Ubaye,04193,Chapelle Saint-Jacques,chapel,44.4761,6.762,5.1,4.8,1.05,203.2,SSW,23.2,0.99,bassa (pianta quasi quadrata),way/128091064,non determinabile da ortofoto
+Saint-Paul-sur-Ubaye,04193,Chapelle Saint-Jean-Baptiste,yes,44.51447,6.75037,17.9,12.4,1.44,62.8,ENE,242.8,0.79,alta,way/128090492,non determinabile da ortofoto
+Saint-Paul-sur-Ubaye,04193,Chapelle Saint-Jean-Baptiste,chapel,44.52589,6.80346,17.8,6.8,2.63,98.1,E,278.1,0.68,alta,way/128091102,non determinabile da ortofoto
+Saint-Paul-sur-Ubaye,04193,Chapelle Saint-Roch,chapel,44.52814,6.77337,16.6,8.3,2.01,46.4,NE,226.4,1.0,"asse sì, verso incerto",way/128090944,non determinabile da ortofoto
+Saint-Paul-sur-Ubaye,04193,Chapelle Sainte-Marie-Madeleine,chapel,44.53663,6.70282,7.5,4.7,1.6,310.1,NW,130.1,1.0,verificata,way/128090685,CORRETTO (calcolo automatico 130°): testata arrotondata a NW
+Saint-Paul-sur-Ubaye,04193,Notre-Dame-de-l'Annonciation,chapel,44.51958,6.76043,10.2,5.6,1.82,136.3,SE,316.3,1.0,"asse sì, verso incerto",way/1203781998,non determinabile da ortofoto
+Saint-Paul-sur-Ubaye,04193,Église Saints-Pierre-et-Paul,yes,44.51443,6.75081,30.3,17.2,1.76,63.3,ENE,243.3,0.77,verificata,way/128090543,confermato dalle fonti: Portale occidentale e coro opposto: l'abside a ENE (63°) è coerente con le fonti.
+Saint-Pons,04195,Église Saint-Pons,church,44.39236,6.62851,33.0,17.5,1.89,103.1,ESE,283.1,0.96,verificata,way/128066982,"CORRETTO DA FONTI (calcolo automatico 283°): Chevet piatto e cieco, coro illuminato solo da sud, portale principale a ovest: l'abside guarda a est. Il calcolo automatico dava il verso opposto (283°): orientamento corretto a 103°."
+Saint-Pons,04195,,yes,44.39471,6.59392,6.0,4.9,1.21,279.1,W,99.1,0.92,bassa (pianta quasi quadrata),way/128067661,non determinabile da ortofoto
+Ubaye-Serre-Ponçon,04033,Église Notre-Dame-de-l'Assomption,church,44.44238,6.35352,15.8,12.0,1.31,1.2,N,181.2,1.0,"asse sì, verso incerto",way/128051016,non determinabile da ortofoto
+Ubaye-Serre-Ponçon,04033,Église Saint-Pierre,church,44.45736,6.29487,25.3,17.0,1.49,96.5,E,276.5,0.99,verificata,way/116097551,confermato: abside semicircolare a E
+Ubaye-Serre-Ponçon,04033,Église Saint-Vincent,church,44.44564,6.3729,24.4,16.1,1.52,283.7,WNW,103.7,0.98,"asse sì, verso incerto",way/128051204,non determinabile da ortofoto
+Ubaye-Serre-Ponçon,04033,Église de Costebelle,church,44.43888,6.32799,18.7,16.1,1.16,141.9,SE,321.9,0.29,bassa (pianta quasi quadrata),way/116084655,non determinabile da ortofoto
+Ubaye-Serre-Ponçon,04033,Chapelle Saint-Antoine,chapel,44.41961,6.35393,8.0,6.1,1.32,217.5,SW,37.5,1.0,"asse sì, verso incerto",way/128050703,non determinabile da ortofoto
+Ubaye-Serre-Ponçon,04033,,chapel,44.44708,6.38015,9.3,6.5,1.42,18.7,NNE,198.7,1.0,pianta OSM dubbia,way/128050603,nessun edificio visibile in ortofoto: pianta OSM da verificare
+Uvernet-Fours,04226,Église Saint-André,church,44.36024,6.62572,22.1,9.8,2.25,159.3,SSE,339.3,0.59,alta,way/128074117,non determinabile da ortofoto
+Uvernet-Fours,04226,Chapelle Saint-François d'Assise,chapel,44.37153,6.60608,21.4,20.0,1.07,42.7,NE,222.7,0.5,bassa (pianta quasi quadrata),way/128075398,non determinabile da ortofoto
+Uvernet-Fours,04226,Saint-Jean des Agneliers,yes,44.33324,6.58411,17.3,9.9,1.75,83.1,E,263.1,0.98,"asse sì, verso incerto",way/128075448,non determinabile da ortofoto
+Val d'Oronaye,04120,Chapelle Sainte-Marie-Madeleine,church,44.44121,6.86354,12.0,10.2,1.18,278.1,W,98.1,0.6,verificata,way/96741859,CORRETTO (calcolo automatico 98°): testata poligonale a W
+Val d'Oronaye,04120,Église Notre-Dame-du-Mont-Carmel,church,44.45139,6.84599,19.4,14.3,1.36,129.3,SE,309.3,0.73,alta,way/96741697,non determinabile da ortofoto
+Val d'Oronaye,04120,Église Saint-Donat,church,44.47584,6.80003,20.2,19.5,1.04,57.4,ENE,237.4,0.31,bassa (pianta quasi quadrata),way/96992129,non determinabile da ortofoto
+Val d'Oronaye,04120,Chapelle Saint-Ours,chapel,44.48408,6.80693,6.7,4.0,1.67,42.8,NE,222.8,1.0,"asse sì, verso incerto",way/96992202,non determinabile da ortofoto
+Val d'Oronaye,04120,Chapelle de la Madeleine,,44.42356,6.89666,4.3,3.6,1.21,223.6,SW,43.6,0.99,bassa (pianta quasi quadrata),way/96741723,non determinabile da ortofoto
+Val d'Oronaye,04120,"Chapelle du Lauzanier, Notre-Dame des Lumières",chapel,44.38083,6.872,5.6,3.9,1.43,169.7,S,349.7,1.0,"asse sì, verso incerto",way/96741728,non determinabile da ortofoto
+Val d'Oronaye,04120,,yes,44.48047,6.80829,15.3,10.6,1.45,251.6,WSW,71.6,0.74,alta,way/96992035,non determinabile da ortofoto

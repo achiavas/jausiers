@@ -1,0 +1,241 @@
+<title>Chiese dell'Ubaye, orientamento</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@400;500;600&family=Spectral:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: map sheet on the left, field-notebook panel on the right; stacks on phones */
+:root{
+  --bg:#eef0ec; --paper:#f8f8f4; --ink:#1f2a2e; --muted:#5d6b6e; --line:#c9d0cb;
+  --commune:#e3e7e0; --commune-line:#aab5ae; --river:#5b8fb0;
+  --sun:#b8741a;
+  --ok:#2f7a4f; --alta:#244e7a; --incerto:#c08a1e; --bassa:#8a9493; --dubbia:#b4413a;
+  --f-ui:"IBM Plex Sans Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-text:"Spectral",Georgia,serif;
+  --f-data:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#141a1c; --paper:#1b2326; --ink:#e4e9e6; --muted:#9aa8a8; --line:#33403f;
+  --commune:#202a2c; --commune-line:#3d4b4a; --river:#5f9cc4; --sun:#e0a24a;
+  --ok:#5cbf86; --alta:#7fb0e6; --incerto:#e2b04a; --bassa:#7c8888; --dubbia:#e2706a; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#141a1c; --paper:#1b2326; --ink:#e4e9e6; --muted:#9aa8a8; --line:#33403f;
+  --commune:#202a2c; --commune-line:#3d4b4a; --river:#5f9cc4; --sun:#e0a24a;
+  --ok:#5cbf86; --alta:#7fb0e6; --incerto:#e2b04a; --bassa:#7c8888; --dubbia:#e2706a; color-scheme:dark}
+html,body{height:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--f-ui);font-size:15px}
+.wrap{display:grid;grid-template-columns:minmax(0,1fr) 400px;height:100%;
+  padding-left:max(0px,env(safe-area-inset-left,0px));padding-right:max(0px,env(safe-area-inset-right,0px))}
+.mapcol{position:relative;min-width:0;display:flex;flex-direction:column}
+header{padding-block:14px 8px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:16px;display:flex;flex-wrap:wrap;gap:4px 18px;align-items:baseline}
+h1{font-size:22px;font-weight:600;margin:0;letter-spacing:.01em;text-wrap:balance}
+.sub{color:var(--muted);font-size:13.5px}
+#map{flex:1;min-height:420px;width:100%;display:block;cursor:grab;touch-action:none}
+#map:active{cursor:grabbing}
+.commune{fill:var(--commune);stroke:var(--commune-line);stroke-width:.8;vector-effect:non-scaling-stroke}
+.clabel{fill:var(--muted);font:500 9px var(--f-ui);text-transform:uppercase;letter-spacing:.06em;pointer-events:none;text-anchor:middle;opacity:.6}
+.river{fill:none;stroke:var(--river);stroke-width:1.6;vector-effect:non-scaling-stroke;opacity:.8}
+.ch{cursor:pointer}
+.ch .hit{fill:transparent}
+.ch .dot{stroke:var(--paper);stroke-width:1.2}
+.ch.sel .halo{fill:none;stroke:var(--sun);stroke-width:2}
+.ch:focus{outline:none}.ch:focus-visible .halo{fill:none;stroke:var(--sun);stroke-width:2.5}
+.legend{position:absolute;left:max(12px,env(safe-area-inset-left,0px));bottom:12px;background:var(--paper);border:1px solid var(--line);border-radius:6px;padding:10px 12px;font-size:12.5px;display:grid;gap:5px;max-width:250px}
+.legend b{font-weight:600;font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted)}
+.lg{display:flex;gap:8px;align-items:center}
+.lg svg{flex:none}
+.lg button{all:unset;cursor:pointer;display:flex;gap:8px;align-items:center}
+.lg button[aria-pressed="false"]{opacity:.35}
+.lg button:focus-visible{outline:2px solid var(--sun);outline-offset:2px}
+.zoom{position:absolute;right:12px;top:60px;display:grid;gap:4px}
+.zoom button{width:32px;height:32px;border:1px solid var(--line);background:var(--paper);color:var(--ink);border-radius:5px;font:600 17px var(--f-ui);cursor:pointer}
+.zoom button:focus-visible{outline:2px solid var(--sun)}
+aside{background:var(--paper);border-left:1px solid var(--line);overflow-y:auto;min-width:0;padding-block:16px 28px;padding-left:20px;padding-right:max(20px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:18px}
+.rose{display:flex;gap:14px;align-items:center}
+.rose p{margin:0;font-size:13px;color:var(--muted);line-height:1.45}
+.k{font:600 11px var(--f-ui);text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+#detail h2{font-size:21px;margin:2px 0 2px;font-weight:600;text-wrap:balance}
+#detail .where{color:var(--muted);font-size:14px}
+.facts{display:grid;grid-template-columns:auto 1fr;gap:5px 14px;margin:14px 0 4px;font-size:14px}
+.facts dt{color:var(--muted)}
+.facts dd{margin:0;font-family:var(--f-data);font-size:13px;font-variant-numeric:tabular-nums;min-width:0;overflow-wrap:anywhere}
+.compass{display:flex;gap:16px;align-items:center;margin-top:12px}
+.chip{display:inline-block;padding:1px 8px;border-radius:999px;font-size:12px;font-weight:500;border:1px solid currentColor}
+.hist{font-family:var(--f-text);font-size:15.5px;line-height:1.6;max-width:62ch}
+.hist p{margin:0 0 .7em}
+.none{font-family:var(--f-text);font-style:italic;color:var(--muted)}
+.src{margin:0;padding-left:18px;font-size:13.5px;line-height:1.55}
+.src a{color:var(--alta)}
+.note{font-size:12.5px;color:var(--muted);line-height:1.5;border-top:1px solid var(--line);padding-top:12px}
+select{font:inherit;padding:6px 8px;border:1px solid var(--line);border-radius:5px;background:var(--bg);color:var(--ink);width:100%}
+@media (max-width:820px){
+  .wrap{grid-template-columns:1fr;height:auto}
+  #map{height:62vh;min-height:360px;flex:none}
+  aside{border-left:0;border-top:1px solid var(--line);padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+  .legend{position:static;margin:8px 16px 0;max-width:none;grid-template-columns:1fr 1fr}
+  .legend b{grid-column:1/-1}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="wrap">
+  <section class="mapcol">
+    <header>
+      <h1>Chiese dell'Ubaye</h1>
+      <span class="sub">La freccia indica la direzione dell'abside. Azimut da Nord, in senso orario.</span>
+    </header>
+    <svg id="map" role="img" aria-label="Cartina dei 14 comuni della valle dell'Ubaye con l'orientamento di 75 chiese e cappelle"></svg>
+    <div class="zoom"><button id="zin" aria-label="Ingrandisci">+</button><button id="zout" aria-label="Riduci">−</button><button id="zreset" aria-label="Vista intera">⤢</button></div>
+    <div class="legend" id="legend"><b>Affidabilità del verso</b></div>
+  </section>
+  <aside>
+    <div class="rose">
+      <svg id="rose" width="132" height="132" viewBox="-66 -66 132 132" aria-label="Rosa delle direzioni delle absidi"></svg>
+      <p id="rosetxt"></p>
+    </div>
+    <div>
+      <label class="k" for="pick">Scegli un edificio</label>
+      <select id="pick"></select>
+    </div>
+    <article id="detail"></article>
+    <p class="note">Orientamento misurato sulle piante OpenStreetMap e verificato a vista sulle ortofoto IGN; Jausiers tarato sulla planimetria catastale del programma <span style="font-family:var(--f-data)">jausiers_sun3d_py</span>. Storia riassunta da Wikipedia (fr) e Wikidata; protezioni da Mérimée. Confini comunali: geo.api.gouv.fr. Fiumi e piante: © contributori OpenStreetMap (ODbL).</p>
+  </aside>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<script>
+const BASE = /*BASE*/null;
+const CH = /*CHURCHES*/[];
+const COL = {verificata:'--ok', alta:'--alta', 'asse sì, verso incerto':'--incerto', 'bassa (pianta quasi quadrata)':'--bassa', 'pianta OSM dubbia':'--dubbia'};
+const LAB = {verificata:'Verificata (ortofoto o fonti)', alta:'Alta (calcolo)', 'asse sì, verso incerto':'Asse certo, verso incerto', 'bassa (pianta quasi quadrata)':'Bassa: pianta quasi quadrata', 'pianta OSM dubbia':'Pianta OSM dubbia'};
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const card = a => ['N','NNE','NE','ENE','E','ESE','SE','SSE','S','SSO','SO','OSO','O','ONO','NO','NNO'][Math.round(((a%360)/22.5))%16];
+const shown = new Set(Object.keys(COL));
+
+const svg = d3.select('#map');
+const g = svg.append('g');
+const proj = d3.geoMercator();
+const path = d3.geoPath(proj);
+let W=0,H=0, k=1;
+
+function size(){
+  const r = svg.node().getBoundingClientRect(); W=r.width; H=r.height;
+  proj.fitExtent([[20,20],[W-20,H-20]], BASE.communes);
+}
+size();
+const gC = g.append('g'), gR = g.append('g'), gL = g.append('g'), gP = g.append('g');
+function drawBase(){
+  gC.selectAll('path').data(BASE.communes.features).join('path').attr('class','commune').attr('d',path);
+  gR.selectAll('path').data(BASE.rivers.features).join('path').attr('class','river').attr('d',path);
+  gL.selectAll('text').data(BASE.communes.features).join('text').attr('class','clabel')
+    .attr('transform',d=>{const c=path.centroid(d);return `translate(${c})`}).text(d=>d.properties.nom);
+}
+function arrowShape(c){
+  // drawn pointing up (north) in screen px; rotated by azimuth
+  if(c.affidabilita==='asse sì, verso incerto') return 'M0,-15 L0,15 M-4,-10 L0,-15 L4,-10 M-4,10 L0,15 L4,10';
+  if(c.affidabilita==='bassa (pianta quasi quadrata)') return 'M0,-10 L0,10';
+  return 'M0,3 L0,-17 M-5,-11 L0,-17 L5,-11';
+}
+let sel = null;
+function drawPts(){
+  const s = gP.selectAll('g.ch').data(CH.filter(c=>shown.has(c.affidabilita)), d=>d.osm);
+  s.exit().remove();
+  const e = s.enter().append('g').attr('class','ch').attr('tabindex',0).attr('role','button')
+    .attr('aria-label',d=>`${d.name||'edificio senza nome'}, ${d.commune}, abside ${Math.round(d.apse_az)} gradi`)
+    .on('click',(ev,d)=>select(d.osm)).on('keydown',(ev,d)=>{if(ev.key==='Enter'||ev.key===' '){ev.preventDefault();select(d.osm)}});
+  e.append('circle').attr('class','halo').attr('r',11);
+  e.append('circle').attr('class','hit').attr('r',14);
+  e.append('path').attr('class','arr').attr('fill','none').attr('stroke-linecap','round').attr('stroke-linejoin','round');
+  e.append('circle').attr('class','dot').attr('r',3.4);
+  e.append('title');
+  const all = e.merge(s);
+  all.attr('transform',d=>{const p=proj([d.lon,d.lat]);return `translate(${p}) scale(${1/k})`});
+  all.select('.arr').attr('d',arrowShape).attr('transform',d=>`rotate(${d.apse_az})`)
+    .attr('stroke',d=>css(COL[d.affidabilita])).attr('stroke-width',d=>d.affidabilita==='bassa (pianta quasi quadrata)'?1.5:2.4)
+    .attr('stroke-dasharray',d=>d.affidabilita==='pianta OSM dubbia'?'3 2':null);
+  all.select('.dot').attr('fill',d=>css(COL[d.affidabilita]));
+  all.select('title').text(d=>`${d.name||'(senza nome)'} · ${d.commune} · abside ${Math.round(d.apse_az)}° ${card(d.apse_az)}`);
+  all.classed('sel',d=>d.osm===sel);
+  all.select('.halo').attr('opacity',d=>d.osm===sel?1:0);
+}
+const zoom = d3.zoom().scaleExtent([1,40]).on('zoom',ev=>{k=ev.transform.k; g.attr('transform',ev.transform);
+  gP.selectAll('g.ch').attr('transform',d=>{const p=proj([d.lon,d.lat]);return `translate(${p}) scale(${1/k})`});
+  gL.attr('opacity',k>6?0.35:1);});
+svg.call(zoom);
+d3.select('#zin').on('click',()=>svg.transition().duration(250).call(zoom.scaleBy,1.8));
+d3.select('#zout').on('click',()=>svg.transition().duration(250).call(zoom.scaleBy,1/1.8));
+d3.select('#zreset').on('click',()=>svg.transition().duration(300).call(zoom.transform,d3.zoomIdentity));
+
+function legend(){
+  const L = d3.select('#legend');
+  Object.keys(COL).forEach(key=>{
+    const n = CH.filter(c=>c.affidabilita===key).length;
+    const b = L.append('div').attr('class','lg').append('button').attr('aria-pressed','true')
+      .on('click',function(){ if(shown.has(key)){shown.delete(key);this.setAttribute('aria-pressed','false')}else{shown.add(key);this.setAttribute('aria-pressed','true')} drawPts(); });
+    const s = b.append('svg').attr('width',22).attr('height',22).attr('viewBox','-11 -11 22 22');
+    s.append('path').attr('d',arrowShape({affidabilita:key})).attr('transform','rotate(45) scale(.6)').attr('fill','none')
+      .attr('stroke',css(COL[key])).attr('stroke-width',3).attr('stroke-linecap','round').attr('stroke-dasharray',key==='pianta OSM dubbia'?'4 3':null);
+    b.append('span').text(`${LAB[key]} (${n})`);
+  });
+}
+function rose(){
+  const rel = CH.filter(c=>c.affidabilita==='verificata'||c.affidabilita==='alta');
+  const bins = new Array(16).fill(0); rel.forEach(c=>bins[Math.round(c.apse_az/22.5)%16]++);
+  const mx = d3.max(bins), R = d3.scaleSqrt().domain([0,mx]).range([0,52]);
+  const s = d3.select('#rose');
+  [0.5,1].forEach(f=>s.append('circle').attr('r',52*f).attr('fill','none').attr('stroke',css('--line')));
+  const arc = d3.arc().innerRadius(0);
+  bins.forEach((v,i)=>{ if(!v) return; const a0=(i*22.5-11.25)*Math.PI/180, a1=(i*22.5+11.25)*Math.PI/180;
+    s.append('path').attr('d',arc({outerRadius:R(v),startAngle:a0,endAngle:a1})).attr('fill',css('--sun')).attr('opacity',.85)
+     .append('title').text(`${card(i*22.5)}: ${v}`); });
+  [['N',0,-58],['E',59,4],['S',0,64],['O',-59,4]].forEach(([t,x,y])=>s.append('text').attr('x',x).attr('y',y).attr('text-anchor','middle')
+    .attr('font-size',10).attr('font-family','IBM Plex Mono, monospace').attr('fill',css('--muted')).text(t));
+  const east = rel.filter(c=>c.apse_az>=45&&c.apse_az<135).length, west = rel.filter(c=>c.apse_az>=225&&c.apse_az<315).length;
+  d3.select('#rosetxt').html(`<b style="color:var(--ink)">${rel.length} absidi affidabili.</b> ${east} guardano tra NE ed E, ${west} tra SO e NO. Nell'Ubaye l'abside a est non è la regola.`);
+}
+function compass(a){
+  const f=(a+180)%360;
+  return `<svg width="64" height="64" viewBox="-32 -32 64 64" aria-hidden="true">
+   <circle r="29" fill="none" stroke="var(--line)"/>
+   <text y="-20" text-anchor="middle" font-size="8" fill="var(--muted)" font-family="IBM Plex Mono,monospace">N</text>
+   <g transform="rotate(${a})"><path d="M0,0 L0,-24 M-5,-18 L0,-24 L5,-18" stroke="var(--sun)" stroke-width="2.5" fill="none" stroke-linecap="round"/></g>
+   <g transform="rotate(${f})"><path d="M0,0 L0,-20" stroke="var(--muted)" stroke-width="1.5" stroke-dasharray="2 2"/></g></svg>`;
+}
+const esc = s => String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function select(id){
+  sel=id; const c=CH.find(x=>x.osm===id); drawPts();
+  document.getElementById('pick').value=id;
+  const col = css(COL[c.affidabilita]);
+  const facts = [
+    ['Abside', `${c.apse_az.toFixed(0)}° ${card(c.apse_az)}`],
+    ['Facciata', `${c.facade_az.toFixed(0)}° ${card(c.facade_az)}`],
+    ['Pianta', `${c.L} × ${c.W} m`],
+    c.epoca && ['Epoca', esc(c.epoca)],
+    c.protezione && ['Protezione', esc(c.protezione)],
+    c.pendio && ['Pendio', esc(c.pendio)],
+    ['Coordinate', `${c.lat.toFixed(5)} N, ${c.lon.toFixed(5)} E`],
+  ].filter(Boolean).map(([a,b])=>`<dt>${a}</dt><dd>${b}</dd>`).join('');
+  const hist = c.storia && c.storia.length ? c.storia.map(p=>`<p>${esc(p)}</p>`).join('') : `<p class="none">Nessuna notizia storica trovata nelle fonti aperte consultate.</p>`;
+  // solo gli URL http(s) diventano link; file locali (PDF del diagnostico, codice) restano testo
+  const src = (c.fonti||[]).map(f=>/^https?:/.test(f.url) ? `<li><a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.t)}</a></li>` : `<li>${esc(f.t)}</li>`).join('');
+  document.getElementById('detail').innerHTML = `
+    <div class="k">${esc(c.commune)}</div>
+    <h2>${esc(c.name||'Edificio senza nome in OSM')}</h2>
+    <div class="compass">${compass(c.apse_az)}<div><span class="chip" style="color:${col}">${LAB[c.affidabilita]}</span>
+      <div class="where" style="margin-top:6px">${esc(c.verifica_ortofoto)}</div></div></div>
+    <dl class="facts">${facts}</dl>
+    <div class="k" style="margin-top:16px">Storia</div>
+    <div class="hist">${hist}</div>
+    <div class="k" style="margin-top:10px">Fonti</div>
+    <ul class="src">${src}</ul>`;
+}
+function picker(){
+  const p=d3.select('#pick');
+  const byC=d3.group(CH,d=>d.commune);
+  [...byC.keys()].sort().forEach(cm=>{const og=p.append('optgroup').attr('label',cm);
+    byC.get(cm).forEach(c=>og.append('option').attr('value',c.osm).text(`${c.name||'(senza nome)'} · ${Math.round(c.apse_az)}°`));});
+  p.on('change',function(){select(this.value)});
+}
+drawBase(); legend(); rose(); picker(); drawPts();
+select((CH.find(c=>c.name==='Église Saint-Nicolas-de-Myre')||CH[0]).osm);
+let rt; window.addEventListener('resize',()=>{clearTimeout(rt);rt=setTimeout(()=>{size();drawBase();drawPts();},150)});
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change',()=>{d3.select('#rose').selectAll('*').remove();rose();drawPts();select(sel)});
+</script>

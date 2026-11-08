@@ -1,0 +1,93 @@
+// Generato da strumenti/genera_dati.py: non modificare a mano.
+window.STORIA_JAUSIERS = {
+ "aggiornato": "2026-11-08",
+ "nota": "Cronologia ricavata dalla 1a parte (synthèse historique) del diagnostico 2016 di Michel Trubert, ACMH (Eglsie_StNicolas_Diagnostic_2016.pdf, pagine 11-29) e dalla trascrizione della delibera del 4 gennaio 1668 (Transcription_claude_Oct_2026_Eglise Saint Nicolas_création.docx).",
+ "fonti": [
+  {
+   "titolo": "Diagnostic 2016 de l'église Saint-Nicolas-de-Myre (M. Trubert, ACMH), synthèse historique, p. 11-29",
+   "url": null,
+   "nota": "archivi comunali, dipartimentali (Digne), DRAC PACA, Médiathèque du Patrimoine, SHD Vincennes (piante militari 1707-1740)",
+   "nota_fr": "archives communales, départementales (Digne), DRAC PACA, Médiathèque du Patrimoine, SHD Vincennes (plans militaires 1707-1740)"
+  },
+  {
+   "titolo": "Délibération de la communauté de Jausiers, 4 janvier 1668 (transcription provisoire)",
+   "url": null,
+   "nota": "spostamento della cappella di San Giovanni Battista e altare nella futura chiesa parrocchiale; trascrizione da collazionare con l'originale",
+   "nota_fr": "déplacement de la chapelle Saint-Jean-Baptiste et autel dans la future église paroissiale ; transcription à collationner avec l'original"
+  }
+ ],
+ "cronologia": [
+  {
+   "quando": "XIV sec.",
+   "it": "Fino al 1380 Jausiers dipende dalla parrocchia di Faucon. Sorge una prima chiesa, orientata, su un'altura al riparo dalle piene dell'Ubaye; del suo campanile resta la torre sul Chastel.",
+   "fr": "Jusqu'en 1380 Jausiers dépend de la paroisse de Faucon. Une première église, orientée, s'élève sur une hauteur à l'abri des crues de l'Ubaye ; de son clocher subsiste la tour du Chastel.",
+   "quando_fr": "XIVe s."
+  },
+  {
+   "quando": "XVI sec.",
+   "it": "Famiglie valdesi venute dal Piemonte sviluppano la lavorazione della seta; durante le guerre di religione chiese e cappelle sono chiuse e si degradano.",
+   "fr": "Des familles vaudoises venues du Piémont développent le travail de la soie ; pendant les guerres de Religion églises et chapelles sont fermées et se dégradent.",
+   "quando_fr": "XVIe s."
+  },
+  {
+   "quando": "4 gen. 1668",
+   "it": "Delibera del consiglio della comunità: la cappella di San Giovanni Battista, rovinata da acque e nevi che scendono dalle rocce sovrastanti, sarà ricostruita al Pasquier; se quel luogo servirà per la nuova chiesa parrocchiale, vi si farà invece una cappella laterale con l'altare di San Giovanni Battista.",
+   "fr": "Délibération du conseil de la communauté : la chapelle Saint-Jean-Baptiste, abîmée par les eaux et les neiges qui descendent des rochers au-dessus, sera rebâtie au Pasquier ; si ce lieu sert à la nouvelle église paroissiale, on y fera plutôt une chapelle latérale avec l'autel de saint Jean-Baptiste.",
+   "quando_fr": "4 janv. 1668"
+  },
+  {
+   "quando": "1668-1689",
+   "it": "Costruzione della chiesa attuale, non orientata: navata larga con cappelle previste fin dall'inizio e coro. Il 4 settembre 1689 la cappellania di San Giovanni Battista risulta insediata nella chiesa parrocchiale: da qui il doppio patronato, san Nicola di Mira e san Giovanni Battista.",
+   "fr": "Construction de l'église actuelle, non orientée : large nef avec chapelles prévues dès l'origine et chœur. Le 4 septembre 1689 la chapellenie Saint-Jean-Baptiste siège dans l'église paroissiale : d'où le double patronage, saint Nicolas de Myre et saint Jean-Baptiste.",
+   "quando_fr": "1668-1689"
+  },
+  {
+   "quando": "1691-1692",
+   "it": "Il 21 aprile 1691 le truppe francesi saccheggiano e incendiano la filanda; il curato Pierre Audiffred difende la chiesa «fresca di costruzione». Nel 1692 le truppe piemontesi la profanano.",
+   "fr": "Le 21 avril 1691 les troupes françaises pillent et incendient la filature ; le curé Pierre Audiffred protège l'église « fraîchement » bâtie. En 1692 les troupes piémontaises la profanent.",
+   "quando_fr": "1691-1692"
+  },
+  {
+   "quando": "1698-1740",
+   "it": "Le cappelle sono decorate fino a metà Settecento, dal coro (barocco) verso il portale (rocaille); un cartiglio del 1702 nella cappella delle Anime del Purgatorio. Le piante militari del 1707, 1710 e 1740 mostrano la chiesa con navata, coro e sacrestia, senza campanile annesso, e la vecchia chiesa demolita.",
+   "fr": "Les chapelles sont décorées jusqu'au milieu du XVIIIe siècle, du chœur (baroque) vers le portail (rocaille) ; un cartouche daté 1702 dans la chapelle des Âmes du Purgatoire. Les plans militaires de 1707, 1710 et 1740 montrent l'église avec nef, chœur et sacristie, sans clocher attenant, et la vieille église démolie.",
+   "quando_fr": "1698-1740"
+  },
+  {
+   "quando": "1783-1789",
+   "it": "L'abate Albert: «non è molto che è stata ricostruita e la sua architettura è di gusto moderno; ha una sola navata, ma molto ampia». La Rivoluzione si limita a decapitare la statua di san Nicola.",
+   "fr": "L'abbé Albert : « il n'y a pas longtemps qu'elle a été rebâtie et son architecture est d'un goût moderne ; elle n'a qu'une seule nef mais très dégagée ». La Révolution se limite à décapiter la statue de saint Nicolas.",
+   "quando_fr": "1783-1789"
+  },
+  {
+   "quando": "1847-1891",
+   "it": "1847: nuova statua di san Nicola e altare in marmo. 1850: le vetrate attuali. 1860: l'abate Féraud nota che la chiesa non ha campanile annesso, quindi il campanile attuale è posteriore. 1891: pavimento in larice.",
+   "fr": "1847 : nouvelle statue de saint Nicolas et autel en marbre. 1850 : les vitraux actuels. 1860 : l'abbé Féraud note que l'église n'a pas de clocher attenant, le clocher actuel est donc postérieur. 1891 : plancher en mélèze.",
+   "quando_fr": "1847-1891"
+  },
+  {
+   "quando": "1901-1922",
+   "it": "1901: fonte battesimale, da un lascito. 1904: altare maggiore in marmo di Carrara, dono di Ferdinand Jauffred, scolpito a Marsiglia da Jules Cantini, dedicato al Sacro Cuore e consacrato il 30 maggio. 1921: monumento storico. 1922: restauro di A. Guéritte (coperture, croci di Sant'Andrea nella capriata, campanile, vetrate).",
+   "fr": "1901 : fonts baptismaux, grâce à un legs. 1904 : maître-autel en marbre de Carrare, don de Ferdinand Jauffred, sculpté à Marseille par Jules Cantini, dédié au Sacré-Cœur et consacré le 30 mai. 1921 : monument historique. 1922 : restauration d'A. Guéritte (couvertures, croix de Saint-André dans la charpente, clocher, vitraux).",
+   "quando_fr": "1901-1922"
+  },
+  {
+   "quando": "1944-1959",
+   "it": "Il bombardamento del 1944 danneggia le vetrate (restaurate nel 1955). Nella notte del 13-14 giugno 1957 l'Ubaye esonda: quasi due metri d'acqua, pavimento in larice distrutto e sostituito da cemento con parquet sotto i banchi. Nel 1959 un terremoto (intensità VII) fessura le murature.",
+   "fr": "Le bombardement de 1944 endommage les vitraux (restaurés en 1955). Dans la nuit du 13 au 14 juin 1957 l'Ubaye déborde : près de deux mètres d'eau, plancher en mélèze détruit et remplacé par un dallage en ciment avec parquets sous les bancs. En 1959 un séisme (intensité VII) fissure les maçonneries.",
+   "quando_fr": "1944-1959"
+  },
+  {
+   "quando": "1972-1989",
+   "it": "1972: consolidamento del pilastro che regge il pulpito in noce (l'angelo che lo sosteneva non viene rimesso). 1973 e 1982: le coperture di navata, cappelle e coro passano dall'ardesia alle scandole di larice. 1989: il pulpito è ricollocato.",
+   "fr": "1972 : confortement du pilier qui porte la chaire en noyer (l'ange qui la soutenait n'est pas reposé). 1973 et 1982 : les couvertures de la nef, des bas-côtés et du chœur passent de l'ardoise au bardeau de mélèze. 1989 : la chaire est reposée.",
+   "quando_fr": "1972-1989"
+  },
+  {
+   "quando": "1993-2016",
+   "it": "1993: restauro delle due meridiane della facciata sud (J.-F. Gavoty). 1997-2000: gessi, pitture del coro (XVIII sec.) e navata (F. Flavigny, ACMH). 2003: cappelle di San Giovanni Battista e del Rosario; 2010: cappella di San Giuseppe (M. Trubert). 2016: diagnostico completo di M. Trubert, ACMH, dopo le fessure dei terremoti del 2012 e 2014.",
+   "fr": "1993 : restauration des deux cadrans solaires de l'élévation sud (J.-F. Gavoty). 1997-2000 : gypseries, peintures du chœur (XVIIIe) et nef (F. Flavigny, ACMH). 2003 : chapelles Saint-Jean-Baptiste et du Rosaire ; 2010 : chapelle Saint-Joseph (M. Trubert). 2016 : diagnostic complet de M. Trubert, ACMH, après les fissures des séismes de 2012 et 2014.",
+   "quando_fr": "1993-2016"
+  }
+ ]
+};

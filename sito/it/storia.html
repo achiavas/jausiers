@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jausiers</title>
+<!-- Pagina generata da strumenti/genera_pagine.py a partire da modelli/storia.html: modifica il modello, non questa copia. -->
+<script>window.LANG_FISSA = "it";</script>
+<script src="../comune/i18n.js"></script>
+<script src="../comune/parametri.js"></script>
+<script src="../comune/dati/ricerca.js"></script>
+<script src="../comune/dati/chiese_ubaye.js"></script>
+<script src="../comune/dati/storia_jausiers.js"></script>
+<style>
+  body { margin: 0; background: #0d1117; color: #e8e8ec; font-family: -apple-system, "Segoe UI", Arial, sans-serif; line-height: 1.55; }
+  main { max-width: 900px; margin: 0 auto; padding: 24px 20px 60px; }
+  a { color: #f2a154; }
+  nav { display: flex; justify-content: space-between; font-size: 13px; color: #8892a0; }
+  nav a { text-decoration: none; }
+  h1 { font-size: 22px; margin: 18px 0 4px; }
+  h2 { font-size: 16px; margin: 28px 0 8px; color: #f2f2f4; }
+  .dim { color: #8892a0; font-size: 13px; }
+  .cifre { display: flex; gap: 14px; flex-wrap: wrap; margin: 10px 0; }
+  .cifra { background: #161b22; border: 1px solid #2a2f3a; border-radius: 8px; padding: 10px 14px; min-width: 150px; }
+  .cifra b { display: block; font-size: 22px; color: #f2a154; font-variant-numeric: tabular-nums; }
+  .testo { white-space: pre-line; }
+  dl.cronologia { display: grid; grid-template-columns: max-content 1fr; gap: 6px 14px; }
+  dl.cronologia dt { font-weight: 600; white-space: nowrap; }
+  dl.cronologia dd { margin: 0; }
+  @media (max-width: 560px) { dl.cronologia { grid-template-columns: 1fr; } dl.cronologia dd { margin-bottom: 6px; } }
+  .cartine { display: grid; grid-template-columns: 1fr; gap: 16px; margin: 14px 0 6px; }
+  .cartine figure { margin: 0; }
+  .cartine figcaption { font-size: 13px; margin-bottom: 4px; }
+  .cartine iframe { width: 100%; height: 320px; border: 1px solid #c9d0cb; border-radius: 6px; background: #eef0ec; }
+  .cartine .larga iframe { height: 640px; }
+  .cartine a { font-size: 12px; }
+  ul.fonti { padding-left: 18px; }
+  ul.fonti li { margin-bottom: 6px; }
+  table { border-collapse: collapse; width: 100%; font-size: 12px; margin-top: 8px; }
+  th, td { border-bottom: 1px solid #2a2f3a; padding: 5px 6px; text-align: left; }
+  td.n { text-align: right; font-variant-numeric: tabular-nums; }
+  tr.jausiers td { background: #f2a15422; }
+  .scroll { overflow-x: auto; }
+</style>
+</head>
+<body>
+<main>
+  <nav><a id="torna" href="index.html"></a></nav>
+  <h1 id="titolo"></h1>
+  <div class="dim" id="sottotitolo"></div>
+
+  <h2 id="hOrient"></h2>
+  <div class="cifre" id="cifre"></div>
+  <div class="dim" id="notaOrient"></div>
+  <div class="testo" id="orientamento"></div>
+  <div class="cartine">
+    <figure>
+      <figcaption id="capChiesa"></figcaption>
+      <iframe id="mappaChiesa" title="OpenStreetMap" loading="lazy"></iframe>
+      <a class="dim" id="apriChiesa" target="_blank" rel="noopener"></a>
+    </figure>
+    <figure class="larga">
+      <figcaption id="capUbaye"></figcaption>
+      <iframe id="mappaUbaye" title="Ubaye" loading="lazy" src="../comune/dati/mappa_orientamento_ubaye.html"></iframe>
+      <a class="dim" id="apriUbaye" target="_blank" rel="noopener" href="../comune/dati/mappa_orientamento_ubaye.html"></a>
+    </figure>
+  </div>
+
+  <h2 id="hStoria"></h2>
+  <div class="testo" id="storia"></div>
+  <div class="dim testo" id="affidabilita"></div>
+
+  <h2 id="hCronologia"></h2>
+  <div class="dim" id="notaCronologia"></div>
+  <dl class="cronologia" id="cronologia"></dl>
+
+  <h2 id="hFonti"></h2>
+  <ul class="fonti" id="fonti"></ul>
+
+  <h2 id="hChiese"></h2>
+  <div class="dim" id="notaChiese"></div>
+  <div class="scroll"><table id="tabella"></table></div>
+</main>
+<script>
+"use strict";
+document.title = T.titoloStoria;
+const $ = (id) => document.getElementById(id);
+const esc = (x) => String(x ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
+const gradi = (x) => (Number.isFinite(x) ? x.toFixed(1) + "°" : T.asseNonDisponibile);
+
+$("torna").textContent = T.tornaModello;
+$("titolo").textContent = T.nomeChiesa + " · Jausiers";
+for (const [id, t] of Object.entries({ hOrient: T.orientamento, hStoria: T.storiaTitolo, hFonti: T.fonti,
+  hChiese: T.chieseUbaye, notaOrient: T.nota, notaChiese: T.chieseNota })) $(id).textContent = t;
+
+// cartine: la chiesa su OpenStreetMap (col segnaposto) e l'orientamento delle
+// chiese dell'Ubaye (cartina della ricerca, copiata da genera_dati.py)
+{
+  const sn = (window.CHIESE_UBAYE || []).find((k) => /93932532/.test(k.osm_url || "")) || { lat: 44.419886, lon: 6.733908 };
+  const d = 0.0008, bbox = [sn.lon - d * 1.6, sn.lat - d, sn.lon + d * 1.6, sn.lat + d].map((x) => x.toFixed(6)).join(",");
+  $("mappaChiesa").src = `https://www.openstreetmap.org/export/embed.html?bbox=${bbox}&layer=mapnik&marker=${sn.lat},${sn.lon}`;
+  $("apriChiesa").href = `https://www.openstreetmap.org/way/93932532`;
+  $("capChiesa").textContent = T.cartinaChiesa;
+  $("capUbaye").textContent = T.cartinaUbaye;
+  $("apriChiesa").textContent = $("apriUbaye").textContent = T.apriGrande;
+}
+
+const r = window.RICERCA;
+const cifre = [
+  [T.fonte_piantine, gradi(160.0)],
+  [T.asseOnline, gradi(r && r.azimutAsse)],
+  [T.fonte_osm, gradi(asseOsmJausiers())],
+];
+if (r && Number.isFinite(r.azimutAbside)) cifre.push([T.asseAbside, gradi(r.azimutAbside)]);
+$("cifre").innerHTML = cifre.map(([k, v]) => `<div class="cifra"><span class="dim">${esc(k)}</span><b>${esc(v)}</b></div>`).join("");
+
+if (!r) {
+  $("sottotitolo").textContent = T.nessunaRicerca;
+} else {
+  $("sottotitolo").textContent = `${T.aggiornato}: ${(r.aggiornato || "").slice(0, 10)}`;
+  const storia = testoRicerca(r, "storia");
+  $("orientamento").textContent = testoRicerca(r, "orientamento");
+  $("storia").textContent = storia || T.nonTradotto;
+  const aff = testoRicerca(r, "affidabilita");
+  if (aff) $("affidabilita").textContent = `${T.affidabilita}: ${aff}`;
+  $("fonti").innerHTML = (r.fonti || []).map((f) => {
+    const nota = testoRicerca(f, "nota");
+    // solo i link web: un file locale (file://, documenti sul computer) resta testo
+    const web = /^https?:\/\//.test(f.url || "");
+    const titolo = esc(f.titolo || f.url);
+    return `<li>${web ? `<a href="${esc(f.url)}" target="_blank" rel="noopener">${titolo}</a>` : titolo}` +
+      (nota ? ` <span class="dim">— ${esc(nota)}</span>` : "") + "</li>";
+  }).join("");
+}
+
+// cronologia dal diagnostico 2016 e dalla delibera del 1668 (storia_jausiers.json)
+const sj = window.STORIA_JAUSIERS;
+if (sj && sj.cronologia) {
+  $("hCronologia").textContent = T.cronologia;
+  $("notaCronologia").textContent = T.cronologiaNota;
+  const fr = (window.LANG_FISSA || "it") === "fr";
+  $("cronologia").innerHTML = sj.cronologia.map((v) => `<dt>${esc(fr ? (v.quando_fr || v.quando) : v.quando)}</dt><dd>${esc(fr ? v.fr : v.it)}</dd>`).join("");
+  // le fonti della cronologia (diagnostico 2016, atti 1668/1689) sono gia' nella scheda della ricerca
+}
+
+const chiese = window.CHIESE_UBAYE || [];
+const c = T.col;
+const num = (x, d = 1) => (Number.isFinite(x) ? x.toFixed(d) : "");
+// storia e fonti della singola chiesa (da ricerca_orientamento_ubaye, solo in italiano)
+const storiaChiesa = (k) => !(k.storia && k.storia.length) ? "" :
+  `<details class="dim"><summary>${esc(T.storiaChiesa + T.lingStoria)}</summary>` +
+  k.storia.map((p) => `<p>${esc(p)}</p>`).join("") +
+  (k.protezione ? `<p>${esc(k.protezione)}</p>` : "") +
+  `<ul class="fonti">${(k.fonti_storia || []).map((f) => `<li><a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.t)}</a></li>`).join("")}</ul></details>`;
+$("tabella").innerHTML =
+  `<tr><th>${c.commune}</th><th>${c.nome}</th><th>${c.asse}</th><th>${c.abside}</th><th>${c.epoca}</th><th>${c.devEW}</th><th>${c.pendenza}</th><th>${c.vsPendenza}</th><th>${c.osm}</th></tr>` +
+  chiese.map((k) => `<tr class="${/Saint-Nicolas/.test(k.nome) && /Jausiers/.test(k.commune) ? "jausiers" : ""}">` +
+    `<td>${esc(k.commune)}</td><td>${esc(nomeOsm(k.nome))}${storiaChiesa(k)}</td><td class="n">${num(k.axis_az)}</td>` +
+    `<td class="n">${num(k.apse_az, 0)}</td><td>${esc(k.epoca)}</td><td class="n">${num(k.dev_from_EW)}</td>` +
+    `<td class="n">${num(k.slope_deg)}</td><td class="n">${num(k.axis_vs_fallline)}</td>` +
+    `<td><a href="${esc(k.osm_url)}" target="_blank" rel="noopener">way</a></td></tr>`).join("");
+</script>
+</body>
+</html>

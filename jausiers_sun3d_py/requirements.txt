@@ -1,0 +1,9 @@
+# visualizzatore 3D (viewer_3d.py)
+numpy
+pyvista
+shapely
+# script che preparano le foto dai video (*_da_video.py, *_da_foto.py)
+# e strumenti del sito (sito/strumenti/genera_foto.py)
+opencv-python-headless
+pillow
+scipy

@@ -1,0 +1,1228 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+<title>Jausiers</title>
+<!-- Pagina generata da strumenti/genera_pagine.py a partire da modelli/index.html: modifica il modello, non questa copia. -->
+<script>window.LANG_FISSA = "it";</script>
+<script src="../comune/i18n.js"></script>
+<script>
+  document.title = T.titoloPagina;
+  // Gestore errori globale: se qualcosa fallisce durante il caricamento
+  // (script bloccato, WebGL non disponibile, ecc.) mostra l'errore reale
+  // al posto di restare bloccati in silenzio su "Caricamento...".
+  window.addEventListener("error", function (e) {
+    var el = document.getElementById("loading");
+    if (!el) return;
+    var msg = (e && (e.message || (e.error && e.error.message))) || String(e);
+    el.style.flexDirection = "column";
+    el.style.padding = "24px";
+    el.style.textAlign = "center";
+    el.innerHTML =
+      '<div style="font-size:15px;margin-bottom:10px;">' + T.errore + '</div>' +
+      '<div style="color:#ff8f8f;font-family:monospace;font-size:12px;max-width:640px;word-break:break-word;">' +
+      msg.replace(/</g, "&lt;") + "</div>" +
+      '<div style="margin-top:14px;font-size:11px;color:#8892a0;">' + T.console + '</div>';
+  });
+  // Se dopo 8 secondi il caricamento non e' terminato (nessun errore
+  // esplicito ma nemmeno successo), mostra un avviso invece di restare
+  // bloccati su uno schermo vuoto senza spiegazioni.
+  window.__loadWatchdog = setTimeout(function () {
+    var el = document.getElementById("loading");
+    if (el && el.textContent.indexOf(T.caricamento) === 0) {
+      el.style.flexDirection = "column";
+      el.style.padding = "24px";
+      el.style.textAlign = "center";
+      el.innerHTML =
+        '<div style="font-size:15px;margin-bottom:10px;">' + T.lento + '</div>' +
+        '<div style="font-size:12px;color:#c8c8ce;max-width:520px;">' + T.lentoCause + '</div>' +
+        '<div style="margin-top:14px;font-size:11px;color:#8892a0;">' + T.lentoConsole + '</div>';
+    }
+  }, 8000);
+</script>
+<style>
+  html, body { margin: 0; padding: 0; height: 100%; overflow: hidden;
+    font-family: -apple-system, "Segoe UI", Arial, sans-serif; background: #0d1117; }
+  #app { display: flex; width: 100vw; height: 100vh; }
+  #sidebar { width: 340px; min-width: 340px; height: 100%; background: #161b22;
+    color: #e8e8ec; box-sizing: border-box; padding: 18px 16px; overflow-y: auto; }
+  #scene-container { flex: 1; height: 100%; position: relative; background: #0d1117; }
+  #scene-container canvas { display: block; touch-action: none; }
+
+  #sidebar h1 { font-size: 15px; font-weight: 600; margin: 0 0 14px 0; line-height: 1.3; color: #f2f2f4; }
+  .lbl { font-size: 11px; color: #8892a0; text-transform: uppercase; letter-spacing: .03em; margin: 14px 0 2px 0; }
+  .big-date { font-size: 25px; font-weight: 600; color: #e8e8ec; margin: 2px 0 6px 0; }
+  .big-time { font-size: 29px; font-weight: 600; color: #f2a154; margin: 2px 0 6px 0; }
+  input[type=range] { width: 100%; accent-color: #f2a154; }
+
+  #sun-info { font-size: 13px; color: #e8e8ec; margin-top: 14px; line-height: 1.5; white-space: pre-line; }
+  #lit-list { font-size: 11px; color: #e8e8ec; margin-top: 10px; line-height: 1.6; white-space: pre-line; }
+
+  .photo-toggle-row { display: flex; align-items: center; gap: 8px; margin-top: 16px; cursor: pointer; user-select: none; }
+  .photo-toggle-row input { width: 18px; height: 18px; accent-color: #f2a154; cursor: pointer; }
+  .photo-toggle-row span { font-size: 13px; color: #e8e8ec; }
+
+  #viste-interne { display: flex; gap: 8px; margin-top: 4px; }
+  #viste-interne .col { flex: 1; display: flex; flex-direction: column; gap: 4px; }
+  #viste-interne .tit { font-size: 11px; color: #8892a0; }
+  .viste-riga { display: flex; gap: 8px; margin-top: 6px; }
+  .vbtn { flex: 1; background: #0d1117; color: #e8e8ec; border: 1px solid #2a2f3a; border-radius: 6px;
+    padding: 6px 4px; font-size: 12px; cursor: pointer; }
+  .vbtn:hover { border-color: #f2a154; }
+  .vbtn.attivo { border-color: #f2a154; color: #f2a154; }
+  .legend { margin-top: 16px; font-size: 12px; line-height: 1.8; }
+
+  .link a { color: #f2a154; text-decoration: none; }
+  #fonteSelect { width: 100%; margin-top: 4px; background: #0d1117; color: #e8e8ec; border: 1px solid #2a2f3a; border-radius: 6px; padding: 5px; font-size: 13px; }
+  #orient-info { font-size: 12px; color: #e8e8ec; margin-top: 6px; line-height: 1.55; white-space: pre-line; }
+  .nota { font-size: 10px; color: #8892a0; margin-top: 4px; line-height: 1.4; }
+  #giorno-luce { font-size: 11px; color: #e8e8ec; margin-top: 4px; line-height: 1.55; }
+  #giorno-luce .t { color: #f2a154; font-variant-numeric: tabular-nums; }
+  .link { margin-top: 18px; font-size: 13px; }
+  #hints { margin-top: 16px; font-size: 10px; color: #8892a0; line-height: 1.6; white-space: pre-line; }
+
+  #loading { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+    color: #8892a0; font-size: 14px; background: #0d1117; z-index: 5; }
+
+  #menuToggle { display: none; position: fixed; top: max(10px, env(safe-area-inset-top)); left: 10px; z-index: 20;
+    width: 44px; height: 44px; border-radius: 8px; background: #161b22e6; border: 1px solid #2a2f3a;
+    color: #e8e8ec; font-size: 20px; align-items: center; justify-content: center; cursor: pointer;
+    touch-action: manipulation; -webkit-tap-highlight-color: transparent; user-select: none; }
+  #sidebarBackdrop { display: none; }
+
+  /* Croce di frecce per camminare (telefono/tablet; su computer: frecce della tastiera) */
+  #frecce { display: none; position: absolute; right: 14px; bottom: max(14px, env(safe-area-inset-bottom));
+    z-index: 6; width: 210px; height: 150px; touch-action: none; user-select: none; -webkit-user-select: none; }
+  #frecce button { position: absolute; width: 50px; height: 50px; border-radius: 10px; border: 1px solid #2a2f3a;
+    background: #161b22b3; color: #e8e8ec; font-size: 20px; touch-action: none; -webkit-tap-highlight-color: transparent; }
+  #frecce button.premuto { background: #f2a154cc; color: #161b22; }
+  #frecce .su { left: 110px; top: 0; } #frecce .giu { left: 110px; top: 100px; }
+  #frecce .sx { left: 60px; top: 50px; } #frecce .dx { left: 160px; top: 50px; }
+  #frecce .alto { left: 0; top: 0; } #frecce .basso { left: 0; top: 100px; }
+  #frecce .alto, #frecce .basso { font-size: 13px; font-weight: 600; }
+  @media (pointer: coarse) { #frecce { display: block; } }
+
+  /* Schermi stretti (telefoni/tablet in verticale): il pannello
+     laterale diventa un cassetto a comparsa sopra la scena 3D, che
+     resta sempre a schermo intero, invece di dividersi lo spazio. */
+  @media (max-width: 760px) {
+    #app { position: relative; }
+    #menuToggle { display: flex; }
+    #sidebar { position: fixed; top: 0; left: 0; z-index: 11; width: 86vw; max-width: 340px;
+      height: 100vh; height: 100dvh;  /* le barre del browser del telefono non coprono il fondo del menu */
+      padding-top: 64px; padding-bottom: calc(24px + env(safe-area-inset-bottom));
+      overscroll-behavior: contain; -webkit-overflow-scrolling: touch;
+      transform: translateX(-100%); transition: transform .25s ease; box-shadow: 4px 0 20px rgba(0,0,0,.5); }
+    #frecce { display: block; }
+    #sidebar.open { transform: translateX(0); }
+    /* sul telefono: menu piu' stretto (resta scena da toccare per chiuderlo),
+       viste in cima, cursori con la maniglia grande per il dito */
+    #sidebar { width: 80vw; display: flex; flex-direction: column; }
+    #sidebar > h1 { order: -2; }
+    #blocco-viste { order: -1; margin-bottom: 8px; padding-bottom: 10px; border-bottom: 1px solid #2a2f3a; }
+    #blocco-viste .vbtn { min-height: 40px; }
+    #sidebar input[type=range] { height: 34px; -webkit-appearance: none; appearance: none; background: transparent; }
+    #sidebar input[type=range]::-webkit-slider-runnable-track { height: 6px; background: #3a3f4a; border-radius: 3px; }
+    #sidebar input[type=range]::-webkit-slider-thumb { -webkit-appearance: none; width: 28px; height: 28px; margin-top: -11px;
+      border-radius: 50%; background: #f2a154; border: 2px solid #161b22; }
+    #sidebar input[type=range]::-moz-range-track { height: 6px; background: #3a3f4a; border-radius: 3px; }
+    #sidebar input[type=range]::-moz-range-thumb { width: 28px; height: 28px; border-radius: 50%; background: #f2a154; border: 2px solid #161b22; }
+    #sidebar select { min-height: 40px; }
+    #sidebarBackdrop.open { display: block; position: fixed; inset: 0; z-index: 10; background: rgba(0,0,0,.45); }
+    #scene-container { width: 100vw; }
+    #hints { display: none; } /* i comandi da tastiera non servono su touch */
+  }
+</style>
+</head>
+<body>
+<div id="app">
+  <div id="menuToggle">&#9776;</div>
+  <div id="sidebarBackdrop"></div>
+  <div id="sidebar">
+    <h1>JAUSIERS<br><span id="nomeChiesa"></span></h1>
+
+    <div class="lbl" id="lblOrientamento"></div>
+    <select id="fonteSelect"></select>
+    <div id="orient-info"></div>
+    <div class="nota" id="notaOrientamento"></div>
+
+    <div class="lbl" id="lblGiorno"></div>
+    <div class="big-date" id="bigDate">21</div>
+    <input type="range" id="daySlider" min="1" max="365" value="172">
+
+    <div class="lbl" id="lblOra"></div>
+    <div class="big-time" id="bigTime">12:00</div>
+    <input type="range" id="hourSlider" min="0" max="23.983" step="0.05" value="12">
+
+    <div id="sun-info"></div>
+    <div id="lit-list"></div>
+
+    <div class="lbl" id="lblLuceGiorno"></div>
+    <div id="giorno-luce"></div>
+
+    <div style="display:flex; gap:24px;">
+      <label class="photo-toggle-row" style="margin-top:16px;">
+        <input type="checkbox" id="photosCheckbox" checked>
+        <span id="txtFoto"></span>
+      </label>
+      <label class="photo-toggle-row" style="margin-top:16px;">
+        <input type="checkbox" id="windowsCheckbox" checked>
+        <span id="txtVetrate"></span>
+      </label>
+    </div>
+
+    <div id="blocco-viste">
+    <div class="lbl" id="lblVistaInterna"></div>
+    <div id="viste-interne">
+      <div class="col"><div class="tit" id="titSinistra"></div></div>
+      <div class="col"><div class="tit" id="titDestra"></div></div>
+    </div>
+    <div class="viste-riga">
+      <button class="vbtn" id="btnFacciata"></button>
+      <button class="vbtn" id="btnAbside"></button>
+      <button class="vbtn" id="btnEsterno"></button>
+    </div>
+    <div class="viste-riga">
+      <button class="vbtn" id="btnFacciataEsterna"></button>
+    </div>
+    <div class="nota" id="notaViste"></div>
+    </div>
+
+    <div class="legend">
+      <div style="color:#f2a154">&#9632; <span id="legCappelle"></span></div>
+      <div style="color:#d1495b">&#9632; <span id="legAbside"></span></div>
+      <div style="color:#3a86ff">&#9632; <span id="legFacciata"></span></div>
+    </div>
+
+    <div class="link"><a id="linkStoria" href="storia.html"></a></div>
+
+    <div id="hints"></div>
+  </div>
+  <div id="scene-container">
+    <div id="frecce">
+      <button class="su" data-tasto="ArrowUp">&#9650;</button>
+      <button class="sx" data-tasto="ArrowLeft">&#9664;</button>
+      <button class="dx" data-tasto="ArrowRight">&#9654;</button>
+      <button class="giu" data-tasto="ArrowDown">&#9660;</button>
+      <button class="alto" data-tasto="PageUp"></button>
+      <button class="basso" data-tasto="PageDown"></button>
+    </div>
+    <div id="loading"></div>
+    <script>document.getElementById("loading").textContent = T.caricamento;</script>
+  </div>
+</div>
+
+<!-- Librerie (build classiche, NON moduli ES: i moduli ES vengono
+     bloccati da Chrome/Edge per CORS quando la pagina e' aperta con
+     doppio click invece che via un server - vedi README) -->
+<script src="../comune/three.min.js"></script>
+<script src="../comune/orbit-controls-lite.js"></script>
+<script src="../comune/photos-data.js"></script>
+
+<!-- Logica applicativa (porting di church_geometry.py, church_mesh.py,
+     solar_position.py, wall_projection.py, reference_photos.py) -->
+<!-- Dati generati da strumenti/genera_dati.py (ricerca /chiesa, chiese.py) -->
+<script src="../comune/dati/ricerca.js"></script>
+<script src="../comune/dati/chiese_ubaye.js"></script>
+<script src="../comune/parametri.js"></script>
+
+<script src="../comune/triangulate.js"></script>
+<script src="../comune/church-geometry.js"></script>
+<script src="../comune/church-mesh.js"></script>
+<script src="../comune/solar-position.js"></script>
+<script src="../comune/wall-projection.js"></script>
+<script src="../comune/paris-time.js"></script>
+<script src="../comune/reference-photos.js"></script>
+
+<script>
+"use strict";
+
+// Testi statici nella lingua scelta
+for (const [id, testo] of Object.entries({
+  lblOrientamento: T.orientamento, lblGiorno: T.giorno, lblOra: T.ora, lblLuceGiorno: T.luceGiorno,
+  txtFoto: T.mostraFoto, txtVetrate: T.mostraVetrate, legCappelle: T.cappelle, legAbside: T.abside,
+  legFacciata: T.facciata, linkStoria: T.storia, hints: T.tasti, notaOrientamento: T.nota,
+  lblVistaInterna: T.vistaInterna, titSinistra: T.vistaSinistra, titDestra: T.vistaDestra,
+  btnFacciata: T.vistaFacciata, btnAbside: T.vistaAbside, btnEsterno: T.vistaEsterno, btnFacciataEsterna: T.vistaFacciataEsterna, notaViste: T.vistaNota,
+})) document.getElementById(id).textContent = testo;
+document.getElementById("nomeChiesa").textContent = T.nomeChiesa;
+const GROUP_COLORS = { cappella: 0xf2a154, abside: 0xd1495b, facciata: 0x3a86ff, porta: 0xcfc7b0 };
+const WALL_OPACITY = 0.28;
+const YEAR = 2026;
+
+// -----------------------------------------------------------------
+// Modello geometrico + mesh
+// -----------------------------------------------------------------
+const church = defaultChurch();
+const meshData = buildAll(church, WALL_HEIGHT_M);
+
+function partToGeometry(part) {
+  const geom = new THREE.BufferGeometry();
+  const pos = new Float32Array(part.positions.length * 3);
+  part.positions.forEach((p, i) => { pos[i * 3] = p[0]; pos[i * 3 + 1] = p[1]; pos[i * 3 + 2] = p[2]; });
+  geom.setAttribute("position", new THREE.BufferAttribute(pos, 3));
+  const idx = new Uint32Array(part.indices.length * 3);
+  part.indices.forEach((t, i) => { idx[i * 3] = t[0]; idx[i * 3 + 1] = t[1]; idx[i * 3 + 2] = t[2]; });
+  geom.setIndex(new THREE.BufferAttribute(idx, 1));
+  geom.computeVertexNormals();
+  return geom;
+}
+
+// -----------------------------------------------------------------
+// Scena Three.js
+// -----------------------------------------------------------------
+const container = document.getElementById("scene-container");
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x0d1117);
+
+const camera = new THREE.PerspectiveCamera(45, 1, 0.1, 500);
+camera.up.set(0, 0, 1);
+
+const renderer = (() => {
+  if (typeof THREE === "undefined") {
+    throw new Error("La libreria Three.js non si e' caricata (three.min.js). Verifica che il file sia nella stessa cartella di index.html.");
+  }
+  const canvasTest = document.createElement("canvas");
+  const gl = canvasTest.getContext("webgl2") || canvasTest.getContext("webgl") || canvasTest.getContext("experimental-webgl");
+  if (!gl) {
+    throw new Error("WebGL non e' disponibile in questo browser/scheda grafica. Prova ad aggiornare il browser, aggiornare i driver video, oppure verificare che l'accelerazione hardware sia attiva nelle impostazioni del browser.");
+  }
+  const isTouch = "ontouchstart" in window || navigator.maxTouchPoints > 0;
+  return new THREE.WebGLRenderer({ antialias: !isTouch, powerPreference: "low-power" });
+})();
+renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+container.appendChild(renderer.domElement);
+
+const controls = new OrbitControlsLite(camera, renderer.domElement);
+
+function resize() {
+  const w = container.clientWidth, h = container.clientHeight;
+  camera.aspect = w / h;
+  camera.updateProjectionMatrix();
+  renderer.setSize(w, h);
+}
+window.addEventListener("resize", resize);
+
+scene.add(new THREE.AmbientLight(0xffffff, 0.35));
+const sunLight = new THREE.DirectionalLight(0xfff2d9, 1.0);
+scene.add(sunLight);
+scene.add(sunLight.target);
+// ombre degli oggetti interni (vedi PRIMO_ARREDO): la camera d'ombra copre tutta la chiesa
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+// gli oggetti che fanno ombra sono fermi: la mappa d'ombra si ridisegna solo
+// quando si sposta il sole (updateScene), non a ogni fotogramma
+renderer.shadowMap.autoUpdate = false;
+sunLight.castShadow = true;
+// sul telefono una mappa piu' piccola (2.5 cm per pixel): meno memoria e meno lavoro
+const SCHERMO_TOUCH = window.matchMedia("(pointer: coarse)").matches;
+sunLight.shadow.mapSize.set(SCHERMO_TOUCH ? 2048 : 4096, SCHERMO_TOUCH ? 2048 : 4096);
+Object.assign(sunLight.shadow.camera, { left: -26, right: 26, top: 26, bottom: -26, near: 1, far: 160 });
+sunLight.shadow.bias = -0.0004;
+sunLight.shadow.normalBias = 0.03;
+
+const floorMat = new THREE.MeshStandardMaterial({ color: 0xf1e9d8, side: THREE.DoubleSide });
+const wallMat = new THREE.MeshStandardMaterial({ color: 0xcfc7b0, transparent: true, opacity: 0.28, side: THREE.DoubleSide, depthWrite: false });
+const roofMat = new THREE.MeshStandardMaterial({ color: 0x6b4a3a, transparent: true, opacity: 0.55, side: THREE.DoubleSide, depthWrite: false });
+const chapelWallMat = new THREE.MeshStandardMaterial({ color: 0xc8bda3, transparent: true, opacity: 0.35, side: THREE.DoubleSide, depthWrite: false });
+const chapelPierMat = new THREE.MeshStandardMaterial({ color: 0xcfc7b0, transparent: true, opacity: 0.28, side: THREE.DoubleSide, depthWrite: false });
+const apseStructureMat = new THREE.MeshStandardMaterial({ color: 0x6b4a3a, transparent: true, opacity: 0.4, side: THREE.DoubleSide, depthWrite: false });
+const towerMat = new THREE.MeshStandardMaterial({ color: 0xa89a82, transparent: true, opacity: 0.55, side: THREE.DoubleSide, depthWrite: false });
+const narthexMat = new THREE.MeshStandardMaterial({ color: 0x4a4038, transparent: true, opacity: 0.75, side: THREE.DoubleSide });
+
+const floorMesh = new THREE.Mesh(partToGeometry(meshData.floor), floorMat);
+// Pavimento vero (texture da IMG_9757, pavimento_da_video.py): coordinate
+// texture dalle coordinate locali (u lungo la navata, si ripete ogni
+// PAVIMENTO_PERIODO_M; v di traverso, corridoio al centro).
+if (PHOTO_DATA[PAVIMENTO_FILENAME]) {
+  const g = floorMesh.geometry, p = g.attributes.position.array, uv = new Float32Array(p.length / 3 * 2);
+  const Uh = church.localToEnu(1, 0, 0), Vh = church.localToEnu(0, 1, 0);
+  for (let i = 0; i < p.length / 3; i++) {
+    const x = p[i * 3], y = p[i * 3 + 1], z = p[i * 3 + 2];
+    uv[i * 2] = (x * Vh[0] + y * Vh[1]) / PAVIMENTO_LARGHEZZA_M + 0.5;   // di traverso (colonne dell'immagine)
+    // lungo la navata (si ripete); + z: le alzate dei gradini prendono la pietra invece di strisce
+    uv[i * 2 + 1] = (x * Uh[0] + y * Uh[1] + z) / PAVIMENTO_PERIODO_M;
+  }
+  g.setAttribute("uv", new THREE.BufferAttribute(uv, 2));
+  const tex = new THREE.TextureLoader().load(PHOTO_DATA[PAVIMENTO_FILENAME]);
+  tex.colorSpace = THREE.SRGBColorSpace;
+  tex.wrapS = THREE.ClampToEdgeWrapping; tex.wrapT = THREE.RepeatWrapping;
+  tex.anisotropy = 8;
+  floorMat.map = tex; floorMat.color.setHex(0xffffff);
+  // un po' di luce propria: dentro la chiesa il sole arriva solo dalle vetrate
+  floorMat.emissive.setHex(0x8a8a8a); floorMat.emissiveMap = tex;
+  floorMat.needsUpdate = true;
+}
+const wallsMesh = new THREE.Mesh(partToGeometry(meshData.walls), wallMat);
+wallsMesh.renderOrder = 1;
+const roofMesh = new THREE.Mesh(partToGeometry(meshData.roof), roofMat);
+roofMesh.renderOrder = 1;
+const chapelWallMesh = new THREE.Mesh(partToGeometry(meshData.chapelWalls), chapelWallMat);
+chapelWallMesh.renderOrder = 1;
+const chapelPierMesh = new THREE.Mesh(partToGeometry(meshData.chapelPiers), chapelPierMat);
+chapelPierMesh.renderOrder = 1;
+const apseStructureMesh = new THREE.Mesh(partToGeometry(meshData.apseStructure), apseStructureMat);
+apseStructureMesh.renderOrder = 1;
+const towerMesh = new THREE.Mesh(partToGeometry(meshData.tower), towerMat);
+towerMesh.renderOrder = 1;
+const narthexMesh = new THREE.Mesh(partToGeometry(meshData.narthex), narthexMat);
+narthexMesh.renderOrder = 1;
+// arredi in 3D (misure stimate dalle foto): banchi, altari
+const banchiMesh = new THREE.Mesh(partToGeometry(meshData.banchi),
+  new THREE.MeshStandardMaterial({ color: 0x7a4a2a, emissive: 0x2e1c10, roughness: 0.8, flatShading: true, side: THREE.DoubleSide }));
+const altariMarmoMesh = new THREE.Mesh(partToGeometry(meshData.altariMarmo),
+  new THREE.MeshStandardMaterial({ color: 0xd9d2c3, emissive: 0x77736c, flatShading: true, side: THREE.DoubleSide }));
+const altariTovagliaMesh = new THREE.Mesh(partToGeometry(meshData.altariTovaglia),
+  new THREE.MeshStandardMaterial({ color: 0xf6f4ee, emissive: 0xa6a49e, flatShading: true, side: THREE.DoubleSide }));
+const balaustraMesh = new THREE.Mesh(partToGeometry(meshData.balaustra),
+  new THREE.MeshStandardMaterial({ color: 0x2b2b2e, metalness: 0.4, roughness: 0.6, flatShading: true, side: THREE.DoubleSide }));
+const riscaldamentoMesh = new THREE.Mesh(partToGeometry(meshData.riscaldamento),
+  new THREE.MeshStandardMaterial({ color: 0x4e301c, emissive: 0x24160c, roughness: 0.8, flatShading: true, side: THREE.DoubleSide }));
+const pulpitoMesh = new THREE.Mesh(partToGeometry(meshData.pulpito), riscaldamentoMesh.material);
+const organoLegnoMesh = new THREE.Mesh(partToGeometry(meshData.organoLegno),
+  new THREE.MeshStandardMaterial({ color: 0xb5793f, emissive: 0x3a2412, roughness: 0.6, flatShading: true, side: THREE.DoubleSide }));
+const organoZoccoloMesh = new THREE.Mesh(partToGeometry(meshData.organoZoccolo),
+  new THREE.MeshStandardMaterial({ color: 0x2a1a10, flatShading: true, side: THREE.DoubleSide }));
+const cornicioneMesh = new THREE.Mesh(partToGeometry(meshData.cornicione),
+  new THREE.MeshStandardMaterial({ color: 0xe8e3d6, emissive: 0x6a675f, roughness: 0.9, flatShading: true, side: THREE.DoubleSide }));
+// da qui gli oggetti interni: fanno ombra nella luce delle vetrate (vedi sotto)
+const PRIMO_ARREDO = scene.children.length;
+scene.add(cornicioneMesh);
+// altari delle cappelle: colori presi dalle foto (ALTARI_CAPPELLE)
+for (const { parti, cf, cg } of meshData.altariCappelle) {
+  // luce propria del suo stesso colore: dentro le nicchie il sole non arriva
+  for (const [chiave, colore, luce] of [["fronte", cf, cf], ["tovaglia", 0xf6f4ee, 0xf6f4ee], ["gradino", cg, cg]]) {
+    scene.add(new THREE.Mesh(partToGeometry(parti[chiave]), new THREE.MeshStandardMaterial({ color: colore, emissive: luce, emissiveIntensity: 0.5,
+      metalness: chiave === "gradino" ? 0.25 : 0.0, roughness: 0.7, flatShading: true, side: THREE.DoubleSide })));
+  }
+}
+// controfacciata e lesene fra le cappelle (IMG_9758)
+for (const { part, color } of meshData.arrediMuri)
+  scene.add(new THREE.Mesh(partToGeometry(part), new THREE.MeshStandardMaterial({ color, emissive: color, emissiveIntensity: 0.75,
+    roughness: 0.8, flatShading: true, side: THREE.DoubleSide })));
+// lampadario di cristallo appeso alla chiave della volta dell'abside
+for (const [chiave, opzioni] of [
+  ["cristallo", { color: 0xfff1cf, emissive: 0xffd27a, emissiveIntensity: 0.7, transparent: true, opacity: 0.8, metalness: 0.3, roughness: 0.2 }],
+  ["oro", { color: 0xc9a33a, emissive: 0x4a3a12, metalness: 0.6, roughness: 0.4 }],
+  ["candele", { color: 0xf5f1e6, emissive: 0x8a8880 }]]) {
+  scene.add(new THREE.Mesh(partToGeometry(meshData.lampadario[chiave]),
+    new THREE.MeshStandardMaterial({ ...opzioni, side: THREE.DoubleSide })));
+}
+// volta dell'abside con la foto (volta_da_video.py, IMG_9757 a 10 s), muro
+// sopra l'arco trionfale e volta a botte della navata
+{
+  const v = meshData.voltaAbside.vele, g = partToGeometry(v);
+  g.setAttribute("uv", new THREE.BufferAttribute(new Float32Array(v.uvs.flat()), 2));
+  const mat = new THREE.MeshStandardMaterial({ color: 0xd8e5c6, emissive: 0x5a6452, roughness: 0.9, side: THREE.DoubleSide });
+  if (PHOTO_DATA["volta_abside.jpg"]) {
+    const t = new THREE.TextureLoader().load(PHOTO_DATA["volta_abside.jpg"]);
+    t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8;
+    mat.map = t; mat.color.setHex(0xffffff); mat.emissive.setHex(0x9a9a9a); mat.emissiveMap = t;
+  }
+  const volta = new THREE.Mesh(g, mat); volta.userData.senzaOmbra = true; scene.add(volta);
+  for (const [parte, colore, luce] of [[meshData.voltaAbside.arco, 0xf0ede6, 0x6a675f], [meshData.voltaNavata, 0xeeebe6, 0x8a8782]]) {
+    const m = new THREE.Mesh(partToGeometry(parte), new THREE.MeshStandardMaterial({ color: colore, emissive: luce, roughness: 0.9,
+      side: THREE.DoubleSide }));
+    m.userData.senzaOmbra = true;   // le volte non fermano la luce delle vetrate (il calcolo non le considera)
+    scene.add(m);
+  }
+}
+scene.add(organoLegnoMesh, organoZoccoloMesh);
+// oggetti sull'altare: candelieri e crocifisso dorati, candele accese, messale
+for (const [chiave, colore, luce] of [["altareOro", 0xc9a33a, 0x4a3a12], ["altareCera", 0xf5f1e6, 0x8a8880],
+  ["altareFiamma", 0xffcc44, 0xffaa22], ["altareLibro", 0x7a1f1f, 0x2a0a0a]]) {
+  scene.add(new THREE.Mesh(partToGeometry(meshData[chiave]), new THREE.MeshStandardMaterial({
+    color: colore, emissive: luce, metalness: chiave === "altareOro" ? 0.6 : 0.0, roughness: 0.5,
+    flatShading: true, side: THREE.DoubleSide })));
+}
+scene.add(banchiMesh, balaustraMesh, riscaldamentoMesh, pulpitoMesh, altariMarmoMesh, altariTovagliaMesh);
+// Ombre opache degli oggetti interni nella luce delle vetrate: proiettano
+// ombra (shadow map della luce del sole) solo banchi, altari, pulpito,
+// organo, balaustra, lampadari, arredi e cornicione; muri, tetto e volte no
+// (oscurerebbero tutto: la luce che entra e' gia' calcolata a parte). Le
+// macchie di luce ricevono le ombre (addLightPatch).
+for (const m of scene.children.slice(PRIMO_ARREDO)) if (m.isMesh && !m.userData.senzaOmbra) m.castShadow = true;
+// il vecchio nartece (volta scura all'ingresso) non si mostra piu': al suo posto la controfacciata in 3D (IMG_9758)
+scene.add(floorMesh, wallsMesh, roofMesh, chapelWallMesh, chapelPierMesh, apseStructureMesh, towerMesh);
+
+// Muri BIANCHI visti da dentro (intonaco), semitrasparenti; da fuori
+// restano color pietra. Prima si orienta ogni triangolo con la normale
+// verso FUORI (lontano dal centro della navata, o della nicchia per
+// cappelle e pilastri): il verso con cui le mesh sono costruite non e'
+// uniforme. Poi il colore esterno va sul fronte, il bianco su un gemello
+// che disegna solo il retro (cioe' le facce viste da dentro).
+const COLORE_INTERNO = 0xf7f5f0;
+const OPACITA_INTERNA = 0.6;
+const WH_ = NAVE_WIDTH_M / 2;
+const centroNavata = () => [NAVE_LENGTH_M / 2, 0, 5.0];
+const centroNicchia = (u, v) => {
+  const us = church.chapelUPositions();
+  const uc = us.reduce((a, b) => (Math.abs(b - u) < Math.abs(a - u) ? b : a));
+  return [uc, Math.sign(v) * (WH_ + CHAPEL_PROJECTION_DEPTH_M / 2), 3.0];
+};
+const U_ = church.localToEnu(1, 0, 0), V_ = church.localToEnu(0, 1, 0);
+function orientaVersoFuori(geom, centro) {
+  const p = geom.attributes.position.array, idx = geom.index.array;
+  const P = (i) => new THREE.Vector3(p[i * 3], p[i * 3 + 1], p[i * 3 + 2]);
+  for (let t = 0; t < idx.length; t += 3) {
+    const a = P(idx[t]), b = P(idx[t + 1]), c = P(idx[t + 2]);
+    const n = new THREE.Vector3().subVectors(b, a).cross(new THREE.Vector3().subVectors(c, a));
+    const m = a.clone().add(b).add(c).multiplyScalar(1 / 3);
+    const u = m.x * U_[0] + m.y * U_[1], v = m.x * V_[0] + m.y * V_[1];
+    const r = new THREE.Vector3(...church.localToEnu(...centro(u, v)));
+    if (n.dot(m.sub(r)) < 0) { const k = idx[t + 1]; idx[t + 1] = idx[t + 2]; idx[t + 2] = k; }
+  }
+  geom.index.needsUpdate = true;
+  geom.computeVertexNormals();
+}
+// La navata nel modello e' un rettangolo chiuso: la parete in fondo (u = L,
+// dove si apre l'abside) da dentro diventerebbe un velo bianco davanti
+// all'abside. In realta' li' c'e' l'arco trionfale aperto: la si toglie.
+{
+  const g = wallsMesh.geometry, p = g.attributes.position.array, idx = Array.from(g.index.array), tieni = [];
+  for (let t = 0; t < idx.length; t += 3) {
+    const us = [0, 1, 2].map((k) => p[idx[t + k] * 3] * U_[0] + p[idx[t + k] * 3 + 1] * U_[1]);
+    const fondo = Math.min(...us) > NAVE_LENGTH_M - 0.05 && Math.max(...us) - Math.min(...us) < 1e-3;
+    if (!fondo) tieni.push(idx[t], idx[t + 1], idx[t + 2]);
+  }
+  g.setIndex(tieni);
+}
+orientaVersoFuori(wallsMesh.geometry, centroNavata);
+orientaVersoFuori(apseStructureMesh.geometry, centroNavata);
+orientaVersoFuori(chapelWallMesh.geometry, centroNicchia);
+orientaVersoFuori(chapelPierMesh.geometry, centroNicchia);
+for (const m of [wallsMesh, chapelWallMesh, chapelPierMesh, apseStructureMesh]) {
+  m.material.side = THREE.FrontSide;
+  const LATO_INTERNO = THREE.BackSide;
+  const bianco = m.material.clone();
+  bianco.color.setHex(COLORE_INTERNO);
+  // il sole illumina da fuori: senza luce propria il retro sarebbe grigio scuro
+  bianco.emissive.setHex(0xa8a6a0);
+  // al 28% sul fondo scuro della scena il bianco sembrerebbe grigio
+  bianco.opacity = OPACITA_INTERNA;
+  bianco.side = LATO_INTERNO;
+  const gemello = new THREE.Mesh(m.geometry, bianco);
+  gemello.renderOrder = m.renderOrder;
+  scene.add(gemello);
+  if (m === wallsMesh) { foraArchi(m.material); foraArchi(bianco); }
+}
+
+// Tetto e muri esterni tappezzati (texture da IMG_9765, tetto_muri_da_video.py):
+// per ogni faccia coordinate texture in metri sul suo piano (orizzontale
+// lungo la faccia, in su lungo il muro o lungo la falda), divise per la
+// misura di una ripetizione. Facce inclinate (|nz| > 0.35) = falde: scandole;
+// le altre: intonaco. Stessa regola del viewer Python (tappezza).
+const OPACITA_ESTERNA = 0.75, OPACITA_TETTO = 0.9;
+function texRipetuta(nome) {
+  if (!PHOTO_DATA[nome]) return null;
+  const t = new THREE.TextureLoader().load(PHOTO_DATA[nome]);
+  t.colorSpace = THREE.SRGBColorSpace; t.wrapS = t.wrapT = THREE.RepeatWrapping; t.anisotropy = 8;
+  return t;
+}
+const TEX_MURO = texRipetuta(MURO_TEXTURE_FILENAME), TEX_TETTO = texRipetuta(TETTO_TEXTURE_FILENAME);
+// Spazio interno di navata e abside: dentro la pianta e sotto il muro. Una faccia il cui
+// fronte guarda qui dentro non prende texture (la texture solo da fuori).
+const PIANTA_ = church.floorOutlineLocal().slice(0, -1);
+function dentroLaChiesa(q) {
+  const u = q.x * U_[0] + q.y * U_[1], v = q.x * V_[0] + q.y * V_[1];
+  let dentro = false;
+  for (let i = 0, j = PIANTA_.length - 1; i < PIANTA_.length; j = i++) {
+    const [ui, vi] = PIANTA_[i], [uj, vj] = PIANTA_[j];
+    if ((vi > v) !== (vj > v) && u < (uj - ui) * (v - vi) / (vj - vi + 1e-12) + ui) dentro = !dentro;
+  }
+  // solo navata e abside: le facce delle cappelle sono gia' orientate verso
+  // fuori dalla nicchia (e il muro della navata dietro le cappelle e' una
+  // faccia unica, che fuori dalle cappelle e' esterna)
+  const alto = u > NAVE_LENGTH_M ? APSE_EXTERNAL_HEIGHT_M : WALL_HEIGHT_M;
+  return dentro && Math.abs(v) < WH_ && q.z > 0 && q.z < alto;
+}
+function tappezza(mesh, opacitaMuro, retro) {
+  if (!TEX_MURO || !TEX_TETTO) return;
+  const g0 = mesh.geometry.index ? mesh.geometry.toNonIndexed() : mesh.geometry;
+  const p = g0.attributes.position.array, nt = p.length / 9;
+  const muri = [], falde = [], interne = [];
+  const V = (t, k) => new THREE.Vector3(p[t * 9 + k * 3], p[t * 9 + k * 3 + 1], p[t * 9 + k * 3 + 2]);
+  const normale = (t) => new THREE.Vector3().subVectors(V(t, 1), V(t, 0)).cross(new THREE.Vector3().subVectors(V(t, 2), V(t, 0))).normalize();
+  for (let t = 0; t < nt; t++) {
+    const n = normale(t);
+    const c = V(t, 0).add(V(t, 1)).add(V(t, 2)).multiplyScalar(1 / 3);
+    // facciata esterna (faccia verso -u, sul filo della facciata): niente
+    // intonaco ne' muro, la copre la foto della facciata
+    const facciata = n.x * U_[0] + n.y * U_[1] < -0.9 && c.x * U_[0] + c.y * U_[1] < 0.8;
+    const prova = c.clone().addScaledVector(n, 0.3);
+    (facciata || dentroLaChiesa(prova) ? interne : Math.abs(n.z) > 0.35 ? falde : muri).push(t);
+  }
+  const pos = new Float32Array(nt * 9), uv = new Float32Array(nt * 6);
+  let k = 0;
+  for (const [lista, tw, th] of [[muri, MURO_TEXTURE_M, MURO_TEXTURE_M], [falde, TETTO_TEXTURE_M[0], TETTO_TEXTURE_M[1]], [interne, 1, 1]]) {
+    for (const t of lista) {
+      const n = normale(t);
+      let tg = new THREE.Vector3(0, 0, 1).cross(n);
+      if (tg.length() < 1e-3) tg.set(1, 0, 0);
+      tg.normalize();
+      const b = new THREE.Vector3().crossVectors(n, tg);
+      for (let j = 0; j < 3; j++) {
+        const q = V(t, j);
+        pos.set([q.x, q.y, q.z], k * 3);
+        uv.set([q.dot(tg) / tw, q.dot(b) / th], k * 2);
+        k++;
+      }
+    }
+  }
+  const g = new THREE.BufferGeometry();
+  g.setAttribute("position", new THREE.BufferAttribute(pos, 3));
+  g.setAttribute("uv", new THREE.BufferAttribute(uv, 2));
+  g.computeVertexNormals();
+  g.addGroup(0, muri.length * 3, 0);
+  g.addGroup(muri.length * 3, falde.length * 3, 1);
+  g.addGroup((muri.length + falde.length) * 3, interne.length * 3, 2);
+  const base = mesh.material;
+  const muro = base.clone(); muro.map = TEX_MURO; muro.color.setHex(0xffffff); muro.opacity = Math.max(base.opacity, opacitaMuro);
+  const tetto = base.clone(); tetto.map = TEX_TETTO; tetto.color.setHex(0xffffff); tetto.opacity = Math.max(base.opacity, OPACITA_TETTO);
+  // un po' di luce propria: sul lato in ombra le texture resterebbero nere
+  for (const m of [muro, tetto]) { m.emissive.setHex(0x6a6a6a); m.emissiveMap = m.map; }
+  if (base.onBeforeCompile) { muro.onBeforeCompile = base.onBeforeCompile; tetto.onBeforeCompile = base.onBeforeCompile; }
+  // facce che guardano dentro: bianche come gli interni (muri) o il colore di prima (tetto)
+  const interna = base.clone();
+  if (retro === undefined) { interna.color.setHex(COLORE_INTERNO); interna.emissive.setHex(0xa8a6a0); interna.opacity = OPACITA_INTERNA; }
+  interna.side = THREE.DoubleSide;
+  // non si disegnano: le facce delle cappelle che chiudono l'arco verso la
+  // navata (farebbero un velo davanti alla nicchia) e la facciata esterna
+  // (sopra c'e' la foto della facciata)
+  interna.visible = false;
+  if (base.onBeforeCompile) interna.onBeforeCompile = base.onBeforeCompile;
+  mesh.geometry = g;
+  mesh.material = [muro, tetto, interna];
+  if (retro !== undefined) {
+    // tetto e campanile: da dentro (retro) il colore di prima, senza texture
+    muro.side = tetto.side = THREE.FrontSide;
+    const m2 = base.clone(); m2.side = THREE.BackSide;
+    const gemello = new THREE.Mesh(g, m2); gemello.renderOrder = mesh.renderOrder;
+    scene.add(gemello);
+  }
+}
+for (const m of [wallsMesh, chapelWallMesh, chapelPierMesh, apseStructureMesh]) tappezza(m, OPACITA_ESTERNA);
+orientaVersoFuori(roofMesh.geometry, centroNavata);
+orientaVersoFuori(towerMesh.geometry, () => [TOWER_U_CENTER_M, TOWER_V_CENTER_M, 10.0]);
+tappezza(roofMesh, OPACITA_TETTO, true);
+tappezza(towerMesh, 0.85, true);
+
+// Buca il muro della navata negli archi d'ingresso delle cappelle con
+// nicchia (il muro semitrasparente davanti alla nicchia la sbiadirebbe):
+// lo shader scarta i pixel che cadono dentro l'arco, sulla faccia interna
+// ed esterna. Stessa forma di reference_photos.py (fora_archi_cappelle).
+// archi aperti solo con la vista dentro la chiesa (vedi aggiornaDentroFuori)
+const ARCHI_BUCATI = { value: 1.0 };
+function foraArchi(mat) {
+  const ucs = NICCHIE.map(([, , i]) => church.chapelUPositions()[i]);
+  const lati = NICCHIE.map(([, l]) => l);
+  while (ucs.length < 8) { ucs.push(0); lati.push(0); }
+  mat.onBeforeCompile = (sh) => {
+    Object.assign(sh.uniforms, {
+      bucato: ARCHI_BUCATI,
+      uHat: { value: new THREE.Vector2(U_[0], U_[1]) }, vHat: { value: new THREE.Vector2(V_[0], V_[1]) },
+      wh: { value: WH_ }, spess: { value: 0.7 }, archR: { value: CHAPEL_ARCH_RADIUS_M },
+      archS: { value: CHAPEL_ARCH_SPRING_M }, ucs: { value: ucs }, lati: { value: lati },
+    });
+    sh.vertexShader = sh.vertexShader
+      .replace("#include <common>", "#include <common>\nvarying vec3 vMondo;")
+      .replace("#include <begin_vertex>", "#include <begin_vertex>\nvMondo = (modelMatrix * vec4(transformed, 1.0)).xyz;");
+    sh.fragmentShader = sh.fragmentShader
+      .replace("#include <common>", `#include <common>
+varying vec3 vMondo;
+uniform vec2 uHat; uniform vec2 vHat; uniform float wh; uniform float spess;
+uniform float archR; uniform float archS; uniform float ucs[8]; uniform float lati[8]; uniform float bucato;`)
+      .replace("void main() {", `void main() {
+  float uu = dot(vMondo.xy, uHat), vv = dot(vMondo.xy, vHat), ww = vMondo.z;
+  if (bucato > 0.5 && abs(vv) > wh - 0.05 && abs(vv) < wh + spess + 0.05) {
+    for (int i = 0; i < 8; i++) {
+      if (lati[i] * vv <= 0.0) continue;
+      float X = uu - ucs[i];
+      if (abs(X) < archR && (ww < archS || X * X + (ww - archS) * (ww - archS) < archR * archR)) discard;
+    }
+  }`);
+  };
+  mat.needsUpdate = true;
+}
+
+const windowMeshes = {};
+for (const win of church.windows) {
+  const part = meshData.windows[win.name];
+  const isDoor = win.group === "porta";
+  const mat = new THREE.MeshStandardMaterial({
+    color: GROUP_COLORS[win.group], transparent: true, opacity: isDoor ? WALL_OPACITY : 0.4,
+    emissive: GROUP_COLORS[win.group], emissiveIntensity: 0.08,
+    // ogni faccia della vetrata si vede solo dal suo lato (vedi buildWindowSolid)
+    side: THREE.FrontSide, depthWrite: false,
+  });
+  const mesh = new THREE.Mesh(partToGeometry(part), mat);
+  mesh.renderOrder = 2;
+  scene.add(mesh);
+  windowMeshes[win.name] = mesh;
+}
+
+{
+  const origin = new THREE.Vector3(...church.localToEnu(13, -3, 0.05));
+  const arrow = new THREE.ArrowHelper(new THREE.Vector3(0, 1, 0), origin, 4.0, 0xff5555, 1.0, 0.6);
+  scene.add(arrow);
+}
+
+// -----------------------------------------------------------------
+// Foto di riferimento (pannelli piatti + abside curva + vetrate reali)
+// -----------------------------------------------------------------
+const photoGroup = new THREE.Group();
+scene.add(photoGroup);
+const textureCache = {};
+function loadTexture(filename) {
+  if (!textureCache[filename]) {
+    const dataUri = PHOTO_DATA[filename];
+    const tex = new THREE.TextureLoader().load(dataUri);
+    tex.colorSpace = THREE.SRGBColorSpace;
+    textureCache[filename] = tex;
+  }
+  return textureCache[filename];
+}
+
+function addTexturedMesh(part, opts = {}) {
+  const geom = new THREE.BufferGeometry();
+  const pos = new Float32Array(part.positions.length * 3);
+  part.positions.forEach((p, i) => { pos[i * 3] = p[0]; pos[i * 3 + 1] = p[1]; pos[i * 3 + 2] = p[2]; });
+  geom.setAttribute("position", new THREE.BufferAttribute(pos, 3));
+  const uvArr = new Float32Array(part.uvs.length * 2);
+  part.uvs.forEach((uv, i) => { uvArr[i * 2] = uv[0]; uvArr[i * 2 + 1] = uv[1]; });
+  geom.setAttribute("uv", new THREE.BufferAttribute(uvArr, 2));
+  const idx = new Uint32Array(part.indices.length * 3);
+  part.indices.forEach((t, i) => { idx[i * 3] = t[0]; idx[i * 3 + 1] = t[1]; idx[i * 3 + 2] = t[2]; });
+  geom.setIndex(new THREE.BufferAttribute(idx, 1));
+  geom.computeVertexNormals();
+
+  // soloFronte: angoli in senso antiorario visti dal fronte -> FrontSide
+  // mostra la foto solo da quel lato (la facciata esterna non si vede da dentro)
+  // PNG con trasparenza (facciata esterna ritagliata): i pixel trasparenti si scartano
+  const png = part.filename.toLowerCase().endsWith(".png");
+  const mat = new THREE.MeshBasicMaterial({ map: loadTexture(part.filename),
+    side: part.soloFronte ? THREE.FrontSide : THREE.DoubleSide, toneMapped: false,
+    transparent: png, alphaTest: png ? 0.5 : 0 });
+  const mesh = new THREE.Mesh(geom, mat);
+  photoGroup.add(mesh);
+
+  if (opts.frameLoop) {
+    const pts = opts.frameLoop.map((i) => new THREE.Vector3(...part.positions[i]));
+    const lineGeom = new THREE.BufferGeometry().setFromPoints(pts);
+    const line = new THREE.Line(lineGeom, new THREE.LineBasicMaterial({ color: 0x2b2b2b }));
+    mesh.add(line);  // figlia della foto: si nasconde con lei (coordinate gia' nel mondo)
+  }
+  return mesh;
+}
+
+// Foto prese DENTRO la chiesa (cappelle: pannelli bucati e nicchie; abside):
+// si vedono solo stando dentro; da fuori sono nascoste e gli archi nel muro
+// si richiudono.
+const fotoCappelle = [];
+for (const card of PHOTO_CARDS) {
+  if (card.foroCappella) { fotoCappelle.push(addTexturedMesh(buildCardConForo(card, church))); continue; }
+  const part = buildFlatCard(card, church);
+  addTexturedMesh(part, { frameLoop: part.frameLoop });
+}
+// Nicchie delle cappelle (profondita': fondo, fianchi, volta)
+for (const [nome, lato, indice] of NICCHIE) {
+  for (const parte of buildNicchia(nome, lato, indice, church)) {
+    if (PHOTO_DATA[parte.filename]) fotoCappelle.push(addTexturedMesh(parte));
+  }
+}
+// "Dentro" = camera nella pianta della chiesa: navata, nicchie, abside.
+function cameraDentro() {
+  const p = camera.position;
+  const u = p.x * U_[0] + p.y * U_[1], v = p.x * V_[0] + p.y * V_[1];
+  if (p.z < 0 || p.z > WALL_HEIGHT_M + 6) return false;
+  if (u >= 0 && u <= NAVE_LENGTH_M && Math.abs(v) <= WH_) return true;           // navata
+  if (u > NAVE_LENGTH_M && u < NAVE_LENGTH_M + 6 && Math.abs(v) < WH_ - 1.0) return true;  // abside
+  return aperturaCappella(church, u, v, Math.min(p.z, CHAPEL_ARCH_SPRING_M), 0)
+    && Math.abs(v) <= WH_ + CHAPEL_PROJECTION_DEPTH_M;                             // dentro una nicchia
+}
+let eraDentro = null;
+function aggiornaDentroFuori() {
+  const dentro = cameraDentro();
+  if (dentro === eraDentro) return;
+  eraDentro = dentro;
+  const fotoAccese = document.getElementById("photosCheckbox").checked;
+  for (const m of fotoCappelle) m.visible = dentro && fotoAccese;
+  ARCHI_BUCATI.value = dentro ? 1.0 : 0.0;
+}
+document.getElementById("photosCheckbox").addEventListener("change", () => { eraDentro = null; });
+{
+  const curved = buildCurvedApsePanel(church);
+  // la foto dell'abside e' presa da dentro: come le cappelle, solo da dentro
+  fotoCappelle.push(addTexturedMesh(curved, { frameLoop: [...curved.bottomLoop] }));
+  fotoCappelle.push(addTexturedMesh(curved, { frameLoop: [...curved.topLoop] }));
+}
+for (const overlay of buildAllWindowOverlays(church)) {
+  addTexturedMesh(overlay);
+}
+
+document.getElementById("photosCheckbox").addEventListener("change", (e) => {
+  photoGroup.visible = e.target.checked;
+});
+document.getElementById("windowsCheckbox").addEventListener("change", (e) => {
+  for (const mesh of Object.values(windowMeshes)) mesh.visible = e.target.checked;
+});
+
+// -----------------------------------------------------------------
+// Macchie di luce (pavimento + pareti), ricostruite ad ogni update
+// -----------------------------------------------------------------
+let lightPatchMeshes = [];
+function clearLightPatches() {
+  for (const m of lightPatchMeshes) { scene.remove(m); m.geometry.dispose(); m.material.dispose(); }
+  lightPatchMeshes = [];
+}
+
+function addLightPatch(pointsWorld, color) {
+  const n = pointsWorld.length;
+  if (n < 3) return;
+  const geom = new THREE.BufferGeometry();
+  const pos = new Float32Array(n * 3);
+  pointsWorld.forEach((p, i) => { pos[i * 3] = p[0]; pos[i * 3 + 1] = p[1]; pos[i * 3 + 2] = p[2]; });
+  geom.setAttribute("position", new THREE.BufferAttribute(pos, 3));
+  // normale verso il sole: lo strato d'ombra (normalBias) cerca l'ombra un
+  // po' fuori dalla superficie; con la normale rovesciata finirebbe dentro
+  // il legno dei banchi e li vedrebbe sempre in ombra
+  const a = new THREE.Vector3(...pointsWorld[0]);
+  const nrm = new THREE.Vector3();
+  for (let i = 1; i < n - 1; i++) {
+    const e1 = new THREE.Vector3(...pointsWorld[i]).sub(a), e2 = new THREE.Vector3(...pointsWorld[i + 1]).sub(a);
+    nrm.add(e1.cross(e2));
+  }
+  const versoSole = sunLight.position.clone().sub(sunLight.target.position);
+  const giro = nrm.dot(versoSole) < 0;
+  const idx = [];
+  for (let i = 1; i < n - 1; i++) giro ? idx.push(0, i + 1, i) : idx.push(0, i, i + 1);
+  geom.setIndex(idx);
+  geom.computeVertexNormals();
+  const mat = new THREE.MeshBasicMaterial({ color, transparent: true, opacity: 0.5, side: THREE.DoubleSide, depthWrite: false, toneMapped: false });
+  const mesh = new THREE.Mesh(geom, mat);
+  mesh.renderOrder = 3;
+  scene.add(mesh);
+  lightPatchMeshes.push(mesh);
+  // ombra opaca: sopra la macchia uno strato che mostra solo le ombre degli
+  // oggetti interni (banchi, altari, pulpito...) dove fermano la luce
+  const ombra = new THREE.Mesh(geom, new THREE.ShadowMaterial({ color: 0x000000, opacity: 0.55, side: THREE.DoubleSide,
+    depthWrite: false }));
+  ombra.receiveShadow = true;
+  ombra.renderOrder = 4;
+  scene.add(ombra);
+  lightPatchMeshes.push(ombra);
+}
+
+// -----------------------------------------------------------------
+// Stato + aggiornamento scena (giorno/ora)
+// -----------------------------------------------------------------
+const state = {
+  dayOfYear: Math.min(365, Math.max(1, parseInt(URL_PARAMS.get("giorno"), 10) || 172)),
+  hour: Math.min(23.983, Math.max(0, parseFloat(URL_PARAMS.get("ora")) || 12.0)),
+  playing: false,
+};
+
+function currentDate() {
+  return dayOfYearToDate(YEAR, state.dayOfYear);
+}
+
+function updateScene() {
+  const { year, month, day } = currentDate();
+  const dtUTC = parisLocalToUTC(year, month, day, state.hour);
+  const sun = solarPosition(dtUTC, LATITUDE_DEG, LONGITUDE_DEG);
+
+  clearLightPatches();
+  const litNames = [];
+
+  if (sun.isUp) {
+    const azRad = (Math.PI / 180) * sun.azimuthDeg;
+    const altRad = (Math.PI / 180) * sun.altitudeDeg;
+    const dir = new THREE.Vector3(Math.sin(azRad) * Math.cos(altRad), Math.cos(azRad) * Math.cos(altRad), Math.sin(altRad));
+    // luce del sole puntata sul centro della chiesa (serve alla camera d'ombra)
+    const centro = new THREE.Vector3(...church.localToEnu(NAVE_LENGTH_M / 2 + 3, 0, 6));
+    sunLight.position.copy(centro.clone().add(dir.clone().multiplyScalar(80)));
+    sunLight.target.position.copy(centro);
+    sunLight.target.updateMatrixWorld();
+    renderer.shadowMap.needsUpdate = true;
+    sunLight.shadow.camera.updateProjectionMatrix();
+    sunLight.intensity = 0.5 + 0.6 * Math.max(0, Math.sin(altRad));
+
+    for (const win of church.windows) {
+      if (win.group === "porta") continue; // la porta e' un solido opaco: non lascia passare luce, non cambia mai aspetto
+      const mesh = windowMeshes[win.name];
+      const patches = projectWindowWithWalls(church, win.localOutline(), win.wallAzimuthDeg, sun, WALL_HEIGHT_M);
+      if (patches.length > 0) {
+        litNames.push(win.name);
+        mesh.material.opacity = 0.85;
+        mesh.material.emissiveIntensity = 0.45;
+        for (const patch of patches) addLightPatch(patch.pointsWorld, GROUP_COLORS[win.group]);
+      } else {
+        mesh.material.opacity = 0.4;
+        mesh.material.emissiveIntensity = 0.08;
+      }
+    }
+  } else {
+    sunLight.intensity = 0.08;
+    for (const win of church.windows) {
+      if (win.group === "porta") continue;
+      const mesh = windowMeshes[win.name];
+      mesh.material.opacity = 0.4;
+      mesh.material.emissiveIntensity = 0.08;
+    }
+  }
+
+  updateTexts(year, month, day, sun, litNames);
+}
+
+function updateTexts(year, month, day, sun, litNames) {
+  let hh = Math.floor(state.hour);
+  let mm = Math.round((state.hour - hh) * 60);
+  if (mm === 60) { mm = 0; hh = (hh + 1) % 24; }
+  document.getElementById("bigDate").textContent = day + " " + T.mesi[month];
+  document.getElementById("bigTime").textContent = String(hh).padStart(2, "0") + ":" + String(mm).padStart(2, "0");
+
+  const sunInfo = sun.isUp ? T.sole(sun.azimuthDeg.toFixed(1), sun.altitudeDeg.toFixed(1)) : T.soleSotto;
+  document.getElementById("sun-info").textContent = sunInfo;
+
+  const litStr = T.illuminate + "\n" + (litNames.length ? litNames.map((n) => "  " + nome(n)).join("\n") : "  " + T.nessuna);
+  document.getElementById("lit-list").textContent = litStr;
+}
+
+// -----------------------------------------------------------------
+// Slider
+// -----------------------------------------------------------------
+const daySlider = document.getElementById("daySlider");
+const hourSlider = document.getElementById("hourSlider");
+daySlider.value = state.dayOfYear;
+hourSlider.value = state.hour;
+daySlider.addEventListener("input", () => { state.dayOfYear = parseInt(daySlider.value, 10); updateScene(); pianificaGiorno(); });
+
+// -----------------------------------------------------------------
+// Menu a comparsa (schermi stretti / telefoni)
+// -----------------------------------------------------------------
+const sidebarEl = document.getElementById("sidebar");
+const backdropEl = document.getElementById("sidebarBackdrop");
+const menuToggleEl = document.getElementById("menuToggle");
+// Il pulsante sta sopra al velo (z-index 20) e mostra la X quando il menu e'
+// aperto, cosi' chiude sempre; si usa pointerup (piu' affidabile del click
+// sui telefoni, che a volte lo perdono dopo uno scorrimento).
+const schermoStretto = () => window.matchMedia("(max-width: 760px)").matches;
+function setSidebar(aperto) {
+  sidebarEl.classList.toggle("open", aperto); backdropEl.classList.toggle("open", aperto);
+  menuToggleEl.innerHTML = aperto ? "&#10005;" : "&#9776;";
+}
+function closeSidebar() { setSidebar(false); }
+function toggleSidebar() { setSidebar(!sidebarEl.classList.contains("open")); }
+menuToggleEl.addEventListener("pointerup", (e) => { e.preventDefault(); toggleSidebar(); });
+backdropEl.addEventListener("pointerup", (e) => { e.preventDefault(); closeSidebar(); });
+// trascinando il menu verso sinistra si chiude (gesto naturale sul telefono)
+{
+  let x0 = null, y0 = 0;
+  sidebarEl.addEventListener("touchstart", (e) => { const t = e.touches[0]; x0 = t.clientX; y0 = t.clientY; }, { passive: true });
+  sidebarEl.addEventListener("touchend", (e) => {
+    if (x0 === null) return;
+    const t = e.changedTouches[0], dx = t.clientX - x0, dy = t.clientY - y0;
+    if (schermoStretto() && dx < -60 && Math.abs(dy) < Math.abs(dx) * 0.6 && !(e.target.closest && e.target.closest("input[type=range]"))) closeSidebar();
+    x0 = null;
+  });
+  window.addEventListener("keydown", (e) => { if (e.key === "Escape") closeSidebar(); });
+}
+// sul telefono, scelta una vista il menu si chiude e si vede la scena
+sidebarEl.addEventListener("click", (e) => {
+  if (schermoStretto() && e.target.closest(".vbtn")) setTimeout(closeSidebar, 120);
+});
+hourSlider.addEventListener("input", () => { state.hour = parseFloat(hourSlider.value); updateScene(); });
+
+function jumpTo(month, day) {
+  const d0 = Date.UTC(YEAR, 0, 1);
+  const d1 = Date.UTC(YEAR, month - 1, day);
+  state.dayOfYear = Math.round((d1 - d0) / 86400000) + 1;
+  daySlider.value = state.dayOfYear;
+  updateScene();
+  pianificaGiorno();
+}
+
+// -----------------------------------------------------------------
+// Camera: viste precostituite + reset
+// -----------------------------------------------------------------
+function wallsCenterXY() {
+  const box = new THREE.Box3().setFromObject(wallsMesh);
+  return box.getCenter(new THREE.Vector3());
+}
+
+function centerCamera() {
+  const c = wallsCenterXY();
+  // schermo in verticale (telefono): piu' lontano, cosi' la chiesa entra tutta
+  const k = camera.aspect < 1 ? Math.min(2.4, 1.15 / camera.aspect) : 1;
+  camera.position.set(c.x - 30 * k, c.y - 42 * k, WALL_HEIGHT_M * 0.35 * k);
+  controls.target.set(c.x, c.y, WALL_HEIGHT_M * 0.2);
+}
+
+function viewFrom(compassAzimuthDeg, elevationDeg, distance) {
+  elevationDeg = elevationDeg === undefined ? 20 : elevationDeg;
+  distance = distance === undefined ? 55 : distance;
+  const c = wallsCenterXY();
+  const az = (Math.PI / 180) * compassAzimuthDeg;
+  const el = (Math.PI / 180) * elevationDeg;
+  const dx = distance * Math.cos(el) * Math.sin(az);
+  const dy = distance * Math.cos(el) * Math.cos(az);
+  const dz = distance * Math.sin(el);
+  camera.position.set(c.x + dx, c.y + dy, WALL_HEIGHT_M * 0.3 + dz);
+  controls.target.set(c.x, c.y, WALL_HEIGHT_M * 0.3);
+}
+
+function viewTop() {
+  const c = wallsCenterXY();
+  camera.position.set(c.x, c.y, 70);
+  controls.target.set(c.x, c.y, 0);
+}
+
+// Viste dall'interno: camera in coordinate locali dell'edificio
+// (u lungo la navata dalla facciata, v verso Ovest, w in alto), cosi'
+// restano giuste con qualunque orientamento scelto.
+function viewInside(da, verso) {
+  camera.position.set(...church.localToEnu(...da));
+  controls.target.set(...church.localToEnu(...verso));
+}
+// Cappella i (0 = vicino all'ingresso); lato +1 = sinistra entrando
+// (Ovest, v = +Wh), -1 = destra (Est). Ci si mette dal lato opposto
+// della navata, ad altezza d'occhio un po' rialzata.
+function viewChapel(i, lato) {
+  const u = church.chapelUPositions()[i];
+  const wh = NAVE_WIDTH_M / 2;
+  viewInside([u, -lato * (wh - 3.0), 3.6], [u, lato * wh, 4.3]);
+}
+// Controfacciata: dalla navata, a meta' altezza e sguardo orizzontale, cosi'
+// si vede intera, dal pavimento (bussola, battistero) fino alla volta e alle vetrate
+function viewFacadeInside() {
+  viewInside([NAVE_LENGTH_M * 0.8, 0, 8.0], [0, 0, 8.0]);
+}
+function viewApse() {
+  viewInside([NAVE_LENGTH_M * 0.35, 0, 3.0], [NAVE_LENGTH_M + 3, 0, 6.0]);
+}
+{
+  const sx = document.querySelector("#viste-interne .col:nth-child(1)");
+  const dx = document.querySelector("#viste-interne .col:nth-child(2)");
+  const tutti = [];
+  const segna = (b) => { tutti.forEach((x) => x.classList.toggle("attivo", x === b)); };
+  for (const [col, lato] of [[sx, 1], [dx, -1]]) {
+    for (let i = 0; i < N_CHAPELS_PER_SIDE; i++) {
+      const b = document.createElement("button");
+      b.className = "vbtn";
+      b.textContent = String(i + 1);
+      b.onclick = () => { viewChapel(i, lato); segna(b); };
+      col.appendChild(b); tutti.push(b);
+    }
+  }
+  const fa = document.getElementById("btnFacciata");
+  fa.onclick = () => { viewFacadeInside(); segna(fa); };
+  tutti.push(fa);
+  const ab = document.getElementById("btnAbside"), es = document.getElementById("btnEsterno");
+  ab.onclick = () => { viewApse(); segna(ab); };
+  es.onclick = () => { centerCamera(); segna(es); };
+  // facciata esterna: di fronte, dalla piazza, a meta' altezza
+  const fe = document.getElementById("btnFacciataEsterna");
+  fe.onclick = () => { viewInside([-30, 0, 9], [0, 0, 10]); segna(fe); };
+  tutti.push(ab, es, fe);
+}
+
+// -----------------------------------------------------------------
+// Tasti di scelta rapida
+// -----------------------------------------------------------------
+let playTimer = null;
+function togglePlay() {
+  state.playing = !state.playing;
+  if (state.playing) {
+    playTimer = setInterval(() => {
+      state.hour += 0.15;
+      if (state.hour >= 24) state.hour = 0;
+      hourSlider.value = state.hour;
+      updateScene();
+    }, 80);
+  } else if (playTimer) {
+    clearInterval(playTimer);
+    playTimer = null;
+  }
+}
+
+window.addEventListener("keydown", (e) => {
+  const tag = (e.target && e.target.tagName) || "";
+  if (tag === "INPUT" && e.target.type === "range") return; // non intercettare mentre si trascina uno slider
+  switch (e.key.toLowerCase()) {
+    case "1": jumpTo(12, 21); break;
+    case "2": jumpTo(3, 20); break;
+    case "3": jumpTo(6, 21); break;
+    case "n": viewFrom(0); break;
+    case "s": viewFrom(180); break;
+    case "e": viewFrom(90); break;
+    case "o": case "w": viewFrom(270); break;
+    case "t": viewTop(); break;
+    case "r": centerCamera(); break;
+    case " ": e.preventDefault(); togglePlay(); break;
+  }
+});
+
+// -----------------------------------------------------------------
+// Camminare: frecce della tastiera (e croce di frecce sul telefono)
+//   su/giu = avanti/indietro nella direzione in cui si guarda
+//   sinistra/destra = girarsi; con Maiusc = passo di lato
+// La camera e il punto guardato si muovono insieme (i controlli del
+// mouse restano validi). Velocita' in m/s e gradi/s.
+// -----------------------------------------------------------------
+const PASSO_M_S = 3.0, GIRO_GRADI_S = 70, SALITA_M_S = 2.0, QUOTA_MIN_M = 0.3, QUOTA_MAX_M = 40;
+const tastiPremuti = new Set();
+let maiuscPremuto = false;
+const TASTI_CAMMINO = ["ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight", "PageUp", "PageDown"];
+window.addEventListener("keydown", (e) => {
+  if (!TASTI_CAMMINO.includes(e.key)) return;
+  const tag = (e.target && e.target.tagName) || "";
+  if (tag === "INPUT" || tag === "SELECT") return;
+  e.preventDefault(); tastiPremuti.add(e.key); maiuscPremuto = e.shiftKey;
+});
+window.addEventListener("keyup", (e) => { tastiPremuti.delete(e.key); maiuscPremuto = e.shiftKey; });
+window.addEventListener("blur", () => tastiPremuti.clear());
+const ETICHETTE_FRECCE = LANG === "fr"
+  ? { ArrowUp: "avancer", ArrowDown: "reculer", ArrowLeft: "tourner à gauche", ArrowRight: "tourner à droite",
+      PageUp: "monter", PageDown: "descendre" }
+  : { ArrowUp: "avanti", ArrowDown: "indietro", ArrowLeft: "gira a sinistra", ArrowRight: "gira a destra",
+      PageUp: "sali", PageDown: "scendi" };
+document.querySelector("#frecce .alto").textContent = LANG === "fr" ? "Haut" : "Su";
+document.querySelector("#frecce .basso").textContent = LANG === "fr" ? "Bas" : "Giù";
+for (const b of document.querySelectorAll("#frecce button")) {
+  b.setAttribute("aria-label", ETICHETTE_FRECCE[b.dataset.tasto]);
+  const giu = (e) => { e.preventDefault(); b.setPointerCapture?.(e.pointerId); tastiPremuti.add(b.dataset.tasto); b.classList.add("premuto"); };
+  const su = (e) => { e.preventDefault(); tastiPremuti.delete(b.dataset.tasto); b.classList.remove("premuto"); };
+  b.addEventListener("pointerdown", giu);
+  for (const ev of ["pointerup", "pointercancel", "lostpointercapture"]) b.addEventListener(ev, su);
+  b.addEventListener("contextmenu", (e) => e.preventDefault());
+}
+let tempoPrima = performance.now();
+function cammina() {
+  const ora = performance.now(), dt = Math.min(0.05, (ora - tempoPrima) / 1000);
+  tempoPrima = ora;
+  if (!tastiPremuti.size) return;
+  const pos = camera.position, tgt = controls.target;
+  const dir = new THREE.Vector3(tgt.x - pos.x, tgt.y - pos.y, 0);
+  if (dir.lengthSq() < 1e-6) dir.set(1, 0, 0);
+  dir.normalize();
+  const lato = new THREE.Vector3(dir.y, -dir.x, 0);  // a destra di chi guarda
+  const mossa = new THREE.Vector3();
+  if (tastiPremuti.has("ArrowUp")) mossa.add(dir);
+  if (tastiPremuti.has("ArrowDown")) mossa.sub(dir);
+  const giro = (tastiPremuti.has("ArrowLeft") ? 1 : 0) - (tastiPremuti.has("ArrowRight") ? 1 : 0);
+  if (maiuscPremuto && giro) mossa.addScaledVector(lato, -giro);
+  if (mossa.lengthSq()) {
+    mossa.normalize().multiplyScalar(PASSO_M_S * dt);
+    pos.add(mossa); tgt.add(mossa);
+  }
+  // su/giu in verticale (PagSu/PagGiu, pulsanti con le frecce doppie)
+  const sale = (tastiPremuti.has("PageUp") ? 1 : 0) - (tastiPremuti.has("PageDown") ? 1 : 0);
+  if (sale) {
+    const dz = Math.min(QUOTA_MAX_M, Math.max(QUOTA_MIN_M, pos.z + sale * SALITA_M_S * dt)) - pos.z;
+    pos.z += dz; tgt.z += dz;
+  }
+  if (giro && !maiuscPremuto) {
+    const a = THREE.MathUtils.degToRad(GIRO_GRADI_S * dt * giro);
+    const dx = tgt.x - pos.x, dy = tgt.y - pos.y;
+    tgt.x = pos.x + dx * Math.cos(a) - dy * Math.sin(a);
+    tgt.y = pos.y + dx * Math.sin(a) + dy * Math.cos(a);
+  }
+}
+
+// -----------------------------------------------------------------
+// Avvio
+// -----------------------------------------------------------------
+// -----------------------------------------------------------------
+// Orientamento: piantine (default), ricerca online, OSM, manuale
+// -----------------------------------------------------------------
+{
+  const sel = document.getElementById("fonteSelect");
+  const fmt = (x) => (x === undefined || x === null || !Number.isFinite(x) ? T.asseNonDisponibile : x.toFixed(1) + "°");
+  const asseOnline = (window.RICERCA || {}).azimutAsse;
+  const asseOsm = asseOsmJausiers();
+  const voci = [
+    ["piantine", T.fonte_piantine + " · " + fmt(ORIENTAMENTO.facciataPiantine), true],
+    ["online", T.fonte_online + " · " + fmt(asseOnline), Number.isFinite(asseOnline)],
+    ["osm", T.fonte_osm + " · " + fmt(asseOsm), Number.isFinite(asseOsm)],
+  ];
+  if (ORIENTAMENTO.fonte === "manuale") voci.push(["manuale", T.fonte_manuale + " · " + fmt(ORIENTAMENTO.asse), true]);
+  for (const [valore, testo, attivo] of voci) {
+    const o = document.createElement("option");
+    o.value = valore; o.textContent = testo; o.disabled = !attivo;
+    o.selected = valore === ORIENTAMENTO.fonte;
+    sel.appendChild(o);
+  }
+  sel.addEventListener("change", () => {
+    window.location.href = urlCon({
+      fonte: sel.value === "piantine" ? undefined : sel.value, asse: undefined,
+      giorno: state.dayOfYear, ora: state.hour.toFixed(2),
+    });
+  });
+  document.getElementById("orient-info").textContent =
+    T.facciataAbside(ORIENTAMENTO.facciata.toFixed(1), mod360(ORIENTAMENTO.facciata + 180).toFixed(1)) +
+    (ORIENTAMENTO.delta !== 0 ? "\n" + T.rotazione((ORIENTAMENTO.delta > 0 ? "+" : "") + ORIENTAMENTO.delta.toFixed(1)) : "");
+}
+
+// -----------------------------------------------------------------
+// Luce diretta nel giorno scelto: stessa griglia di 10 minuti di
+// mods/jausiers/scripts/sole.py (il blocco 2 del mod)
+// -----------------------------------------------------------------
+function luceDelGiorno(year, month, day, passoMin = 10) {
+  const per = {};
+  let alba = null, tramonto = null, culmine = { alt: -99 };
+  for (let m = 0; m < 1440; m += passoMin) {
+    const ora = m / 60;
+    const sun = solarPosition(parisLocalToUTC(year, month, day, ora), LATITUDE_DEG, LONGITUDE_DEG);
+    if (!sun.isUp) continue;
+    const hhmm = String(Math.floor(m / 60)).padStart(2, "0") + ":" + String(m % 60).padStart(2, "0");
+    alba = alba || hhmm;
+    tramonto = hhmm;
+    if (sun.altitudeDeg > culmine.alt) culmine = { ora: hhmm, alt: sun.altitudeDeg };
+    for (const win of church.windows) {
+      if (win.group === "porta") continue;
+      if (projectWindowWithWalls(church, win.localOutline(), win.wallAzimuthDeg, sun, WALL_HEIGHT_M).length > 0) {
+        (per[win.name] = per[win.name] || []).push(hhmm);
+      }
+    }
+  }
+  const vetrate = Object.entries(per)
+    .map(([n, t]) => ({ nome: n, da: t[0], a: t[t.length - 1], minuti: t.length * passoMin }))
+    .sort((x, y) => (x.da < y.da ? -1 : x.da > y.da ? 1 : 0));
+  return { alba, tramonto, culmine, vetrate };
+}
+
+let timerGiorno = null;
+function pianificaGiorno() {
+  clearTimeout(timerGiorno);
+  timerGiorno = setTimeout(mostraGiorno, 200);
+}
+function mostraGiorno() {
+  const { year, month, day } = currentDate();
+  const g = luceDelGiorno(year, month, day);
+  const esc = (x) => String(x).replace(/&/g, "&amp;").replace(/</g, "&lt;");
+  const righe = g.vetrate.map((v) => `<div><span class="t">${v.da}–${v.a}</span> ${esc(nome(v.nome))} <span style="color:#8892a0">(${v.minuti} min)</span></div>`);
+  document.getElementById("giorno-luce").innerHTML =
+    `<div style="color:#8892a0">${T.alba} ${g.alba || "—"} · ${T.tramonto} ${g.tramonto || "—"} · ${T.culmine} ${g.culmine.ora || "—"} (${g.culmine.alt.toFixed(1)}°)</div>` +
+    (righe.length ? righe.join("") : `<div>${T.nessuna}</div>`);
+}
+window.luceDelGiorno = luceDelGiorno; // per la verifica contro il Python
+
+resize();
+centerCamera();
+updateScene();
+mostraGiorno();
+document.getElementById("loading").style.display = "none";
+clearTimeout(window.__loadWatchdog);
+
+function animate() {
+  requestAnimationFrame(animate);
+  cammina();
+  controls.update();
+  aggiornaDentroFuori();
+  renderer.render(scene, camera);
+}
+animate();
+</script>
+</body>
+</html>

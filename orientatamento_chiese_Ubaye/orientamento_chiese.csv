@@ -1,0 +1,39 @@
+nome,commune,lieu_dit,osm_url,denomination,lon,lat,area_m2,elongation,axis_az,dev_from_EW,slope_deg,downhill_az,axis_vs_fallline
+Chapelle Saint-Sébastien,Allos (04),,https://www.openstreetmap.org/way/127961500,,6.628116,44.240768,232,2.74,46.8,43.2,3.3,123.0,76.2
+Église Notre-Dame-de-Valvert,Allos (04),,https://www.openstreetmap.org/way/127963184,,6.628452,44.238036,473,1.54,98.7,8.7,7.3,267.6,11.1
+Église Saint-Pierre-ès-liens,Barcelonnette (04),,https://www.openstreetmap.org/way/128064002,catholic,6.65146,44.387754,906,1.73,171.5,81.5,3.3,179.0,7.5
+Chapelle Saint-Clair,Colmars (04),,https://www.openstreetmap.org/way/182557106,,6.630668,44.204215,114,1.36,120.5,30.5,14.3,69.1,51.4
+Église Notre-Dame-des-Neiges,Enchastrayes (04),,https://www.openstreetmap.org/way/195326268,,6.695205,44.379482,130,1.68,159.7,69.7,6.4,256.9,82.7
+Église Saint-Pierre-et-Saint-Paul,Enchastrayes (04),,https://www.openstreetmap.org/way/195328613,,6.691262,44.369392,200,1.54,64.7,25.3,4.6,311.8,67.1
+Edificio di culto senza nome (Faucon-de-Barcelonnette (04)),Faucon-de-Barcelonnette (04),,https://www.openstreetmap.org/way/72862315,catholic,6.677711,44.393325,154,2.57,90.3,0.3,4.7,184.9,85.5
+Église Saint-Étienne,Faucon-de-Barcelonnette (04),,https://www.openstreetmap.org/way/72861887,catholic,6.67834,44.393902,396,1.67,81.7,8.3,5.7,185.8,75.9
+Cappella senza nome (Jausiers (04)),Jausiers (04),,https://www.openstreetmap.org/way/93927366,,6.717722,44.406399,148,2.23,169.3,79.3,5.1,195.0,25.7
+Église Notre-Dame-del-Bosc,Jausiers (04),,https://www.openstreetmap.org/way/93927303,,6.756404,44.406303,255,2.25,69.0,21.0,6.0,320.4,71.4
+Église Saint-Nicolas-de-Myre,Jausiers (04),,https://www.openstreetmap.org/way/93932532,catholic,6.733908,44.419886,696,1.79,156.2,66.2,16.2,155.6,0.6
+Église Saint-Sébastien,Jausiers (04),,https://www.openstreetmap.org/way/93928811,,6.717439,44.413374,273,1.63,155.9,65.9,4.5,141.3,14.5
+Église Saint-Clément,La Condamine-Châtelard (04),,https://www.openstreetmap.org/way/128081857,catholic,6.739888,44.452799,211,1.37,0.5,89.5,37.3,224.5,44.1
+Église Sainte-Catherine,La Condamine-Châtelard (04),,https://www.openstreetmap.org/way/290959205,catholic,6.74461,44.458693,283,1.97,15.2,74.8,4.1,174.5,20.7
+Église Notre-Dame-de-la-Présentation,Les Orres (05),Mélézet,https://www.openstreetmap.org/way/119318183,catholic,6.553285,44.505032,201,1.54,98.0,8.0,7.3,289.0,11.0
+Église Sainte-Marie-Madeleine,Les Orres (05),,https://www.openstreetmap.org/way/119317907,catholic,6.548577,44.514255,402,1.83,60.3,29.7,6.6,164.3,76.0
+Chapelle Saint-Jean,Les Thuiles (04),,https://www.openstreetmap.org/way/128069346,,6.550405,44.406847,104,2.23,37.4,52.6,12.8,211.0,6.4
+Chapelle Saint-Joseph,Les Thuiles (04),,https://www.openstreetmap.org/way/128069036,,6.573819,44.400375,169,2.0,93.4,3.4,17.2,183.1,89.7
+Edificio di culto senza nome (Les Thuiles (04)),Les Thuiles (04),,https://www.openstreetmap.org/way/128069132,,6.573917,44.383497,178,2.53,116.5,26.5,9.2,300.9,4.3
+Église Saint-Martin de Tours,Les Thuiles (04),,https://www.openstreetmap.org/way/128068584,,6.566517,44.394189,245,1.54,91.1,1.1,8.0,179.7,88.6
+Église Notre-Dame de Lumière,Méolans-Revel (04),,https://www.openstreetmap.org/way/127740254,,6.527462,44.410241,276,2.68,92.4,2.4,10.4,162.6,70.2
+Église Saint-Antoine,Méolans-Revel (04),,https://www.openstreetmap.org/way/127740201,catholic,6.505884,44.349192,184,1.34,82.2,7.8,9.6,206.1,56.1
+Église Saint-Jaques-le-Majeur,Méolans-Revel (04),,https://www.openstreetmap.org/way/127740276,catholic,6.504665,44.401927,271,1.76,51.7,38.3,27.7,141.3,89.7
+Église Saint-Julien,Méolans-Revel (04),,https://www.openstreetmap.org/way/127740308,catholic,6.508167,44.398843,229,1.56,69.8,20.2,21.3,6.3,63.5
+Chapelle Sainte-Marie Madeleine,Saint-Dalmas-le-Selvage (06),,https://www.openstreetmap.org/way/143723197,catholic,6.884451,44.322501,123,1.66,165.4,75.4,7.2,133.5,32.0
+Église Saint-Dalmas,Saint-Dalmas-le-Selvage (06),,https://www.openstreetmap.org/way/143722816,catholic,6.866908,44.283385,369,1.38,112.3,22.3,13.9,143.5,31.3
+Chapelle Saint-Jean-Baptiste,Saint-Paul-sur-Ubaye (04),,https://www.openstreetmap.org/way/128090492,catholic,6.75038,44.514481,184,1.44,62.9,27.1,7.2,172.5,70.4
+Chapelle Saint-Jean-Baptiste,Saint-Paul-sur-Ubaye (04),,https://www.openstreetmap.org/way/128091102,roman_catholic,6.803469,44.525882,101,2.65,98.0,8.0,19.2,185.4,87.3
+Chapelle Saint-Roch,Saint-Paul-sur-Ubaye (04),,https://www.openstreetmap.org/way/128090944,,6.773373,44.528155,135,2.01,46.6,43.4,8.4,117.1,70.4
+Église Saint-Sébastien,Saint-Paul-sur-Ubaye (04),,https://www.openstreetmap.org/way/128090511,catholic,6.723398,44.525219,150,1.97,96.2,6.2,24.4,175.2,79.0
+Église Saint-Thomas,Saint-Paul-sur-Ubaye (04),,https://www.openstreetmap.org/way/128090494,catholic,6.741148,44.487421,183,1.38,110.4,20.4,11.1,74.1,36.4
+Église Saints-Pierre-et-Paul,Saint-Paul-sur-Ubaye (04),,https://www.openstreetmap.org/way/128090543,catholic,6.750786,44.514431,441,1.77,63.5,26.5,13.2,138.9,75.4
+Église Saint-Pons,Saint-Pons (04),,https://www.openstreetmap.org/way/128066982,catholic,6.628509,44.392364,428,1.9,103.0,13.0,4.1,202.8,80.2
+Église de la Transfiguration,Saint-Sauveur (05),,https://www.openstreetmap.org/way/182073101,catholic,6.519724,44.541035,341,1.44,82.5,7.5,7.0,253.2,9.3
+Saint-Jean des Agneliers,Uvernet-Fours (04),,https://www.openstreetmap.org/way/128075448,roman_catholic,6.58411,44.333245,134,1.76,83.1,6.9,17.5,52.7,30.5
+Église Saint-Laurent,Uvernet-Fours (04),,https://www.openstreetmap.org/way/128074163,,6.692415,44.318458,271,1.75,53.7,36.3,20.1,157.2,76.5
+Edificio di culto senza nome (Val d'Oronaye (04)),Val d'Oronaye (04),,https://www.openstreetmap.org/way/96992035,,6.808277,44.480469,132,1.45,71.5,18.5,4.5,251.5,0.0
+Église Notre-Dame-du-Mont-Carmel,Val d'Oronaye (04),,https://www.openstreetmap.org/way/96741697,catholic,6.845973,44.451387,204,1.36,129.1,39.1,4.3,255.6,53.4

@@ -1,0 +1,5571 @@
+{
+  "version": 0.6,
+  "generator": "Overpass API 0.7.62.11 87bfad18",
+  "osm3s": {
+    "timestamp_osm_base": "2026-11-06T22:07:06Z",
+    "timestamp_areas_base": "2026-11-06T18:51:19Z",
+    "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL."
+  },
+  "elements": [
+
+{
+  "type": "node",
+  "id": 1817782344,
+  "lat": 44.3585062,
+  "lon": 6.9549727,
+  "tags": {
+    "amenity": "place_of_worship",
+    "denomination": "catholic",
+    "name": "Chiesa Parrocchiale di San Giacomo",
+    "religion": "christian",
+    "start_date": "1908"
+  }
+},
+{
+  "type": "node",
+  "id": 2020517220,
+  "lat": 44.5235153,
+  "lon": 6.9155959,
+  "tags": {
+    "amenity": "place_of_worship",
+    "denomination": "catholic",
+    "name": "Cappella San Francesco",
+    "religion": "christian",
+    "source": "GPS"
+  }
+},
+{
+  "type": "node",
+  "id": 5051889777,
+  "lat": 44.3604035,
+  "lon": 6.6150084,
+  "tags": {
+    "amenity": "place_of_worship",
+    "name": "Saint-Jean-Baptiste",
+    "name:fr": "Saint-Jean-Baptiste",
+    "religion": "christian"
+  }
+},
+{
+  "type": "node",
+  "id": 5140932573,
+  "lat": 44.4889400,
+  "lon": 6.9246483,
+  "tags": {
+    "amenity": "place_of_worship",
+    "name": "Pilone Bastier",
+    "religion": "christian"
+  }
+},
+{
+  "type": "node",
+  "id": 6164213300,
+  "lat": 44.5742361,
+  "lon": 6.9764740,
+  "tags": {
+    "amenity": "place_of_worship",
+    "denomination": "roman_catholic",
+    "name": "Chiesa di Sant'Anna",
+    "religion": "christian"
+  }
+},
+{
+  "type": "node",
+  "id": 6578582654,
+  "lat": 44.5813103,
+  "lon": 6.5033830,
+  "tags": {
+    "amenity": "place_of_worship",
+    "name": "La cloche",
+    "religion": "shamanic"
+  }
+},
+{
+  "type": "node",
+  "id": 9889819884,
+  "lat": 44.5006872,
+  "lon": 6.4555892,
+  "tags": {
+    "amenity": "place_of_worship",
+    "name": "Chapelle Saint Firmin",
+    "religion": "christian",
+    "wikidata": "Q38368275"
+  }
+},
+{
+  "type": "node",
+  "id": 9889819885,
+  "lat": 44.5006586,
+  "lon": 6.4555175,
+  "tags": {
+    "amenity": "place_of_worship",
+    "check_date": "2024-09-11",
+    "name": "Sacristie",
+    "religion": "christian",
+    "wikidata": "Q38368275"
+  }
+},
+{
+  "type": "way",
+  "id": 56068239,
+  "bounds": {
+    "minlat": 44.5942787,
+    "minlon": 6.6903979,
+    "maxlat": 44.5945013,
+    "maxlon": 6.6907375
+  },
+  "geometry": [
+    { "lat": 44.5944911, "lon": 6.6903979 },
+    { "lat": 44.5942787, "lon": 6.6904070 },
+    { "lat": 44.5942819, "lon": 6.6904685 },
+    { "lat": 44.5943261, "lon": 6.6904660 },
+    { "lat": 44.5943322, "lon": 6.6906906 },
+    { "lat": 44.5943260, "lon": 6.6907036 },
+    { "lat": 44.5943518, "lon": 6.6907375 },
+    { "lat": 44.5944023, "lon": 6.6907355 },
+    { "lat": 44.5944023, "lon": 6.6907192 },
+    { "lat": 44.5944921, "lon": 6.6907166 },
+    { "lat": 44.5944938, "lon": 6.6907080 },
+    { "lat": 44.5945013, "lon": 6.6906942 },
+    { "lat": 44.5945002, "lon": 6.6904147 },
+    { "lat": 44.5944928, "lon": 6.6904136 },
+    { "lat": 44.5944911, "lon": 6.6903979 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "check_date": "2023-09-17",
+    "denomination": "catholic",
+    "name": "Centre œcuménique",
+    "ref:FR:RNB": "3P49V8WZYBKD",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "wikidata": "Q29545315"
+  }
+},
+{
+  "type": "way",
+  "id": 56203330,
+  "bounds": {
+    "minlat": 44.6004183,
+    "minlon": 6.6817465,
+    "maxlat": 44.6004645,
+    "maxlon": 6.6818153
+  },
+  "geometry": [
+    { "lat": 44.6004492, "lon": 6.6817465 },
+    { "lat": 44.6004645, "lon": 6.6817979 },
+    { "lat": 44.6004336, "lon": 6.6818153 },
+    { "lat": 44.6004183, "lon": 6.6817654 },
+    { "lat": 44.6004492, "lon": 6.6817465 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "check_date": "2023-09-17",
+    "denomination": "catholic",
+    "name": "Chapelle",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010"
+  }
+},
+{
+  "type": "way",
+  "id": 56203332,
+  "bounds": {
+    "minlat": 44.6087565,
+    "minlon": 6.6886512,
+    "maxlat": 44.6088244,
+    "maxlon": 6.6887804
+  },
+  "geometry": [
+    { "lat": 44.6088224, "lon": 6.6886512 },
+    { "lat": 44.6088244, "lon": 6.6887783 },
+    { "lat": 44.6087586, "lon": 6.6887804 },
+    { "lat": 44.6087565, "lon": 6.6886533 },
+    { "lat": 44.6088224, "lon": 6.6886512 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "denomination": "protestant",
+    "name": "Temple",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010"
+  }
+},
+{
+  "type": "way",
+  "id": 56203344,
+  "bounds": {
+    "minlat": 44.6102244,
+    "minlon": 6.6884404,
+    "maxlat": 44.6104134,
+    "maxlon": 6.6888027
+  },
+  "geometry": [
+    { "lat": 44.6103622, "lon": 6.6884404 },
+    { "lat": 44.6104134, "lon": 6.6886537 },
+    { "lat": 44.6104028, "lon": 6.6888027 },
+    { "lat": 44.6103207, "lon": 6.6887519 },
+    { "lat": 44.6102679, "lon": 6.6886949 },
+    { "lat": 44.6102460, "lon": 6.6886170 },
+    { "lat": 44.6102244, "lon": 6.6884967 },
+    { "lat": 44.6103622, "lon": 6.6884404 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Église Saint-Marcellin",
+    "ref:FR:CEF": "05177_01",
+    "ref:FR:RNB": "C2QYS6E3PQXH",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "wikidata": "Q60387613"
+  }
+},
+{
+  "type": "way",
+  "id": 58620132,
+  "bounds": {
+    "minlat": 44.5252196,
+    "minlon": 6.4051200,
+    "maxlat": 44.5254471,
+    "maxlon": 6.4055680
+  },
+  "geometry": [
+    { "lat": 44.5252267, "lon": 6.4054938 },
+    { "lat": 44.5252302, "lon": 6.4054884 },
+    { "lat": 44.5252365, "lon": 6.4054825 },
+    { "lat": 44.5252425, "lon": 6.4054792 },
+    { "lat": 44.5252267, "lon": 6.4052277 },
+    { "lat": 44.5252222, "lon": 6.4051559 },
+    { "lat": 44.5252199, "lon": 6.4051200 },
+    { "lat": 44.5254064, "lon": 6.4052326 },
+    { "lat": 44.5254250, "lon": 6.4052439 },
+    { "lat": 44.5254427, "lon": 6.4052383 },
+    { "lat": 44.5254471, "lon": 6.4052606 },
+    { "lat": 44.5254403, "lon": 6.4052637 },
+    { "lat": 44.5254442, "lon": 6.4053189 },
+    { "lat": 44.5252780, "lon": 6.4054998 },
+    { "lat": 44.5252827, "lon": 6.4055175 },
+    { "lat": 44.5252825, "lon": 6.4055336 },
+    { "lat": 44.5252793, "lon": 6.4055456 },
+    { "lat": 44.5252735, "lon": 6.4055560 },
+    { "lat": 44.5252684, "lon": 6.4055619 },
+    { "lat": 44.5252628, "lon": 6.4055659 },
+    { "lat": 44.5252572, "lon": 6.4055680 },
+    { "lat": 44.5252424, "lon": 6.4055678 },
+    { "lat": 44.5252342, "lon": 6.4055625 },
+    { "lat": 44.5252288, "lon": 6.4055567 },
+    { "lat": 44.5252226, "lon": 6.4055448 },
+    { "lat": 44.5252199, "lon": 6.4055331 },
+    { "lat": 44.5252196, "lon": 6.4055203 },
+    { "lat": 44.5252212, "lon": 6.4055068 },
+    { "lat": 44.5252267, "lon": 6.4054938 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "check_date": "2024-12-27",
+    "denomination": "catholic",
+    "internet_access": "no",
+    "name": "Église Saint-Florent",
+    "payment:cards": "no",
+    "payment:credit_cards": "no",
+    "payment:debit_cards": "no",
+    "ref:FR:CEF": "05164_02",
+    "ref:FR:RNB": "FEH9WFF8BXXV",
+    "ref:clochers.org": "05164_1",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2008",
+    "source:name": "clochers.org",
+    "wheelchair": "limited",
+    "wikidata": "Q38581129"
+  }
+},
+{
+  "type": "way",
+  "id": 66294720,
+  "bounds": {
+    "minlat": 44.5398766,
+    "minlon": 6.4954016,
+    "maxlat": 44.5399950,
+    "maxlon": 6.4956905
+  },
+  "geometry": [
+    { "lat": 44.5399002, "lon": 6.4954016 },
+    { "lat": 44.5398981, "lon": 6.4954513 },
+    { "lat": 44.5398950, "lon": 6.4955236 },
+    { "lat": 44.5398808, "lon": 6.4955224 },
+    { "lat": 44.5398766, "lon": 6.4956216 },
+    { "lat": 44.5398892, "lon": 6.4956227 },
+    { "lat": 44.5398867, "lon": 6.4956829 },
+    { "lat": 44.5399766, "lon": 6.4956905 },
+    { "lat": 44.5399803, "lon": 6.4956047 },
+    { "lat": 44.5399920, "lon": 6.4956057 },
+    { "lat": 44.5399950, "lon": 6.4955354 },
+    { "lat": 44.5399753, "lon": 6.4955337 },
+    { "lat": 44.5399807, "lon": 6.4954084 },
+    { "lat": 44.5399002, "lon": 6.4954016 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Église Saint-Chaffrey",
+    "ref:FR:CEF": "05012_01",
+    "ref:FR:RNB": "KZMXQKNDPMXX",
+    "ref:clochers.org": "05156",
+    "religion": "christian",
+    "source": "extraction vectorielle v1 cadastre-dgi-fr source : Direction Générale des Impôts - Cadas. Mise à jour : 2010",
+    "source:name": "clochers.org",
+    "wheelchair": "yes",
+    "wikidata": "Q38478570"
+  }
+},
+{
+  "type": "way",
+  "id": 66335129,
+  "bounds": {
+    "minlat": 44.5372220,
+    "minlon": 6.3152124,
+    "maxlat": 44.5373551,
+    "maxlon": 6.3153330
+  },
+  "geometry": [
+    { "lat": 44.5372431, "lon": 6.3152124 },
+    { "lat": 44.5372220, "lon": 6.3152944 },
+    { "lat": 44.5373159, "lon": 6.3153318 },
+    { "lat": 44.5373241, "lon": 6.3153330 },
+    { "lat": 44.5373346, "lon": 6.3153290 },
+    { "lat": 44.5373446, "lon": 6.3153210 },
+    { "lat": 44.5373509, "lon": 6.3153083 },
+    { "lat": 44.5373551, "lon": 6.3152941 },
+    { "lat": 44.5373548, "lon": 6.3152784 },
+    { "lat": 44.5373508, "lon": 6.3152638 },
+    { "lat": 44.5373436, "lon": 6.3152516 },
+    { "lat": 44.5372431, "lon": 6.3152124 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "denomination": "catholic",
+    "name": "Chapelle Saint-Roch",
+    "ref:FR:RNB": "DQZAMHYD1K64",
+    "religion": "christian",
+    "source": "extraction vectorielle v1 cadastre-dgi-fr source : Direction Générale des Impôts - Cadas. Mise à jour : 2010",
+    "wikidata": "Q60387080"
+  }
+},
+{
+  "type": "way",
+  "id": 66335693,
+  "bounds": {
+    "minlat": 44.5619868,
+    "minlon": 6.2963433,
+    "maxlat": 44.5620750,
+    "maxlon": 6.2964967
+  },
+  "geometry": [
+    { "lat": 44.5620530, "lon": 6.2964721 },
+    { "lat": 44.5620750, "lon": 6.2964658 },
+    { "lat": 44.5620588, "lon": 6.2963433 },
+    { "lat": 44.5619868, "lon": 6.2963589 },
+    { "lat": 44.5619954, "lon": 6.2964395 },
+    { "lat": 44.5620042, "lon": 6.2964743 },
+    { "lat": 44.5620110, "lon": 6.2964967 },
+    { "lat": 44.5620538, "lon": 6.2964902 },
+    { "lat": 44.5620530, "lon": 6.2964721 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "denomination": "catholic",
+    "name": "Chapelle Saint-Pierre",
+    "religion": "christian",
+    "service_times": "Jun 29",
+    "source": "extraction vectorielle v1 cadastre-dgi-fr source : Direction Générale des Impôts - Cadas. Mise à jour : 2010",
+    "wikidata": "Q60385476"
+  }
+},
+{
+  "type": "way",
+  "id": 66337740,
+  "bounds": {
+    "minlat": 44.5158317,
+    "minlon": 6.3036562,
+    "maxlat": 44.5158794,
+    "maxlon": 6.3037409
+  },
+  "geometry": [
+    { "lat": 44.5158469, "lon": 6.3036562 },
+    { "lat": 44.5158317, "lon": 6.3037272 },
+    { "lat": 44.5158643, "lon": 6.3037409 },
+    { "lat": 44.5158794, "lon": 6.3036699 },
+    { "lat": 44.5158469, "lon": 6.3036562 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "check_date": "2023-08-25",
+    "denomination": "catholic",
+    "name": "Chapelle Saint-Jacques",
+    "religion": "christian",
+    "source": "extraction vectorielle v1 cadastre-dgi-fr source : Direction Générale des Impôts - Cadas. Mise à jour : 2010",
+    "wikidata": "Q60374214"
+  }
+},
+{
+  "type": "way",
+  "id": 72393166,
+  "bounds": {
+    "minlat": 44.5107418,
+    "minlon": 6.4679000,
+    "maxlat": 44.5109404,
+    "maxlon": 6.4682108
+  },
+  "geometry": [
+    { "lat": 44.5109404, "lon": 6.4679609 },
+    { "lat": 44.5108625, "lon": 6.4679000 },
+    { "lat": 44.5107877, "lon": 6.4680834 },
+    { "lat": 44.5107696, "lon": 6.4680703 },
+    { "lat": 44.5107418, "lon": 6.4681401 },
+    { "lat": 44.5108379, "lon": 6.4682108 },
+    { "lat": 44.5109404, "lon": 6.4679609 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "name": "Église Saint-Jean-Baptiste",
+    "religion": "christian",
+    "source": "extraction vectorielle v1 cadastre-dgi-fr source : Direction Générale des Impôts - Cadas. Mise à jour : 2010",
+    "wikidata": "Q38635203"
+  }
+},
+{
+  "type": "way",
+  "id": 72393597,
+  "bounds": {
+    "minlat": 44.5216362,
+    "minlon": 6.4580844,
+    "maxlat": 44.5216756,
+    "maxlon": 6.4581396
+  },
+  "geometry": [
+    { "lat": 44.5216756, "lon": 6.4580920 },
+    { "lat": 44.5216417, "lon": 6.4580844 },
+    { "lat": 44.5216362, "lon": 6.4581319 },
+    { "lat": 44.5216702, "lon": 6.4581396 },
+    { "lat": 44.5216756, "lon": 6.4580920 }
+  ],
+  "tags": {
+    "addr:street": "Route De Beauvillard",
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "description": "Chapelle",
+    "religion": "christian",
+    "source": "extraction vectorielle v1 cadastre-dgi-fr source : Direction Générale des Impôts - Cadas. Mise à jour : 2010"
+  }
+},
+{
+  "type": "way",
+  "id": 72393997,
+  "bounds": {
+    "minlat": 44.5005377,
+    "minlon": 6.4550366,
+    "maxlat": 44.5008582,
+    "maxlon": 6.4556432
+  },
+  "geometry": [
+    { "lat": 44.5005972, "lon": 6.4552430 },
+    { "lat": 44.5006835, "lon": 6.4554183 },
+    { "lat": 44.5006107, "lon": 6.4554942 },
+    { "lat": 44.5006549, "lon": 6.4555795 },
+    { "lat": 44.5006440, "lon": 6.4555909 },
+    { "lat": 44.5006859, "lon": 6.4556432 },
+    { "lat": 44.5007319, "lon": 6.4556042 },
+    { "lat": 44.5007139, "lon": 6.4555686 },
+    { "lat": 44.5007499, "lon": 6.4555338 },
+    { "lat": 44.5007715, "lon": 6.4555816 },
+    { "lat": 44.5008415, "lon": 6.4555136 },
+    { "lat": 44.5008188, "lon": 6.4554577 },
+    { "lat": 44.5008582, "lon": 6.4554191 },
+    { "lat": 44.5008076, "lon": 6.4553061 },
+    { "lat": 44.5007662, "lon": 6.4553438 },
+    { "lat": 44.5006214, "lon": 6.4550366 },
+    { "lat": 44.5005377, "lon": 6.4551215 },
+    { "lat": 44.5005848, "lon": 6.4552182 },
+    { "lat": 44.5005972, "lon": 6.4552430 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "denomination": "catholic",
+    "description": "Église abbatiale",
+    "historic": "monastery",
+    "name": "Abbaye de Boscodon",
+    "religion": "christian",
+    "source": "extraction vectorielle v1 cadastre-dgi-fr source : Direction Générale des Impôts - Cadas. Mise à jour : 2010",
+    "website": "https://www.abbayedeboscodon.eu/",
+    "wheelchair": "yes",
+    "wikidata": "Q2820295"
+  }
+},
+{
+  "type": "way",
+  "id": 72394781,
+  "bounds": {
+    "minlat": 44.4923769,
+    "minlon": 6.4748138,
+    "maxlat": 44.4924484,
+    "maxlon": 6.4749105
+  },
+  "geometry": [
+    { "lat": 44.4923769, "lon": 6.4748385 },
+    { "lat": 44.4923934, "lon": 6.4749105 },
+    { "lat": 44.4924484, "lon": 6.4748859 },
+    { "lat": 44.4924319, "lon": 6.4748138 },
+    { "lat": 44.4923769, "lon": 6.4748385 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "name": "Chapelle Saint-Florent",
+    "religion": "christian",
+    "source": "extraction vectorielle v1 cadastre-dgi-fr source : Direction Générale des Impôts - Cadas. Mise à jour : 2010",
+    "wikidata": "Q29545225"
+  }
+},
+{
+  "type": "way",
+  "id": 72394811,
+  "bounds": {
+    "minlat": 44.5150731,
+    "minlon": 6.4454759,
+    "maxlat": 44.5151386,
+    "maxlon": 6.4455711
+  },
+  "geometry": [
+    { "lat": 44.5151045, "lon": 6.4454759 },
+    { "lat": 44.5150731, "lon": 6.4455350 },
+    { "lat": 44.5151122, "lon": 6.4455711 },
+    { "lat": 44.5151386, "lon": 6.4455028 },
+    { "lat": 44.5151045, "lon": 6.4454759 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "denomination": "catholic",
+    "name": "Chapelle Saint-Benoît",
+    "religion": "christian",
+    "source": "extraction vectorielle v1 cadastre-dgi-fr source : Direction Générale des Impôts - Cadas. Mise à jour : 2010",
+    "wikidata": "Q29545220"
+  }
+},
+{
+  "type": "way",
+  "id": 72510652,
+  "bounds": {
+    "minlat": 44.5712190,
+    "minlon": 6.4837223,
+    "maxlat": 44.5712656,
+    "maxlon": 6.4838038
+  },
+  "geometry": [
+    { "lat": 44.5712489, "lon": 6.4837223 },
+    { "lat": 44.5712190, "lon": 6.4837371 },
+    { "lat": 44.5712357, "lon": 6.4838038 },
+    { "lat": 44.5712656, "lon": 6.4837890 },
+    { "lat": 44.5712489, "lon": 6.4837223 }
+  ],
+  "tags": {
+    "building": "chapel",
+    "source": "extraction vectorielle v1 cadastre-dgi-fr source : Direction Générale des Impôts - Cadas. Mise à jour : 2010"
+  }
+},
+{
+  "type": "way",
+  "id": 72510816,
+  "bounds": {
+    "minlat": 44.5854714,
+    "minlon": 6.4375470,
+    "maxlat": 44.5855159,
+    "maxlon": 6.4376251
+  },
+  "geometry": [
+    { "lat": 44.5854714, "lon": 6.4376205 },
+    { "lat": 44.5855117, "lon": 6.4376251 },
+    { "lat": 44.5855159, "lon": 6.4375515 },
+    { "lat": 44.5854756, "lon": 6.4375470 },
+    { "lat": 44.5854714, "lon": 6.4376205 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "name": "Chapelle du Mont Guillaume",
+    "religion": "christian",
+    "source": "extraction vectorielle v1 cadastre-dgi-fr source : Direction Générale des Impôts - Cadas. Mise à jour : 2010",
+    "wheelchair": "no"
+  }
+},
+{
+  "type": "way",
+  "id": 72512861,
+  "bounds": {
+    "minlat": 44.5620969,
+    "minlon": 6.4946718,
+    "maxlat": 44.5625573,
+    "maxlon": 6.4954500
+  },
+  "geometry": [
+    { "lat": 44.5621406, "lon": 6.4948437 },
+    { "lat": 44.5621434, "lon": 6.4948517 },
+    { "lat": 44.5621143, "lon": 6.4948735 },
+    { "lat": 44.5621110, "lon": 6.4948673 },
+    { "lat": 44.5620969, "lon": 6.4948785 },
+    { "lat": 44.5621020, "lon": 6.4948946 },
+    { "lat": 44.5621093, "lon": 6.4948896 },
+    { "lat": 44.5621327, "lon": 6.4949514 },
+    { "lat": 44.5621286, "lon": 6.4949548 },
+    { "lat": 44.5621342, "lon": 6.4949708 },
+    { "lat": 44.5621393, "lon": 6.4949675 },
+    { "lat": 44.5621629, "lon": 6.4950263 },
+    { "lat": 44.5621582, "lon": 6.4950309 },
+    { "lat": 44.5621633, "lon": 6.4950445 },
+    { "lat": 44.5621690, "lon": 6.4950418 },
+    { "lat": 44.5621893, "lon": 6.4950914 },
+    { "lat": 44.5621835, "lon": 6.4950977 },
+    { "lat": 44.5621887, "lon": 6.4951088 },
+    { "lat": 44.5621944, "lon": 6.4951050 },
+    { "lat": 44.5622147, "lon": 6.4951533 },
+    { "lat": 44.5622084, "lon": 6.4951602 },
+    { "lat": 44.5622146, "lon": 6.4951739 },
+    { "lat": 44.5622213, "lon": 6.4951694 },
+    { "lat": 44.5622415, "lon": 6.4952226 },
+    { "lat": 44.5622363, "lon": 6.4952265 },
+    { "lat": 44.5622409, "lon": 6.4952419 },
+    { "lat": 44.5622481, "lon": 6.4952375 },
+    { "lat": 44.5622670, "lon": 6.4952834 },
+    { "lat": 44.5622623, "lon": 6.4952879 },
+    { "lat": 44.5622665, "lon": 6.4953002 },
+    { "lat": 44.5622722, "lon": 6.4952964 },
+    { "lat": 44.5622904, "lon": 6.4953458 },
+    { "lat": 44.5622868, "lon": 6.4953492 },
+    { "lat": 44.5622919, "lon": 6.4953634 },
+    { "lat": 44.5622976, "lon": 6.4953601 },
+    { "lat": 44.5623229, "lon": 6.4954269 },
+    { "lat": 44.5623172, "lon": 6.4954320 },
+    { "lat": 44.5623248, "lon": 6.4954500 },
+    { "lat": 44.5623590, "lon": 6.4954255 },
+    { "lat": 44.5624192, "lon": 6.4953481 },
+    { "lat": 44.5624289, "lon": 6.4953638 },
+    { "lat": 44.5624362, "lon": 6.4953715 },
+    { "lat": 44.5624537, "lon": 6.4953816 },
+    { "lat": 44.5624719, "lon": 6.4953833 },
+    { "lat": 44.5624811, "lon": 6.4953809 },
+    { "lat": 44.5624981, "lon": 6.4953704 },
+    { "lat": 44.5625114, "lon": 6.4953525 },
+    { "lat": 44.5625202, "lon": 6.4953295 },
+    { "lat": 44.5625230, "lon": 6.4953043 },
+    { "lat": 44.5625192, "lon": 6.4952635 },
+    { "lat": 44.5625340, "lon": 6.4952608 },
+    { "lat": 44.5625407, "lon": 6.4952564 },
+    { "lat": 44.5625465, "lon": 6.4952501 },
+    { "lat": 44.5625546, "lon": 6.4952331 },
+    { "lat": 44.5625573, "lon": 6.4952127 },
+    { "lat": 44.5625507, "lon": 6.4951784 },
+    { "lat": 44.5625554, "lon": 6.4951745 },
+    { "lat": 44.5625474, "lon": 6.4951547 },
+    { "lat": 44.5625422, "lon": 6.4951586 },
+    { "lat": 44.5625040, "lon": 6.4950644 },
+    { "lat": 44.5625103, "lon": 6.4950594 },
+    { "lat": 44.5625003, "lon": 6.4950358 },
+    { "lat": 44.5624951, "lon": 6.4950397 },
+    { "lat": 44.5624565, "lon": 6.4949456 },
+    { "lat": 44.5624632, "lon": 6.4949399 },
+    { "lat": 44.5624543, "lon": 6.4949182 },
+    { "lat": 44.5624480, "lon": 6.4949233 },
+    { "lat": 44.5624428, "lon": 6.4949115 },
+    { "lat": 44.5624730, "lon": 6.4948879 },
+    { "lat": 44.5624568, "lon": 6.4948478 },
+    { "lat": 44.5624404, "lon": 6.4948074 },
+    { "lat": 44.5624098, "lon": 6.4948298 },
+    { "lat": 44.5624085, "lon": 6.4948248 },
+    { "lat": 44.5624142, "lon": 6.4948204 },
+    { "lat": 44.5624053, "lon": 6.4947962 },
+    { "lat": 44.5623980, "lon": 6.4948012 },
+    { "lat": 44.5623615, "lon": 6.4947036 },
+    { "lat": 44.5623672, "lon": 6.4946997 },
+    { "lat": 44.5623559, "lon": 6.4946718 },
+    { "lat": 44.5623336, "lon": 6.4946880 },
+    { "lat": 44.5623373, "lon": 6.4946979 },
+    { "lat": 44.5623036, "lon": 6.4947224 },
+    { "lat": 44.5623013, "lon": 6.4947156 },
+    { "lat": 44.5622836, "lon": 6.4947285 },
+    { "lat": 44.5622869, "lon": 6.4947377 },
+    { "lat": 44.5622745, "lon": 6.4947467 },
+    { "lat": 44.5622674, "lon": 6.4947287 },
+    { "lat": 44.5622259, "lon": 6.4947582 },
+    { "lat": 44.5622334, "lon": 6.4947786 },
+    { "lat": 44.5622183, "lon": 6.4947898 },
+    { "lat": 44.5622160, "lon": 6.4947824 },
+    { "lat": 44.5622005, "lon": 6.4947936 },
+    { "lat": 44.5622047, "lon": 6.4948041 },
+    { "lat": 44.5621617, "lon": 6.4948353 },
+    { "lat": 44.5621588, "lon": 6.4948285 },
+    { "lat": 44.5621406, "lon": 6.4948437 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "cathedral",
+    "denomination": "catholic",
+    "heritage": "2",
+    "heritage:operator": "mhs",
+    "historic": "church",
+    "mhs:inscription_date": "1840",
+    "name": "Cathédrale Notre-Dame-du-Réal",
+    "ref:FR:CEF": "05046_01",
+    "ref:clochers.org": "05046",
+    "ref:mhs": "PA00080556",
+    "religion": "christian",
+    "source": "extraction vectorielle v1 cadastre-dgi-fr source : Direction Générale des Impôts - Cadas. Mise à jour : 2010",
+    "source:heritage": "data.gouv.fr:Ministère de la Culture - 04/2015",
+    "source:name": "clochers.org",
+    "wheelchair": "limited",
+    "wikidata": "Q934764",
+    "wikipedia": "fr:Cathédrale Notre-Dame d'Embrun"
+  }
+},
+{
+  "type": "way",
+  "id": 72650019,
+  "bounds": {
+    "minlat": 44.6191964,
+    "minlon": 6.8120095,
+    "maxlat": 44.6192640,
+    "maxlon": 6.8121153
+  },
+  "geometry": [
+    { "lat": 44.6192248, "lon": 6.8121153 },
+    { "lat": 44.6192640, "lon": 6.8120869 },
+    { "lat": 44.6192356, "lon": 6.8120095 },
+    { "lat": 44.6191964, "lon": 6.8120379 },
+    { "lat": 44.6192248, "lon": 6.8121153 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "denomination": "catholic",
+    "name": "Chapelle Sainte-Anne",
+    "religion": "christian",
+    "source": "extraction vectorielle v1 cadastre-dgi-fr source : Direction Générale des Impôts - Cadas. Mise à jour : 2010",
+    "wall": "no",
+    "wheelchair": "no",
+    "wikidata": "Q60366938"
+  }
+},
+{
+  "type": "way",
+  "id": 72861887,
+  "bounds": {
+    "minlat": 44.3938209,
+    "minlon": 6.6781008,
+    "maxlat": 44.3939993,
+    "maxlon": 6.6784537
+  },
+  "geometry": [
+    { "lat": 44.3938677, "lon": 6.6784338 },
+    { "lat": 44.3938938, "lon": 6.6784198 },
+    { "lat": 44.3938996, "lon": 6.6784537 },
+    { "lat": 44.3939993, "lon": 6.6784146 },
+    { "lat": 44.3939662, "lon": 6.6781008 },
+    { "lat": 44.3938209, "lon": 6.6781261 },
+    { "lat": 44.3938677, "lon": 6.6784338 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Église Saint-Étienne",
+    "ref:FR:RNB": "548VDZ5PQGKH",
+    "ref:clochers.org": "04086b",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "wikidata": "Q38569754"
+  }
+},
+{
+  "type": "way",
+  "id": 72862068,
+  "bounds": {
+    "minlat": 44.3942980,
+    "minlon": 6.6799547,
+    "maxlat": 44.3944529,
+    "maxlon": 6.6801830
+  },
+  "geometry": [
+    { "lat": 44.3944510, "lon": 6.6799547 },
+    { "lat": 44.3942980, "lon": 6.6799609 },
+    { "lat": 44.3942984, "lon": 6.6799898 },
+    { "lat": 44.3942992, "lon": 6.6800372 },
+    { "lat": 44.3943012, "lon": 6.6801830 },
+    { "lat": 44.3944529, "lon": 6.6801777 },
+    { "lat": 44.3944526, "lon": 6.6801560 },
+    { "lat": 44.3944510, "lon": 6.6799547 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Chapelle Saint-Jean-de-Matha",
+    "ref:FR:CEF": "04086_01",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010"
+  }
+},
+{
+  "type": "way",
+  "id": 72862315,
+  "bounds": {
+    "minlat": 44.3932881,
+    "minlon": 6.6775475,
+    "maxlat": 44.3933605,
+    "maxlon": 6.6778034
+  },
+  "geometry": [
+    { "lat": 44.3933596, "lon": 6.6777464 },
+    { "lat": 44.3933602, "lon": 6.6776180 },
+    { "lat": 44.3933605, "lon": 6.6775481 },
+    { "lat": 44.3932891, "lon": 6.6775475 },
+    { "lat": 44.3932884, "lon": 6.6777152 },
+    { "lat": 44.3932882, "lon": 6.6777481 },
+    { "lat": 44.3932881, "lon": 6.6777715 },
+    { "lat": 44.3933106, "lon": 6.6777717 },
+    { "lat": 44.3933104, "lon": 6.6778030 },
+    { "lat": 44.3933594, "lon": 6.6778034 },
+    { "lat": 44.3933596, "lon": 6.6777464 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "denomination": "catholic",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "wikidata": "Q38569754"
+  }
+},
+{
+  "type": "way",
+  "id": 90502486,
+  "bounds": {
+    "minlat": 44.5952780,
+    "minlon": 6.3654570,
+    "maxlat": 44.5954290,
+    "maxlon": 6.3658490
+  },
+  "geometry": [
+    { "lat": 44.5953130, "lon": 6.3657430 },
+    { "lat": 44.5952860, "lon": 6.3657370 },
+    { "lat": 44.5952780, "lon": 6.3658080 },
+    { "lat": 44.5953250, "lon": 6.3658160 },
+    { "lat": 44.5953320, "lon": 6.3658340 },
+    { "lat": 44.5953410, "lon": 6.3658440 },
+    { "lat": 44.5953520, "lon": 6.3658490 },
+    { "lat": 44.5953630, "lon": 6.3658490 },
+    { "lat": 44.5953740, "lon": 6.3658470 },
+    { "lat": 44.5953860, "lon": 6.3658390 },
+    { "lat": 44.5953930, "lon": 6.3658290 },
+    { "lat": 44.5953990, "lon": 6.3658140 },
+    { "lat": 44.5954010, "lon": 6.3657990 },
+    { "lat": 44.5954120, "lon": 6.3657980 },
+    { "lat": 44.5954210, "lon": 6.3656950 },
+    { "lat": 44.5954150, "lon": 6.3656960 },
+    { "lat": 44.5954290, "lon": 6.3655340 },
+    { "lat": 44.5954220, "lon": 6.3655330 },
+    { "lat": 44.5954290, "lon": 6.3654690 },
+    { "lat": 44.5953650, "lon": 6.3654570 },
+    { "lat": 44.5953580, "lon": 6.3655180 },
+    { "lat": 44.5953510, "lon": 6.3655170 },
+    { "lat": 44.5953320, "lon": 6.3656820 },
+    { "lat": 44.5953200, "lon": 6.3656810 },
+    { "lat": 44.5953130, "lon": 6.3657430 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "heritage": "2",
+    "heritage:operator": "mhs",
+    "mhs:inscription_date": "1948-11-06",
+    "ref:mhs": "PA00080600",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "source:heritage": "data.gouv.fr, Ministère de la Culture - 2016",
+    "wheelchair": "limited",
+    "wikidata": "Q22998483"
+  }
+},
+{
+  "type": "way",
+  "id": 90502582,
+  "bounds": {
+    "minlat": 44.5786078,
+    "minlon": 6.3769517,
+    "maxlat": 44.5787283,
+    "maxlon": 6.3771397
+  },
+  "geometry": [
+    { "lat": 44.5786078, "lon": 6.3770908 },
+    { "lat": 44.5786545, "lon": 6.3771397 },
+    { "lat": 44.5787283, "lon": 6.3770006 },
+    { "lat": 44.5786816, "lon": 6.3769517 },
+    { "lat": 44.5786078, "lon": 6.3770908 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010"
+  }
+},
+{
+  "type": "way",
+  "id": 90502661,
+  "bounds": {
+    "minlat": 44.6163705,
+    "minlon": 6.3338726,
+    "maxlat": 44.6164349,
+    "maxlon": 6.3339555
+  },
+  "geometry": [
+    { "lat": 44.6163781, "lon": 6.3338726 },
+    { "lat": 44.6163705, "lon": 6.3339434 },
+    { "lat": 44.6164272, "lon": 6.3339555 },
+    { "lat": 44.6164349, "lon": 6.3338847 },
+    { "lat": 44.6163781, "lon": 6.3338726 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "name": "Chapelle de la Nativité et de Saint-Jean l'Évangeliste",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "wikidata": "Q60341315"
+  }
+},
+{
+  "type": "way",
+  "id": 93927303,
+  "bounds": {
+    "minlat": 44.4061911,
+    "minlon": 6.7562145,
+    "maxlat": 44.4063692,
+    "maxlon": 6.7565789
+  },
+  "geometry": [
+    { "lat": 44.4063432, "lon": 6.7563640 },
+    { "lat": 44.4063252, "lon": 6.7563236 },
+    { "lat": 44.4063148, "lon": 6.7563334 },
+    { "lat": 44.4062539, "lon": 6.7562145 },
+    { "lat": 44.4061911, "lon": 6.7562824 },
+    { "lat": 44.4062439, "lon": 6.7563930 },
+    { "lat": 44.4062384, "lon": 6.7564057 },
+    { "lat": 44.4062622, "lon": 6.7564503 },
+    { "lat": 44.4062445, "lon": 6.7564754 },
+    { "lat": 44.4063303, "lon": 6.7565789 },
+    { "lat": 44.4063531, "lon": 6.7565503 },
+    { "lat": 44.4063303, "lon": 6.7565031 },
+    { "lat": 44.4063692, "lon": 6.7564702 },
+    { "lat": 44.4063337, "lon": 6.7564000 },
+    { "lat": 44.4063441, "lon": 6.7563902 },
+    { "lat": 44.4063354, "lon": 6.7563726 },
+    { "lat": 44.4063432, "lon": 6.7563640 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "name": "Église Notre-Dame-del-Bosc",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "wikidata": "Q55084040"
+  }
+},
+{
+  "type": "way",
+  "id": 93927366,
+  "bounds": {
+    "minlat": 44.4063214,
+    "minlon": 6.7176558,
+    "maxlat": 44.4064978,
+    "maxlon": 6.7177915
+  },
+  "geometry": [
+    { "lat": 44.4064564, "lon": 6.7176630 },
+    { "lat": 44.4063461, "lon": 6.7176917 },
+    { "lat": 44.4063214, "lon": 6.7177261 },
+    { "lat": 44.4063244, "lon": 6.7177650 },
+    { "lat": 44.4063405, "lon": 6.7177851 },
+    { "lat": 44.4063656, "lon": 6.7177915 },
+    { "lat": 44.4064978, "lon": 6.7177602 },
+    { "lat": 44.4064827, "lon": 6.7176558 },
+    { "lat": 44.4064564, "lon": 6.7176630 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "ref:FR:RNB": "F3NT914CSNQ8",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010"
+  }
+},
+{
+  "type": "way",
+  "id": 93928811,
+  "bounds": {
+    "minlat": 44.4132392,
+    "minlon": 6.7173258,
+    "maxlat": 44.4134596,
+    "maxlon": 6.7175647
+  },
+  "geometry": [
+    { "lat": 44.4132392, "lon": 6.7174680 },
+    { "lat": 44.4132697, "lon": 6.7175647 },
+    { "lat": 44.4133126, "lon": 6.7175392 },
+    { "lat": 44.4133254, "lon": 6.7175347 },
+    { "lat": 44.4133477, "lon": 6.7175470 },
+    { "lat": 44.4134007, "lon": 6.7175194 },
+    { "lat": 44.4134022, "lon": 6.7175244 },
+    { "lat": 44.4134271, "lon": 6.7175110 },
+    { "lat": 44.4134203, "lon": 6.7174858 },
+    { "lat": 44.4134454, "lon": 6.7174626 },
+    { "lat": 44.4134535, "lon": 6.7174483 },
+    { "lat": 44.4134582, "lon": 6.7174317 },
+    { "lat": 44.4134596, "lon": 6.7174137 },
+    { "lat": 44.4134577, "lon": 6.7173958 },
+    { "lat": 44.4134515, "lon": 6.7173799 },
+    { "lat": 44.4134418, "lon": 6.7173669 },
+    { "lat": 44.4134303, "lon": 6.7173584 },
+    { "lat": 44.4134178, "lon": 6.7173547 },
+    { "lat": 44.4134136, "lon": 6.7173547 },
+    { "lat": 44.4134016, "lon": 6.7173612 },
+    { "lat": 44.4133918, "lon": 6.7173258 },
+    { "lat": 44.4132974, "lon": 6.7173846 },
+    { "lat": 44.4132936, "lon": 6.7173972 },
+    { "lat": 44.4132932, "lon": 6.7174110 },
+    { "lat": 44.4132961, "lon": 6.7174240 },
+    { "lat": 44.4132985, "lon": 6.7174273 },
+    { "lat": 44.4132392, "lon": 6.7174680 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "name": "Église Saint-Sébastien",
+    "ref:FR:RNB": "KR4XNC1CF55J",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "wikidata": "Q55119864"
+  }
+},
+{
+  "type": "way",
+  "id": 93929250,
+  "bounds": {
+    "minlat": 44.4190091,
+    "minlon": 6.7346047,
+    "maxlat": 44.4191593,
+    "maxlon": 6.7347751
+  },
+  "geometry": [
+    { "lat": 44.4191191, "lon": 6.7346084 },
+    { "lat": 44.4190610, "lon": 6.7346597 },
+    { "lat": 44.4190437, "lon": 6.7346743 },
+    { "lat": 44.4190091, "lon": 6.7347048 },
+    { "lat": 44.4190472, "lon": 6.7347751 },
+    { "lat": 44.4191593, "lon": 6.7346894 },
+    { "lat": 44.4191225, "lon": 6.7346047 },
+    { "lat": 44.4191191, "lon": 6.7346084 }
+  ],
+  "tags": {
+    "building": "chapel",
+    "ref:FR:RNB": "1E6H9F6RYQR4",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010"
+  }
+},
+{
+  "type": "way",
+  "id": 93929830,
+  "bounds": {
+    "minlat": 44.4205817,
+    "minlon": 6.7336584,
+    "maxlat": 44.4206444,
+    "maxlon": 6.7337464
+  },
+  "geometry": [
+    { "lat": 44.4206216, "lon": 6.7336584 },
+    { "lat": 44.4205817, "lon": 6.7336951 },
+    { "lat": 44.4206013, "lon": 6.7337382 },
+    { "lat": 44.4206078, "lon": 6.7337464 },
+    { "lat": 44.4206381, "lon": 6.7337196 },
+    { "lat": 44.4206444, "lon": 6.7337069 },
+    { "lat": 44.4206216, "lon": 6.7336584 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "denomination": "roman_catholic",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "wikidata": "Q3583322"
+  }
+},
+{
+  "type": "way",
+  "id": 93932532,
+  "bounds": {
+    "minlat": 44.4196229,
+    "minlon": 6.7337466,
+    "maxlat": 44.4199918,
+    "maxlon": 6.7341266
+  },
+  "geometry": [
+    { "lat": 44.4199536, "lon": 6.7338007 },
+    { "lat": 44.4199099, "lon": 6.7337744 },
+    { "lat": 44.4198945, "lon": 6.7337813 },
+    { "lat": 44.4198831, "lon": 6.7337466 },
+    { "lat": 44.4196229, "lon": 6.7339080 },
+    { "lat": 44.4196882, "lon": 6.7341266 },
+    { "lat": 44.4198392, "lon": 6.7340367 },
+    { "lat": 44.4199052, "lon": 6.7339964 },
+    { "lat": 44.4199113, "lon": 6.7340164 },
+    { "lat": 44.4199886, "lon": 6.7339690 },
+    { "lat": 44.4199773, "lon": 6.7339278 },
+    { "lat": 44.4199918, "lon": 6.7339195 },
+    { "lat": 44.4199536, "lon": 6.7338007 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "check_date": "2025-07-06",
+    "denomination": "catholic",
+    "heritage": "2",
+    "heritage:operator": "mhs",
+    "mhs:inscription_date": "1921-01-11",
+    "name": "Église Saint-Nicolas-de-Myre",
+    "ref:FR:CEF": "04096_01",
+    "ref:FR:RNB": "33CSN1HE75ZF",
+    "ref:mhs": "PA00080407",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "source:heritage": "data.gouv.fr, Ministère de la Culture - 2016",
+    "source:name": "clochers.org",
+    "wikidata": "Q3583322",
+    "wikipedia": "fr:Église Saint-Nicolas-de-Myre de Jausiers"
+  }
+},
+{
+  "type": "way",
+  "id": 96741697,
+  "bounds": {
+    "minlat": 44.4513093,
+    "minlon": 6.8458638,
+    "maxlat": 44.4514819,
+    "maxlon": 6.8461658
+  },
+  "geometry": [
+    { "lat": 44.4513904, "lon": 6.8458638 },
+    { "lat": 44.4513665, "lon": 6.8459027 },
+    { "lat": 44.4513925, "lon": 6.8459399 },
+    { "lat": 44.4513093, "lon": 6.8460821 },
+    { "lat": 44.4513790, "lon": 6.8461658 },
+    { "lat": 44.4514819, "lon": 6.8459894 },
+    { "lat": 44.4513904, "lon": 6.8458638 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Église Notre-Dame-du-Mont-Carmel",
+    "ref:FR:CEF": "04100_01",
+    "ref:FR:RNB": "W7AA3G5EAEY1",
+    "ref:clochers.org": "04120",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q60385534"
+  }
+},
+{
+  "type": "way",
+  "id": 96741723,
+  "bounds": {
+    "minlat": 44.4235410,
+    "minlon": 6.8966300,
+    "maxlat": 44.4235890,
+    "maxlon": 6.8967000
+  },
+  "geometry": [
+    { "lat": 44.4235890, "lon": 6.8966660 },
+    { "lat": 44.4235620, "lon": 6.8966300 },
+    { "lat": 44.4235410, "lon": 6.8966630 },
+    { "lat": 44.4235680, "lon": 6.8967000 },
+    { "lat": 44.4235890, "lon": 6.8966660 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "denomination": "catholic",
+    "name": "Chapelle de la Madeleine",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wall": "no",
+    "wikidata": "Q60368279"
+  }
+},
+{
+  "type": "way",
+  "id": 96741728,
+  "bounds": {
+    "minlat": 44.3807993,
+    "minlon": 6.8719711,
+    "maxlat": 44.3808554,
+    "maxlon": 6.8720324
+  },
+  "geometry": [
+    { "lat": 44.3808554, "lon": 6.8720197 },
+    { "lat": 44.3808490, "lon": 6.8719711 },
+    { "lat": 44.3807993, "lon": 6.8719838 },
+    { "lat": 44.3808056, "lon": 6.8720324 },
+    { "lat": 44.3808554, "lon": 6.8720197 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "name": "Chapelle du Lauzanier, Notre-Dame des Lumières",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q60359997"
+  }
+},
+{
+  "type": "way",
+  "id": 96741859,
+  "bounds": {
+    "minlat": 44.4411670,
+    "minlon": 6.8634660,
+    "maxlat": 44.4412600,
+    "maxlon": 6.8636250
+  },
+  "geometry": [
+    { "lat": 44.4412220, "lon": 6.8636250 },
+    { "lat": 44.4412260, "lon": 6.8635860 },
+    { "lat": 44.4412420, "lon": 6.8635890 },
+    { "lat": 44.4412600, "lon": 6.8635180 },
+    { "lat": 44.4412470, "lon": 6.8634830 },
+    { "lat": 44.4412201, "lon": 6.8634747 },
+    { "lat": 44.4411920, "lon": 6.8634660 },
+    { "lat": 44.4411710, "lon": 6.8634850 },
+    { "lat": 44.4411670, "lon": 6.8635710 },
+    { "lat": 44.4411810, "lon": 6.8635740 },
+    { "lat": 44.4411770, "lon": 6.8636160 },
+    { "lat": 44.4412220, "lon": 6.8636250 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "name": "Chapelle Sainte-Marie-Madeleine",
+    "ref:FR:RNB": "34RDVMWS4VPR",
+    "ref:clochers.org": "04120",
+    "religion": "christian",
+    "start_date": "1956",
+    "wikidata": "Q60368718"
+  }
+},
+{
+  "type": "way",
+  "id": 96992035,
+  "bounds": {
+    "minlat": 44.4804110,
+    "minlon": 6.8081720,
+    "maxlat": 44.4805310,
+    "maxlon": 6.8083910
+  },
+  "geometry": [
+    { "lat": 44.4804770, "lon": 6.8081720 },
+    { "lat": 44.4804110, "lon": 6.8082030 },
+    { "lat": 44.4804350, "lon": 6.8083020 },
+    { "lat": 44.4804240, "lon": 6.8083070 },
+    { "lat": 44.4804430, "lon": 6.8083910 },
+    { "lat": 44.4805310, "lon": 6.8083500 },
+    { "lat": 44.4805200, "lon": 6.8082940 },
+    { "lat": 44.4805060, "lon": 6.8083000 },
+    { "lat": 44.4804770, "lon": 6.8081720 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "ref:clochers.org": "04120",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q60389523"
+  }
+},
+{
+  "type": "way",
+  "id": 96992129,
+  "bounds": {
+    "minlat": 44.4757210,
+    "minlon": 6.7999105,
+    "maxlat": 44.4759570,
+    "maxlon": 6.8001425
+  },
+  "geometry": [
+    { "lat": 44.4759570, "lon": 6.8001005 },
+    { "lat": 44.4759070, "lon": 6.8000015 },
+    { "lat": 44.4759120, "lon": 6.7999965 },
+    { "lat": 44.4758680, "lon": 6.7999115 },
+    { "lat": 44.4758490, "lon": 6.7999325 },
+    { "lat": 44.4758360, "lon": 6.7999105 },
+    { "lat": 44.4757520, "lon": 6.7999965 },
+    { "lat": 44.4757480, "lon": 6.7999895 },
+    { "lat": 44.4757210, "lon": 6.8000175 },
+    { "lat": 44.4757390, "lon": 6.8000535 },
+    { "lat": 44.4757330, "lon": 6.8000595 },
+    { "lat": 44.4757760, "lon": 6.8001425 },
+    { "lat": 44.4758580, "lon": 6.8000545 },
+    { "lat": 44.4758600, "lon": 6.8000635 },
+    { "lat": 44.4758650, "lon": 6.8000655 },
+    { "lat": 44.4758690, "lon": 6.8000595 },
+    { "lat": 44.4758790, "lon": 6.8000765 },
+    { "lat": 44.4758840, "lon": 6.8000715 },
+    { "lat": 44.4759180, "lon": 6.8001385 },
+    { "lat": 44.4759570, "lon": 6.8001005 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Église Saint-Donat",
+    "ref:clochers.org": "04120",
+    "religion": "christian",
+    "source": "©IGN 2010 dans le cadre de la cartographie réglementaire",
+    "wikidata": "Q60386094"
+  }
+},
+{
+  "type": "way",
+  "id": 96992202,
+  "bounds": {
+    "minlat": 44.4840430,
+    "minlon": 6.8068899,
+    "maxlat": 44.4841120,
+    "maxlon": 6.8069847
+  },
+  "geometry": [
+    { "lat": 44.4840843, "lon": 6.8069116 },
+    { "lat": 44.4840676, "lon": 6.8068899 },
+    { "lat": 44.4840430, "lon": 6.8069272 },
+    { "lat": 44.4840874, "lon": 6.8069847 },
+    { "lat": 44.4841120, "lon": 6.8069475 },
+    { "lat": 44.4840843, "lon": 6.8069116 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "name": "Chapelle Saint-Ours",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q60384897"
+  }
+},
+{
+  "type": "way",
+  "id": 103364553,
+  "bounds": {
+    "minlat": 44.3747698,
+    "minlon": 6.3669561,
+    "maxlat": 44.3748951,
+    "maxlon": 6.3671434
+  },
+  "geometry": [
+    { "lat": 44.3747973, "lon": 6.3671123 },
+    { "lat": 44.3748279, "lon": 6.3671434 },
+    { "lat": 44.3748951, "lon": 6.3670226 },
+    { "lat": 44.3748593, "lon": 6.3669805 },
+    { "lat": 44.3748387, "lon": 6.3669561 },
+    { "lat": 44.3747698, "lon": 6.3670805 },
+    { "lat": 44.3747973, "lon": 6.3671123 }
+  ],
+  "tags": {
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Église Sainte-Anne",
+    "ref:FR:RNB": "T2Q8F12H4XCN",
+    "religion": "christian",
+    "source": "©IGN 2010 dans le cadre de la cartographie réglementaire",
+    "wikidata": "Q68164550"
+  }
+},
+{
+  "type": "way",
+  "id": 103364590,
+  "bounds": {
+    "minlat": 44.3502870,
+    "minlon": 6.3803905,
+    "maxlat": 44.3504978,
+    "maxlon": 6.3807638
+  },
+  "geometry": [
+    { "lat": 44.3503724, "lon": 6.3803905 },
+    { "lat": 44.3503472, "lon": 6.3805467 },
+    { "lat": 44.3503137, "lon": 6.3805389 },
+    { "lat": 44.3503128, "lon": 6.3805445 },
+    { "lat": 44.3502870, "lon": 6.3806952 },
+    { "lat": 44.3503128, "lon": 6.3807037 },
+    { "lat": 44.3503064, "lon": 6.3807363 },
+    { "lat": 44.3503701, "lon": 6.3807638 },
+    { "lat": 44.3504024, "lon": 6.3806385 },
+    { "lat": 44.3504603, "lon": 6.3806675 },
+    { "lat": 44.3504978, "lon": 6.3804992 },
+    { "lat": 44.3504463, "lon": 6.3804772 },
+    { "lat": 44.3504575, "lon": 6.3804166 },
+    { "lat": 44.3503958, "lon": 6.3803976 },
+    { "lat": 44.3503724, "lon": 6.3803905 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Église Saint-Pons",
+    "ref:FR:RNB": "SV6H37QVHTTT",
+    "religion": "christian",
+    "source": "©IGN 2010 dans le cadre de la cartographie réglementaire",
+    "wikidata": "Q55084079"
+  }
+},
+{
+  "type": "way",
+  "id": 103364770,
+  "bounds": {
+    "minlat": 44.3833507,
+    "minlon": 6.3692215,
+    "maxlat": 44.3834277,
+    "maxlon": 6.3693317
+  },
+  "geometry": [
+    { "lat": 44.3833898, "lon": 6.3692215 },
+    { "lat": 44.3833507, "lon": 6.3692881 },
+    { "lat": 44.3833887, "lon": 6.3693317 },
+    { "lat": 44.3834277, "lon": 6.3692652 },
+    { "lat": 44.3833898, "lon": 6.3692215 }
+  ],
+  "tags": {
+    "addr:city": "Seyne",
+    "addr:housename": "Chapelle Des Hauts-Savornins",
+    "addr:street": "Chemin de Chouchista",
+    "building": "chapel",
+    "ref:FR:RNB": "EVFPDDVQ6HFR",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "way",
+  "id": 103364877,
+  "bounds": {
+    "minlat": 44.3503107,
+    "minlon": 6.3560127,
+    "maxlat": 44.3505793,
+    "maxlon": 6.3564148
+  },
+  "geometry": [
+    { "lat": 44.3504914, "lon": 6.3564148 },
+    { "lat": 44.3505793, "lon": 6.3563593 },
+    { "lat": 44.3505226, "lon": 6.3562470 },
+    { "lat": 44.3505290, "lon": 6.3562415 },
+    { "lat": 44.3503879, "lon": 6.3560127 },
+    { "lat": 44.3503107, "lon": 6.3561018 },
+    { "lat": 44.3503446, "lon": 6.3561548 },
+    { "lat": 44.3504246, "lon": 6.3562799 },
+    { "lat": 44.3504055, "lon": 6.3562931 },
+    { "lat": 44.3504470, "lon": 6.3563734 },
+    { "lat": 44.3504687, "lon": 6.3563567 },
+    { "lat": 44.3504914, "lon": 6.3564148 }
+  ],
+  "tags": {
+    "building": "church",
+    "heritage": "3",
+    "heritage:operator": "mhs",
+    "historic": "monastery",
+    "mhs:inscription_date": "1988-12-02",
+    "name": "Chapelle des Pénitents",
+    "ref:FR:RNB": "JTVS9FBCZ2JG",
+    "ref:mhs": "PA00080485",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "source:heritage": "data.gouv.fr:Ministère de la Culture - 04/2015",
+    "wikidata": "Q3001713",
+    "wikipedia": "fr:Couvent des Dominicains de Seyne"
+  }
+},
+{
+  "type": "way",
+  "id": 103365094,
+  "bounds": {
+    "minlat": 44.3498048,
+    "minlon": 6.3530924,
+    "maxlat": 44.3498634,
+    "maxlon": 6.3531966
+  },
+  "geometry": [
+    { "lat": 44.3498626, "lon": 6.3531261 },
+    { "lat": 44.3498521, "lon": 6.3531256 },
+    { "lat": 44.3498506, "lon": 6.3530993 },
+    { "lat": 44.3498448, "lon": 6.3530924 },
+    { "lat": 44.3498346, "lon": 6.3530926 },
+    { "lat": 44.3498286, "lon": 6.3531003 },
+    { "lat": 44.3498290, "lon": 6.3531168 },
+    { "lat": 44.3498187, "lon": 6.3531176 },
+    { "lat": 44.3498191, "lon": 6.3531329 },
+    { "lat": 44.3498098, "lon": 6.3531334 },
+    { "lat": 44.3498048, "lon": 6.3531444 },
+    { "lat": 44.3498050, "lon": 6.3531577 },
+    { "lat": 44.3498123, "lon": 6.3531677 },
+    { "lat": 44.3498211, "lon": 6.3531681 },
+    { "lat": 44.3498206, "lon": 6.3531807 },
+    { "lat": 44.3498315, "lon": 6.3531808 },
+    { "lat": 44.3498310, "lon": 6.3531842 },
+    { "lat": 44.3498315, "lon": 6.3531909 },
+    { "lat": 44.3498336, "lon": 6.3531966 },
+    { "lat": 44.3498453, "lon": 6.3531964 },
+    { "lat": 44.3498538, "lon": 6.3531899 },
+    { "lat": 44.3498534, "lon": 6.3531624 },
+    { "lat": 44.3498634, "lon": 6.3531608 },
+    { "lat": 44.3498626, "lon": 6.3531261 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "name": "Chapelle de Bellevue",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "way",
+  "id": 103365639,
+  "bounds": {
+    "minlat": 44.3445912,
+    "minlon": 6.3305556,
+    "maxlat": 44.3446932,
+    "maxlon": 6.3308094
+  },
+  "geometry": [
+    { "lat": 44.3446428, "lon": 6.3308094 },
+    { "lat": 44.3446890, "lon": 6.3307888 },
+    { "lat": 44.3446774, "lon": 6.3307379 },
+    { "lat": 44.3446932, "lon": 6.3307309 },
+    { "lat": 44.3446533, "lon": 6.3305556 },
+    { "lat": 44.3445912, "lon": 6.3305832 },
+    { "lat": 44.3446428, "lon": 6.3308094 }
+  ],
+  "tags": {
+    "addr:city": "Seyne",
+    "addr:housenumber": "1840",
+    "addr:postcode": "04140",
+    "addr:street": "Route du Haut Chardavon",
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "way",
+  "id": 103365763,
+  "bounds": {
+    "minlat": 44.3527021,
+    "minlon": 6.3261305,
+    "maxlat": 44.3527881,
+    "maxlon": 6.3262736
+  },
+  "geometry": [
+    { "lat": 44.3527441, "lon": 6.3262736 },
+    { "lat": 44.3527881, "lon": 6.3262408 },
+    { "lat": 44.3527462, "lon": 6.3261305 },
+    { "lat": 44.3527021, "lon": 6.3261633 },
+    { "lat": 44.3527441, "lon": 6.3262736 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "ref:FR:RNB": "N2XDPN4PXJMT",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "way",
+  "id": 103365980,
+  "bounds": {
+    "minlat": 44.3336467,
+    "minlon": 6.3482945,
+    "maxlat": 44.3337202,
+    "maxlon": 6.3484136
+  },
+  "geometry": [
+    { "lat": 44.3336467, "lon": 6.3483157 },
+    { "lat": 44.3336663, "lon": 6.3484136 },
+    { "lat": 44.3337202, "lon": 6.3483924 },
+    { "lat": 44.3337005, "lon": 6.3482945 },
+    { "lat": 44.3336467, "lon": 6.3483157 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "ref:FR:RNB": "YCHSY6VXNJFH",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "way",
+  "id": 103366967,
+  "bounds": {
+    "minlat": 44.3506020,
+    "minlon": 6.3542879,
+    "maxlat": 44.3508359,
+    "maxlon": 6.3549007
+  },
+  "geometry": [
+    { "lat": 44.3507358, "lon": 6.3542952 },
+    { "lat": 44.3507155, "lon": 6.3542879 },
+    { "lat": 44.3507082, "lon": 6.3543282 },
+    { "lat": 44.3507164, "lon": 6.3543312 },
+    { "lat": 44.3507043, "lon": 6.3543978 },
+    { "lat": 44.3506955, "lon": 6.3543947 },
+    { "lat": 44.3506900, "lon": 6.3544251 },
+    { "lat": 44.3506971, "lon": 6.3544311 },
+    { "lat": 44.3506781, "lon": 6.3545290 },
+    { "lat": 44.3506696, "lon": 6.3545257 },
+    { "lat": 44.3506630, "lon": 6.3545597 },
+    { "lat": 44.3506723, "lon": 6.3545632 },
+    { "lat": 44.3506645, "lon": 6.3546029 },
+    { "lat": 44.3506300, "lon": 6.3545897 },
+    { "lat": 44.3506020, "lon": 6.3547336 },
+    { "lat": 44.3506373, "lon": 6.3547471 },
+    { "lat": 44.3506146, "lon": 6.3548642 },
+    { "lat": 44.3507105, "lon": 6.3549007 },
+    { "lat": 44.3507334, "lon": 6.3547829 },
+    { "lat": 44.3507598, "lon": 6.3547930 },
+    { "lat": 44.3507728, "lon": 6.3547259 },
+    { "lat": 44.3507553, "lon": 6.3547192 },
+    { "lat": 44.3507762, "lon": 6.3546113 },
+    { "lat": 44.3507841, "lon": 6.3546143 },
+    { "lat": 44.3507893, "lon": 6.3545871 },
+    { "lat": 44.3507812, "lon": 6.3545841 },
+    { "lat": 44.3507989, "lon": 6.3544916 },
+    { "lat": 44.3508069, "lon": 6.3544946 },
+    { "lat": 44.3508113, "lon": 6.3544714 },
+    { "lat": 44.3508031, "lon": 6.3544684 },
+    { "lat": 44.3508224, "lon": 6.3543663 },
+    { "lat": 44.3508291, "lon": 6.3543688 },
+    { "lat": 44.3508359, "lon": 6.3543327 },
+    { "lat": 44.3508220, "lon": 6.3543276 },
+    { "lat": 44.3508202, "lon": 6.3543375 },
+    { "lat": 44.3507338, "lon": 6.3543059 },
+    { "lat": 44.3507358, "lon": 6.3542952 }
+  ],
+  "tags": {
+    "addr:city": "Seyne",
+    "addr:housenumber": "43",
+    "addr:postcode": "04140",
+    "addr:street": "Grande Rue",
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "denomination": "catholic",
+    "heritage": "2",
+    "heritage:operator": "mhs",
+    "mhs:inscription_date": "1862",
+    "name": "Église Notre-Dame-de-Nazareth",
+    "ref:clochers.org": "04205_1",
+    "ref:mhs": "PA00080486",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "source:heritage": "Ministère de la Culture - 06/2019",
+    "wikidata": "Q3580225",
+    "wikipedia": "fr:Église Notre-Dame-de-Nazareth de Seyne"
+  }
+},
+{
+  "type": "way",
+  "id": 116084655,
+  "bounds": {
+    "minlat": 44.4388240,
+    "minlon": 6.3278640,
+    "maxlat": 44.4390140,
+    "maxlon": 6.3281370
+  },
+  "geometry": [
+    { "lat": 44.4390140, "lon": 6.3279940 },
+    { "lat": 44.4389400, "lon": 6.3278640 },
+    { "lat": 44.4388560, "lon": 6.3279420 },
+    { "lat": 44.4388450, "lon": 6.3279220 },
+    { "lat": 44.4388240, "lon": 6.3279460 },
+    { "lat": 44.4388400, "lon": 6.3279740 },
+    { "lat": 44.4388920, "lon": 6.3280670 },
+    { "lat": 44.4388600, "lon": 6.3281000 },
+    { "lat": 44.4388840, "lon": 6.3281370 },
+    { "lat": 44.4390140, "lon": 6.3279940 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "name": "Église de Costebelle",
+    "ref:FR:RNB": "ZDYNJP4MHWXY",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "way",
+  "id": 116097551,
+  "bounds": {
+    "minlat": 44.4572810,
+    "minlon": 6.2946104,
+    "maxlat": 44.4574468,
+    "maxlon": 6.2949400
+  },
+  "geometry": [
+    { "lat": 44.4572810, "lon": 6.2948914 },
+    { "lat": 44.4573130, "lon": 6.2948950 },
+    { "lat": 44.4573200, "lon": 6.2949080 },
+    { "lat": 44.4573280, "lon": 6.2949200 },
+    { "lat": 44.4573370, "lon": 6.2949300 },
+    { "lat": 44.4573490, "lon": 6.2949380 },
+    { "lat": 44.4573580, "lon": 6.2949400 },
+    { "lat": 44.4573670, "lon": 6.2949380 },
+    { "lat": 44.4573750, "lon": 6.2949330 },
+    { "lat": 44.4573830, "lon": 6.2949260 },
+    { "lat": 44.4573890, "lon": 6.2949180 },
+    { "lat": 44.4574320, "lon": 6.2949310 },
+    { "lat": 44.4574468, "lon": 6.2946675 },
+    { "lat": 44.4573735, "lon": 6.2946382 },
+    { "lat": 44.4573039, "lon": 6.2946104 },
+    { "lat": 44.4572810, "lon": 6.2948914 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "check_date": "2023-10-08",
+    "name": "Église Saint-Pierre",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q29537809"
+  }
+},
+{
+  "type": "way",
+  "id": 119317907,
+  "bounds": {
+    "minlat": 44.5141070,
+    "minlon": 6.5483459,
+    "maxlat": 44.5143593,
+    "maxlon": 6.5487456
+  },
+  "geometry": [
+    { "lat": 44.5142120, "lon": 6.5483459 },
+    { "lat": 44.5141070, "lon": 6.5484293 },
+    { "lat": 44.5141715, "lon": 6.5485888 },
+    { "lat": 44.5142083, "lon": 6.5486799 },
+    { "lat": 44.5142244, "lon": 6.5486671 },
+    { "lat": 44.5142560, "lon": 6.5487456 },
+    { "lat": 44.5143381, "lon": 6.5486804 },
+    { "lat": 44.5143290, "lon": 6.5486579 },
+    { "lat": 44.5143593, "lon": 6.5486339 },
+    { "lat": 44.5143326, "lon": 6.5485677 },
+    { "lat": 44.5143091, "lon": 6.5485864 },
+    { "lat": 44.5142120, "lon": 6.5483459 }
+  ],
+  "tags": {
+    "access": "yes",
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "heritage": "3",
+    "heritage:operator": "mhs",
+    "hide": "no",
+    "mhs:inscription_date": "1992-12-21",
+    "name": "Église Sainte-Marie-Madeleine",
+    "phone": "+33 4 92 43 00 54",
+    "ref": "L27",
+    "ref:FR:CEF": "05098_06",
+    "ref:clochers.org": "05098_1",
+    "ref:mhs": "PA00080647",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "source:heritage": "data.gouv.fr, Ministère de la Culture - 2016",
+    "source:name": "clochers.org",
+    "wikidata": "Q22916156"
+  }
+},
+{
+  "type": "way",
+  "id": 119318161,
+  "bounds": {
+    "minlat": 44.5128032,
+    "minlon": 6.5689441,
+    "maxlat": 44.5128609,
+    "maxlon": 6.5690094
+  },
+  "geometry": [
+    { "lat": 44.5128032, "lon": 6.5690062 },
+    { "lat": 44.5128590, "lon": 6.5690094 },
+    { "lat": 44.5128609, "lon": 6.5689474 },
+    { "lat": 44.5128050, "lon": 6.5689441 },
+    { "lat": 44.5128032, "lon": 6.5690062 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "name": "Chapelle des Ribes",
+    "religion": "christian",
+    "wikidata": "Q60341663"
+  }
+},
+{
+  "type": "way",
+  "id": 119318183,
+  "bounds": {
+    "minlat": 44.5049745,
+    "minlon": 6.5531310,
+    "maxlat": 44.5051095,
+    "maxlon": 6.5534020
+  },
+  "geometry": [
+    { "lat": 44.5050055, "lon": 6.5533380 },
+    { "lat": 44.5050125, "lon": 6.5533460 },
+    { "lat": 44.5050415, "lon": 6.5533860 },
+    { "lat": 44.5050555, "lon": 6.5533980 },
+    { "lat": 44.5050835, "lon": 6.5534020 },
+    { "lat": 44.5051065, "lon": 6.5531580 },
+    { "lat": 44.5051095, "lon": 6.5531440 },
+    { "lat": 44.5050235, "lon": 6.5531310 },
+    { "lat": 44.5050145, "lon": 6.5532330 },
+    { "lat": 44.5049775, "lon": 6.5532300 },
+    { "lat": 44.5049745, "lon": 6.5532960 },
+    { "lat": 44.5050085, "lon": 6.5532990 },
+    { "lat": 44.5050055, "lon": 6.5533380 }
+  ],
+  "tags": {
+    "access": "yes",
+    "addr:place": "Mélézet",
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "heritage": "3",
+    "heritage:operator": "mhs",
+    "hide": "no",
+    "mhs:inscription_date": "1997-01-13",
+    "name": "Église Notre-Dame-de-la-Présentation",
+    "ref": "L21",
+    "ref:mhs": "PA05000006",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "source:heritage": "data.gouv.fr, Ministère de la Culture - 2016",
+    "wikidata": "Q15953525",
+    "wikipedia": "fr:Église Notre-Dame-de-la-Présentation du Mélezet"
+  }
+},
+{
+  "type": "way",
+  "id": 119318190,
+  "bounds": {
+    "minlat": 44.4987360,
+    "minlon": 6.5555320,
+    "maxlat": 44.4987800,
+    "maxlon": 6.5556130
+  },
+  "geometry": [
+    { "lat": 44.4987800, "lon": 6.5555400 },
+    { "lat": 44.4987420, "lon": 6.5555320 },
+    { "lat": 44.4987360, "lon": 6.5556120 },
+    { "lat": 44.4987750, "lon": 6.5556130 },
+    { "lat": 44.4987800, "lon": 6.5555400 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Chapelle Sainte-Marguerite",
+    "phone": "+33 4 92 43 00 54",
+    "ref:FR:CEF": "05098_01",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2010",
+    "wikidata": "Q108627782"
+  }
+},
+{
+  "type": "way",
+  "id": 127740201,
+  "bounds": {
+    "minlat": 44.3491343,
+    "minlon": 6.5057597,
+    "maxlat": 44.3492764,
+    "maxlon": 6.5059991
+  },
+  "geometry": [
+    { "lat": 44.3491990, "lon": 6.5059991 },
+    { "lat": 44.3492764, "lon": 6.5059843 },
+    { "lat": 44.3492545, "lon": 6.5057597 },
+    { "lat": 44.3492236, "lon": 6.5057656 },
+    { "lat": 44.3491343, "lon": 6.5057826 },
+    { "lat": 44.3491375, "lon": 6.5058157 },
+    { "lat": 44.3491726, "lon": 6.5058090 },
+    { "lat": 44.3491815, "lon": 6.5059000 },
+    { "lat": 44.3491664, "lon": 6.5059029 },
+    { "lat": 44.3491707, "lon": 6.5059466 },
+    { "lat": 44.3491934, "lon": 6.5059422 },
+    { "lat": 44.3491990, "lon": 6.5059991 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Église Saint-Antoine",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q55310942"
+  }
+},
+{
+  "type": "way",
+  "id": 127740254,
+  "bounds": {
+    "minlat": 44.4101938,
+    "minlon": 6.5272586,
+    "maxlat": 44.4103003,
+    "maxlon": 6.5276359
+  },
+  "geometry": [
+    { "lat": 44.4102128, "lon": 6.5276181 },
+    { "lat": 44.4102826, "lon": 6.5276359 },
+    { "lat": 44.4102808, "lon": 6.5274891 },
+    { "lat": 44.4102945, "lon": 6.5274891 },
+    { "lat": 44.4103003, "lon": 6.5272608 },
+    { "lat": 44.4102619, "lon": 6.5272586 },
+    { "lat": 44.4102596, "lon": 6.5273098 },
+    { "lat": 44.4101996, "lon": 6.5273029 },
+    { "lat": 44.4101938, "lon": 6.5274751 },
+    { "lat": 44.4102028, "lon": 6.5274761 },
+    { "lat": 44.4101948, "lon": 6.5276131 },
+    { "lat": 44.4102128, "lon": 6.5276181 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "name": "Église Notre-Dame de Lumière",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q55084042"
+  }
+},
+{
+  "type": "way",
+  "id": 127740276,
+  "bounds": {
+    "minlat": 44.4018055,
+    "minlon": 6.5044836,
+    "maxlat": 44.4020302,
+    "maxlon": 6.5047731
+  },
+  "geometry": [
+    { "lat": 44.4020033, "lon": 6.5046628 },
+    { "lat": 44.4019482, "lon": 6.5045660 },
+    { "lat": 44.4019222, "lon": 6.5045850 },
+    { "lat": 44.4018748, "lon": 6.5044836 },
+    { "lat": 44.4018055, "lon": 6.5045481 },
+    { "lat": 44.4018608, "lon": 6.5046740 },
+    { "lat": 44.4018474, "lon": 6.5046939 },
+    { "lat": 44.4018700, "lon": 6.5047318 },
+    { "lat": 44.4019057, "lon": 6.5047103 },
+    { "lat": 44.4019354, "lon": 6.5047731 },
+    { "lat": 44.4019784, "lon": 6.5047329 },
+    { "lat": 44.4019926, "lon": 6.5047597 },
+    { "lat": 44.4020302, "lon": 6.5047250 },
+    { "lat": 44.4020033, "lon": 6.5046628 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Église Saint-Jaques-le-Majeur",
+    "ref:FR:RNB": "4F9G6BXHRYPV",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q38620572"
+  }
+},
+{
+  "type": "way",
+  "id": 127740306,
+  "bounds": {
+    "minlat": 44.3741970,
+    "minlon": 6.4626070,
+    "maxlat": 44.3743500,
+    "maxlon": 6.4628630
+  },
+  "geometry": [
+    { "lat": 44.3742520, "lon": 6.4628630 },
+    { "lat": 44.3743210, "lon": 6.4627670 },
+    { "lat": 44.3743330, "lon": 6.4627820 },
+    { "lat": 44.3743500, "lon": 6.4627590 },
+    { "lat": 44.3743400, "lon": 6.4627400 },
+    { "lat": 44.3743450, "lon": 6.4627240 },
+    { "lat": 44.3743470, "lon": 6.4627100 },
+    { "lat": 44.3743480, "lon": 6.4626960 },
+    { "lat": 44.3743440, "lon": 6.4626810 },
+    { "lat": 44.3743370, "lon": 6.4626670 },
+    { "lat": 44.3743320, "lon": 6.4626580 },
+    { "lat": 44.3743250, "lon": 6.4626530 },
+    { "lat": 44.3743050, "lon": 6.4626450 },
+    { "lat": 44.3742880, "lon": 6.4626070 },
+    { "lat": 44.3742500, "lon": 6.4626380 },
+    { "lat": 44.3742620, "lon": 6.4626770 },
+    { "lat": 44.3741970, "lon": 6.4627760 },
+    { "lat": 44.3742520, "lon": 6.4628630 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "name": "Église Saint-Julien",
+    "ref:clochers.org": "04161_1",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q38648557"
+  }
+},
+{
+  "type": "way",
+  "id": 127740308,
+  "bounds": {
+    "minlat": 44.3987690,
+    "minlon": 6.5080610,
+    "maxlat": 44.3989300,
+    "maxlon": 6.5083340
+  },
+  "geometry": [
+    { "lat": 44.3988220, "lon": 6.5082780 },
+    { "lat": 44.3988340, "lon": 6.5083340 },
+    { "lat": 44.3989300, "lon": 6.5082840 },
+    { "lat": 44.3989110, "lon": 6.5082150 },
+    { "lat": 44.3989010, "lon": 6.5082190 },
+    { "lat": 44.3988910, "lon": 6.5081840 },
+    { "lat": 44.3988890, "lon": 6.5081740 },
+    { "lat": 44.3988980, "lon": 6.5081690 },
+    { "lat": 44.3988850, "lon": 6.5081140 },
+    { "lat": 44.3988620, "lon": 6.5081250 },
+    { "lat": 44.3988560, "lon": 6.5081000 },
+    { "lat": 44.3988530, "lon": 6.5080790 },
+    { "lat": 44.3988570, "lon": 6.5080760 },
+    { "lat": 44.3988540, "lon": 6.5080610 },
+    { "lat": 44.3988470, "lon": 6.5080630 },
+    { "lat": 44.3987690, "lon": 6.5080830 },
+    { "lat": 44.3987720, "lon": 6.5080960 },
+    { "lat": 44.3987793, "lon": 6.5081271 },
+    { "lat": 44.3987860, "lon": 6.5081560 },
+    { "lat": 44.3987900, "lon": 6.5081730 },
+    { "lat": 44.3987760, "lon": 6.5081770 },
+    { "lat": 44.3988000, "lon": 6.5082870 },
+    { "lat": 44.3988220, "lon": 6.5082780 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Église Saint-Julien",
+    "ref:clochers.org": "04161_1",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q38648140"
+  }
+},
+{
+  "type": "way",
+  "id": 127740366,
+  "bounds": {
+    "minlat": 44.3580365,
+    "minlon": 6.4752510,
+    "maxlat": 44.3581255,
+    "maxlon": 6.4753766
+  },
+  "geometry": [
+    { "lat": 44.3581255, "lon": 6.4753221 },
+    { "lat": 44.3580812, "lon": 6.4752510 },
+    { "lat": 44.3580365, "lon": 6.4753056 },
+    { "lat": 44.3580809, "lon": 6.4753766 },
+    { "lat": 44.3581255, "lon": 6.4753221 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Chapelle Saint-Jean",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q55311038"
+  }
+},
+{
+  "type": "way",
+  "id": 127740889,
+  "bounds": {
+    "minlat": 44.3976870,
+    "minlon": 6.5066260,
+    "maxlat": 44.3978060,
+    "maxlon": 6.5067550
+  },
+  "geometry": [
+    { "lat": 44.3976870, "lon": 6.5066950 },
+    { "lat": 44.3977770, "lon": 6.5067550 },
+    { "lat": 44.3978060, "lon": 6.5066930 },
+    { "lat": 44.3977100, "lon": 6.5066260 },
+    { "lat": 44.3976870, "lon": 6.5066950 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "way",
+  "id": 127741231,
+  "bounds": {
+    "minlat": 44.4098420,
+    "minlon": 6.5295349,
+    "maxlat": 44.4098950,
+    "maxlon": 6.5296239
+  },
+  "geometry": [
+    { "lat": 44.4098950, "lon": 6.5295989 },
+    { "lat": 44.4098730, "lon": 6.5295349 },
+    { "lat": 44.4098420, "lon": 6.5295539 },
+    { "lat": 44.4098640, "lon": 6.5296239 },
+    { "lat": 44.4098950, "lon": 6.5295989 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "name": "Chapelle Saint-Antoine et Saint-Roch",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q55084291"
+  }
+},
+{
+  "type": "way",
+  "id": 127741555,
+  "bounds": {
+    "minlat": 44.4124989,
+    "minlon": 6.5178953,
+    "maxlat": 44.4125819,
+    "maxlon": 6.5179953
+  },
+  "geometry": [
+    { "lat": 44.4125579, "lon": 6.5179783 },
+    { "lat": 44.4125819, "lon": 6.5179683 },
+    { "lat": 44.4125749, "lon": 6.5179073 },
+    { "lat": 44.4125749, "lon": 6.5178953 },
+    { "lat": 44.4124989, "lon": 6.5179193 },
+    { "lat": 44.4125079, "lon": 6.5179953 },
+    { "lat": 44.4125579, "lon": 6.5179783 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "name": "Chapelle des Trons",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "way",
+  "id": 127741573,
+  "bounds": {
+    "minlat": 44.4010110,
+    "minlon": 6.4873260,
+    "maxlat": 44.4010650,
+    "maxlon": 6.4874410
+  },
+  "geometry": [
+    { "lat": 44.4010210, "lon": 6.4874410 },
+    { "lat": 44.4010650, "lon": 6.4874320 },
+    { "lat": 44.4010590, "lon": 6.4873850 },
+    { "lat": 44.4010510, "lon": 6.4873260 },
+    { "lat": 44.4010110, "lon": 6.4873360 },
+    { "lat": 44.4010110, "lon": 6.4873430 },
+    { "lat": 44.4010210, "lon": 6.4874410 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "denomination": "catholic",
+    "name": "Chapelle Notre-Dame de la Salette",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q107435572"
+  }
+},
+{
+  "type": "way",
+  "id": 128050603,
+  "bounds": {
+    "minlat": 44.4470310,
+    "minlon": 6.3800923,
+    "maxlat": 44.4471288,
+    "maxlon": 6.3802078
+  },
+  "geometry": [
+    { "lat": 44.4471099, "lon": 6.3802078 },
+    { "lat": 44.4471288, "lon": 6.3801297 },
+    { "lat": 44.4470499, "lon": 6.3800923 },
+    { "lat": 44.4470310, "lon": 6.3801704 },
+    { "lat": 44.4471099, "lon": 6.3802078 }
+  ],
+  "tags": {
+    "building": "chapel",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "way",
+  "id": 128050703,
+  "bounds": {
+    "minlat": 44.4195607,
+    "minlon": 6.3538645,
+    "maxlat": 44.4196513,
+    "maxlon": 6.3539868
+  },
+  "geometry": [
+    { "lat": 44.4196180, "lon": 6.3539868 },
+    { "lat": 44.4196513, "lon": 6.3539260 },
+    { "lat": 44.4195940, "lon": 6.3538645 },
+    { "lat": 44.4195607, "lon": 6.3539253 },
+    { "lat": 44.4196180, "lon": 6.3539868 }
+  ],
+  "tags": {
+    "building": "chapel",
+    "name": "Chapelle Saint-Antoine",
+    "ref:FR:RNB": "CEFNQPM1P3QW",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q60365217"
+  }
+},
+{
+  "type": "way",
+  "id": 128051016,
+  "bounds": {
+    "minlat": 44.4423051,
+    "minlon": 6.3534428,
+    "maxlat": 44.4424493,
+    "maxlon": 6.3535984
+  },
+  "geometry": [
+    { "lat": 44.4424493, "lon": 6.3534469 },
+    { "lat": 44.4423073, "lon": 6.3534428 },
+    { "lat": 44.4423051, "lon": 6.3535944 },
+    { "lat": 44.4424471, "lon": 6.3535984 },
+    { "lat": 44.4424493, "lon": 6.3534469 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Église Notre-Dame-de-l'Assomption",
+    "ref:FR:RNB": "YS513BDX94NH",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q60385312"
+  }
+},
+{
+  "type": "way",
+  "id": 128051204,
+  "bounds": {
+    "minlat": 44.4455490,
+    "minlon": 6.3726980,
+    "maxlat": 44.4457160,
+    "maxlon": 6.3730190
+  },
+  "geometry": [
+    { "lat": 44.4457160, "lon": 6.3728930 },
+    { "lat": 44.4456580, "lon": 6.3728740 },
+    { "lat": 44.4456820, "lon": 6.3727260 },
+    { "lat": 44.4456010, "lon": 6.3726980 },
+    { "lat": 44.4455678, "lon": 6.3728891 },
+    { "lat": 44.4455490, "lon": 6.3729970 },
+    { "lat": 44.4456220, "lon": 6.3730190 },
+    { "lat": 44.4456360, "lon": 6.3730060 },
+    { "lat": 44.4456450, "lon": 6.3729530 },
+    { "lat": 44.4456880, "lon": 6.3729670 },
+    { "lat": 44.4457160, "lon": 6.3728930 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Église Saint-Vincent",
+    "ref:FR:RNB": "D4M461TR3ZX4",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "source:name": "clochers.org",
+    "wikidata": "Q60393158"
+  }
+},
+{
+  "type": "way",
+  "id": 128062231,
+  "bounds": {
+    "minlat": 44.3977706,
+    "minlon": 6.6435696,
+    "maxlat": 44.3978415,
+    "maxlon": 6.6436446
+  },
+  "geometry": [
+    { "lat": 44.3978301, "lon": 6.6435696 },
+    { "lat": 44.3977706, "lon": 6.6435980 },
+    { "lat": 44.3977820, "lon": 6.6436446 },
+    { "lat": 44.3978415, "lon": 6.6436161 },
+    { "lat": 44.3978301, "lon": 6.6435696 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "name": "Chapelle Saint-Jacques et Saint-Philippe",
+    "ref:clochers.org": "04019",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q108627960"
+  }
+},
+{
+  "type": "way",
+  "id": 128064002,
+  "bounds": {
+    "minlat": 44.3875930,
+    "minlon": 6.6512830,
+    "maxlat": 44.3880160,
+    "maxlon": 6.6516760
+  },
+  "geometry": [
+    { "lat": 44.3880050, "lon": 6.6515260 },
+    { "lat": 44.3879980, "lon": 6.6514580 },
+    { "lat": 44.3880160, "lon": 6.6514530 },
+    { "lat": 44.3880050, "lon": 6.6513440 },
+    { "lat": 44.3879860, "lon": 6.6513470 },
+    { "lat": 44.3879790, "lon": 6.6512830 },
+    { "lat": 44.3879090, "lon": 6.6512970 },
+    { "lat": 44.3879080, "lon": 6.6512900 },
+    { "lat": 44.3879000, "lon": 6.6512920 },
+    { "lat": 44.3878980, "lon": 6.6513000 },
+    { "lat": 44.3878570, "lon": 6.6513080 },
+    { "lat": 44.3878550, "lon": 6.6513020 },
+    { "lat": 44.3878460, "lon": 6.6513040 },
+    { "lat": 44.3878460, "lon": 6.6513100 },
+    { "lat": 44.3878080, "lon": 6.6513170 },
+    { "lat": 44.3878070, "lon": 6.6513110 },
+    { "lat": 44.3877950, "lon": 6.6513130 },
+    { "lat": 44.3877950, "lon": 6.6513200 },
+    { "lat": 44.3877560, "lon": 6.6513280 },
+    { "lat": 44.3877550, "lon": 6.6513220 },
+    { "lat": 44.3877450, "lon": 6.6513250 },
+    { "lat": 44.3877450, "lon": 6.6513330 },
+    { "lat": 44.3877030, "lon": 6.6513390 },
+    { "lat": 44.3877030, "lon": 6.6513330 },
+    { "lat": 44.3876920, "lon": 6.6513350 },
+    { "lat": 44.3876920, "lon": 6.6513420 },
+    { "lat": 44.3876520, "lon": 6.6513510 },
+    { "lat": 44.3876500, "lon": 6.6513460 },
+    { "lat": 44.3876410, "lon": 6.6513480 },
+    { "lat": 44.3876400, "lon": 6.6513540 },
+    { "lat": 44.3876070, "lon": 6.6513610 },
+    { "lat": 44.3876060, "lon": 6.6513530 },
+    { "lat": 44.3875980, "lon": 6.6513540 },
+    { "lat": 44.3875990, "lon": 6.6513640 },
+    { "lat": 44.3875930, "lon": 6.6513650 },
+    { "lat": 44.3875950, "lon": 6.6513770 },
+    { "lat": 44.3876000, "lon": 6.6513760 },
+    { "lat": 44.3876040, "lon": 6.6514150 },
+    { "lat": 44.3876050, "lon": 6.6514210 },
+    { "lat": 44.3875960, "lon": 6.6514220 },
+    { "lat": 44.3875970, "lon": 6.6514350 },
+    { "lat": 44.3876060, "lon": 6.6514340 },
+    { "lat": 44.3876200, "lon": 6.6515410 },
+    { "lat": 44.3876120, "lon": 6.6515420 },
+    { "lat": 44.3876130, "lon": 6.6515550 },
+    { "lat": 44.3876200, "lon": 6.6515560 },
+    { "lat": 44.3876220, "lon": 6.6515590 },
+    { "lat": 44.3876260, "lon": 6.6515990 },
+    { "lat": 44.3876200, "lon": 6.6516030 },
+    { "lat": 44.3876210, "lon": 6.6516130 },
+    { "lat": 44.3876280, "lon": 6.6516130 },
+    { "lat": 44.3876290, "lon": 6.6516200 },
+    { "lat": 44.3876360, "lon": 6.6516190 },
+    { "lat": 44.3876350, "lon": 6.6516120 },
+    { "lat": 44.3876430, "lon": 6.6516100 },
+    { "lat": 44.3876450, "lon": 6.6516760 },
+    { "lat": 44.3876950, "lon": 6.6516700 },
+    { "lat": 44.3876930, "lon": 6.6515970 },
+    { "lat": 44.3877220, "lon": 6.6515900 },
+    { "lat": 44.3877230, "lon": 6.6515970 },
+    { "lat": 44.3877340, "lon": 6.6515950 },
+    { "lat": 44.3877330, "lon": 6.6515880 },
+    { "lat": 44.3877730, "lon": 6.6515790 },
+    { "lat": 44.3877730, "lon": 6.6515860 },
+    { "lat": 44.3877850, "lon": 6.6515840 },
+    { "lat": 44.3877850, "lon": 6.6515770 },
+    { "lat": 44.3878220, "lon": 6.6515690 },
+    { "lat": 44.3878240, "lon": 6.6515740 },
+    { "lat": 44.3878370, "lon": 6.6515730 },
+    { "lat": 44.3878380, "lon": 6.6515650 },
+    { "lat": 44.3878740, "lon": 6.6515570 },
+    { "lat": 44.3878750, "lon": 6.6515640 },
+    { "lat": 44.3878870, "lon": 6.6515610 },
+    { "lat": 44.3878880, "lon": 6.6515550 },
+    { "lat": 44.3879260, "lon": 6.6515470 },
+    { "lat": 44.3879270, "lon": 6.6515520 },
+    { "lat": 44.3879390, "lon": 6.6515490 },
+    { "lat": 44.3879370, "lon": 6.6515390 },
+    { "lat": 44.3880050, "lon": 6.6515260 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Église Saint-Pierre-ès-liens",
+    "ref:FR:CEF": "04019_01",
+    "ref:clochers.org": "04019",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q41743736"
+  }
+},
+{
+  "type": "way",
+  "id": 128066982,
+  "bounds": {
+    "minlat": 44.3922730,
+    "minlon": 6.6282415,
+    "maxlat": 44.3924560,
+    "maxlon": 6.6286605
+  },
+  "geometry": [
+    { "lat": 44.3924340, "lon": 6.6285745 },
+    { "lat": 44.3924410, "lon": 6.6285325 },
+    { "lat": 44.3924450, "lon": 6.6285085 },
+    { "lat": 44.3924240, "lon": 6.6285035 },
+    { "lat": 44.3924560, "lon": 6.6283315 },
+    { "lat": 44.3924270, "lon": 6.6283225 },
+    { "lat": 44.3924330, "lon": 6.6282655 },
+    { "lat": 44.3923450, "lon": 6.6282415 },
+    { "lat": 44.3923060, "lon": 6.6284765 },
+    { "lat": 44.3923020, "lon": 6.6284735 },
+    { "lat": 44.3922980, "lon": 6.6284755 },
+    { "lat": 44.3922970, "lon": 6.6284775 },
+    { "lat": 44.3922880, "lon": 6.6285375 },
+    { "lat": 44.3922790, "lon": 6.6285355 },
+    { "lat": 44.3922730, "lon": 6.6285905 },
+    { "lat": 44.3922960, "lon": 6.6285975 },
+    { "lat": 44.3922940, "lon": 6.6286465 },
+    { "lat": 44.3923680, "lon": 6.6286605 },
+    { "lat": 44.3923690, "lon": 6.6286465 },
+    { "lat": 44.3923940, "lon": 6.6286505 },
+    { "lat": 44.3924100, "lon": 6.6285675 },
+    { "lat": 44.3924340, "lon": 6.6285745 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "heritage": "2",
+    "heritage:operator": "mhs",
+    "mhs:inscription_date": "1912-10-31",
+    "name": "Église Saint-Pons",
+    "ref:FR:CEF": "04195_01",
+    "ref:clochers.org": "04195",
+    "ref:mhs": "PA00080478",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "source:heritage": "Ministère de la Culture - 06/2019",
+    "wikidata": "Q3584210",
+    "wikipedia": "fr:Église Saint-Pons de Saint-Pons"
+  }
+},
+{
+  "type": "way",
+  "id": 128067661,
+  "bounds": {
+    "minlat": 44.3946805,
+    "minlon": 6.5938823,
+    "maxlat": 44.3947325,
+    "maxlon": 6.5939623
+  },
+  "geometry": [
+    { "lat": 44.3947325, "lon": 6.5938923 },
+    { "lat": 44.3947185, "lon": 6.5938883 },
+    { "lat": 44.3946935, "lon": 6.5938823 },
+    { "lat": 44.3946805, "lon": 6.5939553 },
+    { "lat": 44.3947245, "lon": 6.5939623 },
+    { "lat": 44.3947325, "lon": 6.5938923 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "denomination": "catholic",
+    "ref:clochers.org": "04195",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "way",
+  "id": 128068584,
+  "bounds": {
+    "minlat": 44.3941210,
+    "minlon": 6.5663630,
+    "maxlat": 44.3942520,
+    "maxlon": 6.5666460
+  },
+  "geometry": [
+    { "lat": 44.3941290, "lon": 6.5666400 },
+    { "lat": 44.3942180, "lon": 6.5666460 },
+    { "lat": 44.3942210, "lon": 6.5665730 },
+    { "lat": 44.3942520, "lon": 6.5665720 },
+    { "lat": 44.3942520, "lon": 6.5665120 },
+    { "lat": 44.3942290, "lon": 6.5665120 },
+    { "lat": 44.3942290, "lon": 6.5664440 },
+    { "lat": 44.3942050, "lon": 6.5664440 },
+    { "lat": 44.3942040, "lon": 6.5663810 },
+    { "lat": 44.3942040, "lon": 6.5663670 },
+    { "lat": 44.3941240, "lon": 6.5663630 },
+    { "lat": 44.3941210, "lon": 6.5665710 },
+    { "lat": 44.3941300, "lon": 6.5665710 },
+    { "lat": 44.3941290, "lon": 6.5666400 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "name": "Église Saint-Martin de Tours",
+    "ref:FR:RNB": "QPMDBY4JXA34",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q41743885"
+  }
+},
+{
+  "type": "way",
+  "id": 128069036,
+  "bounds": {
+    "minlat": 44.4003210,
+    "minlon": 6.5737050,
+    "maxlat": 44.4004120,
+    "maxlon": 6.5739580
+  },
+  "geometry": [
+    { "lat": 44.4004120, "lon": 6.5737450 },
+    { "lat": 44.4003250, "lon": 6.5737050 },
+    { "lat": 44.4003210, "lon": 6.5739420 },
+    { "lat": 44.4004030, "lon": 6.5739580 },
+    { "lat": 44.4004120, "lon": 6.5737450 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "name": "Chapelle Saint-Joseph",
+    "ref:FR:RNB": "G76APZ5ZVJ2Z",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q55177561"
+  }
+},
+{
+  "type": "way",
+  "id": 128069132,
+  "bounds": {
+    "minlat": 44.3834058,
+    "minlon": 6.5737998,
+    "maxlat": 44.3835598,
+    "maxlon": 6.5740808
+  },
+  "geometry": [
+    { "lat": 44.3835598, "lon": 6.5738358 },
+    { "lat": 44.3834858, "lon": 6.5737998 },
+    { "lat": 44.3834058, "lon": 6.5740338 },
+    { "lat": 44.3834718, "lon": 6.5740808 },
+    { "lat": 44.3835598, "lon": 6.5738358 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q55177556"
+  }
+},
+{
+  "type": "way",
+  "id": 128069160,
+  "bounds": {
+    "minlat": 44.3901592,
+    "minlon": 6.5714985,
+    "maxlat": 44.3902112,
+    "maxlon": 6.5715855
+  },
+  "geometry": [
+    { "lat": 44.3902102, "lon": 6.5715855 },
+    { "lat": 44.3902112, "lon": 6.5715004 },
+    { "lat": 44.3901622, "lon": 6.5714985 },
+    { "lat": 44.3901592, "lon": 6.5715835 },
+    { "lat": 44.3902102, "lon": 6.5715855 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "name": "Chapelle ouverte des Guérins",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "way",
+  "id": 128069346,
+  "bounds": {
+    "minlat": 44.4067740,
+    "minlon": 6.5503160,
+    "maxlat": 44.4069150,
+    "maxlon": 6.5505060
+  },
+  "geometry": [
+    { "lat": 44.4069150, "lon": 6.5504330 },
+    { "lat": 44.4068050, "lon": 6.5503160 },
+    { "lat": 44.4067920, "lon": 6.5503490 },
+    { "lat": 44.4067740, "lon": 6.5503910 },
+    { "lat": 44.4068790, "lon": 6.5505060 },
+    { "lat": 44.4069150, "lon": 6.5504330 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "name": "Chapelle Saint-Jean",
+    "ref:FR:RNB": "WDT5K635M81Y",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q55177563"
+  }
+},
+{
+  "type": "way",
+  "id": 128071277,
+  "bounds": {
+    "minlat": 44.4294068,
+    "minlon": 6.4323293,
+    "maxlat": 44.4296443,
+    "maxlon": 6.4327254
+  },
+  "geometry": [
+    { "lat": 44.4295355, "lon": 6.4327254 },
+    { "lat": 44.4296443, "lon": 6.4326454 },
+    { "lat": 44.4295515, "lon": 6.4323978 },
+    { "lat": 44.4295615, "lon": 6.4323904 },
+    { "lat": 44.4295386, "lon": 6.4323293 },
+    { "lat": 44.4295096, "lon": 6.4323506 },
+    { "lat": 44.4295053, "lon": 6.4323373 },
+    { "lat": 44.4294201, "lon": 6.4324027 },
+    { "lat": 44.4294374, "lon": 6.4324488 },
+    { "lat": 44.4294068, "lon": 6.4324713 },
+    { "lat": 44.4294248, "lon": 6.4325192 },
+    { "lat": 44.4294298, "lon": 6.4325326 },
+    { "lat": 44.4294560, "lon": 6.4325133 },
+    { "lat": 44.4295355, "lon": 6.4327254 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "check_date": "2025-08-30",
+    "denomination": "catholic",
+    "description": "Construite entre 1715 et 1720",
+    "name": "Église Saint-Laurent",
+    "ref:clochers.org": "04102",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q38662814"
+  }
+},
+{
+  "type": "way",
+  "id": 128071366,
+  "bounds": {
+    "minlat": 44.4464384,
+    "minlon": 6.4196428,
+    "maxlat": 44.4465094,
+    "maxlon": 6.4197437
+  },
+  "geometry": [
+    { "lat": 44.4464724, "lon": 6.4196428 },
+    { "lat": 44.4464384, "lon": 6.4197090 },
+    { "lat": 44.4464726, "lon": 6.4197437 },
+    { "lat": 44.4465094, "lon": 6.4196774 },
+    { "lat": 44.4464724, "lon": 6.4196428 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "name": "Chapelle Sainte-Anne",
+    "ref:clochers.org": "04102",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q108627739"
+  }
+},
+{
+  "type": "way",
+  "id": 128071854,
+  "bounds": {
+    "minlat": 44.4391228,
+    "minlon": 6.4272380,
+    "maxlat": 44.4391917,
+    "maxlon": 6.4273412
+  },
+  "geometry": [
+    { "lat": 44.4391614, "lon": 6.4273412 },
+    { "lat": 44.4391803, "lon": 6.4273120 },
+    { "lat": 44.4391917, "lon": 6.4272764 },
+    { "lat": 44.4391541, "lon": 6.4272380 },
+    { "lat": 44.4391228, "lon": 6.4272966 },
+    { "lat": 44.4391614, "lon": 6.4273412 }
+  ],
+  "tags": {
+    "building": "chapel",
+    "name": "Chapelle de Costeplane",
+    "ref:FR:RNB": "WNHHBF3KSD3C",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "way",
+  "id": 128071888,
+  "bounds": {
+    "minlat": 44.4315797,
+    "minlon": 6.4438229,
+    "maxlat": 44.4316391,
+    "maxlon": 6.4439207
+  },
+  "geometry": [
+    { "lat": 44.4316391, "lon": 6.4438331 },
+    { "lat": 44.4315887, "lon": 6.4438229 },
+    { "lat": 44.4315797, "lon": 6.4439105 },
+    { "lat": 44.4316301, "lon": 6.4439207 },
+    { "lat": 44.4316391, "lon": 6.4438331 }
+  ],
+  "tags": {
+    "building": "chapel",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "way",
+  "id": 128074117,
+  "bounds": {
+    "minlat": 44.3601590,
+    "minlon": 6.6256279,
+    "maxlat": 44.3603480,
+    "maxlon": 6.6258269
+  },
+  "geometry": [
+    { "lat": 44.3601700, "lon": 6.6258269 },
+    { "lat": 44.3603100, "lon": 6.6257529 },
+    { "lat": 44.3603020, "lon": 6.6257259 },
+    { "lat": 44.3603480, "lon": 6.6257049 },
+    { "lat": 44.3603290, "lon": 6.6256279 },
+    { "lat": 44.3602350, "lon": 6.6256739 },
+    { "lat": 44.3602330, "lon": 6.6256659 },
+    { "lat": 44.3602090, "lon": 6.6256739 },
+    { "lat": 44.3602120, "lon": 6.6256829 },
+    { "lat": 44.3601790, "lon": 6.6256999 },
+    { "lat": 44.3601920, "lon": 6.6257649 },
+    { "lat": 44.3601590, "lon": 6.6257809 },
+    { "lat": 44.3601700, "lon": 6.6258269 }
+  ],
+  "tags": {
+    "building": "church",
+    "historic": "church",
+    "name": "Église Saint-André",
+    "ref:FR:RNB": "HTT4GBV2D1P1",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q38417892"
+  }
+},
+{
+  "type": "way",
+  "id": 128075398,
+  "bounds": {
+    "minlat": 44.3714270,
+    "minlon": 6.6059400,
+    "maxlat": 44.3716370,
+    "maxlon": 6.6062310
+  },
+  "geometry": [
+    { "lat": 44.3715080, "lon": 6.6059400 },
+    { "lat": 44.3714270, "lon": 6.6060630 },
+    { "lat": 44.3714390, "lon": 6.6060780 },
+    { "lat": 44.3714330, "lon": 6.6060860 },
+    { "lat": 44.3714370, "lon": 6.6060910 },
+    { "lat": 44.3714430, "lon": 6.6060830 },
+    { "lat": 44.3714520, "lon": 6.6060950 },
+    { "lat": 44.3714450, "lon": 6.6061070 },
+    { "lat": 44.3714500, "lon": 6.6061140 },
+    { "lat": 44.3714580, "lon": 6.6061010 },
+    { "lat": 44.3714670, "lon": 6.6061110 },
+    { "lat": 44.3714570, "lon": 6.6061280 },
+    { "lat": 44.3714600, "lon": 6.6061310 },
+    { "lat": 44.3714700, "lon": 6.6061170 },
+    { "lat": 44.3714800, "lon": 6.6061280 },
+    { "lat": 44.3714670, "lon": 6.6061490 },
+    { "lat": 44.3714720, "lon": 6.6061540 },
+    { "lat": 44.3714850, "lon": 6.6061350 },
+    { "lat": 44.3714930, "lon": 6.6061450 },
+    { "lat": 44.3714780, "lon": 6.6061680 },
+    { "lat": 44.3714830, "lon": 6.6061730 },
+    { "lat": 44.3714980, "lon": 6.6061510 },
+    { "lat": 44.3715080, "lon": 6.6061610 },
+    { "lat": 44.3714890, "lon": 6.6061890 },
+    { "lat": 44.3714930, "lon": 6.6061930 },
+    { "lat": 44.3715100, "lon": 6.6061670 },
+    { "lat": 44.3715190, "lon": 6.6061790 },
+    { "lat": 44.3715010, "lon": 6.6062070 },
+    { "lat": 44.3715040, "lon": 6.6062120 },
+    { "lat": 44.3715220, "lon": 6.6061820 },
+    { "lat": 44.3715310, "lon": 6.6061950 },
+    { "lat": 44.3715110, "lon": 6.6062260 },
+    { "lat": 44.3715150, "lon": 6.6062310 },
+    { "lat": 44.3715540, "lon": 6.6061710 },
+    { "lat": 44.3715880, "lon": 6.6062150 },
+    { "lat": 44.3716310, "lon": 6.6061500 },
+    { "lat": 44.3715960, "lon": 6.6061080 },
+    { "lat": 44.3716370, "lon": 6.6060460 },
+    { "lat": 44.3716320, "lon": 6.6060400 },
+    { "lat": 44.3716110, "lon": 6.6060730 },
+    { "lat": 44.3716010, "lon": 6.6060600 },
+    { "lat": 44.3716200, "lon": 6.6060310 },
+    { "lat": 44.3716180, "lon": 6.6060260 },
+    { "lat": 44.3715980, "lon": 6.6060570 },
+    { "lat": 44.3715900, "lon": 6.6060460 },
+    { "lat": 44.3716070, "lon": 6.6060190 },
+    { "lat": 44.3716030, "lon": 6.6060130 },
+    { "lat": 44.3715850, "lon": 6.6060410 },
+    { "lat": 44.3715750, "lon": 6.6060280 },
+    { "lat": 44.3715910, "lon": 6.6060040 },
+    { "lat": 44.3715890, "lon": 6.6060010 },
+    { "lat": 44.3715740, "lon": 6.6060230 },
+    { "lat": 44.3715640, "lon": 6.6060110 },
+    { "lat": 44.3715770, "lon": 6.6059900 },
+    { "lat": 44.3715730, "lon": 6.6059840 },
+    { "lat": 44.3715590, "lon": 6.6060070 },
+    { "lat": 44.3715500, "lon": 6.6059960 },
+    { "lat": 44.3715630, "lon": 6.6059770 },
+    { "lat": 44.3715580, "lon": 6.6059720 },
+    { "lat": 44.3715460, "lon": 6.6059890 },
+    { "lat": 44.3715380, "lon": 6.6059790 },
+    { "lat": 44.3715470, "lon": 6.6059640 },
+    { "lat": 44.3715410, "lon": 6.6059550 },
+    { "lat": 44.3715320, "lon": 6.6059700 },
+    { "lat": 44.3715230, "lon": 6.6059590 },
+    { "lat": 44.3715310, "lon": 6.6059480 },
+    { "lat": 44.3715260, "lon": 6.6059430 },
+    { "lat": 44.3715190, "lon": 6.6059540 },
+    { "lat": 44.3715080, "lon": 6.6059400 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "denomination": "catholic",
+    "name": "Chapelle Saint-François d'Assise",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "start_date": "1969"
+  }
+},
+{
+  "type": "way",
+  "id": 128075448,
+  "bounds": {
+    "minlat": 44.3331869,
+    "minlon": 6.5840192,
+    "maxlat": 44.3332828,
+    "maxlon": 6.5842408
+  },
+  "geometry": [
+    { "lat": 44.3332828, "lon": 6.5841259 },
+    { "lat": 44.3332752, "lon": 6.5840334 },
+    { "lat": 44.3332364, "lon": 6.5840401 },
+    { "lat": 44.3332144, "lon": 6.5840192 },
+    { "lat": 44.3331869, "lon": 6.5840519 },
+    { "lat": 44.3332033, "lon": 6.5842408 },
+    { "lat": 44.3332658, "lon": 6.5842278 },
+    { "lat": 44.3332598, "lon": 6.5841271 },
+    { "lat": 44.3332828, "lon": 6.5841259 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "denomination": "roman_catholic",
+    "name": "Saint-Jean des Agneliers",
+    "ref:FR:RNB": "7NV7VJD2EJ6S",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q55440461"
+  }
+},
+{
+  "type": "way",
+  "id": 128081813,
+  "bounds": {
+    "minlat": 44.4529530,
+    "minlon": 6.7398890,
+    "maxlat": 44.4530360,
+    "maxlon": 6.7400410
+  },
+  "geometry": [
+    { "lat": 44.4529880, "lon": 6.7398920 },
+    { "lat": 44.4529840, "lon": 6.7398890 },
+    { "lat": 44.4529530, "lon": 6.7399970 },
+    { "lat": 44.4529590, "lon": 6.7400170 },
+    { "lat": 44.4529650, "lon": 6.7400250 },
+    { "lat": 44.4529710, "lon": 6.7400320 },
+    { "lat": 44.4529790, "lon": 6.7400380 },
+    { "lat": 44.4529880, "lon": 6.7400400 },
+    { "lat": 44.4529970, "lon": 6.7400410 },
+    { "lat": 44.4530050, "lon": 6.7400380 },
+    { "lat": 44.4530360, "lon": 6.7399310 },
+    { "lat": 44.4530095, "lon": 6.7399095 },
+    { "lat": 44.4529880, "lon": 6.7398920 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "check_date": "2023-12-23",
+    "name": "Chapelle des Pénitents Blancs",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "start_date": "~1630",
+    "wikidata": "Q38488529"
+  }
+},
+{
+  "type": "way",
+  "id": 128081857,
+  "bounds": {
+    "minlat": 44.4527015,
+    "minlon": 6.7397962,
+    "maxlat": 44.4528685,
+    "maxlon": 6.7399674
+  },
+  "geometry": [
+    { "lat": 44.4528625, "lon": 6.7398413 },
+    { "lat": 44.4528630, "lon": 6.7398078 },
+    { "lat": 44.4527219, "lon": 6.7397962 },
+    { "lat": 44.4527217, "lon": 6.7398322 },
+    { "lat": 44.4527017, "lon": 6.7398312 },
+    { "lat": 44.4527015, "lon": 6.7398744 },
+    { "lat": 44.4527015, "lon": 6.7399343 },
+    { "lat": 44.4527225, "lon": 6.7399353 },
+    { "lat": 44.4527235, "lon": 6.7399663 },
+    { "lat": 44.4528192, "lon": 6.7399674 },
+    { "lat": 44.4528195, "lon": 6.7399323 },
+    { "lat": 44.4528445, "lon": 6.7399313 },
+    { "lat": 44.4528535, "lon": 6.7399263 },
+    { "lat": 44.4528605, "lon": 6.7399203 },
+    { "lat": 44.4528665, "lon": 6.7399113 },
+    { "lat": 44.4528685, "lon": 6.7398993 },
+    { "lat": 44.4528685, "lon": 6.7398423 },
+    { "lat": 44.4528625, "lon": 6.7398413 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Église Saint-Clément",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q38488529"
+  }
+},
+{
+  "type": "way",
+  "id": 128082035,
+  "bounds": {
+    "minlat": 44.4585937,
+    "minlon": 6.7374556,
+    "maxlat": 44.4586463,
+    "maxlon": 6.7375394
+  },
+  "geometry": [
+    { "lat": 44.4585985, "lon": 6.7374556 },
+    { "lat": 44.4585937, "lon": 6.7375336 },
+    { "lat": 44.4586204, "lon": 6.7375368 },
+    { "lat": 44.4586415, "lon": 6.7375394 },
+    { "lat": 44.4586463, "lon": 6.7374614 },
+    { "lat": 44.4585985, "lon": 6.7374556 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "name": "Chapelle Saint-Roch",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "start_date": "~1870",
+    "wikidata": "Q55084587"
+  }
+},
+{
+  "type": "way",
+  "id": 128082218,
+  "bounds": {
+    "minlat": 44.4508059,
+    "minlon": 6.7379685,
+    "maxlat": 44.4508550,
+    "maxlon": 6.7380714
+  },
+  "geometry": [
+    { "lat": 44.4508059, "lon": 6.7379708 },
+    { "lat": 44.4508085, "lon": 6.7380714 },
+    { "lat": 44.4508550, "lon": 6.7380690 },
+    { "lat": 44.4508524, "lon": 6.7379685 },
+    { "lat": 44.4508059, "lon": 6.7379708 }
+  ],
+  "tags": {
+    "building": "chapel",
+    "name": "Chapelle Saint-Baptiste",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011"
+  }
+},
+{
+  "type": "way",
+  "id": 128086950,
+  "bounds": {
+    "minlat": 44.5934211,
+    "minlon": 6.8466935,
+    "maxlat": 44.5935681,
+    "maxlon": 6.8469774
+  },
+  "geometry": [
+    { "lat": 44.5935678, "lon": 6.8467118 },
+    { "lat": 44.5935681, "lon": 6.8466974 },
+    { "lat": 44.5935519, "lon": 6.8466968 },
+    { "lat": 44.5935098, "lon": 6.8466951 },
+    { "lat": 44.5934702, "lon": 6.8466935 },
+    { "lat": 44.5934670, "lon": 6.8468866 },
+    { "lat": 44.5934221, "lon": 6.8468870 },
+    { "lat": 44.5934211, "lon": 6.8469724 },
+    { "lat": 44.5935490, "lon": 6.8469774 },
+    { "lat": 44.5935506, "lon": 6.8468962 },
+    { "lat": 44.5935641, "lon": 6.8468967 },
+    { "lat": 44.5935678, "lon": 6.8467118 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "check_date": "2026-02-26",
+    "denomination": "catholic",
+    "heritage": "2",
+    "heritage:operator": "mhs",
+    "mhs:inscription_date": "1920-12-20",
+    "name": "Église Saint-Antoine-du-Désert de Maurin",
+    "ref:mhs": "PA00080476",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "source:heritage": "data.gouv.fr, Ministère de la Culture - 2016",
+    "wikidata": "Q3580940",
+    "wikipedia": "fr:Église Saint-Antoine-du-Désert de Maurin"
+  }
+},
+{
+  "type": "way",
+  "id": 128090492,
+  "bounds": {
+    "minlat": 44.5144110,
+    "minlon": 6.7502790,
+    "maxlat": 44.5145820,
+    "maxlon": 6.7505300
+  },
+  "geometry": [
+    { "lat": 44.5145820, "lon": 6.7504780 },
+    { "lat": 44.5145090, "lon": 6.7502790 },
+    { "lat": 44.5144980, "lon": 6.7502880 },
+    { "lat": 44.5144620, "lon": 6.7503110 },
+    { "lat": 44.5144320, "lon": 6.7503320 },
+    { "lat": 44.5144330, "lon": 6.7503400 },
+    { "lat": 44.5144110, "lon": 6.7503550 },
+    { "lat": 44.5144290, "lon": 6.7504040 },
+    { "lat": 44.5144490, "lon": 6.7503900 },
+    { "lat": 44.5145020, "lon": 6.7505300 },
+    { "lat": 44.5145820, "lon": 6.7504780 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "check_date": "2026-03-02",
+    "denomination": "catholic",
+    "name": "Chapelle Saint-Jean-Baptiste",
+    "ref:FR:RNB": "CZXF2MSQJP8M",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q55084528"
+  }
+},
+{
+  "type": "way",
+  "id": 128090494,
+  "bounds": {
+    "minlat": 44.4873490,
+    "minlon": 6.7410030,
+    "maxlat": 44.4874960,
+    "maxlon": 6.7412650
+  },
+  "geometry": [
+    { "lat": 44.4874960, "lon": 6.7410520 },
+    { "lat": 44.4874180, "lon": 6.7410030 },
+    { "lat": 44.4873900, "lon": 6.7411310 },
+    { "lat": 44.4873570, "lon": 6.7411270 },
+    { "lat": 44.4873490, "lon": 6.7411910 },
+    { "lat": 44.4873770, "lon": 6.7411940 },
+    { "lat": 44.4873700, "lon": 6.7412250 },
+    { "lat": 44.4874490, "lon": 6.7412650 },
+    { "lat": 44.4874680, "lon": 6.7411940 },
+    { "lat": 44.4874590, "lon": 6.7411900 },
+    { "lat": 44.4874960, "lon": 6.7410520 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Église Saint-Thomas",
+    "ref:FR:RNB": "44C55YQ4FJRW",
+    "religion": "christian",
+    "source": "©IGN 2010 dans le cadre de la cartographie réglementaire",
+    "wikidata": "Q55084089"
+  }
+},
+{
+  "type": "way",
+  "id": 128090511,
+  "bounds": {
+    "minlat": 44.5251800,
+    "minlon": 6.7233240,
+    "maxlat": 44.5252660,
+    "maxlon": 6.7235670
+  },
+  "geometry": [
+    { "lat": 44.5252070, "lon": 6.7233240 },
+    { "lat": 44.5252070, "lon": 6.7233430 },
+    { "lat": 44.5251850, "lon": 6.7233390 },
+    { "lat": 44.5251800, "lon": 6.7233990 },
+    { "lat": 44.5251920, "lon": 6.7234000 },
+    { "lat": 44.5251820, "lon": 6.7235530 },
+    { "lat": 44.5252530, "lon": 6.7235670 },
+    { "lat": 44.5252660, "lon": 6.7234000 },
+    { "lat": 44.5252600, "lon": 6.7233990 },
+    { "lat": 44.5252660, "lon": 6.7233330 },
+    { "lat": 44.5252070, "lon": 6.7233240 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Église Saint-Sébastien",
+    "religion": "christian",
+    "source": "Survey 2015",
+    "wikidata": "Q55084084"
+  }
+},
+{
+  "type": "way",
+  "id": 128090543,
+  "bounds": {
+    "minlat": 44.5143197,
+    "minlon": 6.7505292,
+    "maxlat": 44.5145402,
+    "maxlon": 6.7509460
+  },
+  "geometry": [
+    { "lat": 44.5144391, "lon": 6.7505292 },
+    { "lat": 44.5143197, "lon": 6.7506133 },
+    { "lat": 44.5143812, "lon": 6.7507854 },
+    { "lat": 44.5143687, "lon": 6.7507942 },
+    { "lat": 44.5143939, "lon": 6.7508646 },
+    { "lat": 44.5143878, "lon": 6.7508689 },
+    { "lat": 44.5144027, "lon": 6.7509105 },
+    { "lat": 44.5144334, "lon": 6.7508889 },
+    { "lat": 44.5144538, "lon": 6.7509460 },
+    { "lat": 44.5145402, "lon": 6.7508852 },
+    { "lat": 44.5145127, "lon": 6.7508083 },
+    { "lat": 44.5145337, "lon": 6.7507935 },
+    { "lat": 44.5144391, "lon": 6.7505292 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "check_date": "2026-03-02",
+    "denomination": "catholic",
+    "heritage": "2",
+    "heritage:operator": "mhs",
+    "mhs:inscription_date": "1921-01-11",
+    "name": "Église Saints-Pierre-et-Paul",
+    "ref:clochers.org": "04193b",
+    "ref:mhs": "PA00080475",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "source:heritage": "data.gouv.fr, Ministère de la Culture - 2016",
+    "wikidata": "Q3583644",
+    "wikipedia": "fr:Église Saint-Pierre-et-Paul de Saint-Paul-sur-Ubaye"
+  }
+},
+{
+  "type": "way",
+  "id": 128090685,
+  "bounds": {
+    "minlat": 44.5365937,
+    "minlon": 6.7027617,
+    "maxlat": 44.5366695,
+    "maxlon": 6.7028722
+  },
+  "geometry": [
+    { "lat": 44.5366260, "lon": 6.7028722 },
+    { "lat": 44.5366695, "lon": 6.7027999 },
+    { "lat": 44.5366372, "lon": 6.7027617 },
+    { "lat": 44.5365937, "lon": 6.7028341 },
+    { "lat": 44.5366260, "lon": 6.7028722 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "denomination": "catholic",
+    "name": "Chapelle Sainte-Marie-Madeleine",
+    "religion": "christian",
+    "source": "Survey 2015",
+    "wikidata": "Q55084421"
+  }
+},
+{
+  "type": "way",
+  "id": 128090724,
+  "bounds": {
+    "minlat": 44.5216205,
+    "minlon": 6.7470046,
+    "maxlat": 44.5216994,
+    "maxlon": 6.7470780
+  },
+  "geometry": [
+    { "lat": 44.5216994, "lon": 6.7470588 },
+    { "lat": 44.5216915, "lon": 6.7470046 },
+    { "lat": 44.5216205, "lon": 6.7470238 },
+    { "lat": 44.5216285, "lon": 6.7470780 },
+    { "lat": 44.5216994, "lon": 6.7470588 }
+  ],
+  "tags": {
+    "alt_name": "Chapelle des Prads",
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "name": "Chapelle Notre-Dame-des-Sept-Douleurs",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q55084260"
+  }
+},
+{
+  "type": "way",
+  "id": 128090944,
+  "bounds": {
+    "minlat": 44.5280628,
+    "minlon": 6.7732530,
+    "maxlat": 44.5282168,
+    "maxlon": 6.7734770
+  },
+  "geometry": [
+    { "lat": 44.5282168, "lon": 6.7734040 },
+    { "lat": 44.5281148, "lon": 6.7732530 },
+    { "lat": 44.5280628, "lon": 6.7733280 },
+    { "lat": 44.5281638, "lon": 6.7734770 },
+    { "lat": 44.5282168, "lon": 6.7734040 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "name": "Chapelle Saint-Roch",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q55084591"
+  }
+},
+{
+  "type": "way",
+  "id": 128091064,
+  "bounds": {
+    "minlat": 44.4760739,
+    "minlon": 6.7619679,
+    "maxlat": 44.4761329,
+    "maxlon": 6.7620469
+  },
+  "geometry": [
+    { "lat": 44.4760739, "lon": 6.7620229 },
+    { "lat": 44.4760929, "lon": 6.7620339 },
+    { "lat": 44.4761139, "lon": 6.7620469 },
+    { "lat": 44.4761319, "lon": 6.7619959 },
+    { "lat": 44.4761329, "lon": 6.7619919 },
+    { "lat": 44.4760909, "lon": 6.7619679 },
+    { "lat": 44.4760899, "lon": 6.7619739 },
+    { "lat": 44.4760739, "lon": 6.7620229 }
+  ],
+  "tags": {
+    "building": "chapel",
+    "name": "Chapelle Saint-Jacques",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2011",
+    "wikidata": "Q55084499"
+  }
+},
+{
+  "type": "way",
+  "id": 128091102,
+  "bounds": {
+    "minlat": 44.5258517,
+    "minlon": 6.8033368,
+    "maxlat": 44.5259301,
+    "maxlon": 6.8035684
+  },
+  "geometry": [
+    { "lat": 44.5258517, "lon": 6.8035603 },
+    { "lat": 44.5258925, "lon": 6.8035684 },
+    { "lat": 44.5259036, "lon": 6.8034576 },
+    { "lat": 44.5259189, "lon": 6.8034606 },
+    { "lat": 44.5259301, "lon": 6.8033487 },
+    { "lat": 44.5258699, "lon": 6.8033368 },
+    { "lat": 44.5258572, "lon": 6.8034624 },
+    { "lat": 44.5258615, "lon": 6.8034633 },
+    { "lat": 44.5258517, "lon": 6.8035603 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "denomination": "roman_catholic",
+    "heritage": "2",
+    "heritage:operator": "mhs",
+    "historic": "building",
+    "image": "File:Eglise de Fouillouse.jpg",
+    "mhs:inscription_date": "2016-09-26",
+    "name": "Chapelle Saint-Jean-Baptiste",
+    "ref:mhs": "PA04000035",
+    "religion": "christian",
+    "source:heritage": "Ministère de la Culture - 06/2019",
+    "start_date": "C16",
+    "wikidata": "Q38629481"
+  }
+},
+{
+  "type": "way",
+  "id": 128091115,
+  "bounds": {
+    "minlat": 44.5306300,
+    "minlon": 6.7762640,
+    "maxlat": 44.5308130,
+    "maxlon": 6.7765100
+  },
+  "geometry": [
+    { "lat": 44.5308130, "lon": 6.7764140 },
+    { "lat": 44.5307270, "lon": 6.7762640 },
+    { "lat": 44.5306350, "lon": 6.7763600 },
+    { "lat": 44.5306550, "lon": 6.7763920 },
+    { "lat": 44.5306300, "lon": 6.7764250 },
+    { "lat": 44.5306830, "lon": 6.7765050 },
+    { "lat": 44.5307100, "lon": 6.7764750 },
+    { "lat": 44.5307330, "lon": 6.7765100 },
+    { "lat": 44.5308130, "lon": 6.7764140 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "religion": "christian",
+    "source": "©IGN 2010 dans le cadre de la cartographie réglementaire",
+    "wikidata": "Q55084038"
+  }
+},
+{
+  "type": "way",
+  "id": 159650623,
+  "bounds": {
+    "minlat": 44.3956135,
+    "minlon": 6.3369374,
+    "maxlat": 44.3957436,
+    "maxlon": 6.3372013
+  },
+  "geometry": [
+    { "lat": 44.3956135, "lon": 6.3371208 },
+    { "lat": 44.3956210, "lon": 6.3371211 },
+    { "lat": 44.3956196, "lon": 6.3371980 },
+    { "lat": 44.3957228, "lon": 6.3372013 },
+    { "lat": 44.3957239, "lon": 6.3371372 },
+    { "lat": 44.3957423, "lon": 6.3371379 },
+    { "lat": 44.3957436, "lon": 6.3370640 },
+    { "lat": 44.3957034, "lon": 6.3370626 },
+    { "lat": 44.3957056, "lon": 6.3369404 },
+    { "lat": 44.3956167, "lon": 6.3369374 },
+    { "lat": 44.3956135, "lon": 6.3371208 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Église Saint-Michel",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wikidata": "Q41743822"
+  }
+},
+{
+  "type": "way",
+  "id": 159650655,
+  "bounds": {
+    "minlat": 44.3886712,
+    "minlon": 6.3276392,
+    "maxlat": 44.3888895,
+    "maxlon": 6.3278193
+  },
+  "geometry": [
+    { "lat": 44.3888895, "lon": 6.3277138 },
+    { "lat": 44.3888021, "lon": 6.3276878 },
+    { "lat": 44.3888045, "lon": 6.3276725 },
+    { "lat": 44.3886926, "lon": 6.3276392 },
+    { "lat": 44.3886712, "lon": 6.3277798 },
+    { "lat": 44.3887825, "lon": 6.3278129 },
+    { "lat": 44.3887855, "lon": 6.3277931 },
+    { "lat": 44.3888735, "lon": 6.3278193 },
+    { "lat": 44.3888819, "lon": 6.3277641 },
+    { "lat": 44.3888895, "lon": 6.3277138 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Église Saint-Pierre",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wikidata": "Q41743825"
+  }
+},
+{
+  "type": "way",
+  "id": 159650801,
+  "bounds": {
+    "minlat": 44.4148754,
+    "minlon": 6.3507610,
+    "maxlat": 44.4149586,
+    "maxlon": 6.3509583
+  },
+  "geometry": [
+    { "lat": 44.4149331, "lon": 6.3509321 },
+    { "lat": 44.4149586, "lon": 6.3507829 },
+    { "lat": 44.4149063, "lon": 6.3507610 },
+    { "lat": 44.4148754, "lon": 6.3509185 },
+    { "lat": 44.4148813, "lon": 6.3509432 },
+    { "lat": 44.4148961, "lon": 6.3509583 },
+    { "lat": 44.4149187, "lon": 6.3509573 },
+    { "lat": 44.4149331, "lon": 6.3509321 }
+  ],
+  "tags": {
+    "building": "chapel",
+    "name": "Chapelle Saint-Jean",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wikidata": "Q55084504"
+  }
+},
+{
+  "type": "way",
+  "id": 159651029,
+  "bounds": {
+    "minlat": 44.4201764,
+    "minlon": 6.3375300,
+    "maxlat": 44.4202363,
+    "maxlon": 6.3376560
+  },
+  "geometry": [
+    { "lat": 44.4202363, "lon": 6.3375303 },
+    { "lat": 44.4201767, "lon": 6.3375300 },
+    { "lat": 44.4201764, "lon": 6.3376556 },
+    { "lat": 44.4202359, "lon": 6.3376560 },
+    { "lat": 44.4202363, "lon": 6.3375303 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "denomination": "catholic",
+    "name": "Chapelle Saint-Léger",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wikidata": "Q55235481"
+  }
+},
+{
+  "type": "way",
+  "id": 159651053,
+  "bounds": {
+    "minlat": 44.4103882,
+    "minlon": 6.3116497,
+    "maxlat": 44.4104666,
+    "maxlon": 6.3117702
+  },
+  "geometry": [
+    { "lat": 44.4104438, "lon": 6.3116497 },
+    { "lat": 44.4103882, "lon": 6.3116762 },
+    { "lat": 44.4104110, "lon": 6.3117702 },
+    { "lat": 44.4104666, "lon": 6.3117438 },
+    { "lat": 44.4104438, "lon": 6.3116497 }
+  ],
+  "tags": {
+    "building": "chapel",
+    "name": "Chapelle Sainte-Anne",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012"
+  }
+},
+{
+  "type": "way",
+  "id": 159653294,
+  "bounds": {
+    "minlat": 44.3967174,
+    "minlon": 6.3257414,
+    "maxlat": 44.3968220,
+    "maxlon": 6.3258737
+  },
+  "geometry": [
+    { "lat": 44.3967847, "lon": 6.3257422 },
+    { "lat": 44.3967851, "lon": 6.3257816 },
+    { "lat": 44.3967174, "lon": 6.3257830 },
+    { "lat": 44.3967184, "lon": 6.3258737 },
+    { "lat": 44.3968220, "lon": 6.3258715 },
+    { "lat": 44.3968206, "lon": 6.3257414 },
+    { "lat": 44.3967847, "lon": 6.3257422 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "name": "Chapelle Notre-Dame-de-la-Salette",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wikidata": "Q55084222"
+  }
+},
+{
+  "type": "way",
+  "id": 162367074,
+  "bounds": {
+    "minlat": 44.4799436,
+    "minlon": 6.7115023,
+    "maxlat": 44.4800224,
+    "maxlon": 6.7116211
+  },
+  "geometry": [
+    { "lat": 44.4799874, "lon": 6.7115023 },
+    { "lat": 44.4799436, "lon": 6.7115440 },
+    { "lat": 44.4799793, "lon": 6.7116211 },
+    { "lat": 44.4800224, "lon": 6.7115804 },
+    { "lat": 44.4799874, "lon": 6.7115023 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "name": "Chapelle Sainte-Anne",
+    "religion": "christian",
+    "wikidata": "Q55084342"
+  }
+},
+{
+  "type": "way",
+  "id": 169771317,
+  "bounds": {
+    "minlat": 44.5896452,
+    "minlon": 6.4476567,
+    "maxlat": 44.5896986,
+    "maxlon": 6.4477701
+  },
+  "geometry": [
+    { "lat": 44.5896986, "lon": 6.4476741 },
+    { "lat": 44.5896711, "lon": 6.4476567 },
+    { "lat": 44.5896488, "lon": 6.4476656 },
+    { "lat": 44.5896452, "lon": 6.4477663 },
+    { "lat": 44.5896974, "lon": 6.4477701 },
+    { "lat": 44.5896986, "lon": 6.4476741 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "denomination": "catholic",
+    "ele": "2056",
+    "name": "Chapelle des Seyères",
+    "religion": "christian",
+    "wikidata": "Q107445987"
+  }
+},
+{
+  "type": "way",
+  "id": 175507608,
+  "bounds": {
+    "minlat": 44.5866788,
+    "minlon": 6.5339838,
+    "maxlat": 44.5869099,
+    "maxlon": 6.5343531
+  },
+  "geometry": [
+    { "lat": 44.5868106, "lon": 6.5343531 },
+    { "lat": 44.5869099, "lon": 6.5340737 },
+    { "lat": 44.5867764, "lon": 6.5339838 },
+    { "lat": 44.5866788, "lon": 6.5342595 },
+    { "lat": 44.5868106, "lon": 6.5343531 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "heritage": "2",
+    "heritage:operator": "mhs",
+    "mhs:inscription_date": "1948-11-08",
+    "name": "Église Saint-André de Saint-André-d'Embrun",
+    "ref:mhs": "PA00080604",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2018",
+    "source:heritage": "Ministère de la Culture - 07/2018",
+    "wikidata": "Q22998490",
+    "wikipedia": "fr:Église Saint-André de Saint-André-d'Embrun"
+  }
+},
+{
+  "type": "way",
+  "id": 175977172,
+  "bounds": {
+    "minlat": 44.5476284,
+    "minlon": 6.6079284,
+    "maxlat": 44.5478064,
+    "maxlon": 6.6082034
+  },
+  "geometry": [
+    { "lat": 44.5477714, "lon": 6.6080084 },
+    { "lat": 44.5477814, "lon": 6.6079594 },
+    { "lat": 44.5477064, "lon": 6.6079284 },
+    { "lat": 44.5476994, "lon": 6.6079504 },
+    { "lat": 44.5476554, "lon": 6.6079374 },
+    { "lat": 44.5476284, "lon": 6.6080754 },
+    { "lat": 44.5476774, "lon": 6.6080954 },
+    { "lat": 44.5476614, "lon": 6.6081764 },
+    { "lat": 44.5477274, "lon": 6.6082034 },
+    { "lat": 44.5477444, "lon": 6.6081194 },
+    { "lat": 44.5477914, "lon": 6.6081384 },
+    { "lat": 44.5478064, "lon": 6.6080644 },
+    { "lat": 44.5477874, "lon": 6.6080574 },
+    { "lat": 44.5477954, "lon": 6.6080174 },
+    { "lat": 44.5477714, "lon": 6.6080084 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Église Saint-Marcellin",
+    "ref:clochers.org": "05044_1",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wikidata": "Q41743951"
+  }
+},
+{
+  "type": "way",
+  "id": 175977235,
+  "bounds": {
+    "minlat": 44.5479210,
+    "minlon": 6.6206860,
+    "maxlat": 44.5479790,
+    "maxlon": 6.6208000
+  },
+  "geometry": [
+    { "lat": 44.5479740, "lon": 6.6208000 },
+    { "lat": 44.5479790, "lon": 6.6206860 },
+    { "lat": 44.5479220, "lon": 6.6206860 },
+    { "lat": 44.5479210, "lon": 6.6207960 },
+    { "lat": 44.5479740, "lon": 6.6208000 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "name": "Chapelle Saint-Jean",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wikidata": "Q29545216"
+  }
+},
+{
+  "type": "way",
+  "id": 175977265,
+  "bounds": {
+    "minlat": 44.5496849,
+    "minlon": 6.5956230,
+    "maxlat": 44.5497575,
+    "maxlon": 6.5957291
+  },
+  "geometry": [
+    { "lat": 44.5497228, "lon": 6.5957291 },
+    { "lat": 44.5497575, "lon": 6.5956913 },
+    { "lat": 44.5497196, "lon": 6.5956230 },
+    { "lat": 44.5496849, "lon": 6.5956608 },
+    { "lat": 44.5497228, "lon": 6.5957291 }
+  ],
+  "tags": {
+    "building": "church",
+    "name": "Chapelle Saint-Antoine",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wikidata": "Q29545218"
+  }
+},
+{
+  "type": "way",
+  "id": 181927692,
+  "bounds": {
+    "minlat": 44.6192361,
+    "minlon": 6.5224644,
+    "maxlat": 44.6194971,
+    "maxlon": 6.5228314
+  },
+  "geometry": [
+    { "lat": 44.6192941, "lon": 6.5224644 },
+    { "lat": 44.6192361, "lon": 6.5225994 },
+    { "lat": 44.6194081, "lon": 6.5227424 },
+    { "lat": 44.6193901, "lon": 6.5227924 },
+    { "lat": 44.6194351, "lon": 6.5228314 },
+    { "lat": 44.6194671, "lon": 6.5227594 },
+    { "lat": 44.6194741, "lon": 6.5227544 },
+    { "lat": 44.6194821, "lon": 6.5227474 },
+    { "lat": 44.6194881, "lon": 6.5227384 },
+    { "lat": 44.6194931, "lon": 6.5227274 },
+    { "lat": 44.6194961, "lon": 6.5227154 },
+    { "lat": 44.6194971, "lon": 6.5227024 },
+    { "lat": 44.6194961, "lon": 6.5226894 },
+    { "lat": 44.6194931, "lon": 6.5226784 },
+    { "lat": 44.6194891, "lon": 6.5226664 },
+    { "lat": 44.6194831, "lon": 6.5226574 },
+    { "lat": 44.6194551, "lon": 6.5226314 },
+    { "lat": 44.6194661, "lon": 6.5226094 },
+    { "lat": 44.6192941, "lon": 6.5224644 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "heritage": "2",
+    "heritage:operator": "mhs",
+    "mhs:inscription_date": "1981-02-19",
+    "name": "Église Saint-Marcellin",
+    "ref:clochers.org": "05036a",
+    "ref:mhs": "PA00080547",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "source:heritage": "data.gouv.fr, Ministère de la Culture - 2016",
+    "wikidata": "Q22998418",
+    "wikipedia": "fr:Église Saint-Marcellin de Châteauroux-les-Alpes"
+  }
+},
+{
+  "type": "way",
+  "id": 181928365,
+  "bounds": {
+    "minlat": 44.6004363,
+    "minlon": 6.5020403,
+    "maxlat": 44.6005312,
+    "maxlon": 6.5021792
+  },
+  "geometry": [
+    { "lat": 44.6004363, "lon": 6.5021313 },
+    { "lat": 44.6004772, "lon": 6.5021792 },
+    { "lat": 44.6005312, "lon": 6.5020882 },
+    { "lat": 44.6004903, "lon": 6.5020403 },
+    { "lat": 44.6004363, "lon": 6.5021313 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012"
+  }
+},
+{
+  "type": "way",
+  "id": 181928974,
+  "bounds": {
+    "minlat": 44.6150870,
+    "minlon": 6.5194060,
+    "maxlat": 44.6153130,
+    "maxlon": 6.5198960
+  },
+  "geometry": [
+    { "lat": 44.6153000, "lon": 6.5194800 },
+    { "lat": 44.6152320, "lon": 6.5194430 },
+    { "lat": 44.6152350, "lon": 6.5194330 },
+    { "lat": 44.6152270, "lon": 6.5194300 },
+    { "lat": 44.6152230, "lon": 6.5194430 },
+    { "lat": 44.6151840, "lon": 6.5194200 },
+    { "lat": 44.6151830, "lon": 6.5194070 },
+    { "lat": 44.6151790, "lon": 6.5194060 },
+    { "lat": 44.6151770, "lon": 6.5194140 },
+    { "lat": 44.6151700, "lon": 6.5194110 },
+    { "lat": 44.6151680, "lon": 6.5194160 },
+    { "lat": 44.6151720, "lon": 6.5194190 },
+    { "lat": 44.6151390, "lon": 6.5195330 },
+    { "lat": 44.6151330, "lon": 6.5195360 },
+    { "lat": 44.6151320, "lon": 6.5195390 },
+    { "lat": 44.6151380, "lon": 6.5195420 },
+    { "lat": 44.6151350, "lon": 6.5195480 },
+    { "lat": 44.6151400, "lon": 6.5195530 },
+    { "lat": 44.6151430, "lon": 6.5195480 },
+    { "lat": 44.6151520, "lon": 6.5195530 },
+    { "lat": 44.6151300, "lon": 6.5196320 },
+    { "lat": 44.6151230, "lon": 6.5196270 },
+    { "lat": 44.6150870, "lon": 6.5197500 },
+    { "lat": 44.6151250, "lon": 6.5197680 },
+    { "lat": 44.6151110, "lon": 6.5198180 },
+    { "lat": 44.6151030, "lon": 6.5198150 },
+    { "lat": 44.6151020, "lon": 6.5198270 },
+    { "lat": 44.6151110, "lon": 6.5198320 },
+    { "lat": 44.6151060, "lon": 6.5198480 },
+    { "lat": 44.6151130, "lon": 6.5198550 },
+    { "lat": 44.6151190, "lon": 6.5198410 },
+    { "lat": 44.6151880, "lon": 6.5198770 },
+    { "lat": 44.6151840, "lon": 6.5198920 },
+    { "lat": 44.6151900, "lon": 6.5198960 },
+    { "lat": 44.6151970, "lon": 6.5198760 },
+    { "lat": 44.6152090, "lon": 6.5198830 },
+    { "lat": 44.6152110, "lon": 6.5198750 },
+    { "lat": 44.6152360, "lon": 6.5198880 },
+    { "lat": 44.6152490, "lon": 6.5198390 },
+    { "lat": 44.6152230, "lon": 6.5198260 },
+    { "lat": 44.6152250, "lon": 6.5198160 },
+    { "lat": 44.6152160, "lon": 6.5198120 },
+    { "lat": 44.6152310, "lon": 6.5197640 },
+    { "lat": 44.6152400, "lon": 6.5197680 },
+    { "lat": 44.6152430, "lon": 6.5197560 },
+    { "lat": 44.6152350, "lon": 6.5197520 },
+    { "lat": 44.6152450, "lon": 6.5197140 },
+    { "lat": 44.6152730, "lon": 6.5197290 },
+    { "lat": 44.6152760, "lon": 6.5197190 },
+    { "lat": 44.6152840, "lon": 6.5197220 },
+    { "lat": 44.6152870, "lon": 6.5197110 },
+    { "lat": 44.6152790, "lon": 6.5197080 },
+    { "lat": 44.6152970, "lon": 6.5196420 },
+    { "lat": 44.6153040, "lon": 6.5196470 },
+    { "lat": 44.6153090, "lon": 6.5196360 },
+    { "lat": 44.6153000, "lon": 6.5196310 },
+    { "lat": 44.6153030, "lon": 6.5196190 },
+    { "lat": 44.6152980, "lon": 6.5196140 },
+    { "lat": 44.6152940, "lon": 6.5196260 },
+    { "lat": 44.6152720, "lon": 6.5196130 },
+    { "lat": 44.6152840, "lon": 6.5195640 },
+    { "lat": 44.6152930, "lon": 6.5195670 },
+    { "lat": 44.6152960, "lon": 6.5195580 },
+    { "lat": 44.6152880, "lon": 6.5195540 },
+    { "lat": 44.6153030, "lon": 6.5195000 },
+    { "lat": 44.6153110, "lon": 6.5195010 },
+    { "lat": 44.6153130, "lon": 6.5194930 },
+    { "lat": 44.6153050, "lon": 6.5194910 },
+    { "lat": 44.6153090, "lon": 6.5194760 },
+    { "lat": 44.6153020, "lon": 6.5194700 },
+    { "lat": 44.6153000, "lon": 6.5194800 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Église Saint-Irénée",
+    "ref:clochers.org": "05036_1",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wikidata": "Q29545208"
+  }
+},
+{
+  "type": "way",
+  "id": 181928986,
+  "bounds": {
+    "minlat": 44.6087943,
+    "minlon": 6.5127548,
+    "maxlat": 44.6089352,
+    "maxlon": 6.5129211
+  },
+  "geometry": [
+    { "lat": 44.6089189, "lon": 6.5127604 },
+    { "lat": 44.6089054, "lon": 6.5127550 },
+    { "lat": 44.6088895, "lon": 6.5127548 },
+    { "lat": 44.6087943, "lon": 6.5128225 },
+    { "lat": 44.6088293, "lon": 6.5129211 },
+    { "lat": 44.6089215, "lon": 6.5128481 },
+    { "lat": 44.6089319, "lon": 6.5128200 },
+    { "lat": 44.6089352, "lon": 6.5127954 },
+    { "lat": 44.6089314, "lon": 6.5127762 },
+    { "lat": 44.6089189, "lon": 6.5127604 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "denomination": "catholic",
+    "name": "Chapelle Saint-Roch",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wikidata": "Q29545206"
+  }
+},
+{
+  "type": "way",
+  "id": 182063779,
+  "bounds": {
+    "minlat": 44.4771240,
+    "minlon": 6.3137320,
+    "maxlat": 44.4772830,
+    "maxlon": 6.3139800
+  },
+  "geometry": [
+    { "lat": 44.4771930, "lon": 6.3137320 },
+    { "lat": 44.4771440, "lon": 6.3137770 },
+    { "lat": 44.4771240, "lon": 6.3137920 },
+    { "lat": 44.4771690, "lon": 6.3138970 },
+    { "lat": 44.4771490, "lon": 6.3139150 },
+    { "lat": 44.4771700, "lon": 6.3139620 },
+    { "lat": 44.4771920, "lon": 6.3139450 },
+    { "lat": 44.4771980, "lon": 6.3139620 },
+    { "lat": 44.4772130, "lon": 6.3139520 },
+    { "lat": 44.4772240, "lon": 6.3139800 },
+    { "lat": 44.4772830, "lon": 6.3139350 },
+    { "lat": 44.4772650, "lon": 6.3138950 },
+    { "lat": 44.4772720, "lon": 6.3138900 },
+    { "lat": 44.4771930, "lon": 6.3137320 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Église Notre-Dame de la Colle",
+    "ref:clochers.org": "05163",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wikidata": "Q38397256"
+  }
+},
+{
+  "type": "way",
+  "id": 182073101,
+  "bounds": {
+    "minlat": 44.5409480,
+    "minlon": 6.5195250,
+    "maxlat": 44.5411080,
+    "maxlon": 6.5198630
+  },
+  "geometry": [
+    { "lat": 44.5410450, "lon": 6.5196100 },
+    { "lat": 44.5410340, "lon": 6.5195250 },
+    { "lat": 44.5409480, "lon": 6.5195420 },
+    { "lat": 44.5409650, "lon": 6.5197250 },
+    { "lat": 44.5409490, "lon": 6.5197330 },
+    { "lat": 44.5409640, "lon": 6.5198580 },
+    { "lat": 44.5409950, "lon": 6.5198530 },
+    { "lat": 44.5409960, "lon": 6.5198630 },
+    { "lat": 44.5410610, "lon": 6.5198510 },
+    { "lat": 44.5410610, "lon": 6.5198330 },
+    { "lat": 44.5410820, "lon": 6.5198280 },
+    { "lat": 44.5410750, "lon": 6.5197650 },
+    { "lat": 44.5410910, "lon": 6.5197570 },
+    { "lat": 44.5410830, "lon": 6.5196840 },
+    { "lat": 44.5411080, "lon": 6.5196740 },
+    { "lat": 44.5410990, "lon": 6.5196000 },
+    { "lat": 44.5410450, "lon": 6.5196100 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "heritage": "2",
+    "heritage:operator": "mhs",
+    "mhs:inscription_date": "1984-12-21",
+    "name": "Église de la Transfiguration",
+    "ref:clochers.org": "05156",
+    "ref:mhs": "PA00080618",
+    "religion": "christian",
+    "source": "©IGN 2010 dans le cadre de la cartographie réglementaire",
+    "source:heritage": "data.gouv.fr, Ministère de la Culture - 2016",
+    "wikidata": "Q22998508"
+  }
+},
+{
+  "type": "way",
+  "id": 182073982,
+  "bounds": {
+    "minlat": 44.5223027,
+    "minlon": 6.5193771,
+    "maxlat": 44.5223982,
+    "maxlon": 6.5195255
+  },
+  "geometry": [
+    { "lat": 44.5223027, "lon": 6.5194193 },
+    { "lat": 44.5223267, "lon": 6.5194864 },
+    { "lat": 44.5223348, "lon": 6.5194808 },
+    { "lat": 44.5223507, "lon": 6.5195255 },
+    { "lat": 44.5223982, "lon": 6.5194921 },
+    { "lat": 44.5223828, "lon": 6.5194493 },
+    { "lat": 44.5223874, "lon": 6.5194461 },
+    { "lat": 44.5223628, "lon": 6.5193771 },
+    { "lat": 44.5223027, "lon": 6.5194193 }
+  ],
+  "tags": {
+    "alt_name": "Chapelle Saint-Claude des Sallettes",
+    "building": "chapel",
+    "name": "Chapelle Saint-Claude",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wikidata": "Q60365830"
+  }
+},
+{
+  "type": "way",
+  "id": 182766579,
+  "bounds": {
+    "minlat": 44.5557958,
+    "minlon": 6.3610968,
+    "maxlat": 44.5559118,
+    "maxlon": 6.3613298
+  },
+  "geometry": [
+    { "lat": 44.5558878, "lon": 6.3612268 },
+    { "lat": 44.5558828, "lon": 6.3610968 },
+    { "lat": 44.5558198, "lon": 6.3611098 },
+    { "lat": 44.5558218, "lon": 6.3612328 },
+    { "lat": 44.5557958, "lon": 6.3612368 },
+    { "lat": 44.5557998, "lon": 6.3612918 },
+    { "lat": 44.5558228, "lon": 6.3612888 },
+    { "lat": 44.5558308, "lon": 6.3613298 },
+    { "lat": 44.5558818, "lon": 6.3613168 },
+    { "lat": 44.5558798, "lon": 6.3612708 },
+    { "lat": 44.5559118, "lon": 6.3612608 },
+    { "lat": 44.5559068, "lon": 6.3612278 },
+    { "lat": 44.5558878, "lon": 6.3612268 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Église Saint-Apollinaire",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wikidata": "Q38422354"
+  }
+},
+{
+  "type": "way",
+  "id": 182775170,
+  "bounds": {
+    "minlat": 44.5204814,
+    "minlon": 6.3348367,
+    "maxlat": 44.5205592,
+    "maxlon": 6.3349819
+  },
+  "geometry": [
+    { "lat": 44.5205592, "lon": 6.3348464 },
+    { "lat": 44.5204866, "lon": 6.3348367 },
+    { "lat": 44.5204814, "lon": 6.3349236 },
+    { "lat": 44.5204818, "lon": 6.3349342 },
+    { "lat": 44.5204839, "lon": 6.3349463 },
+    { "lat": 44.5204930, "lon": 6.3349666 },
+    { "lat": 44.5205047, "lon": 6.3349788 },
+    { "lat": 44.5205141, "lon": 6.3349819 },
+    { "lat": 44.5205246, "lon": 6.3349807 },
+    { "lat": 44.5205315, "lon": 6.3349776 },
+    { "lat": 44.5205387, "lon": 6.3349701 },
+    { "lat": 44.5205457, "lon": 6.3349576 },
+    { "lat": 44.5205502, "lon": 6.3349470 },
+    { "lat": 44.5205536, "lon": 6.3349356 },
+    { "lat": 44.5205592, "lon": 6.3348464 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Chapelle Saint-Michel",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wheelchair": "no",
+    "wikidata": "Q60383868"
+  }
+},
+{
+  "type": "way",
+  "id": 182779375,
+  "bounds": {
+    "minlat": 44.5434210,
+    "minlon": 6.3254110,
+    "maxlat": 44.5435640,
+    "maxlon": 6.3257250
+  },
+  "geometry": [
+    { "lat": 44.5434420, "lon": 6.3256900 },
+    { "lat": 44.5435020, "lon": 6.3257250 },
+    { "lat": 44.5435330, "lon": 6.3256280 },
+    { "lat": 44.5435450, "lon": 6.3256320 },
+    { "lat": 44.5435640, "lon": 6.3255680 },
+    { "lat": 44.5435240, "lon": 6.3255470 },
+    { "lat": 44.5435530, "lon": 6.3254500 },
+    { "lat": 44.5434800, "lon": 6.3254110 },
+    { "lat": 44.5434210, "lon": 6.3256070 },
+    { "lat": 44.5434230, "lon": 6.3256310 },
+    { "lat": 44.5434270, "lon": 6.3256550 },
+    { "lat": 44.5434350, "lon": 6.3256760 },
+    { "lat": 44.5434420, "lon": 6.3256900 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Église Saint-Sauveur",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wikidata": "Q41744029"
+  }
+},
+{
+  "type": "way",
+  "id": 182779633,
+  "bounds": {
+    "minlat": 44.5443080,
+    "minlon": 6.3244610,
+    "maxlat": 44.5444530,
+    "maxlon": 6.3246370
+  },
+  "geometry": [
+    { "lat": 44.5443430, "lon": 6.3244610 },
+    { "lat": 44.5443350, "lon": 6.3244745 },
+    { "lat": 44.5443080, "lon": 6.3245200 },
+    { "lat": 44.5444130, "lon": 6.3246370 },
+    { "lat": 44.5444530, "lon": 6.3245690 },
+    { "lat": 44.5444100, "lon": 6.3245190 },
+    { "lat": 44.5444020, "lon": 6.3245310 },
+    { "lat": 44.5443430, "lon": 6.3244610 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "denomination": "catholic",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wikidata": "Q60338270"
+  }
+},
+{
+  "type": "way",
+  "id": 182840477,
+  "bounds": {
+    "minlat": 44.5600130,
+    "minlon": 6.3800630,
+    "maxlat": 44.5601240,
+    "maxlon": 6.3802890
+  },
+  "geometry": [
+    { "lat": 44.5600410, "lon": 6.3802470 },
+    { "lat": 44.5600480, "lon": 6.3802480 },
+    { "lat": 44.5600500, "lon": 6.3802570 },
+    { "lat": 44.5600530, "lon": 6.3802660 },
+    { "lat": 44.5600580, "lon": 6.3802740 },
+    { "lat": 44.5600630, "lon": 6.3802810 },
+    { "lat": 44.5600700, "lon": 6.3802850 },
+    { "lat": 44.5600760, "lon": 6.3802880 },
+    { "lat": 44.5600830, "lon": 6.3802890 },
+    { "lat": 44.5600910, "lon": 6.3802870 },
+    { "lat": 44.5600980, "lon": 6.3802840 },
+    { "lat": 44.5601040, "lon": 6.3802780 },
+    { "lat": 44.5601090, "lon": 6.3802710 },
+    { "lat": 44.5601130, "lon": 6.3802630 },
+    { "lat": 44.5601160, "lon": 6.3802530 },
+    { "lat": 44.5601200, "lon": 6.3801590 },
+    { "lat": 44.5601240, "lon": 6.3800740 },
+    { "lat": 44.5600450, "lon": 6.3800630 },
+    { "lat": 44.5600410, "lon": 6.3801760 },
+    { "lat": 44.5600130, "lon": 6.3801750 },
+    { "lat": 44.5600130, "lon": 6.3802430 },
+    { "lat": 44.5600410, "lon": 6.3802470 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "name": "Chapelle Sainte-Anne",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wheelchair": "yes",
+    "wikidata": "Q60366104"
+  }
+},
+{
+  "type": "way",
+  "id": 182840871,
+  "bounds": {
+    "minlat": 44.5449080,
+    "minlon": 6.3925141,
+    "maxlat": 44.5449549,
+    "maxlon": 6.3925898
+  },
+  "geometry": [
+    { "lat": 44.5449526, "lon": 6.3925898 },
+    { "lat": 44.5449549, "lon": 6.3925169 },
+    { "lat": 44.5449104, "lon": 6.3925141 },
+    { "lat": 44.5449080, "lon": 6.3925870 },
+    { "lat": 44.5449526, "lon": 6.3925898 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012"
+  }
+},
+{
+  "type": "way",
+  "id": 182846589,
+  "bounds": {
+    "minlat": 44.5634676,
+    "minlon": 6.4188781,
+    "maxlat": 44.5635953,
+    "maxlon": 6.4191760
+  },
+  "geometry": [
+    { "lat": 44.5635953, "lon": 6.4188953 },
+    { "lat": 44.5635130, "lon": 6.4188781 },
+    { "lat": 44.5634930, "lon": 6.4190668 },
+    { "lat": 44.5634731, "lon": 6.4190626 },
+    { "lat": 44.5634676, "lon": 6.4191150 },
+    { "lat": 44.5634972, "lon": 6.4191211 },
+    { "lat": 44.5634928, "lon": 6.4191629 },
+    { "lat": 44.5635557, "lon": 6.4191760 },
+    { "lat": 44.5635647, "lon": 6.4190909 },
+    { "lat": 44.5635743, "lon": 6.4190929 },
+    { "lat": 44.5635953, "lon": 6.4188953 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "name": "Église de Puy Saint-Eusèbe",
+    "ref:clochers.org": "05108",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wikidata": "Q38575840"
+  }
+},
+{
+  "type": "way",
+  "id": 182846839,
+  "bounds": {
+    "minlat": 44.5679090,
+    "minlon": 6.4013407,
+    "maxlat": 44.5679662,
+    "maxlon": 6.4014307
+  },
+  "geometry": [
+    { "lat": 44.5679090, "lon": 6.4014180 },
+    { "lat": 44.5679537, "lon": 6.4014287 },
+    { "lat": 44.5679567, "lon": 6.4014307 },
+    { "lat": 44.5679662, "lon": 6.4013521 },
+    { "lat": 44.5679184, "lon": 6.4013407 },
+    { "lat": 44.5679090, "lon": 6.4014180 }
+  ],
+  "tags": {
+    "addr:street": "Route de Réallon",
+    "building": "chapel",
+    "name": "Chapelle Saint-Jacques",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wikidata": "Q60374945"
+  }
+},
+{
+  "type": "way",
+  "id": 183203095,
+  "bounds": {
+    "minlat": 44.5567390,
+    "minlon": 6.4454520,
+    "maxlat": 44.5568110,
+    "maxlon": 6.4455510
+  },
+  "geometry": [
+    { "lat": 44.5567390, "lon": 6.4454890 },
+    { "lat": 44.5567630, "lon": 6.4455510 },
+    { "lat": 44.5568110, "lon": 6.4455090 },
+    { "lat": 44.5567900, "lon": 6.4454520 },
+    { "lat": 44.5567390, "lon": 6.4454890 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "ref:clochers.org": "05111",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wikidata": "Q60346350"
+  }
+},
+{
+  "type": "way",
+  "id": 183203328,
+  "bounds": {
+    "minlat": 44.5571370,
+    "minlon": 6.4360940,
+    "maxlat": 44.5573550,
+    "maxlon": 6.4364910
+  },
+  "geometry": [
+    { "lat": 44.5573550, "lon": 6.4361580 },
+    { "lat": 44.5572760, "lon": 6.4360940 },
+    { "lat": 44.5572150, "lon": 6.4362400 },
+    { "lat": 44.5571940, "lon": 6.4362230 },
+    { "lat": 44.5571620, "lon": 6.4363000 },
+    { "lat": 44.5571830, "lon": 6.4363170 },
+    { "lat": 44.5571370, "lon": 6.4364270 },
+    { "lat": 44.5572150, "lon": 6.4364910 },
+    { "lat": 44.5573550, "lon": 6.4361580 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Église Saint-Pierre-aux-Liens",
+    "name:source": "clocher.org",
+    "ref:clochers.org": "05111",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wikidata": "Q41744033"
+  }
+},
+{
+  "type": "way",
+  "id": 189753709,
+  "bounds": {
+    "minlat": 44.5104912,
+    "minlon": 6.9782941,
+    "maxlat": 44.5106629,
+    "maxlon": 6.9784274
+  },
+  "geometry": [
+    { "lat": 44.5106267, "lon": 6.9782941 },
+    { "lat": 44.5106430, "lon": 6.9782967 },
+    { "lat": 44.5106562, "lon": 6.9783102 },
+    { "lat": 44.5106629, "lon": 6.9783313 },
+    { "lat": 44.5106618, "lon": 6.9783516 },
+    { "lat": 44.5106542, "lon": 6.9783693 },
+    { "lat": 44.5106419, "lon": 6.9783803 },
+    { "lat": 44.5105065, "lon": 6.9784274 },
+    { "lat": 44.5104912, "lon": 6.9783413 },
+    { "lat": 44.5106267, "lon": 6.9782941 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "denomination": "catholic",
+    "name": "Madonna delle Grazie",
+    "religion": "christian",
+    "wikidata": "Q113621922"
+  }
+},
+{
+  "type": "way",
+  "id": 195326268,
+  "bounds": {
+    "minlat": 44.3794200,
+    "minlon": 6.6950880,
+    "maxlat": 44.3795620,
+    "maxlon": 6.6952830
+  },
+  "geometry": [
+    { "lat": 44.3794610, "lon": 6.6952470 },
+    { "lat": 44.3795620, "lon": 6.6952230 },
+    { "lat": 44.3795620, "lon": 6.6950920 },
+    { "lat": 44.3795360, "lon": 6.6950880 },
+    { "lat": 44.3795350, "lon": 6.6951290 },
+    { "lat": 44.3794200, "lon": 6.6951720 },
+    { "lat": 44.3794250, "lon": 6.6952530 },
+    { "lat": 44.3794360, "lon": 6.6952510 },
+    { "lat": 44.3794410, "lon": 6.6952830 },
+    { "lat": 44.3794630, "lon": 6.6952740 },
+    { "lat": 44.3794610, "lon": 6.6952470 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "name": "Église Notre-Dame-des-Neiges",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wikidata": "Q49655685"
+  }
+},
+{
+  "type": "way",
+  "id": 195328613,
+  "bounds": {
+    "minlat": 44.3693194,
+    "minlon": 6.6911413,
+    "maxlat": 44.3694794,
+    "maxlon": 6.6914310
+  },
+  "geometry": [
+    { "lat": 44.3693704, "lon": 6.6911760 },
+    { "lat": 44.3693194, "lon": 6.6912180 },
+    { "lat": 44.3693864, "lon": 6.6913850 },
+    { "lat": 44.3693694, "lon": 6.6913990 },
+    { "lat": 44.3693834, "lon": 6.6914310 },
+    { "lat": 44.3694794, "lon": 6.6913480 },
+    { "lat": 44.3694144, "lon": 6.6911780 },
+    { "lat": 44.3694189, "lon": 6.6911703 },
+    { "lat": 44.3694084, "lon": 6.6911413 },
+    { "lat": 44.3693704, "lon": 6.6911760 }
+  ],
+  "tags": {
+    "addr:city": "Enchastrayes",
+    "addr:postcode": "04400",
+    "addr:street": "Place de l'Église",
+    "amenity": "place_of_worship",
+    "building": "church",
+    "name": "Église Saint-Pierre-et-Saint-Paul",
+    "ref:clochers.org": "04073_1",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wikidata": "Q49665041"
+  }
+},
+{
+  "type": "way",
+  "id": 196333110,
+  "bounds": {
+    "minlat": 44.3708851,
+    "minlon": 6.3099316,
+    "maxlat": 44.3709347,
+    "maxlon": 6.3100014
+  },
+  "geometry": [
+    { "lat": 44.3709089, "lon": 6.3100014 },
+    { "lat": 44.3709160, "lon": 6.3100003 },
+    { "lat": 44.3709225, "lon": 6.3099966 },
+    { "lat": 44.3709281, "lon": 6.3099904 },
+    { "lat": 44.3709322, "lon": 6.3099822 },
+    { "lat": 44.3709344, "lon": 6.3099728 },
+    { "lat": 44.3709347, "lon": 6.3099629 },
+    { "lat": 44.3709330, "lon": 6.3099532 },
+    { "lat": 44.3709294, "lon": 6.3099447 },
+    { "lat": 44.3709242, "lon": 6.3099379 },
+    { "lat": 44.3709178, "lon": 6.3099334 },
+    { "lat": 44.3709108, "lon": 6.3099316 },
+    { "lat": 44.3709038, "lon": 6.3099326 },
+    { "lat": 44.3708972, "lon": 6.3099364 },
+    { "lat": 44.3708917, "lon": 6.3099426 },
+    { "lat": 44.3708876, "lon": 6.3099508 },
+    { "lat": 44.3708853, "lon": 6.3099602 },
+    { "lat": 44.3708851, "lon": 6.3099701 },
+    { "lat": 44.3708868, "lon": 6.3099797 },
+    { "lat": 44.3708904, "lon": 6.3099883 },
+    { "lat": 44.3708956, "lon": 6.3099951 },
+    { "lat": 44.3709019, "lon": 6.3099996 },
+    { "lat": 44.3709089, "lon": 6.3100014 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "heritage": "3",
+    "heritage:operator": "mhs",
+    "historic": "yes",
+    "man_made": "tower",
+    "mhs:inscription_date": "1984-11-09",
+    "name": "Tour Lesdiguières",
+    "ref:mhs": "PA00080480",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "source:heritage": "data.gouv.fr, Ministère de la Culture - 2016",
+    "start_date": "C15",
+    "wikidata": "Q3533114",
+    "wikipedia": "fr:Tour Lesdiguières"
+  }
+},
+{
+  "type": "way",
+  "id": 196333248,
+  "bounds": {
+    "minlat": 44.3975212,
+    "minlon": 6.2981591,
+    "maxlat": 44.3976258,
+    "maxlon": 6.2983400
+  },
+  "geometry": [
+    { "lat": 44.3975280, "lon": 6.2981591 },
+    { "lat": 44.3975212, "lon": 6.2983325 },
+    { "lat": 44.3976190, "lon": 6.2983400 },
+    { "lat": 44.3976258, "lon": 6.2981667 },
+    { "lat": 44.3975280, "lon": 6.2981591 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wikidata": "Q55084388"
+  }
+},
+{
+  "type": "way",
+  "id": 196333301,
+  "bounds": {
+    "minlat": 44.3707796,
+    "minlon": 6.3100399,
+    "maxlat": 44.3710076,
+    "maxlon": 6.3104339
+  },
+  "geometry": [
+    { "lat": 44.3708336, "lon": 6.3102779 },
+    { "lat": 44.3708386, "lon": 6.3102749 },
+    { "lat": 44.3708356, "lon": 6.3102669 },
+    { "lat": 44.3708496, "lon": 6.3102579 },
+    { "lat": 44.3708596, "lon": 6.3102509 },
+    { "lat": 44.3708756, "lon": 6.3102979 },
+    { "lat": 44.3708696, "lon": 6.3103039 },
+    { "lat": 44.3708726, "lon": 6.3103129 },
+    { "lat": 44.3708796, "lon": 6.3103079 },
+    { "lat": 44.3708966, "lon": 6.3103539 },
+    { "lat": 44.3708886, "lon": 6.3103589 },
+    { "lat": 44.3708916, "lon": 6.3103689 },
+    { "lat": 44.3708996, "lon": 6.3103629 },
+    { "lat": 44.3709166, "lon": 6.3104139 },
+    { "lat": 44.3709096, "lon": 6.3104189 },
+    { "lat": 44.3709136, "lon": 6.3104289 },
+    { "lat": 44.3709196, "lon": 6.3104229 },
+    { "lat": 44.3709236, "lon": 6.3104339 },
+    { "lat": 44.3709306, "lon": 6.3104289 },
+    { "lat": 44.3709266, "lon": 6.3104189 },
+    { "lat": 44.3709936, "lon": 6.3103729 },
+    { "lat": 44.3709976, "lon": 6.3103839 },
+    { "lat": 44.3710046, "lon": 6.3103779 },
+    { "lat": 44.3710006, "lon": 6.3103679 },
+    { "lat": 44.3710076, "lon": 6.3103639 },
+    { "lat": 44.3710036, "lon": 6.3103539 },
+    { "lat": 44.3709956, "lon": 6.3103599 },
+    { "lat": 44.3709786, "lon": 6.3103099 },
+    { "lat": 44.3709866, "lon": 6.3103039 },
+    { "lat": 44.3709836, "lon": 6.3102939 },
+    { "lat": 44.3709746, "lon": 6.3102999 },
+    { "lat": 44.3709586, "lon": 6.3102549 },
+    { "lat": 44.3709666, "lon": 6.3102489 },
+    { "lat": 44.3709636, "lon": 6.3102379 },
+    { "lat": 44.3709546, "lon": 6.3102439 },
+    { "lat": 44.3709466, "lon": 6.3102189 },
+    { "lat": 44.3709426, "lon": 6.3102089 },
+    { "lat": 44.3709546, "lon": 6.3101969 },
+    { "lat": 44.3709726, "lon": 6.3101859 },
+    { "lat": 44.3709696, "lon": 6.3101779 },
+    { "lat": 44.3709756, "lon": 6.3101739 },
+    { "lat": 44.3709726, "lon": 6.3101669 },
+    { "lat": 44.3709656, "lon": 6.3101709 },
+    { "lat": 44.3709486, "lon": 6.3101189 },
+    { "lat": 44.3709536, "lon": 6.3101149 },
+    { "lat": 44.3709516, "lon": 6.3101069 },
+    { "lat": 44.3709456, "lon": 6.3101109 },
+    { "lat": 44.3709426, "lon": 6.3101029 },
+    { "lat": 44.3709316, "lon": 6.3100709 },
+    { "lat": 44.3709256, "lon": 6.3100759 },
+    { "lat": 44.3709136, "lon": 6.3100439 },
+    { "lat": 44.3709106, "lon": 6.3100399 },
+    { "lat": 44.3708786, "lon": 6.3100619 },
+    { "lat": 44.3708766, "lon": 6.3100549 },
+    { "lat": 44.3707796, "lon": 6.3101219 },
+    { "lat": 44.3708066, "lon": 6.3102049 },
+    { "lat": 44.3708026, "lon": 6.3102079 },
+    { "lat": 44.3708046, "lon": 6.3102149 },
+    { "lat": 44.3708106, "lon": 6.3102109 },
+    { "lat": 44.3708286, "lon": 6.3102639 },
+    { "lat": 44.3708236, "lon": 6.3102669 },
+    { "lat": 44.3708256, "lon": 6.3102749 },
+    { "lat": 44.3708306, "lon": 6.3102709 },
+    { "lat": 44.3708336, "lon": 6.3102779 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "name": "Église Notre-Dame et Saint-Antoine",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wikidata": "Q38421078"
+  }
+},
+{
+  "type": "way",
+  "id": 197385428,
+  "bounds": {
+    "minlat": 44.5042400,
+    "minlon": 6.3573850,
+    "maxlat": 44.5044680,
+    "maxlon": 6.3575340
+  },
+  "geometry": [
+    { "lat": 44.5044520, "lon": 6.3575340 },
+    { "lat": 44.5044530, "lon": 6.3574950 },
+    { "lat": 44.5044670, "lon": 6.3574950 },
+    { "lat": 44.5044680, "lon": 6.3574150 },
+    { "lat": 44.5042990, "lon": 6.3574160 },
+    { "lat": 44.5042980, "lon": 6.3573850 },
+    { "lat": 44.5042641, "lon": 6.3573857 },
+    { "lat": 44.5042460, "lon": 6.3573860 },
+    { "lat": 44.5042460, "lon": 6.3574160 },
+    { "lat": 44.5042400, "lon": 6.3574160 },
+    { "lat": 44.5042410, "lon": 6.3575320 },
+    { "lat": 44.5044520, "lon": 6.3575340 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "check_date": "2025-08-06",
+    "name": "Église Saint-Jérôme",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wheelchair": "yes",
+    "wikidata": "Q38645225"
+  }
+},
+{
+  "type": "way",
+  "id": 197385437,
+  "bounds": {
+    "minlat": 44.4812050,
+    "minlon": 6.3562760,
+    "maxlat": 44.4813500,
+    "maxlon": 6.3564840
+  },
+  "geometry": [
+    { "lat": 44.4812050, "lon": 6.3564300 },
+    { "lat": 44.4812440, "lon": 6.3564840 },
+    { "lat": 44.4812990, "lon": 6.3564050 },
+    { "lat": 44.4813200, "lon": 6.3564300 },
+    { "lat": 44.4813500, "lon": 6.3563820 },
+    { "lat": 44.4812720, "lon": 6.3562760 },
+    { "lat": 44.4812460, "lon": 6.3563140 },
+    { "lat": 44.4812660, "lon": 6.3563410 },
+    { "lat": 44.4812460, "lon": 6.3563690 },
+    { "lat": 44.4812350, "lon": 6.3563540 },
+    { "lat": 44.4812200, "lon": 6.3563750 },
+    { "lat": 44.4812320, "lon": 6.3563920 },
+    { "lat": 44.4812050, "lon": 6.3564300 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Église Saint-Claude",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wikidata": "Q55084286"
+  }
+},
+{
+  "type": "way",
+  "id": 197385465,
+  "bounds": {
+    "minlat": 44.5146470,
+    "minlon": 6.3626010,
+    "maxlat": 44.5147060,
+    "maxlon": 6.3627090
+  },
+  "geometry": [
+    { "lat": 44.5147060, "lon": 6.3626090 },
+    { "lat": 44.5146580, "lon": 6.3626010 },
+    { "lat": 44.5146470, "lon": 6.3627010 },
+    { "lat": 44.5146930, "lon": 6.3627090 },
+    { "lat": 44.5147060, "lon": 6.3626090 }
+  ],
+  "tags": {
+    "alt_name": "Chapelle des Chappas",
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "name": "Chapelle Saint-Martin",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Impôts - Cadastre. Mise à jour : 2012",
+    "wikidata": "Q55084548"
+  }
+},
+{
+  "type": "way",
+  "id": 206423021,
+  "bounds": {
+    "minlat": 44.5692138,
+    "minlon": 6.5362418,
+    "maxlat": 44.5692586,
+    "maxlon": 6.5362780
+  },
+  "geometry": [
+    { "lat": 44.5692586, "lon": 6.5362761 },
+    { "lat": 44.5692574, "lon": 6.5362443 },
+    { "lat": 44.5692359, "lon": 6.5362445 },
+    { "lat": 44.5692138, "lon": 6.5362418 },
+    { "lat": 44.5692155, "lon": 6.5362780 },
+    { "lat": 44.5692586, "lon": 6.5362761 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "denomination": "catholic",
+    "name": "Chapelle Sainte-Marguerite",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2018",
+    "wikidata": "Q60368434"
+  }
+},
+{
+  "type": "way",
+  "id": 206891507,
+  "bounds": {
+    "minlat": 44.4969999,
+    "minlon": 6.5167018,
+    "maxlat": 44.4970817,
+    "maxlon": 6.5167923
+  },
+  "geometry": [
+    { "lat": 44.4970755, "lon": 6.5167018 },
+    { "lat": 44.4969999, "lon": 6.5167135 },
+    { "lat": 44.4970061, "lon": 6.5167923 },
+    { "lat": 44.4970817, "lon": 6.5167806 },
+    { "lat": 44.4970755, "lon": 6.5167018 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "denomination": "catholic",
+    "ele": "1906",
+    "name": "Chapelle Saint Roch",
+    "ref:refuges.info": "5034",
+    "religion": "christian"
+  }
+},
+{
+  "type": "way",
+  "id": 206970215,
+  "bounds": {
+    "minlat": 44.5956998,
+    "minlon": 6.6026279,
+    "maxlat": 44.5957873,
+    "maxlon": 6.6027489
+  },
+  "geometry": [
+    { "lat": 44.5957513, "lon": 6.6026279 },
+    { "lat": 44.5957873, "lon": 6.6026895 },
+    { "lat": 44.5957357, "lon": 6.6027489 },
+    { "lat": 44.5956998, "lon": 6.6026873 },
+    { "lat": 44.5957513, "lon": 6.6026279 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "denomination": "catholic",
+    "name": "Chapelle de la Visitation",
+    "religion": "christian",
+    "wikidata": "Q29545272"
+  }
+},
+{
+  "type": "way",
+  "id": 207974117,
+  "bounds": {
+    "minlat": 44.6112490,
+    "minlon": 6.5550613,
+    "maxlat": 44.6113374,
+    "maxlon": 6.5551940
+  },
+  "geometry": [
+    { "lat": 44.6113374, "lon": 6.5550913 },
+    { "lat": 44.6113131, "lon": 6.5551940 },
+    { "lat": 44.6112490, "lon": 6.5551640 },
+    { "lat": 44.6112734, "lon": 6.5550613 },
+    { "lat": 44.6113374, "lon": 6.5550913 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "name": "Chapelle Saint-Roch",
+    "religion": "christian",
+    "wikidata": "Q60386941"
+  }
+},
+{
+  "type": "way",
+  "id": 222172638,
+  "bounds": {
+    "minlat": 44.6153453,
+    "minlon": 6.5322528,
+    "maxlat": 44.6154636,
+    "maxlon": 6.5324359
+  },
+  "geometry": [
+    { "lat": 44.6153982, "lon": 6.5322528 },
+    { "lat": 44.6153453, "lon": 6.5323103 },
+    { "lat": 44.6154083, "lon": 6.5324246 },
+    { "lat": 44.6154173, "lon": 6.5324141 },
+    { "lat": 44.6154290, "lon": 6.5324302 },
+    { "lat": 44.6154419, "lon": 6.5324359 },
+    { "lat": 44.6154559, "lon": 6.5324282 },
+    { "lat": 44.6154629, "lon": 6.5324127 },
+    { "lat": 44.6154636, "lon": 6.5323936 },
+    { "lat": 44.6154563, "lon": 6.5323724 },
+    { "lat": 44.6154612, "lon": 6.5323671 },
+    { "lat": 44.6153982, "lon": 6.5322528 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "denomination": "catholic",
+    "name": "Chapelle Sainte-Catherine",
+    "ref:clochers.org": "05036b",
+    "religion": "christian",
+    "ruined:building": "yes",
+    "ruins": "yes",
+    "wikidata": "Q60367449"
+  }
+},
+{
+  "type": "way",
+  "id": 223705048,
+  "bounds": {
+    "minlat": 44.5810997,
+    "minlon": 6.5876387,
+    "maxlat": 44.5811629,
+    "maxlon": 6.5877431
+  },
+  "geometry": [
+    { "lat": 44.5811629, "lon": 6.5876580 },
+    { "lat": 44.5811441, "lon": 6.5877431 },
+    { "lat": 44.5810997, "lon": 6.5877238 },
+    { "lat": 44.5811185, "lon": 6.5876387 },
+    { "lat": 44.5811629, "lon": 6.5876580 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "name": "Chapelle de Pra Leydon",
+    "religion": "christian",
+    "wikidata": "Q108627587"
+  }
+},
+{
+  "type": "way",
+  "id": 228286524,
+  "bounds": {
+    "minlat": 44.4786793,
+    "minlon": 6.9371220,
+    "maxlat": 44.4788284,
+    "maxlon": 6.9372375
+  },
+  "geometry": [
+    { "lat": 44.4788280, "lon": 6.9371220 },
+    { "lat": 44.4788284, "lon": 6.9372364 },
+    { "lat": 44.4786797, "lon": 6.9372375 },
+    { "lat": 44.4786793, "lon": 6.9371231 },
+    { "lat": 44.4788280, "lon": 6.9371220 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "denomination": "catholic",
+    "name": "Cappella di San Lorenzo",
+    "religion": "christian"
+  }
+},
+{
+  "type": "way",
+  "id": 235331636,
+  "bounds": {
+    "minlat": 44.3959272,
+    "minlon": 6.9383696,
+    "maxlat": 44.3961876,
+    "maxlon": 6.9386941
+  },
+  "geometry": [
+    { "lat": 44.3959964, "lon": 6.9383696 },
+    { "lat": 44.3961876, "lon": 6.9385119 },
+    { "lat": 44.3961183, "lon": 6.9386941 },
+    { "lat": 44.3959272, "lon": 6.9385519 },
+    { "lat": 44.3959964, "lon": 6.9383696 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "roman_catholic",
+    "name": "San Pietro",
+    "religion": "christian",
+    "wikidata": "Q108039843"
+  }
+},
+{
+  "type": "way",
+  "id": 239032280,
+  "bounds": {
+    "minlat": 44.4822072,
+    "minlon": 6.4220149,
+    "maxlat": 44.4822770,
+    "maxlon": 6.4221127
+  },
+  "geometry": [
+    { "lat": 44.4822446, "lon": 6.4221127 },
+    { "lat": 44.4822770, "lon": 6.4220605 },
+    { "lat": 44.4822396, "lon": 6.4220149 },
+    { "lat": 44.4822072, "lon": 6.4220671 },
+    { "lat": 44.4822446, "lon": 6.4221127 }
+  ],
+  "tags": {
+    "building": "chapel",
+    "building:levels": "1",
+    "denomination": "catholic",
+    "name": "Chapelle Saint-Pierre",
+    "religion": "christian",
+    "url": "http://www.oduch.fr/Paysage/Chapelle-Saint-Pierre-de-Morgon",
+    "wikidata": "Q60385319"
+  }
+},
+{
+  "type": "way",
+  "id": 250817382,
+  "bounds": {
+    "minlat": 44.5640922,
+    "minlon": 6.5470682,
+    "maxlat": 44.5641684,
+    "maxlon": 6.5471735
+  },
+  "geometry": [
+    { "lat": 44.5641234, "lon": 6.5470682 },
+    { "lat": 44.5640922, "lon": 6.5471233 },
+    { "lat": 44.5641372, "lon": 6.5471735 },
+    { "lat": 44.5641684, "lon": 6.5471185 },
+    { "lat": 44.5641234, "lon": 6.5470682 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "name": "Chapelle Saint-Jean-Baptiste",
+    "religion": "christian",
+    "wikidata": "Q60376668"
+  }
+},
+{
+  "type": "way",
+  "id": 251465887,
+  "bounds": {
+    "minlat": 44.5737139,
+    "minlon": 6.5292298,
+    "maxlat": 44.5737611,
+    "maxlon": 6.5293243
+  },
+  "geometry": [
+    { "lat": 44.5737611, "lon": 6.5293243 },
+    { "lat": 44.5737593, "lon": 6.5292298 },
+    { "lat": 44.5737139, "lon": 6.5292312 },
+    { "lat": 44.5737156, "lon": 6.5293240 },
+    { "lat": 44.5737611, "lon": 6.5293243 }
+  ],
+  "tags": {
+    "alt_name": "Chapelle des Raufes",
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "denomination": "catholic",
+    "name": "Chapelle Saint-Philippe-et-Saint-Jacques",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2018",
+    "wikidata": "Q60385109"
+  }
+},
+{
+  "type": "way",
+  "id": 260318592,
+  "bounds": {
+    "minlat": 44.4842612,
+    "minlon": 6.6134347,
+    "maxlat": 44.4843355,
+    "maxlon": 6.6135370
+  },
+  "geometry": [
+    { "lat": 44.4843355, "lon": 6.6134781 },
+    { "lat": 44.4843072, "lon": 6.6135370 },
+    { "lat": 44.4842612, "lon": 6.6134936 },
+    { "lat": 44.4842895, "lon": 6.6134347 },
+    { "lat": 44.4843355, "lon": 6.6134781 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "denomination": "catholic",
+    "name": "Chapelle Saint-Pierre",
+    "ref:clochers.org": "05098a",
+    "religion": "christian"
+  }
+},
+{
+  "type": "way",
+  "id": 290959205,
+  "bounds": {
+    "minlat": 44.4585322,
+    "minlon": 6.7444964,
+    "maxlat": 44.4587620,
+    "maxlon": 6.7447211
+  },
+  "geometry": [
+    { "lat": 44.4587560, "lon": 6.7445600 },
+    { "lat": 44.4585598, "lon": 6.7444964 },
+    { "lat": 44.4585322, "lon": 6.7446377 },
+    { "lat": 44.4587470, "lon": 6.7447211 },
+    { "lat": 44.4587620, "lon": 6.7446560 },
+    { "lat": 44.4587370, "lon": 6.7446420 },
+    { "lat": 44.4587560, "lon": 6.7445600 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Église Sainte-Catherine",
+    "ref:clochers.org": "04062_1",
+    "religion": "christian",
+    "wikidata": "Q38508254"
+  }
+},
+{
+  "type": "way",
+  "id": 294668059,
+  "bounds": {
+    "minlat": 44.4809050,
+    "minlon": 6.4865003,
+    "maxlat": 44.4809509,
+    "maxlon": 6.4865600
+  },
+  "geometry": [
+    { "lat": 44.4809125, "lon": 6.4865040 },
+    { "lat": 44.4809336, "lon": 6.4865003 },
+    { "lat": 44.4809496, "lon": 6.4865175 },
+    { "lat": 44.4809509, "lon": 6.4865390 },
+    { "lat": 44.4809403, "lon": 6.4865589 },
+    { "lat": 44.4809217, "lon": 6.4865600 },
+    { "lat": 44.4809050, "lon": 6.4865459 },
+    { "lat": 44.4809051, "lon": 6.4865214 },
+    { "lat": 44.4809125, "lon": 6.4865040 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "denomination": "catholic",
+    "ele": "1705",
+    "historic": "chapel",
+    "name": "Chapelle du Lauzerot",
+    "religion": "christian"
+  }
+},
+{
+  "type": "way",
+  "id": 315883699,
+  "bounds": {
+    "minlat": 44.4764539,
+    "minlon": 6.9767544,
+    "maxlat": 44.4766207,
+    "maxlon": 6.9769440
+  },
+  "geometry": [
+    { "lat": 44.4765861, "lon": 6.9767544 },
+    { "lat": 44.4766207, "lon": 6.9768503 },
+    { "lat": 44.4764886, "lon": 6.9769440 },
+    { "lat": 44.4764539, "lon": 6.9768482 },
+    { "lat": 44.4765861, "lon": 6.9767544 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Chiesa della Santissima Trinità",
+    "religion": "christian",
+    "wikidata": "Q113622167"
+  }
+},
+{
+  "type": "way",
+  "id": 315884945,
+  "bounds": {
+    "minlat": 44.4811989,
+    "minlon": 6.9771360,
+    "maxlat": 44.4813407,
+    "maxlon": 6.9772801
+  },
+  "geometry": [
+    { "lat": 44.4813245, "lon": 6.9771360 },
+    { "lat": 44.4813407, "lon": 6.9772424 },
+    { "lat": 44.4812152, "lon": 6.9772801 },
+    { "lat": 44.4811989, "lon": 6.9771737 },
+    { "lat": 44.4813245, "lon": 6.9771360 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "chiesa degli Angeli Custodi",
+    "religion": "christian"
+  }
+},
+{
+  "type": "way",
+  "id": 315945029,
+  "bounds": {
+    "minlat": 44.4763817,
+    "minlon": 6.9663586,
+    "maxlat": 44.4765801,
+    "maxlon": 6.9665372
+  },
+  "geometry": [
+    { "lat": 44.4764044, "lon": 6.9663586 },
+    { "lat": 44.4763817, "lon": 6.9664585 },
+    { "lat": 44.4763945, "lon": 6.9664642 },
+    { "lat": 44.4765573, "lon": 6.9665372 },
+    { "lat": 44.4765801, "lon": 6.9664373 },
+    { "lat": 44.4764167, "lon": 6.9663640 },
+    { "lat": 44.4764044, "lon": 6.9663586 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "denomination": "catholic",
+    "name": "Cappella Sant'Antonio Abate",
+    "religion": "christian",
+    "wikidata": "Q118641462"
+  }
+},
+{
+  "type": "way",
+  "id": 315945066,
+  "bounds": {
+    "minlat": 44.4803385,
+    "minlon": 6.9728480,
+    "maxlat": 44.4804736,
+    "maxlon": 6.9730417
+  },
+  "geometry": [
+    { "lat": 44.4804474, "lon": 6.9728480 },
+    { "lat": 44.4804736, "lon": 6.9730207 },
+    { "lat": 44.4804028, "lon": 6.9730417 },
+    { "lat": 44.4803946, "lon": 6.9729879 },
+    { "lat": 44.4803538, "lon": 6.9730001 },
+    { "lat": 44.4803385, "lon": 6.9728992 },
+    { "lat": 44.4803774, "lon": 6.9728876 },
+    { "lat": 44.4803747, "lon": 6.9728697 },
+    { "lat": 44.4804474, "lon": 6.9728480 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "denomination": "catholic",
+    "name": "San Maurizio",
+    "religion": "christian",
+    "wikidata": "Q118641461"
+  }
+},
+{
+  "type": "way",
+  "id": 315945067,
+  "bounds": {
+    "minlat": 44.4760176,
+    "minlon": 6.9536772,
+    "maxlat": 44.4761284,
+    "maxlon": 6.9538366
+  },
+  "geometry": [
+    { "lat": 44.4760788, "lon": 6.9536772 },
+    { "lat": 44.4761284, "lon": 6.9537374 },
+    { "lat": 44.4760672, "lon": 6.9538366 },
+    { "lat": 44.4760176, "lon": 6.9537764 },
+    { "lat": 44.4760788, "lon": 6.9536772 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "denomination": "catholic",
+    "name": "San Pietro e Paolo",
+    "religion": "christian"
+  }
+},
+{
+  "type": "way",
+  "id": 315949833,
+  "bounds": {
+    "minlat": 44.4920487,
+    "minlon": 6.9239613,
+    "maxlat": 44.4923055,
+    "maxlon": 6.9242772
+  },
+  "geometry": [
+    { "lat": 44.4922309, "lon": 6.9239613 },
+    { "lat": 44.4923055, "lon": 6.9241429 },
+    { "lat": 44.4921394, "lon": 6.9242772 },
+    { "lat": 44.4920487, "lon": 6.9240804 },
+    { "lat": 44.4922309, "lon": 6.9239613 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "Chiesa di Santa Margherita",
+    "religion": "christian",
+    "wikidata": "Q113622165"
+  }
+},
+{
+  "type": "way",
+  "id": 315949848,
+  "bounds": {
+    "minlat": 44.4913527,
+    "minlon": 6.9245241,
+    "maxlat": 44.4914627,
+    "maxlon": 6.9247599
+  },
+  "geometry": [
+    { "lat": 44.4914236, "lon": 6.9245241 },
+    { "lat": 44.4913527, "lon": 6.9245415 },
+    { "lat": 44.4913941, "lon": 6.9247346 },
+    { "lat": 44.4914185, "lon": 6.9247599 },
+    { "lat": 44.4914428, "lon": 6.9247561 },
+    { "lat": 44.4914573, "lon": 6.9247397 },
+    { "lat": 44.4914627, "lon": 6.9247093 },
+    { "lat": 44.4914236, "lon": 6.9245241 }
+  ],
+  "tags": {
+    "building": "chapel",
+    "name": "Confraternita"
+  }
+},
+{
+  "type": "way",
+  "id": 316982446,
+  "bounds": {
+    "minlat": 44.3798169,
+    "minlon": 6.9692728,
+    "maxlat": 44.3800087,
+    "maxlon": 6.9696564
+  },
+  "geometry": [
+    { "lat": 44.3799200, "lon": 6.9692728 },
+    { "lat": 44.3800087, "lon": 6.9693272 },
+    { "lat": 44.3799056, "lon": 6.9696564 },
+    { "lat": 44.3798169, "lon": 6.9696020 },
+    { "lat": 44.3799200, "lon": 6.9692728 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "name": "San Lorenzo",
+    "religion": "christian",
+    "wikidata": "Q108012131"
+  }
+},
+{
+  "type": "way",
+  "id": 317001572,
+  "bounds": {
+    "minlat": 44.3794465,
+    "minlon": 6.9723058,
+    "maxlat": 44.3795565,
+    "maxlon": 6.9724160
+  },
+  "geometry": [
+    { "lat": 44.3794749, "lon": 6.9723058 },
+    { "lat": 44.3795565, "lon": 6.9723555 },
+    { "lat": 44.3795338, "lon": 6.9724160 },
+    { "lat": 44.3794465, "lon": 6.9723733 },
+    { "lat": 44.3794749, "lon": 6.9723058 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "building:colour": "white",
+    "building:material": "stone",
+    "denomination": "catholic",
+    "name": "Chiesa di Santa Trinità",
+    "name:oc": "Gleiza di Santa Trinitaia",
+    "religion": "christian",
+    "wheelchair": "limited",
+    "wikidata": "Q118641482"
+  }
+},
+{
+  "type": "way",
+  "id": 401080144,
+  "bounds": {
+    "minlat": 44.5449445,
+    "minlon": 6.7950964,
+    "maxlat": 44.5450144,
+    "maxlon": 6.7951946
+  },
+  "geometry": [
+    { "lat": 44.5449740, "lon": 6.7951946 },
+    { "lat": 44.5450144, "lon": 6.7951370 },
+    { "lat": 44.5449850, "lon": 6.7950964 },
+    { "lat": 44.5449445, "lon": 6.7951540 },
+    { "lat": 44.5449740, "lon": 6.7951946 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "name": "Chapelle Saint-Antoine",
+    "religion": "christian",
+    "source": "cadastre-dgi-fr source : Direction Générale des Finances Publiques - Cadastre. Mise à jour : 2016",
+    "wikidata": "Q55084288"
+  }
+},
+{
+  "type": "way",
+  "id": 455993129,
+  "bounds": {
+    "minlat": 44.5334371,
+    "minlon": 6.4697642,
+    "maxlat": 44.5336699,
+    "maxlon": 6.4700131
+  },
+  "geometry": [
+    { "lat": 44.5336362, "lon": 6.4697642 },
+    { "lat": 44.5336699, "lon": 6.4699632 },
+    { "lat": 44.5335201, "lon": 6.4700131 },
+    { "lat": 44.5335101, "lon": 6.4699545 },
+    { "lat": 44.5334543, "lon": 6.4699731 },
+    { "lat": 44.5334371, "lon": 6.4698720 },
+    { "lat": 44.5334605, "lon": 6.4698642 },
+    { "lat": 44.5334538, "lon": 6.4698250 },
+    { "lat": 44.5336362, "lon": 6.4697642 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "church",
+    "denomination": "catholic",
+    "heritage": "3",
+    "heritage:operator": "mhs",
+    "mhs:inscription_date": "1978-09-04",
+    "name": "Église Saint-Laurent",
+    "ref:clochers.org": "05045a",
+    "ref:mhs": "PA00080554",
+    "religion": "christian",
+    "source:heritage": "data.gouv.fr, Ministère de la Culture - 2016",
+    "wikidata": "Q15953730",
+    "wikipedia": "fr:Église Saint-Laurent de Crots"
+  }
+},
+{
+  "type": "way",
+  "id": 600812181,
+  "bounds": {
+    "minlat": 44.3880391,
+    "minlon": 6.7041930,
+    "maxlat": 44.3881430,
+    "maxlon": 6.7043361
+  },
+  "geometry": [
+    { "lat": 44.3881430, "lon": 6.7042620 },
+    { "lat": 44.3880991, "lon": 6.7043361 },
+    { "lat": 44.3880391, "lon": 6.7042555 },
+    { "lat": 44.3880820, "lon": 6.7041930 },
+    { "lat": 44.3881430, "lon": 6.7042620 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "denomination": "catholic",
+    "name": "Chapelle Saint-Jean",
+    "religion": "christian",
+    "wikidata": "Q49665348"
+  }
+},
+{
+  "type": "way",
+  "id": 614092283,
+  "bounds": {
+    "minlat": 44.5539167,
+    "minlon": 6.4837464,
+    "maxlat": 44.5541111,
+    "maxlon": 6.4839781
+  },
+  "geometry": [
+    { "lat": 44.5540883, "lon": 6.4837464 },
+    { "lat": 44.5539167, "lon": 6.4837865 },
+    { "lat": 44.5539395, "lon": 6.4839781 },
+    { "lat": 44.5541111, "lon": 6.4839380 },
+    { "lat": 44.5540883, "lon": 6.4837464 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "denomination": "jehovahs_witness",
+    "ref:clochers.org": "05046",
+    "religion": "christian"
+  }
+},
+{
+  "type": "way",
+  "id": 651702379,
+  "bounds": {
+    "minlat": 44.4807394,
+    "minlon": 6.3315421,
+    "maxlat": 44.4808092,
+    "maxlon": 6.3316602
+  },
+  "geometry": [
+    { "lat": 44.4808006, "lon": 6.3315421 },
+    { "lat": 44.4808092, "lon": 6.3316481 },
+    { "lat": 44.4807499, "lon": 6.3316602 },
+    { "lat": 44.4807394, "lon": 6.3315502 },
+    { "lat": 44.4808006, "lon": 6.3315421 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "name": "Chapelle Saint-Martin",
+    "ref:clochers.org": "05163",
+    "religion": "christian",
+    "wikidata": "Q60383038"
+  }
+},
+{
+  "type": "way",
+  "id": 826494425,
+  "bounds": {
+    "minlat": 44.4782758,
+    "minlon": 6.9366319,
+    "maxlat": 44.4783344,
+    "maxlon": 6.9367007
+  },
+  "geometry": [
+    { "lat": 44.4783199, "lon": 6.9366319 },
+    { "lat": 44.4782758, "lon": 6.9366529 },
+    { "lat": 44.4782884, "lon": 6.9367007 },
+    { "lat": 44.4783344, "lon": 6.9366740 },
+    { "lat": 44.4783199, "lon": 6.9366319 }
+  ],
+  "tags": {
+    "building": "chapel"
+  }
+},
+{
+  "type": "way",
+  "id": 987807412,
+  "bounds": {
+    "minlat": 44.4919324,
+    "minlon": 6.9243495,
+    "maxlat": 44.4920596,
+    "maxlon": 6.9245143
+  },
+  "geometry": [
+    { "lat": 44.4920220, "lon": 6.9243495 },
+    { "lat": 44.4920596, "lon": 6.9244444 },
+    { "lat": 44.4919700, "lon": 6.9245143 },
+    { "lat": 44.4919324, "lon": 6.9244193 },
+    { "lat": 44.4920220, "lon": 6.9243495 }
+  ],
+  "tags": {
+    "building": "chapel"
+  }
+},
+{
+  "type": "way",
+  "id": 1038844287,
+  "bounds": {
+    "minlat": 44.4896450,
+    "minlon": 6.3610104,
+    "maxlat": 44.4897052,
+    "maxlon": 6.3610821
+  },
+  "geometry": [
+    { "lat": 44.4897052, "lon": 6.3610116 },
+    { "lat": 44.4897045, "lon": 6.3610821 },
+    { "lat": 44.4896450, "lon": 6.3610809 },
+    { "lat": 44.4896457, "lon": 6.3610104 },
+    { "lat": 44.4897052, "lon": 6.3610116 }
+  ],
+  "tags": {
+    "building": "chapel",
+    "name": "Chapelle Saint-Pierre",
+    "religion": "christian",
+    "wikidata": "Q61408749"
+  }
+},
+{
+  "type": "way",
+  "id": 1203781998,
+  "bounds": {
+    "minlat": 44.5195254,
+    "minlon": 6.7603590,
+    "maxlat": 44.5196268,
+    "maxlon": 6.7604993
+  },
+  "geometry": [
+    { "lat": 44.5195919, "lon": 6.7603590 },
+    { "lat": 44.5196268, "lon": 6.7604104 },
+    { "lat": 44.5195603, "lon": 6.7604993 },
+    { "lat": 44.5195254, "lon": 6.7604480 },
+    { "lat": 44.5195919, "lon": 6.7603590 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "chapel",
+    "check_date": "2023-12-23",
+    "name": "Notre-Dame-de-l'Annonciation",
+    "religion": "christian",
+    "wikidata": "Q55084219"
+  }
+},
+{
+  "type": "way",
+  "id": 1409518781,
+  "bounds": {
+    "minlat": 44.4143712,
+    "minlon": 6.5210236,
+    "maxlat": 44.4144124,
+    "maxlon": 6.5210724
+  },
+  "geometry": [
+    { "lat": 44.4144114, "lon": 6.5210236 },
+    { "lat": 44.4143712, "lon": 6.5210250 },
+    { "lat": 44.4143712, "lon": 6.5210724 },
+    { "lat": 44.4144124, "lon": 6.5210695 },
+    { "lat": 44.4144114, "lon": 6.5210236 }
+  ],
+  "tags": {
+    "amenity": "place_of_worship",
+    "building": "yes",
+    "name": "Chapelle",
+    "religion": "christian"
+  }
+},
+{
+  "type": "relation",
+  "id": 1255240,
+  "bounds": {
+    "minlat": 44.5002837,
+    "minlon": 6.4550366,
+    "maxlat": 44.5008582,
+    "maxlon": 6.4556554
+  },
+  "tags": {
+    "amenity": "place_of_worship",
+    "heritage": "2",
+    "heritage:operator": "mhs",
+    "historic": "monastery",
+    "mhs:inscription_date": "1989-06-08",
+    "name": "Abbaye Notre-Dame de Boscodon",
+    "name:oc": "Abaia de Nòstra Dòna de Boscodon",
+    "ref:mhs": "PA00080552",
+    "religion": "christian",
+    "source:name:oc": "ieo-bdtopoc",
+    "tourism": "attraction",
+    "type": "site",
+    "website": "https://www.abbayedeboscodon.eu/",
+    "wikidata": "Q2820295",
+    "wikipedia": "fr:Abbaye Notre-Dame de Boscodon"
+  }
+}
+
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "jausiers",
+  "version": "0.1.0",
+  "description": "Pannello Saint-Nicolas-de-Myre (Jausiers): ricerca web su orientamento e storia, e calcolo solare Python che usa l'azimut trovato",
+  "types": "./types/index.d.ts",
+  "author": {
+    "name": "Andrea Chiavassa"
+  }
+}
