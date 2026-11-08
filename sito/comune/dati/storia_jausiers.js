@@ -12,7 +12,7 @@ window.STORIA_JAUSIERS = {
   {
    "titolo": "Délibération de la communauté de Jausiers, 4 janvier 1668 (transcription provisoire)",
    "url": null,
-   "nota": "spostamento della cappella di San Giovanni Battista e altare nella futura chiesa parrocchiale; trascrizione da collazionare con l'originale",
+   "nota": "spostamento della cappella Saint-Jean-Baptiste e altare nella futura chiesa parrocchiale; trascrizione da collazionare con l'originale",
    "nota_fr": "déplacement de la chapelle Saint-Jean-Baptiste et autel dans la future église paroissiale ; transcription à collationner avec l'original"
   }
  ],
@@ -31,13 +31,13 @@ window.STORIA_JAUSIERS = {
   },
   {
    "quando": "4 gen. 1668",
-   "it": "Delibera del consiglio della comunità: la cappella di San Giovanni Battista, rovinata da acque e nevi che scendono dalle rocce sovrastanti, sarà ricostruita al Pasquier; se quel luogo servirà per la nuova chiesa parrocchiale, vi si farà invece una cappella laterale con l'altare di San Giovanni Battista.",
+   "it": "Delibera del consiglio della comunità: la cappella Saint-Jean-Baptiste, rovinata da acque e nevi che scendono dalle rocce sovrastanti, sarà ricostruita al Pasquier; se quel luogo servirà per la nuova chiesa parrocchiale, vi si farà invece una cappella laterale con l'altare di San Giovanni Battista.",
    "fr": "Délibération du conseil de la communauté : la chapelle Saint-Jean-Baptiste, abîmée par les eaux et les neiges qui descendent des rochers au-dessus, sera rebâtie au Pasquier ; si ce lieu sert à la nouvelle église paroissiale, on y fera plutôt une chapelle latérale avec l'autel de saint Jean-Baptiste.",
    "quando_fr": "4 janv. 1668"
   },
   {
    "quando": "1668-1689",
-   "it": "Costruzione della chiesa attuale, non orientata: navata larga con cappelle previste fin dall'inizio e coro. Il 4 settembre 1689 la cappellania di San Giovanni Battista risulta insediata nella chiesa parrocchiale: da qui il doppio patronato, san Nicola di Mira e san Giovanni Battista.",
+   "it": "Costruzione della chiesa attuale, non orientata: navata larga con cappelle previste fin dall'inizio e coro. Il 4 settembre 1689 la cappellania Saint-Jean-Baptiste risulta insediata nella chiesa parrocchiale: da qui il doppio patronato, san Nicola di Mira e san Giovanni Battista.",
    "fr": "Construction de l'église actuelle, non orientée : large nef avec chapelles prévues dès l'origine et chœur. Le 4 septembre 1689 la chapellenie Saint-Jean-Baptiste siège dans l'église paroissiale : d'où le double patronage, saint Nicolas de Myre et saint Jean-Baptiste.",
    "quando_fr": "1668-1689"
   },
@@ -49,7 +49,7 @@ window.STORIA_JAUSIERS = {
   },
   {
    "quando": "1698-1740",
-   "it": "Le cappelle sono decorate fino a metà Settecento, dal coro (barocco) verso il portale (rocaille); un cartiglio del 1702 nella cappella delle Anime del Purgatorio. Le piante militari del 1707, 1710 e 1740 mostrano la chiesa con navata, coro e sacrestia, senza campanile annesso, e la vecchia chiesa demolita.",
+   "it": "Le cappelle sono decorate fino a metà Settecento, dal coro (barocco) verso il portale (rocaille); un cartiglio del 1702 nella cappella des Âmes du Purgatoire. Le piante militari del 1707, 1710 e 1740 mostrano la chiesa con navata, coro e sacrestia, senza campanile annesso, e la vecchia chiesa demolita.",
    "fr": "Les chapelles sont décorées jusqu'au milieu du XVIIIe siècle, du chœur (baroque) vers le portail (rocaille) ; un cartouche daté 1702 dans la chapelle des Âmes du Purgatoire. Les plans militaires de 1707, 1710 et 1740 montrent l'église avec nef, chœur et sacristie, sans clocher attenant, et la vieille église démolie.",
    "quando_fr": "1698-1740"
   },
@@ -85,8 +85,8 @@ window.STORIA_JAUSIERS = {
   },
   {
    "quando": "1993-2016",
-   "it": "1993: restauro delle due meridiane della facciata sud (J.-F. Gavoty). 1997-2000: gessi, pitture del coro (XVIII sec.) e navata (F. Flavigny, ACMH). 2003: cappelle di San Giovanni Battista e del Rosario; 2010: cappella di San Giuseppe (M. Trubert). 2016: diagnostico completo di M. Trubert, ACMH, dopo le fessure dei terremoti del 2012 e 2014.",
-   "fr": "1993 : restauration des deux cadrans solaires de l'élévation sud (J.-F. Gavoty). 1997-2000 : gypseries, peintures du chœur (XVIIIe) et nef (F. Flavigny, ACMH). 2003 : chapelles Saint-Jean-Baptiste et du Rosaire ; 2010 : chapelle Saint-Joseph (M. Trubert). 2016 : diagnostic complet de M. Trubert, ACMH, après les fissures des séismes de 2012 et 2014.",
+   "it": "1993: restauro delle due meridiane della facciata sud (J.-F. Gavoty). 1997-2000: gessi, pitture del coro (XVIII sec.) e navata (F. Flavigny, ACMH). 2003: cappelle Saint-Jean-Baptiste e Notre-Dame-du-Rosaire; 2010: cappella Saint-Joseph (M. Trubert). 2016: diagnostico completo di M. Trubert, ACMH, dopo le fessure dei terremoti del 2012 e 2014.",
+   "fr": "1993 : restauration des deux cadrans solaires de l'élévation sud (J.-F. Gavoty). 1997-2000 : gypseries, peintures du chœur (XVIIIe) et nef (F. Flavigny, ACMH). 2003 : chapelles Saint-Jean-Baptiste et Notre-Dame-du-Rosaire ; 2010 : chapelle Saint-Joseph (M. Trubert). 2016 : diagnostic complet de M. Trubert, ACMH, après les fissures des séismes de 2012 et 2014.",
    "quando_fr": "1993-2016"
   }
  ]

@@ -73,6 +73,30 @@ window.CHIESE_UBAYE = [
     "t": "Pendenza: DEM IGN RGE ALTI, calcolata da chiese.py",
     "url": "https://geoservices.ign.fr/rgealti"
    }
+  ],
+  "epoca_fr": "Moyen Âge ; reconstruite en 1634-1644 ; église actuelle 1923-1927",
+  "protezione_fr": null,
+  "storia_fr": [
+   "Église médiévale détruite par le grand incendie de 1628 et reconstruite deux fois (1634-1638 et 1643-1644). L'édifice du XVIIe siècle fut démoli en 1926-1927 : l'église actuelle, commencée en 1923, le remplace.",
+   "Du XVIIe siècle subsiste le clocher, surélevé d'un étage en 1653 pour les cloches, avec baies géminées, pyramides et gargouilles ; le campanile en fer forgé avec la Vierge dorée date de 1860."
+  ],
+  "fonti_storia_fr": [
+   {
+    "t": "Wikipedia (fr): Barcelonnette, Art religieux",
+    "url": "https://fr.wikipedia.org/wiki/Barcelonnette"
+   },
+   {
+    "t": "Wikidata Q41743736",
+    "url": "https://www.wikidata.org/wiki/Q41743736"
+   },
+   {
+    "t": "OpenStreetMap way/128064002 (plan)",
+    "url": "https://www.openstreetmap.org/way/128064002"
+   },
+   {
+    "t": "Pente : MNT IGN RGE ALTI, calculée par chiese.py",
+    "url": "https://geoservices.ign.fr/rgealti"
+   }
   ]
  },
  {
@@ -112,7 +136,7 @@ window.CHIESE_UBAYE = [
   "epoca": "parrocchia dal 1816",
   "protezione": null,
   "storia": [
-   "Chiesa del hameau di La Conche, eretta in parrocchia nel 1816 (la voce del comune la chiama anche cappella)."
+   "Chiesa della frazione di La Conche, eretta in parrocchia nel 1816 (la voce del comune la chiama anche cappella)."
   ],
   "fonti_storia": [
    {
@@ -129,6 +153,29 @@ window.CHIESE_UBAYE = [
    },
    {
     "t": "Pendenza: DEM IGN RGE ALTI, calcolata da chiese.py",
+    "url": "https://geoservices.ign.fr/rgealti"
+   }
+  ],
+  "epoca_fr": "paroisse depuis 1816",
+  "protezione_fr": null,
+  "storia_fr": [
+   "Église du hameau de La Conche, érigée en paroisse en 1816 (l'article de la commune l'appelle aussi chapelle)."
+  ],
+  "fonti_storia_fr": [
+   {
+    "t": "Wikipedia (fr): Enchastrayes",
+    "url": "https://fr.wikipedia.org/wiki/Enchastrayes"
+   },
+   {
+    "t": "Wikidata Q49655685",
+    "url": "https://www.wikidata.org/wiki/Q49655685"
+   },
+   {
+    "t": "OpenStreetMap way/195326268 (plan)",
+    "url": "https://www.openstreetmap.org/way/195326268"
+   },
+   {
+    "t": "Pente : MNT IGN RGE ALTI, calculée par chiese.py",
     "url": "https://geoservices.ign.fr/rgealti"
    }
   ]
@@ -174,6 +221,30 @@ window.CHIESE_UBAYE = [
     "t": "Pendenza: DEM IGN RGE ALTI, calcolata da chiese.py",
     "url": "https://geoservices.ign.fr/rgealti"
    }
+  ],
+  "epoca_fr": "XIXe siècle",
+  "protezione_fr": null,
+  "storia_fr": [
+   "Église du village, du XIXe siècle, adossée à la mairie.",
+   "Elle conserve le tableau « Les âmes du Purgatoire avec saint Pierre et saint Paul » (1717), classé monument historique au titre objet (1991)."
+  ],
+  "fonti_storia_fr": [
+   {
+    "t": "Wikipedia (fr): Enchastrayes",
+    "url": "https://fr.wikipedia.org/wiki/Enchastrayes"
+   },
+   {
+    "t": "Wikidata Q49665041",
+    "url": "https://www.wikidata.org/wiki/Q49665041"
+   },
+   {
+    "t": "OpenStreetMap way/195328613 (plan)",
+    "url": "https://www.openstreetmap.org/way/195328613"
+   },
+   {
+    "t": "Pente : MNT IGN RGE ALTI, calculée par chiese.py",
+    "url": "https://geoservices.ign.fr/rgealti"
+   }
   ]
  },
  {
@@ -216,6 +287,29 @@ window.CHIESE_UBAYE = [
     "t": "Pendenza: DEM IGN RGE ALTI, calcolata da chiese.py",
     "url": "https://geoservices.ign.fr/rgealti"
    }
+  ],
+  "epoca_fr": null,
+  "protezione_fr": null,
+  "storia_fr": [
+   "Bâtiment proche du clocher de Saint-Étienne, sans nom dans OSM. Il pourrait s'agir de la chapelle des Pénitents (1690, ancienne église des Chalaisiens, aujourd'hui salle des fêtes), que les sources placent à côté du clocher : identification à vérifier."
+  ],
+  "fonti_storia_fr": [
+   {
+    "t": "Wikipedia (fr): Faucon-de-Barcelonnette",
+    "url": "https://fr.wikipedia.org/wiki/Faucon-de-Barcelonnette"
+   },
+   {
+    "t": "Wikidata Q38569754",
+    "url": "https://www.wikidata.org/wiki/Q38569754"
+   },
+   {
+    "t": "OpenStreetMap way/72862315 (plan)",
+    "url": "https://www.openstreetmap.org/way/72862315"
+   },
+   {
+    "t": "Pente : MNT IGN RGE ALTI, calculée par chiese.py",
+    "url": "https://geoservices.ign.fr/rgealti"
+   }
   ]
  },
  {
@@ -239,7 +333,7 @@ window.CHIESE_UBAYE = [
   "epoca": "XI secolo; ricostruita nel XVII secolo",
   "protezione": null,
   "storia": [
-   "Prima costruzione nell'XI secolo, ricostruita nel Seicento. Navata con collaterali, archi a tutto sesto, abside a catino (cul-de-four).",
+   "Prima costruzione nell'XI secolo, ricostruita nel Seicento. Navata con collaterali, archi a tutto sesto, abside a catino.",
    "Il campanile isolato è il monumento più antico: secondo la DRAC i primi 20 metri sarebbero gallo-romani (secondo Collier è una ricostruzione del XVI secolo). Ha una meridiana del 1878. Nella chiesa c'è un coperchio di sarcofago classificato."
   ],
   "fonti_storia": [
@@ -257,6 +351,30 @@ window.CHIESE_UBAYE = [
    },
    {
     "t": "Pendenza: DEM IGN RGE ALTI, calcolata da chiese.py",
+    "url": "https://geoservices.ign.fr/rgealti"
+   }
+  ],
+  "epoca_fr": "XIe siècle ; reconstruite au XVIIe siècle",
+  "protezione_fr": null,
+  "storia_fr": [
+   "Première construction au XIe siècle, reconstruite au XVIIe. Nef avec collatéraux, arcs en plein cintre, abside en cul-de-four.",
+   "Le clocher isolé est le monument le plus ancien : selon la DRAC, ses 20 premiers mètres seraient gallo-romains (selon Collier, il s'agit d'une reconstruction du XVIe siècle). Il porte un cadran solaire de 1878. L'église abrite un couvercle de sarcophage classé."
+  ],
+  "fonti_storia_fr": [
+   {
+    "t": "Wikipedia (fr): Faucon-de-Barcelonnette",
+    "url": "https://fr.wikipedia.org/wiki/Faucon-de-Barcelonnette"
+   },
+   {
+    "t": "Wikidata Q38569754",
+    "url": "https://www.wikidata.org/wiki/Q38569754"
+   },
+   {
+    "t": "OpenStreetMap way/72861887 (plan)",
+    "url": "https://www.openstreetmap.org/way/72861887"
+   },
+   {
+    "t": "Pente : MNT IGN RGE ALTI, calculée par chiese.py",
     "url": "https://geoservices.ign.fr/rgealti"
    }
   ]
@@ -291,6 +409,19 @@ window.CHIESE_UBAYE = [
     "t": "Pendenza: DEM IGN RGE ALTI, calcolata da chiese.py",
     "url": "https://geoservices.ign.fr/rgealti"
    }
+  ],
+  "epoca_fr": null,
+  "protezione_fr": null,
+  "storia_fr": [],
+  "fonti_storia_fr": [
+   {
+    "t": "OpenStreetMap way/93927366 (plan)",
+    "url": "https://www.openstreetmap.org/way/93927366"
+   },
+   {
+    "t": "Pente : MNT IGN RGE ALTI, calculée par chiese.py",
+    "url": "https://geoservices.ign.fr/rgealti"
+   }
   ]
  },
  {
@@ -314,7 +445,7 @@ window.CHIESE_UBAYE = [
   "epoca": null,
   "protezione": null,
   "storia": [
-   "Chiesa del hameau di Lans, un tempo parrocchiale, dedicata all'Annunciazione (Wikidata: «Notre-Dame-del-Bosc de Lans»)."
+   "Chiesa della frazione di Lans, un tempo parrocchiale, dedicata all'Annunciazione (Wikidata: «Notre-Dame-del-Bosc de Lans»)."
   ],
   "fonti_storia": [
    {
@@ -331,6 +462,29 @@ window.CHIESE_UBAYE = [
    },
    {
     "t": "Pendenza: DEM IGN RGE ALTI, calcolata da chiese.py",
+    "url": "https://geoservices.ign.fr/rgealti"
+   }
+  ],
+  "epoca_fr": null,
+  "protezione_fr": null,
+  "storia_fr": [
+   "Église du hameau de Lans, autrefois paroissiale, dédiée à l'Annonciation (Wikidata : « Notre-Dame-del-Bosc de Lans »)."
+  ],
+  "fonti_storia_fr": [
+   {
+    "t": "Wikipedia (fr): Jausiers, Art religieux",
+    "url": "https://fr.wikipedia.org/wiki/Jausiers"
+   },
+   {
+    "t": "Wikidata Q55084040",
+    "url": "https://www.wikidata.org/wiki/Q55084040"
+   },
+   {
+    "t": "OpenStreetMap way/93927303 (plan)",
+    "url": "https://www.openstreetmap.org/way/93927303"
+   },
+   {
+    "t": "Pente : MNT IGN RGE ALTI, calculée par chiese.py",
     "url": "https://geoservices.ign.fr/rgealti"
    }
   ]
@@ -356,19 +510,19 @@ window.CHIESE_UBAYE = [
   "epoca": "costruita tra il 1668 e il 1689 (atti notarili); campanile dopo il 1860",
   "protezione": "Monumento storico, classificata nel 1921 (PA00080407)",
   "storia": [
-   "Chiesa barocca di stile controriformato, definita «la più grande chiesa barocca dei paesi della Durance». Due atti notarili ne fissano la costruzione tra il 1668 e il 1689. Il 4 gennaio 1668 la cappellania di San Giovanni Battista e i consoli decidono di ricostruire la cappella in rovina al Pasquier, oppure, se lì sorgerà la nuova parrocchiale, di farvi un altare di San Giovanni Battista. Il 4 settembre 1689 la cappellania risulta insediata nella chiesa parrocchiale: da qui il doppio patronato, san Nicola e san Giovanni Battista. Gli atti confermano il XVII secolo (Collier) contro il XVIII della scheda MH; Wikipedia indica una consacrazione nel 1686.",
-   "Il 21 aprile 1691 la chiesa, «fraîchement bâtie», fu saccheggiata dalle truppe francesi. Il campanile annesso è posteriore al 1860: quell'anno l'abate Féraud scrive che non esiste. Interventi successivi: altare Cantini (1904), alluvione (1957), copertura in scandole di larice (1973), meridiane rifatte da Gavoty (1993).",
+   "Chiesa barocca di stile controriformato, definita «la più grande chiesa barocca dei paesi della Durance». Due atti notarili ne fissano la costruzione tra il 1668 e il 1689. Il 4 gennaio 1668 la cappellania Saint-Jean-Baptiste e i consoli decidono di ricostruire la cappella in rovina al Pasquier, oppure, se lì sorgerà la nuova parrocchiale, di farvi un altare di San Giovanni Battista. Il 4 settembre 1689 la cappellania risulta insediata nella chiesa parrocchiale: da qui il doppio patronato, san Nicola e san Giovanni Battista. Gli atti confermano il XVII secolo (Collier) contro il XVIII della scheda MH; Wikipedia indica una consacrazione nel 1686.",
+   "Il 21 aprile 1691 la chiesa, «appena costruita», fu saccheggiata dalle truppe francesi. Il campanile annesso è posteriore al 1860: quell'anno l'abate Féraud scrive che non esiste. Interventi successivi: altare Cantini (1904), alluvione (1957), copertura in scandole di larice (1973), meridiane rifatte da Gavoty (1993).",
    "Navata di quattro campate alta 18 m, coro con volte a crociera raggiate, capitelli corinzi. Le fonti danno 26 × 18 m (il programma, dalla planimetria catastale, usa una navata di 26,52 m e un'abside a 5 lati).",
-   "Orientamento: il diagnostico 2016 lo dice esplicitamente: «L'édifice n'est pas orienté», mentre la chiesa antica, demolita, era orientata. Planimetria catastale (facciata a 160°), pianta OSM (156°) e ortofoto concordano su una facciata a SSE con meridiana sul lato sud; la «facciata occidentale» di Wikipedia è un errore."
+   "Orientamento: il diagnostico 2016 lo dice esplicitamente: «l'edificio non è orientato», mentre la chiesa antica, demolita, era orientata. Planimetria catastale (facciata a 160°), pianta OSM (156°) e ortofoto concordano su una facciata a SSE con meridiana sul lato sud; la «facciata occidentale» di Wikipedia è un errore."
   ],
   "fonti_storia": [
    {
-    "t": "Diagnostic 2016, M. Trubert (ACMH), synthèse historique pp. 11-29 (archivi comunali, AD Digne, DRAC PACA, Médiathèque du Patrimoine, SHD)",
-    "url": "file:///Users/andreew_1/Documents/eglise_jausiers/Eglsie_StNicolas_Diagnostic_2016.pdf"
+    "t": "Diagnostico 2016, M. Trubert (ACMH), sintesi storica, pp. 11-29 (archivi comunali, AD Digne, DRAC PACA, Médiathèque du Patrimoine, SHD)",
+    "url": null
    },
    {
-    "t": "Atti del 4/1/1668 e del 4/9/1689 (trascrizione «Eglise Saint Nicolas_création»)",
-    "url": "file:///Users/andreew_1/Documents/eglise_jausiers/Eglise%20Saint%20Nicolas_cr%C3%A9ation.pdf"
+    "t": "Atti del 4/1/1668 e del 4/9/1689 (trascrizione)",
+    "url": null
    },
    {
     "t": "Wikipedia (fr): Église Saint-Nicolas-de-Myre de Jausiers",
@@ -380,7 +534,7 @@ window.CHIESE_UBAYE = [
    },
    {
     "t": "Programma jausiers_sun3d_py: church_geometry.py (planimetria catastale con freccia nord)",
-    "url": "../church_geometry.py"
+    "url": null
    },
    {
     "t": "Mérimée PA00080407 (POP, Ministero della Cultura)",
@@ -396,6 +550,52 @@ window.CHIESE_UBAYE = [
    },
    {
     "t": "Pendenza: DEM IGN RGE ALTI, calcolata da chiese.py",
+    "url": "https://geoservices.ign.fr/rgealti"
+   }
+  ],
+  "epoca_fr": "bâtie entre 1668 et 1689 (actes notariés) ; clocher après 1860",
+  "protezione_fr": "Monument historique, classé en 1921 (PA00080407)",
+  "storia_fr": [
+   "Église baroque de style Contre-Réforme, qualifiée de « plus grande église baroque des pays de Durance ». Deux actes notariés en fixent la construction entre 1668 et 1689. Le 4 janvier 1668, la chapellenie Saint-Jean-Baptiste et les consuls décident de reconstruire la chapelle en ruine au Pasquier ou, si la nouvelle paroissiale doit s'y élever, d'y faire un autel de saint Jean-Baptiste. Le 4 septembre 1689, la chapellenie est installée dans l'église paroissiale : d'où le double patronage, saint Nicolas et saint Jean-Baptiste. Les actes confirment le XVIIe siècle (Collier) contre le XVIIIe de la notice MH ; Wikipédia indique une consécration en 1686.",
+   "Le 21 avril 1691, l'église, « fraîchement bâtie », fut pillée par les troupes françaises. Le clocher attenant est postérieur à 1860 : cette année-là, l'abbé Féraud écrit qu'il n'existe pas. Interventions suivantes : autel Cantini (1904), crue (1957), couverture en bardeaux de mélèze (1973), cadrans solaires refaits par Gavoty (1993).",
+   "Nef de quatre travées haute de 18 m, chœur aux voûtes d'arêtes rayonnantes, chapiteaux corinthiens. Les sources donnent 26 × 18 m (le programme, d'après le plan cadastral, utilise une nef de 26,52 m et une abside à 5 pans).",
+   "Orientation : le diagnostic 2016 le dit explicitement : « L'édifice n'est pas orienté », alors que l'ancienne église, démolie, l'était. Plan cadastral (façade à 160°), plan OSM (156°) et orthophoto s'accordent sur une façade au SSE avec un cadran solaire au sud ; la « façade occidentale » de Wikipédia est une erreur."
+  ],
+  "fonti_storia_fr": [
+   {
+    "t": "Diagnostic 2016, M. Trubert (ACMH), synthèse historique p. 11-29 (archives communales, AD Digne, DRAC PACA, Médiathèque du Patrimoine, SHD)",
+    "url": null
+   },
+   {
+    "t": "Actes du 4/1/1668 et du 4/9/1689 (transcription)",
+    "url": null
+   },
+   {
+    "t": "Wikipedia (fr): Église Saint-Nicolas-de-Myre de Jausiers",
+    "url": "https://fr.wikipedia.org/wiki/Église_Saint-Nicolas-de-Myre_de_Jausiers"
+   },
+   {
+    "t": "Wikipedia (fr): Jausiers, Art religieux",
+    "url": "https://fr.wikipedia.org/wiki/Jausiers"
+   },
+   {
+    "t": "Programme jausiers_sun3d_py : church_geometry.py (plan cadastral avec flèche nord)",
+    "url": null
+   },
+   {
+    "t": "Mérimée PA00080407 (POP, ministère de la Culture)",
+    "url": "https://pop.culture.gouv.fr/notice/merimee/PA00080407"
+   },
+   {
+    "t": "Wikidata Q3583322",
+    "url": "https://www.wikidata.org/wiki/Q3583322"
+   },
+   {
+    "t": "OpenStreetMap way/93932532 (plan)",
+    "url": "https://www.openstreetmap.org/way/93932532"
+   },
+   {
+    "t": "Pente : MNT IGN RGE ALTI, calculée par chiese.py",
     "url": "https://geoservices.ign.fr/rgealti"
    }
   ]
@@ -421,7 +621,7 @@ window.CHIESE_UBAYE = [
   "epoca": "1832",
   "protezione": null,
   "storia": [
-   "Chiesa del hameau di Les Sanières, un tempo parrocchiale, costruita nel 1832 e dedicata a san Sebastiano."
+   "Chiesa della frazione di Les Sanières, un tempo parrocchiale, costruita nel 1832 e dedicata a san Sebastiano."
   ],
   "fonti_storia": [
    {
@@ -438,6 +638,29 @@ window.CHIESE_UBAYE = [
    },
    {
     "t": "Pendenza: DEM IGN RGE ALTI, calcolata da chiese.py",
+    "url": "https://geoservices.ign.fr/rgealti"
+   }
+  ],
+  "epoca_fr": "1832",
+  "protezione_fr": null,
+  "storia_fr": [
+   "Église du hameau des Sanières, autrefois paroissiale, bâtie en 1832 et dédiée à saint Sébastien."
+  ],
+  "fonti_storia_fr": [
+   {
+    "t": "Wikipedia (fr): Jausiers, Art religieux",
+    "url": "https://fr.wikipedia.org/wiki/Jausiers"
+   },
+   {
+    "t": "Wikidata Q55119864",
+    "url": "https://www.wikidata.org/wiki/Q55119864"
+   },
+   {
+    "t": "OpenStreetMap way/93928811 (plan)",
+    "url": "https://www.openstreetmap.org/way/93928811"
+   },
+   {
+    "t": "Pente : MNT IGN RGE ALTI, calculée par chiese.py",
     "url": "https://geoservices.ign.fr/rgealti"
    }
   ]
@@ -483,6 +706,30 @@ window.CHIESE_UBAYE = [
     "t": "Pendenza: DEM IGN RGE ALTI, calcolata da chiese.py",
     "url": "https://geoservices.ign.fr/rgealti"
    }
+  ],
+  "epoca_fr": "1830",
+  "protezione_fr": null,
+  "storia_fr": [
+   "Église du Châtelard, de 1830. Chœur en cul-de-four et clocher construit contre le chœur, adossé à la chapelle des Pénitents. Elle conserve des fonts baptismaux carolingiens classés.",
+   "Orientation : le chœur en cul-de-four se voit sur l'orthophoto comme une extrémité arrondie au nord, et la direction mesurée le confirme."
+  ],
+  "fonti_storia_fr": [
+   {
+    "t": "Wikipedia (fr): La Condamine-Châtelard",
+    "url": "https://fr.wikipedia.org/wiki/La_Condamine-Châtelard"
+   },
+   {
+    "t": "Wikidata Q38488529",
+    "url": "https://www.wikidata.org/wiki/Q38488529"
+   },
+   {
+    "t": "OpenStreetMap way/128081857 (plan)",
+    "url": "https://www.openstreetmap.org/way/128081857"
+   },
+   {
+    "t": "Pente : MNT IGN RGE ALTI, calculée par chiese.py",
+    "url": "https://geoservices.ign.fr/rgealti"
+   }
   ]
  },
  {
@@ -523,6 +770,29 @@ window.CHIESE_UBAYE = [
    },
    {
     "t": "Pendenza: DEM IGN RGE ALTI, calcolata da chiese.py",
+    "url": "https://geoservices.ign.fr/rgealti"
+   }
+  ],
+  "epoca_fr": "1822",
+  "protezione_fr": null,
+  "storia_fr": [
+   "Église paroissiale du chef-lieu, de 1822, dédiée à sainte Catherine d'Alexandrie. Le fronton porte un oculus en forme de coquille de plus de 1,5 m de large. Elle conserve une « Présentation de Jésus au Temple » de Fidèle Maria Patritti (1862)."
+  ],
+  "fonti_storia_fr": [
+   {
+    "t": "Wikipedia (fr): La Condamine-Châtelard",
+    "url": "https://fr.wikipedia.org/wiki/La_Condamine-Châtelard"
+   },
+   {
+    "t": "Wikidata Q38508254",
+    "url": "https://www.wikidata.org/wiki/Q38508254"
+   },
+   {
+    "t": "OpenStreetMap way/290959205 (plan)",
+    "url": "https://www.openstreetmap.org/way/290959205"
+   },
+   {
+    "t": "Pente : MNT IGN RGE ALTI, calculée par chiese.py",
     "url": "https://geoservices.ign.fr/rgealti"
    }
   ]
@@ -580,7 +850,7 @@ window.CHIESE_UBAYE = [
   "epoca": null,
   "protezione": null,
   "storia": [
-   "Cappella Saint-Jean del hameau des Prats, vicino a un mulino. Conserva l'unico oggetto classificato del comune, una pisside d'argento del XVIII secolo."
+   "Cappella Saint-Jean della frazione Les Prats, vicino a un mulino. Conserva l'unico oggetto classificato del comune, una pisside d'argento del XVIII secolo."
   ],
   "fonti_storia": [
    {
@@ -597,6 +867,29 @@ window.CHIESE_UBAYE = [
    },
    {
     "t": "Pendenza: DEM IGN RGE ALTI, calcolata da chiese.py",
+    "url": "https://geoservices.ign.fr/rgealti"
+   }
+  ],
+  "epoca_fr": null,
+  "protezione_fr": null,
+  "storia_fr": [
+   "Chapelle Saint-Jean du hameau des Prats, près d'un moulin. Elle conserve le seul objet classé de la commune, un ciboire en argent du XVIIIe siècle."
+  ],
+  "fonti_storia_fr": [
+   {
+    "t": "Wikipedia (fr): Les Thuiles",
+    "url": "https://fr.wikipedia.org/wiki/Les_Thuiles"
+   },
+   {
+    "t": "Wikidata Q55177563",
+    "url": "https://www.wikidata.org/wiki/Q55177563"
+   },
+   {
+    "t": "OpenStreetMap way/128069346 (plan)",
+    "url": "https://www.openstreetmap.org/way/128069346"
+   },
+   {
+    "t": "Pente : MNT IGN RGE ALTI, calculée par chiese.py",
     "url": "https://geoservices.ign.fr/rgealti"
    }
   ]
@@ -641,6 +934,29 @@ window.CHIESE_UBAYE = [
     "t": "Pendenza: DEM IGN RGE ALTI, calcolata da chiese.py",
     "url": "https://geoservices.ign.fr/rgealti"
    }
+  ],
+  "epoca_fr": null,
+  "protezione_fr": null,
+  "storia_fr": [
+   "Chapelle Saint-Joseph de Miraval, citée sans date."
+  ],
+  "fonti_storia_fr": [
+   {
+    "t": "Wikipedia (fr): Les Thuiles",
+    "url": "https://fr.wikipedia.org/wiki/Les_Thuiles"
+   },
+   {
+    "t": "Wikidata Q55177561",
+    "url": "https://www.wikidata.org/wiki/Q55177561"
+   },
+   {
+    "t": "OpenStreetMap way/128069036 (plan)",
+    "url": "https://www.openstreetmap.org/way/128069036"
+   },
+   {
+    "t": "Pente : MNT IGN RGE ALTI, calculée par chiese.py",
+    "url": "https://geoservices.ign.fr/rgealti"
+   }
   ]
  },
  {
@@ -681,6 +997,29 @@ window.CHIESE_UBAYE = [
    },
    {
     "t": "Pendenza: DEM IGN RGE ALTI, calcolata da chiese.py",
+    "url": "https://geoservices.ign.fr/rgealti"
+   }
+  ],
+  "epoca_fr": null,
+  "protezione_fr": null,
+  "storia_fr": [
+   "Wikidata : « chapelle du Clot-Meyrans » (dédiée à saint Joseph selon l'article de la commune)."
+  ],
+  "fonti_storia_fr": [
+   {
+    "t": "Wikipedia (fr): Les Thuiles",
+    "url": "https://fr.wikipedia.org/wiki/Les_Thuiles"
+   },
+   {
+    "t": "Wikidata Q55177556",
+    "url": "https://www.wikidata.org/wiki/Q55177556"
+   },
+   {
+    "t": "OpenStreetMap way/128069132 (plan)",
+    "url": "https://www.openstreetmap.org/way/128069132"
+   },
+   {
+    "t": "Pente : MNT IGN RGE ALTI, calculée par chiese.py",
     "url": "https://geoservices.ign.fr/rgealti"
    }
   ]
@@ -725,6 +1064,29 @@ window.CHIESE_UBAYE = [
     "t": "Pendenza: DEM IGN RGE ALTI, calcolata da chiese.py",
     "url": "https://geoservices.ign.fr/rgealti"
    }
+  ],
+  "epoca_fr": "fin XVIIe-XVIIIe siècle ; clocher et portail sud début XVIe",
+  "protezione_fr": null,
+  "storia_fr": [
+   "Nef haute de trois travées voûtées d'arêtes, avec une chapelle latérale à chaque travée ; chœur plus bas. De l'édifice précédent subsistent le clocher carré à flèche et quatre pyramides et le portail sud gothique (début du XVIe siècle). Cadran solaire de 1881, restauré en 1996."
+  ],
+  "fonti_storia_fr": [
+   {
+    "t": "Wikipedia (fr): Les Thuiles",
+    "url": "https://fr.wikipedia.org/wiki/Les_Thuiles"
+   },
+   {
+    "t": "Wikidata Q41743885",
+    "url": "https://www.wikidata.org/wiki/Q41743885"
+   },
+   {
+    "t": "OpenStreetMap way/128068584 (plan)",
+    "url": "https://www.openstreetmap.org/way/128068584"
+   },
+   {
+    "t": "Pente : MNT IGN RGE ALTI, calculée par chiese.py",
+    "url": "https://geoservices.ign.fr/rgealti"
+   }
   ]
  },
  {
@@ -765,6 +1127,29 @@ window.CHIESE_UBAYE = [
    },
    {
     "t": "Pendenza: DEM IGN RGE ALTI, calcolata da chiese.py",
+    "url": "https://geoservices.ign.fr/rgealti"
+   }
+  ],
+  "epoca_fr": "1763",
+  "protezione_fr": null,
+  "storia_fr": [
+   "Notre-Dame-de-la-Visitation, dite Notre-Dame-des-Lumières, à Rioclar : ancienne paroisse indépendante, de 1763. Nef de deux travées, clocher-tour, un Christ en bois du XVIe siècle."
+  ],
+  "fonti_storia_fr": [
+   {
+    "t": "Wikipedia (fr): Méolans-Revel, Lieux et monuments",
+    "url": "https://fr.wikipedia.org/wiki/Méolans-Revel"
+   },
+   {
+    "t": "Wikidata Q55084042",
+    "url": "https://www.wikidata.org/wiki/Q55084042"
+   },
+   {
+    "t": "OpenStreetMap way/127740254 (plan)",
+    "url": "https://www.openstreetmap.org/way/127740254"
+   },
+   {
+    "t": "Pente : MNT IGN RGE ALTI, calculée par chiese.py",
     "url": "https://geoservices.ign.fr/rgealti"
    }
   ]
@@ -811,6 +1196,31 @@ window.CHIESE_UBAYE = [
     "t": "Pendenza: DEM IGN RGE ALTI, calcolata da chiese.py",
     "url": "https://geoservices.ign.fr/rgealti"
    }
+  ],
+  "epoca_fr": "prieuré fondé en 1135 ; reconstruite au XVIIe siècle",
+  "protezione_fr": null,
+  "storia_fr": [
+   "Ancien prieuré du Laverq, dépendant de Volonne et fondé en 1135, passé ensuite aux abbayes de Chalais et de Boscodon. Il reste un fragment de mur de la première construction ; l'église fut reconstruite au XVIIe siècle et rénovée au XIXe.",
+   "Nef de deux travées, coupole sur le chœur, clocher-tour accolé à la façade ouest avec flèche de pierre à quatre pans.",
+   "Orientation : le clocher est accolé à la façade ouest : abside à l'est, comme la mesure (82°)."
+  ],
+  "fonti_storia_fr": [
+   {
+    "t": "Wikipedia (fr): Méolans-Revel, Lieux et monuments",
+    "url": "https://fr.wikipedia.org/wiki/Méolans-Revel"
+   },
+   {
+    "t": "Wikidata Q55310942",
+    "url": "https://www.wikidata.org/wiki/Q55310942"
+   },
+   {
+    "t": "OpenStreetMap way/127740201 (plan)",
+    "url": "https://www.openstreetmap.org/way/127740201"
+   },
+   {
+    "t": "Pente : MNT IGN RGE ALTI, calculée par chiese.py",
+    "url": "https://geoservices.ign.fr/rgealti"
+   }
   ]
  },
  {
@@ -853,6 +1263,29 @@ window.CHIESE_UBAYE = [
     "t": "Pendenza: DEM IGN RGE ALTI, calcolata da chiese.py",
     "url": "https://geoservices.ign.fr/rgealti"
    }
+  ],
+  "epoca_fr": "fin XVe siècle (éléments gothiques) ; chapelle nord XVIe-XVIIe",
+  "protezione_fr": null,
+  "storia_fr": [
+   "Église paroissiale de Revel. La façade porte une statuette gothique de saint Jacques de la fin du XVe siècle ; il reste des éléments gothiques et la chapelle nord, voûtée d'arêtes, du tournant des XVIe et XVIIe siècles."
+  ],
+  "fonti_storia_fr": [
+   {
+    "t": "Wikipedia (fr): Méolans-Revel, Lieux et monuments",
+    "url": "https://fr.wikipedia.org/wiki/Méolans-Revel"
+   },
+   {
+    "t": "Wikidata Q38620572",
+    "url": "https://www.wikidata.org/wiki/Q38620572"
+   },
+   {
+    "t": "OpenStreetMap way/127740276 (plan)",
+    "url": "https://www.openstreetmap.org/way/127740276"
+   },
+   {
+    "t": "Pente : MNT IGN RGE ALTI, calculée par chiese.py",
+    "url": "https://geoservices.ign.fr/rgealti"
+   }
   ]
  },
  {
@@ -893,6 +1326,29 @@ window.CHIESE_UBAYE = [
    },
    {
     "t": "Pendenza: DEM IGN RGE ALTI, calcolata da chiese.py",
+    "url": "https://geoservices.ign.fr/rgealti"
+   }
+  ],
+  "epoca_fr": null,
+  "protezione_fr": null,
+  "storia_fr": [
+   "Wikidata : « église Saint-Julien de Méolans ». L'article de la commune rappelle que l'église Saint-Julien d'origine a disparu et qu'il en reste le clocher du XVIe siècle, isolé sur un rocher (site classé en 1944). Le bâtiment cartographié est l'église ou chapelle actuelle."
+  ],
+  "fonti_storia_fr": [
+   {
+    "t": "Wikipedia (fr): Méolans-Revel, Lieux et monuments",
+    "url": "https://fr.wikipedia.org/wiki/Méolans-Revel"
+   },
+   {
+    "t": "Wikidata Q38648140",
+    "url": "https://www.wikidata.org/wiki/Q38648140"
+   },
+   {
+    "t": "OpenStreetMap way/127740308 (plan)",
+    "url": "https://www.openstreetmap.org/way/127740308"
+   },
+   {
+    "t": "Pente : MNT IGN RGE ALTI, calculée par chiese.py",
     "url": "https://geoservices.ign.fr/rgealti"
    }
   ]
@@ -965,6 +1421,25 @@ window.CHIESE_UBAYE = [
     "t": "Pendenza: DEM IGN RGE ALTI, calcolata da chiese.py",
     "url": "https://geoservices.ign.fr/rgealti"
    }
+  ],
+  "epoca_fr": null,
+  "protezione_fr": null,
+  "storia_fr": [
+   "Wikidata : « chapelle Saint-Jean-Baptiste de Saint-Paul-sur-Ubaye » ; les sources consultées ne donnent pas d'autres informations."
+  ],
+  "fonti_storia_fr": [
+   {
+    "t": "Wikidata Q55084528",
+    "url": "https://www.wikidata.org/wiki/Q55084528"
+   },
+   {
+    "t": "OpenStreetMap way/128090492 (plan)",
+    "url": "https://www.openstreetmap.org/way/128090492"
+   },
+   {
+    "t": "Pente : MNT IGN RGE ALTI, calculée par chiese.py",
+    "url": "https://geoservices.ign.fr/rgealti"
+   }
   ]
  },
  {
@@ -1015,6 +1490,37 @@ window.CHIESE_UBAYE = [
     "t": "Pendenza: DEM IGN RGE ALTI, calcolata da chiese.py",
     "url": "https://geoservices.ign.fr/rgealti"
    }
+  ],
+  "epoca_fr": "reconstruite en 1549",
+  "protezione_fr": "Monument historique, inscrit en 2016 (PA04000035)",
+  "storia_fr": [
+   "Église Saint-Jean-Baptiste de Fouillouse, entre Fouillouse et Les Serrets, reconstruite en 1549, avec une voûte en berceau brisé postérieure et un clocher-mur à trois baies. Le Christ sur poutre de gloire et un antependium en tapisserie sont classés. Fouillouse obtint la paroisse en 1534."
+  ],
+  "fonti_storia_fr": [
+   {
+    "t": "Wikipedia (fr): Saint-Paul-sur-Ubaye, Art religieux",
+    "url": "https://fr.wikipedia.org/wiki/Saint-Paul-sur-Ubaye"
+   },
+   {
+    "t": "Wikipedia (fr): Église Saint-Antoine-du-Désert de Maurin",
+    "url": "https://fr.wikipedia.org/wiki/Église_Saint-Antoine-du-Désert_de_Maurin"
+   },
+   {
+    "t": "Mérimée PA04000035 (POP, ministère de la Culture)",
+    "url": "https://pop.culture.gouv.fr/notice/merimee/PA04000035"
+   },
+   {
+    "t": "Wikidata Q38629481",
+    "url": "https://www.wikidata.org/wiki/Q38629481"
+   },
+   {
+    "t": "OpenStreetMap way/128091102 (plan)",
+    "url": "https://www.openstreetmap.org/way/128091102"
+   },
+   {
+    "t": "Pente : MNT IGN RGE ALTI, calculée par chiese.py",
+    "url": "https://geoservices.ign.fr/rgealti"
+   }
   ]
  },
  {
@@ -1055,6 +1561,29 @@ window.CHIESE_UBAYE = [
    },
    {
     "t": "Pendenza: DEM IGN RGE ALTI, calcolata da chiese.py",
+    "url": "https://geoservices.ign.fr/rgealti"
+   }
+  ],
+  "epoca_fr": null,
+  "protezione_fr": null,
+  "storia_fr": [
+   "Chapelle Saint-Roch de la Petite-Serenne."
+  ],
+  "fonti_storia_fr": [
+   {
+    "t": "Wikipedia (fr): Saint-Paul-sur-Ubaye, Art religieux",
+    "url": "https://fr.wikipedia.org/wiki/Saint-Paul-sur-Ubaye"
+   },
+   {
+    "t": "Wikidata Q55084591",
+    "url": "https://www.wikidata.org/wiki/Q55084591"
+   },
+   {
+    "t": "OpenStreetMap way/128090944 (plan)",
+    "url": "https://www.openstreetmap.org/way/128090944"
+   },
+   {
+    "t": "Pente : MNT IGN RGE ALTI, calculée par chiese.py",
     "url": "https://geoservices.ign.fr/rgealti"
    }
   ]
@@ -1099,6 +1628,29 @@ window.CHIESE_UBAYE = [
     "t": "Pendenza: DEM IGN RGE ALTI, calcolata da chiese.py",
     "url": "https://geoservices.ign.fr/rgealti"
    }
+  ],
+  "epoca_fr": "1785",
+  "protezione_fr": null,
+  "storia_fr": [
+   "Église de Mélézen de 1785. Une chapelle antérieure fut transformée en presbytère. Croix de procession du XVIIe siècle classée."
+  ],
+  "fonti_storia_fr": [
+   {
+    "t": "Wikipedia (fr): Saint-Paul-sur-Ubaye, Art religieux",
+    "url": "https://fr.wikipedia.org/wiki/Saint-Paul-sur-Ubaye"
+   },
+   {
+    "t": "Wikidata Q55084084",
+    "url": "https://www.wikidata.org/wiki/Q55084084"
+   },
+   {
+    "t": "OpenStreetMap way/128090511 (plan)",
+    "url": "https://www.openstreetmap.org/way/128090511"
+   },
+   {
+    "t": "Pente : MNT IGN RGE ALTI, calculée par chiese.py",
+    "url": "https://geoservices.ign.fr/rgealti"
+   }
   ]
  },
  {
@@ -1141,6 +1693,29 @@ window.CHIESE_UBAYE = [
     "t": "Pendenza: DEM IGN RGE ALTI, calcolata da chiese.py",
     "url": "https://geoservices.ign.fr/rgealti"
    }
+  ],
+  "epoca_fr": "XIIIe siècle",
+  "protezione_fr": null,
+  "storia_fr": [
+   "Église gothique de Tournoux, du XIIIe siècle, aux voûtes plus récentes. Le clocher a une base romane et des étages des XVIe-XVIIe siècles à baies géminées. Un collatéral nord a été ajouté aux XVIIIe-XIXe siècles ; le portail a un linteau sur deux consoles sculptées (XVe-XVIe siècle). Elle conserve une Vierge du Rosaire."
+  ],
+  "fonti_storia_fr": [
+   {
+    "t": "Wikipedia (fr): Saint-Paul-sur-Ubaye, Art religieux",
+    "url": "https://fr.wikipedia.org/wiki/Saint-Paul-sur-Ubaye"
+   },
+   {
+    "t": "Wikidata Q55084089",
+    "url": "https://www.wikidata.org/wiki/Q55084089"
+   },
+   {
+    "t": "OpenStreetMap way/128090494 (plan)",
+    "url": "https://www.openstreetmap.org/way/128090494"
+   },
+   {
+    "t": "Pente : MNT IGN RGE ALTI, calculée par chiese.py",
+    "url": "https://geoservices.ign.fr/rgealti"
+   }
   ]
  },
  {
@@ -1165,7 +1740,7 @@ window.CHIESE_UBAYE = [
   "protezione": "Monumento storico, classificata nel 1921 (PA00080475)",
   "storia": [
    "Origini tardomedievali: la base del campanile (1390 circa) e parte del coro (1452-1472) sono le parti più antiche. Nel 1591 le truppe di Lesdiguières la distrussero mentre gli abitanti vi si erano trincerati; le volte furono ricostruite solo nel 1690, la chiesa fu fortificata nel 1696 e la copertura rifatta nel 1762.",
-   "Il terremoto del 5 aprile 1959 fece crollare una campata: i restauri durarono dal 1963 al 1970. Navata di due campate con volte a ogiva, coro a chevet piatto, cappella a sud, arcatelle lombarde all'esterno. Il portale occidentale è dell'inizio del XVI secolo; affreschi cinquecenteschi di pittori italiani.",
+   "Il terremoto del 5 aprile 1959 fece crollare una campata: i restauri durarono dal 1963 al 1970. Navata di due campate con volte a ogiva, coro a terminazione piatta, cappella a sud, arcatelle lombarde all'esterno. Il portale occidentale è dell'inizio del XVI secolo; affreschi cinquecenteschi di pittori italiani.",
    "Orientamento: Portale occidentale e coro opposto: l'abside a ENE (63°) è coerente con le fonti."
   ],
   "fonti_storia": [
@@ -1193,6 +1768,39 @@ window.CHIESE_UBAYE = [
     "t": "Pendenza: DEM IGN RGE ALTI, calcolata da chiese.py",
     "url": "https://geoservices.ign.fr/rgealti"
    }
+  ],
+  "epoca_fr": "clocher 1390 ; chœur 1452-1472 ; voûtes 1690 ; fortifiée en 1696",
+  "protezione_fr": "Monument historique, classé en 1921 (PA00080475)",
+  "storia_fr": [
+   "Origines de la fin du Moyen Âge : la base du clocher (vers 1390) et une partie du chœur (1452-1472) sont les parties les plus anciennes. En 1591, les troupes de Lesdiguières la détruisirent alors que les habitants s'y étaient retranchés ; les voûtes ne furent reconstruites qu'en 1690, l'église fut fortifiée en 1696 et la toiture refaite en 1762.",
+   "Le séisme du 5 avril 1959 fit s'effondrer une travée : les restaurations durèrent de 1963 à 1970. Nef de deux travées voûtées d'ogives, chœur à chevet plat, chapelle au sud, arcatures lombardes à l'extérieur. Le portail occidental date du début du XVIe siècle ; fresques du XVIe siècle par des peintres italiens.",
+   "Orientation : portail occidental et chœur opposé : l'abside à l'ENE (63°) est cohérente avec les sources."
+  ],
+  "fonti_storia_fr": [
+   {
+    "t": "Wikipedia (fr): Église Saint-Pierre-et-Saint-Paul de Saint-Paul-sur-Ubaye",
+    "url": "https://fr.wikipedia.org/wiki/Église_Saint-Pierre-et-Saint-Paul_de_Saint-Paul-sur-Ubaye"
+   },
+   {
+    "t": "Wikipedia (fr): Saint-Paul-sur-Ubaye, Art religieux",
+    "url": "https://fr.wikipedia.org/wiki/Saint-Paul-sur-Ubaye"
+   },
+   {
+    "t": "Mérimée PA00080475 (POP, ministère de la Culture)",
+    "url": "https://pop.culture.gouv.fr/notice/merimee/PA00080475"
+   },
+   {
+    "t": "Wikidata Q3583644",
+    "url": "https://www.wikidata.org/wiki/Q3583644"
+   },
+   {
+    "t": "OpenStreetMap way/128090543 (plan)",
+    "url": "https://www.openstreetmap.org/way/128090543"
+   },
+   {
+    "t": "Pente : MNT IGN RGE ALTI, calculée par chiese.py",
+    "url": "https://geoservices.ign.fr/rgealti"
+   }
   ]
  },
  {
@@ -1218,7 +1826,7 @@ window.CHIESE_UBAYE = [
   "storia": [
    "Antico priorato benedettino del XII secolo, ricostruito nel Cinquecento: il coro è del XVI secolo, la navata di tre campate e la cappella sud del XVII. Conserva rare bande lombarde e un arco trionfale con capitelli figurati.",
    "Campanile a torre con guglia a sei facce e doccioni. Il portale occidentale ha tre archivolti; quello sud ha un architrave con Cristo in maestà e un'iscrizione gotica. Il timpano dipinto con l'Adorazione dei Magi (verso il 1500) fu restaurato nel 1912.",
-   "Orientamento: Chevet piatto e cieco, coro illuminato solo da sud, portale principale a ovest: l'abside guarda a est. Il calcolo automatico dava il verso opposto (283°): orientamento corretto a 103°."
+   "Orientamento: Terminazione del coro piatta e cieca, coro illuminato solo da sud, portale principale a ovest: l'abside guarda a est. Il calcolo automatico dava il verso opposto (283°): orientamento corretto a 103°."
   ],
   "fonti_storia": [
    {
@@ -1247,6 +1855,43 @@ window.CHIESE_UBAYE = [
    },
    {
     "t": "Pendenza: DEM IGN RGE ALTI, calcolata da chiese.py",
+    "url": "https://geoservices.ign.fr/rgealti"
+   }
+  ],
+  "epoca_fr": "prieuré XIIe siècle ; chœur XVIe ; nef XVIIe",
+  "protezione_fr": "Monument historique, classé le 31/10/1912 (PA00080478)",
+  "storia_fr": [
+   "Ancien prieuré bénédictin du XIIe siècle, reconstruit au XVIe : le chœur date du XVIe siècle, la nef de trois travées et la chapelle sud du XVIIe. Il conserve de rares bandes lombardes et un arc triomphal à chapiteaux historiés.",
+   "Clocher-tour à flèche à six pans et gargouilles. Le portail occidental a trois voussures ; le portail sud a un linteau avec un Christ en majesté et une inscription gothique. Le tympan peint de l'Adoration des Mages (vers 1500) fut restauré en 1912.",
+   "Orientation : chevet plat et aveugle, chœur éclairé seulement par le sud, portail principal à l'ouest : l'abside regarde vers l'est. Le calcul automatique donnait le sens opposé (283°) : orientation corrigée à 103°."
+  ],
+  "fonti_storia_fr": [
+   {
+    "t": "Wikipedia (fr): Saint-Pons (Alpes-de-Haute-Provence)",
+    "url": "https://fr.wikipedia.org/wiki/Saint-Pons_(Alpes-de-Haute-Provence)"
+   },
+   {
+    "t": "Wikipedia (fr): Église Saint-Pons de Saint-Pons",
+    "url": "https://fr.wikipedia.org/wiki/Église_Saint-Pons_de_Saint-Pons"
+   },
+   {
+    "t": "Wikipedia (fr): Barcelonnette, Art religieux",
+    "url": "https://fr.wikipedia.org/wiki/Barcelonnette"
+   },
+   {
+    "t": "Mérimée PA00080478 (POP, ministère de la Culture)",
+    "url": "https://pop.culture.gouv.fr/notice/merimee/PA00080478"
+   },
+   {
+    "t": "Wikidata Q3584210",
+    "url": "https://www.wikidata.org/wiki/Q3584210"
+   },
+   {
+    "t": "OpenStreetMap way/128066982 (plan)",
+    "url": "https://www.openstreetmap.org/way/128066982"
+   },
+   {
+    "t": "Pente : MNT IGN RGE ALTI, calculée par chiese.py",
     "url": "https://geoservices.ign.fr/rgealti"
    }
   ]
@@ -1307,6 +1952,29 @@ window.CHIESE_UBAYE = [
     "t": "Pendenza: DEM IGN RGE ALTI, calcolata da chiese.py",
     "url": "https://geoservices.ign.fr/rgealti"
    }
+  ],
+  "epoca_fr": "XVIe-XVIIe siècle",
+  "protezione_fr": null,
+  "storia_fr": [
+   "Ancienne église paroissiale des Agneliers, des XVIe-XVIIe siècles. Elle conserve trois tableaux classés provenant de la chapelle de Morjuan (Mise au tombeau, Vierge à l'Enfant, Dieu le Père)."
+  ],
+  "fonti_storia_fr": [
+   {
+    "t": "Wikipedia (fr): Uvernet-Fours, Églises et chapelles",
+    "url": "https://fr.wikipedia.org/wiki/Uvernet-Fours"
+   },
+   {
+    "t": "Wikidata Q55440461",
+    "url": "https://www.wikidata.org/wiki/Q55440461"
+   },
+   {
+    "t": "OpenStreetMap way/128075448 (plan)",
+    "url": "https://www.openstreetmap.org/way/128075448"
+   },
+   {
+    "t": "Pente : MNT IGN RGE ALTI, calculée par chiese.py",
+    "url": "https://geoservices.ign.fr/rgealti"
+   }
   ]
  },
  {
@@ -1346,7 +2014,7 @@ window.CHIESE_UBAYE = [
   "epoca": "1773; parrocchia dal 1833; ricostruita dopo la guerra",
   "protezione": null,
   "storia": [
-   "Chiesa di Saint-Ours (Wikidata: «église Saint-Ours de Saint-Ours»). La prima cappella, a nord del hameau, fu spostata e ricostruita nel 1773 al Plan de Saint-Ours, eretta in parrocchia nel 1833 e ricostruita dopo l'ultima guerra."
+   "Chiesa di Saint-Ours (Wikidata: «église Saint-Ours de Saint-Ours»). La prima cappella, a nord della frazione, fu spostata e ricostruita nel 1773 al Plan de Saint-Ours, eretta in parrocchia nel 1833 e ricostruita dopo l'ultima guerra."
   ],
   "fonti_storia": [
    {
@@ -1363,6 +2031,29 @@ window.CHIESE_UBAYE = [
    },
    {
     "t": "Pendenza: DEM IGN RGE ALTI, calcolata da chiese.py",
+    "url": "https://geoservices.ign.fr/rgealti"
+   }
+  ],
+  "epoca_fr": "1773 ; paroisse depuis 1833 ; reconstruite après la guerre",
+  "protezione_fr": null,
+  "storia_fr": [
+   "Église de Saint-Ours (Wikidata : « église Saint-Ours de Saint-Ours »). La première chapelle, au nord du hameau, fut déplacée et reconstruite en 1773 au Plan de Saint-Ours, érigée en paroisse en 1833 et reconstruite après la dernière guerre."
+  ],
+  "fonti_storia_fr": [
+   {
+    "t": "Wikipedia (fr): Meyronnes",
+    "url": "https://fr.wikipedia.org/wiki/Meyronnes"
+   },
+   {
+    "t": "Wikidata Q60389523",
+    "url": "https://www.wikidata.org/wiki/Q60389523"
+   },
+   {
+    "t": "OpenStreetMap way/96992035 (plan)",
+    "url": "https://www.openstreetmap.org/way/96992035"
+   },
+   {
+    "t": "Pente : MNT IGN RGE ALTI, calculée par chiese.py",
     "url": "https://geoservices.ign.fr/rgealti"
    }
   ]
@@ -1405,6 +2096,29 @@ window.CHIESE_UBAYE = [
    },
    {
     "t": "Pendenza: DEM IGN RGE ALTI, calcolata da chiese.py",
+    "url": "https://geoservices.ign.fr/rgealti"
+   }
+  ],
+  "epoca_fr": "reconstruite après 1945",
+  "protezione_fr": null,
+  "storia_fr": [
+   "Église de Larche. Le village fut entièrement détruit par les combats de la Libération en avril 1945 puis reconstruit : l'édifice actuel appartient à la reconstruction (l'article de la commune cite des églises du XXe siècle dédiées à Notre-Dame-des-Neiges et à Saint-Pierre-ès-Liens)."
+  ],
+  "fonti_storia_fr": [
+   {
+    "t": "Wikipedia (fr): Larche (Alpes-de-Haute-Provence)",
+    "url": "https://fr.wikipedia.org/wiki/Larche_(Alpes-de-Haute-Provence)"
+   },
+   {
+    "t": "Wikidata Q60385534",
+    "url": "https://www.wikidata.org/wiki/Q60385534"
+   },
+   {
+    "t": "OpenStreetMap way/96741697 (plan)",
+    "url": "https://www.openstreetmap.org/way/96741697"
+   },
+   {
+    "t": "Pente : MNT IGN RGE ALTI, calculée par chiese.py",
     "url": "https://geoservices.ign.fr/rgealti"
    }
   ]

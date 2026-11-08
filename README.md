@@ -24,6 +24,8 @@ stessa logica:
   banchi; gli arredi fanno ombra.
 - Viste rapide: ciascuna cappella, facciata interna, abside, esterno, facciata esterna.
 - Pagina **Storia**: cronologia (dal 1668), orientamento della chiesa, cartine e fonti.
+- Le due lingue sono separate: la versione italiana non contiene testi francesi e viceversa;
+  i nomi propri (chiesa, cappelle, luoghi) restano in francese anche in italiano.
 
 ## Avviare il sito in locale
 
@@ -77,17 +79,19 @@ Tasti utili: `1` `2` `4` solstizi/equinozio, `N` `S` `K` `O` viste laterali, `T`
 | `comune/church-geometry.js`, `church-mesh.js`, `wall-projection.js`, `solar-position.js`, `reference-photos.js` | Gli stessi calcoli della parte Python, tradotti in JavaScript |
 | `comune/i18n.js` | Testi in italiano e francese |
 | `comune/photos-data.js` | Le foto incorporate nel sito |
-| `comune/dati/` | Storia, ricerca e cartina dell'Ubaye in formato per il sito |
+| `comune/dati/` | Storia, ricerca e cartina dell'Ubaye in formato per il sito (cartina in due file: `mappa_orientamento_ubaye.html` italiano, `..._fr.html` francese) |
 | `comune/three.min.js`, `orbit-controls-lite.js`, `triangulate.js`, `paris-time.js`, `parametri.js` | Librerie e utilità |
 | `strumenti/genera_pagine.py` | Genera `it/` e `fr/` dai modelli |
 | `strumenti/genera_foto.py` | Incorpora le foto in `photos-data.js` |
-| `strumenti/genera_dati.py` | Copia storia, ricerca e cartina in `comune/dati/` |
+| `strumenti/genera_dati.py` | Porta storia, ricerca e cartina in `comune/dati/`, in versione italiana e francese separate |
+| `strumenti/traduzioni_fr.py` | Le traduzioni francesi dei testi delle chiese dell'Ubaye (nati in italiano) e le correzioni della versione italiana |
 | `strumenti/verifica_sync.py` | Controlla che Python e sito usino le stesse misure |
 
 Dopo una modifica al sito:
 
 ```bash
 cd sito
+python3 strumenti/genera_dati.py      # segnala i testi nuovi ancora senza francese
 python3 strumenti/genera_pagine.py
 python3 strumenti/verifica_sync.py
 ```

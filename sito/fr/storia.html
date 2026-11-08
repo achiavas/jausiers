@@ -61,8 +61,8 @@
     </figure>
     <figure class="larga">
       <figcaption id="capUbaye"></figcaption>
-      <iframe id="mappaUbaye" title="Ubaye" loading="lazy" src="../comune/dati/mappa_orientamento_ubaye.html"></iframe>
-      <a class="dim" id="apriUbaye" target="_blank" rel="noopener" href="../comune/dati/mappa_orientamento_ubaye.html"></a>
+      <iframe id="mappaUbaye" title="Ubaye" loading="lazy"></iframe>
+      <a class="dim" id="apriUbaye" target="_blank" rel="noopener"></a>
     </figure>
   </div>
 
@@ -100,6 +100,9 @@ for (const [id, t] of Object.entries({ hOrient: T.orientamento, hStoria: T.stori
   const d = 0.0008, bbox = [sn.lon - d * 1.6, sn.lat - d, sn.lon + d * 1.6, sn.lat + d].map((x) => x.toFixed(6)).join(",");
   $("mappaChiesa").src = `https://www.openstreetmap.org/export/embed.html?bbox=${bbox}&layer=mapnik&marker=${sn.lat},${sn.lon}`;
   $("apriChiesa").href = `https://www.openstreetmap.org/way/93932532`;
+  // la cartina dell'Ubaye nella lingua della pagina
+  const mappa = LANG === "fr" ? "../comune/dati/mappa_orientamento_ubaye_fr.html" : "../comune/dati/mappa_orientamento_ubaye.html";
+  $("mappaUbaye").src = $("apriUbaye").href = mappa;
   $("capChiesa").textContent = T.cartinaChiesa;
   $("capUbaye").textContent = T.cartinaUbaye;
   $("apriChiesa").textContent = $("apriUbaye").textContent = T.apriGrande;
@@ -127,7 +130,7 @@ if (!r) {
     const nota = testoRicerca(f, "nota");
     // solo i link web: un file locale (file://, documenti sul computer) resta testo
     const web = /^https?:\/\//.test(f.url || "");
-    const titolo = esc(f.titolo || f.url);
+    const titolo = esc((LANG === "fr" && f.titolo_fr) || f.titolo || f.url);
     return `<li>${web ? `<a href="${esc(f.url)}" target="_blank" rel="noopener">${titolo}</a>` : titolo}` +
       (nota ? ` <span class="dim">— ${esc(nota)}</span>` : "") + "</li>";
   }).join("");
@@ -146,17 +149,19 @@ if (sj && sj.cronologia) {
 const chiese = window.CHIESE_UBAYE || [];
 const c = T.col;
 const num = (x, d = 1) => (Number.isFinite(x) ? x.toFixed(d) : "");
-// storia e fonti della singola chiesa (da ricerca_orientamento_ubaye, solo in italiano)
+// storia e fonti della singola chiesa (da ricerca_orientamento_ubaye; il
+// francese viene da strumenti/traduzioni_fr.py, campi *_fr)
+const inLingua = (k, campo) => (LANG === "fr" && k[campo + "_fr"] != null ? k[campo + "_fr"] : k[campo]);
 const storiaChiesa = (k) => !(k.storia && k.storia.length) ? "" :
-  `<details class="dim"><summary>${esc(T.storiaChiesa + T.lingStoria)}</summary>` +
-  k.storia.map((p) => `<p>${esc(p)}</p>`).join("") +
-  (k.protezione ? `<p>${esc(k.protezione)}</p>` : "") +
-  `<ul class="fonti">${(k.fonti_storia || []).map((f) => `<li><a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.t)}</a></li>`).join("")}</ul></details>`;
+  `<details class="dim"><summary>${esc(T.storiaChiesa)}</summary>` +
+  inLingua(k, "storia").map((p) => `<p>${esc(p)}</p>`).join("") +
+  (k.protezione ? `<p>${esc(inLingua(k, "protezione"))}</p>` : "") +
+  `<ul class="fonti">${(inLingua(k, "fonti_storia") || []).map((f) => f.url ? `<li><a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.t)}</a></li>` : `<li>${esc(f.t)}</li>`).join("")}</ul></details>`;
 $("tabella").innerHTML =
   `<tr><th>${c.commune}</th><th>${c.nome}</th><th>${c.asse}</th><th>${c.abside}</th><th>${c.epoca}</th><th>${c.devEW}</th><th>${c.pendenza}</th><th>${c.vsPendenza}</th><th>${c.osm}</th></tr>` +
   chiese.map((k) => `<tr class="${/Saint-Nicolas/.test(k.nome) && /Jausiers/.test(k.commune) ? "jausiers" : ""}">` +
     `<td>${esc(k.commune)}</td><td>${esc(nomeOsm(k.nome))}${storiaChiesa(k)}</td><td class="n">${num(k.axis_az)}</td>` +
-    `<td class="n">${num(k.apse_az, 0)}</td><td>${esc(k.epoca)}</td><td class="n">${num(k.dev_from_EW)}</td>` +
+    `<td class="n">${num(k.apse_az, 0)}</td><td>${esc(inLingua(k, "epoca"))}</td><td class="n">${num(k.dev_from_EW)}</td>` +
     `<td class="n">${num(k.slope_deg)}</td><td class="n">${num(k.axis_vs_fallline)}</td>` +
     `<td><a href="${esc(k.osm_url)}" target="_blank" rel="noopener">way</a></td></tr>`).join("");
 </script>
