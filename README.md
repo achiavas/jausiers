@@ -61,7 +61,6 @@ Tasti utili: `1` `2` `4` solstizi/equinozio, `N` `S` `K` `O` viste laterali, `T`
 | `church_mesh.py` | Costruisce le mesh 3D: muri, tetto, volte, gradini, altari, banchi, pulpito, organo, lampadari… |
 | `solar_position.py` | Posizione del sole (azimut, altezza) per data, ora e luogo |
 | `wall_projection.py` | Proietta la luce di ogni vetrata sul primo ostacolo: pavimento, pareti (con gli archi delle cappelle) e banchi |
-| `light_projection.py` | Proiezione semplice sul solo pavimento (versione precedente) |
 | `reference_photos.py` | Dove va ogni foto sulle pareti, nelle cappelle e sulle vetrate |
 | `viewer_3d.py` | Il programma interattivo: scena, cursori, macchie di luce e ombre |
 | `storia_chiesa.py`, `storia_jausiers.json` | Testo della storia e cronologia (italiano e francese) |

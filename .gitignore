@@ -2,8 +2,6 @@
 *.pdf
 *.docx
 /Screenshot*.png
-/jausiers_web_final/
-/jausiers_web_fr/
 
 # --- video originali: troppo grandi per GitHub (le foto estratte restano) ---
 *.mov
