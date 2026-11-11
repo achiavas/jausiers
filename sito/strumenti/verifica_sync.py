@@ -46,8 +46,9 @@ SOLO_UNA_PARTE = {"ELEVATION_M", "RAD", "TIMEZONE_NAME"}
 
 def valore(testo: str):
     """Numero, lista di numeri o stringa; None se e' un'espressione."""
-    t = testo.strip().rstrip(";").strip()
-    t = re.sub(r"\s*(#|//).*$", "", t)
+    # prima il commento, poi il punto e virgola ("1.93;  // nota")
+    t = re.sub(r"\s*(#|//).*$", "", testo.strip())
+    t = t.rstrip(";").strip()
     try:
         v = ast.literal_eval(t)
     except Exception:

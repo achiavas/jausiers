@@ -96,6 +96,7 @@ function ritaglia(poli, asse, limite, sopra) {
   return out;
 }
 
+const PASSI_BISEZIONE = 14;     // precisione del punto dove la luce passa da una superficie all'altra
 const STACCO_BANCO_M = 0.012;   // la luce sui banchi poco sopra il legno
 
 // La macchia sul pavimento rimandata indietro lungo i raggi del sole sulle
@@ -201,35 +202,44 @@ function projectWindowWithWalls(church, outlineLocalUVW, wallAzimuthDeg, sun, wa
     return h.kind === "pavimento" ? "pavimento" : `parete_${h.edgeIndex}`;
   }
 
+  // Tratti consecutivi del contorno che cadono sulla stessa superficie.
+  // Dove la superficie cambia si cerca, per bisezione lungo il contorno
+  // della vetrata, il punto esatto del passaggio: ogni tratto si chiude con
+  // un punto sulla PROPRIA superficie (prima prendeva in prestito un punto
+  // dell'altra, e la macchia restava con un triangolo sospeso in aria).
   const n = hits.length;
-  let start = 0;
-  for (let i = 0; i < n; i++) {
-    if (surfKey(hits[i]) !== surfKey(hits[(i - 1 + n) % n])) { start = i; break; }
-  }
-  const order = Array.from({ length: n }, (_, i) => (start + i) % n);
-
-  const groups = [];
-  for (const idx of order) {
-    if (hits[idx] === null) continue;
-    if (groups.length > 0 && surfKey(hits[idx]) === surfKey(hits[groups[groups.length - 1][groups[groups.length - 1].length - 1]])) {
-      groups[groups.length - 1].push(idx);
-    } else {
-      groups.push([idx]);
+  const keys = hits.map(surfKey);
+  const gruppi = [];   // { key, items: [hit...] }
+  if (keys.every((k) => k === keys[0])) {
+    gruppi.push({ key: keys[0], items: hits.slice() });
+  } else {
+    let start = 0;
+    for (let i = 0; i < n; i++) {
+      if (keys[i] !== keys[(i - 1 + n) % n]) { start = i; break; }
     }
-  }
-  if (groups.length > 1) {
-    const first = groups[0], last = groups[groups.length - 1];
-    if (surfKey(hits[first[0]]) === surfKey(hits[last[last.length - 1]])) {
-      groups[0] = [...last, ...first];
-      groups.pop();
+    const fine = [];   // indice dell'ultimo punto di ogni gruppo
+    for (let k = 0; k < n; k++) {
+      const idx = (start + k) % n;
+      if (gruppi.length > 0 && gruppi[gruppi.length - 1].key === keys[idx]) {
+        gruppi[gruppi.length - 1].items.push(hits[idx]);
+        fine[fine.length - 1] = idx;
+      } else {
+        gruppi.push({ key: keys[idx], items: [hits[idx]] });
+        fine.push(idx);
+      }
     }
-  }
-
-  // punto di cucitura condiviso fra gruppi adiacenti
-  const originalFirst = groups.map((g) => g[0]);
-  for (let gi = 0; gi < groups.length; gi++) {
-    const prevGroup = groups[(gi - 1 + groups.length) % groups.length];
-    groups[gi] = [prevGroup[prevGroup.length - 1], ...groups[gi]];
+    for (let g = 0; g < gruppi.length; g++) {
+      const A = gruppi[g], B = gruppi[(g + 1) % gruppi.length];
+      let lo = dense[fine[g]], hi = dense[(fine[g] + 1) % n];
+      let hLo = hits[fine[g]], hHi = hits[(fine[g] + 1) % n];
+      for (let it = 0; it < PASSI_BISEZIONE; it++) {
+        const mid = [(lo[0] + hi[0]) / 2, (lo[1] + hi[1]) / 2, (lo[2] + hi[2]) / 2];
+        const hMid = firstHit(mid[0], mid[1], mid[2], pu, pv, pw, perimeter, wallHeight, schermi);
+        if (surfKey(hMid) === A.key) { lo = mid; hLo = hMid; } else { hi = mid; hHi = hMid; }
+      }
+      if (A.key !== null) A.items.push(hLo);
+      if (B.key !== null && surfKey(hHi) === B.key) B.items.unshift(hHi);
+    }
   }
 
   // verso del perimetro (< 0: senso orario, interno a destra)
@@ -251,18 +261,14 @@ function projectWindowWithWalls(church, outlineLocalUVW, wallAzimuthDeg, sun, wa
   }
 
   const patches = [];
-  for (let gi = 0; gi < groups.length; gi++) {
-    const group = groups[gi];
-    if (group.length < 3) continue;
-    const kind = hits[originalFirst[gi]].kind;
-    const pts = group.map((idx) => hits[idx]).filter((h) => h !== null).map(toWorld);
-    if (pts.length >= 3) patches.push({ surface: kind, pointsWorld: pts });
+  for (const { key, items } of gruppi) {
+    if (key === null || items.length < 3) continue;
+    const kind = items[0].kind;
+    patches.push({ surface: kind, pointsWorld: items.map(toWorld) });
     if (kind === "pavimento") {
       // la stessa luce, prima di toccare terra, cade sui banchi
-      const pav = group.map((idx) => hits[idx]).filter((h) => h !== null && h.kind === "pavimento").map((h) => [h.u, h.v, quotaPavimento(h.u, h.v)]);
-      if (pav.length >= 3) {
-        for (const poli of luceSuiBanchi(church, pav, [-pu, -pv, -pw])) patches.push({ surface: "banco", pointsWorld: poli.map((q) => church.localToEnu(...q)) });
-      }
+      const pav = items.map((h) => [h.u, h.v, quotaPavimento(h.u, h.v)]);
+      for (const poli of luceSuiBanchi(church, pav, [-pu, -pv, -pw])) patches.push({ surface: "banco", pointsWorld: poli.map((q) => church.localToEnu(...q)) });
     }
   }
   return patches;

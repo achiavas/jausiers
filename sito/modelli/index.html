@@ -481,7 +481,7 @@ scene.add(floorMesh, wallsMesh, roofMesh, chapelWallMesh, chapelPierMesh, apseSt
 // uniforme. Poi il colore esterno va sul fronte, il bianco su un gemello
 // che disegna solo il retro (cioe' le facce viste da dentro).
 const COLORE_INTERNO = 0xf7f5f0;
-const OPACITA_INTERNA = 0.6;
+const OPACITA_INTERNA = 0.9;   // a 0.6 sul fondo scuro le pareti senza foto sembravano grigie
 const WH_ = NAVE_WIDTH_M / 2;
 const centroNavata = () => [NAVE_LENGTH_M / 2, 0, 5.0];
 const centroNicchia = (u, v) => {
@@ -693,10 +693,23 @@ for (const win of church.windows) {
   windowMeshes[win.name] = mesh;
 }
 
+// Freccia del Nord, sul pavimento della corsia centrale (fra i banchi non si
+// vedrebbe), con la lettera N in punta
 {
-  const origin = new THREE.Vector3(...church.localToEnu(13, -3, 0.05));
-  const arrow = new THREE.ArrowHelper(new THREE.Vector3(0, 1, 0), origin, 4.0, 0xff5555, 1.0, 0.6);
+  const LUNGA = 2.8;
+  const [nu, nv] = church.enuToLocalUV(0, 1);
+  const origin = new THREE.Vector3(...church.localToEnu(11 - nu * LUNGA / 2, -nv * LUNGA / 2, 0.06));
+  const arrow = new THREE.ArrowHelper(new THREE.Vector3(0, 1, 0), origin, LUNGA, 0xff5555, 0.7, 0.42);
   scene.add(arrow);
+  const tela = document.createElement("canvas");
+  tela.width = tela.height = 64;
+  const c2 = tela.getContext("2d");
+  c2.font = "bold 52px Arial"; c2.textAlign = "center"; c2.textBaseline = "middle"; c2.fillStyle = "#ff5555";
+  c2.fillText("N", 32, 35);
+  const lettera = new THREE.Sprite(new THREE.SpriteMaterial({ map: new THREE.CanvasTexture(tela), depthWrite: false }));
+  lettera.scale.set(0.7, 0.7, 1);
+  lettera.position.copy(origin).add(new THREE.Vector3(0, LUNGA + 0.15, 0.4));
+  scene.add(lettera);
 }
 
 // -----------------------------------------------------------------

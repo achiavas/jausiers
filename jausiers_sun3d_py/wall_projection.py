@@ -167,6 +167,7 @@ def _ritaglia(poli, asse, limite, sopra):
     return out
 
 
+PASSI_BISEZIONE = 14     # precisione del punto dove la luce passa da una superficie all'altra
 STACCO_BANCO_M = 0.012   # la luce sui banchi poco sopra il legno
 
 
@@ -313,46 +314,56 @@ def project_window_with_walls(
             return None
         return h[0] if h[0] == "pavimento" else (h[0], h[1])
 
+    # Tratti consecutivi del contorno che cadono sulla stessa superficie.
+    # Dove la superficie cambia si cerca, per bisezione lungo il contorno
+    # della vetrata, il punto esatto del passaggio: ogni tratto si chiude con
+    # un punto sulla PROPRIA superficie (prima prendeva in prestito un punto
+    # dell'altra, e la macchia restava con un triangolo sospeso in aria).
     n = len(hits)
-    # ruota la lista cosi' da iniziare a un cambio di gruppo (evita di
-    # spezzare in due un gruppo che "avvolge" l'inizio/fine dell'anello)
-    start = 0
-    for i in range(n):
-        if surf_key(hits[i]) != surf_key(hits[i - 1]):
-            start = i
-            break
-    order = [(start + i) % n for i in range(n)]
-
-    groups: list[list[int]] = []
-    for idx in order:
-        if hits[idx] is None:
-            continue
-        if groups and surf_key(hits[idx]) == surf_key(hits[groups[-1][-1]]):
-            groups[-1].append(idx)
-        else:
-            groups.append([idx])
-
-    # unisce un eventuale primo/ultimo gruppo residuo dello stesso tipo
-    if len(groups) > 1 and surf_key(hits[groups[0][0]]) == surf_key(hits[groups[-1][-1]]):
-        groups[0] = groups[-1] + groups[0]
-        groups.pop()
-
-    # --- condivide un punto di cucitura fra gruppi adiacenti, cosi' i
-    #     poligoni si accostano senza vuoti visibili ---
-    original_first = [g[0] for g in groups]  # per riconoscere il tipo del gruppo, ignorando la cucitura
-    for gi in range(len(groups)):
-        prev_group = groups[gi - 1]
-        groups[gi] = [prev_group[-1]] + groups[gi]
+    keys = [surf_key(h) for h in hits]
+    gruppi: list[list] = []   # [key, [hit...]]
+    if all(k == keys[0] for k in keys):
+        gruppi.append([keys[0], list(hits)])
+    else:
+        start = 0
+        for i in range(n):
+            if keys[i] != keys[i - 1]:
+                start = i
+                break
+        fine: list[int] = []   # indice dell'ultimo punto di ogni gruppo
+        for k in range(n):
+            idx = (start + k) % n
+            if gruppi and gruppi[-1][0] == keys[idx]:
+                gruppi[-1][1].append(hits[idx])
+                fine[-1] = idx
+            else:
+                gruppi.append([keys[idx], [hits[idx]]])
+                fine.append(idx)
+        for g in range(len(gruppi)):
+            A, B = gruppi[g], gruppi[(g + 1) % len(gruppi)]
+            lo, hi = dense[fine[g]], dense[(fine[g] + 1) % n]
+            h_lo, h_hi = hits[fine[g]], hits[(fine[g] + 1) % n]
+            for _ in range(PASSI_BISEZIONE):
+                mid = ((lo[0] + hi[0]) / 2, (lo[1] + hi[1]) / 2, (lo[2] + hi[2]) / 2)
+                h_mid = _first_hit(mid[0], mid[1], mid[2], pu, pv, pw, perimeter, wall_height, schermi)
+                if surf_key(h_mid) == A[0]:
+                    lo, h_lo = mid, h_mid
+                else:
+                    hi, h_hi = mid, h_mid
+            if A[0] is not None:
+                A[1].append(h_lo)
+            if B[0] is not None and surf_key(h_hi) == B[0]:
+                B[1].insert(0, h_hi)
 
     a2 = 0.0
     for i in range(len(perimeter) - 1):
         a2 += perimeter[i][0] * perimeter[i + 1][1] - perimeter[i + 1][0] * perimeter[i][1]
     verso_perimetro = a2                  # < 0: perimetro in senso orario (interno a destra)
     patches: list[LightSurfacePatch] = []
-    for gi, group in enumerate(groups):
-        if len(group) < 3:
+    for key, items in gruppi:
+        if key is None or len(items) < 3:
             continue
-        kind = hits[original_first[gi]][0]
+        kind = items[0][0]
 
         def to_world(h):
             if h[0] == "pavimento":
@@ -372,15 +383,11 @@ def project_window_with_walls(
                 iu, iv = 0.0, -math.copysign(1.0, v)
             return church.local_to_enu(u + STACCO_PARETE_M * iu, v + STACCO_PARETE_M * iv, height)
 
-        pts = [to_world(hits[idx]) for idx in group if hits[idx] is not None]
-        if len(pts) >= 3:
-            patches.append(LightSurfacePatch(surface=kind, points_world=pts))
+        patches.append(LightSurfacePatch(surface=kind, points_world=[to_world(h) for h in items]))
         if kind == "pavimento":
             # la stessa luce, prima di toccare terra, cade sui banchi
-            pav = [(hits[idx][1][0], hits[idx][1][1], quota_pavimento(*hits[idx][1]))
-                   for idx in group if hits[idx] is not None and hits[idx][0] == "pavimento"]
-            if len(pav) >= 3:
-                for poli in luce_sui_banchi(church, pav, (-pu, -pv, -pw)):
-                    patches.append(LightSurfacePatch(surface="banco", points_world=[church.local_to_enu(*q) for q in poli]))
+            pav = [(h[1][0], h[1][1], quota_pavimento(*h[1])) for h in items]
+            for poli in luce_sui_banchi(church, pav, (-pu, -pv, -pw)):
+                patches.append(LightSurfacePatch(surface="banco", points_world=[church.local_to_enu(*q) for q in poli]))
 
     return patches
